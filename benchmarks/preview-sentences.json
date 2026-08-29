@@ -1,0 +1,18 @@
+{
+  "purpose": "Fixed sentences for Caedral preview WAV generation (founder directive).",
+  "neutral": [
+    "Hello. This is the first generation of Caedral Voice."
+  ],
+  "conversational": [
+    "Hey, so basically that's the whole story. What do you think?"
+  ],
+  "expressive": [
+    "Welcome to Caedral. Let's build something extraordinary!"
+  ],
+  "longform_paragraph": "The morning market opened early, as it always did on Saturdays. Vendors arranged their stalls under striped awnings while the streetlights were still on, and by seven o'clock the narrow road smelled of bread, wet stone, and strong coffee.",
+  "rules": [
+    "Generate ALL sentences at every refresh; never cherry-pick.",
+    "Label earliest checkpoint output EARLY TRAINING CHECKPOINT - NOT QUALITY REPRESENTATIVE.",
+    "Record RTF/RAM at generation time into the README."
+  ]
+}

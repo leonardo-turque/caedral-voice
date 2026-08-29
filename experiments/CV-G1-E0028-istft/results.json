@@ -1,0 +1,279 @@
+{
+  "experiment": "CV-G1-E0028-istft-split",
+  "date": "2026-08-23",
+  "task_id": "ISTFT-SPLIT-01",
+  "model": "models\\kokoro\\kokoro-v1.0.onnx",
+  "cut_tensor": "/decoder/decoder/generator/istft/stft/Concat_output_0",
+  "threads": 4,
+  "versions": {
+    "python": "3.13.15",
+    "onnx": "1.22.0",
+    "onnxruntime": "1.29.0",
+    "scipy": "1.18.1",
+    "librosa": "0.11.0",
+    "kokoro_onnx": "n/a",
+    "numpy": "2.2.6"
+  },
+  "graph_findings": {
+    "opset": [
+      20
+    ],
+    "outputs_original": [
+      "audio"
+    ],
+    "forward_stft_node": {
+      "name": "/decoder/decoder/generator/STFT",
+      "op_type": "STFT",
+      "domain": "",
+      "note": "kept in-graph; feeds source-envelope branch"
+    },
+    "istft_implementation": "no ISTFT op: subgraph of Cos/Sin/Mul/Concat -> ConvTranspose (inverse_basis 22x1x20, stride=5, kernel=20) -> window_sum edge-normalization (Greater/NonZero/Gather/Div/ScatterND) -> Mul(4.0) -> Slice[10:-10]",
+    "n_fft": 20,
+    "hop": 5,
+    "sample_rate": 24000,
+    "window_constant_is_initializer": true,
+    "stft_related_nodes": 36
+  },
+  "equivalence": {
+    "waveform": {
+      "evalA": {
+        "native_exact": {
+          "len": 94800,
+          "maxabsdiff": 4.681938010175912e-06,
+          "rel_to_absmax": 1.061786684720421e-05,
+          "corr": 1.0,
+          "snr_db": 128.2
+        },
+        "librosa_x1.5": {
+          "len": 94800,
+          "maxabsdiff": 4.681938009287734e-06,
+          "rel_to_absmax": 1.0617866845189967e-05,
+          "corr": 1.0,
+          "snr_db": 123.4
+        }
+      },
+      "avx": {
+        "native_exact": {
+          "len": 141000,
+          "maxabsdiff": 9.207669319444278e-06,
+          "rel_to_absmax": 1.5819961130758252e-05,
+          "corr": 1.0,
+          "snr_db": 126.6
+        },
+        "librosa_x1.5": {
+          "len": 141000,
+          "maxabsdiff": 9.207669319444278e-06,
+          "rel_to_absmax": 1.5819961130758252e-05,
+          "corr": 1.0,
+          "snr_db": 122.8
+        }
+      },
+      "numbers": {
+        "native_exact": {
+          "len": 155400,
+          "maxabsdiff": 1.2064791966359678e-05,
+          "rel_to_absmax": 2.593561938998903e-05,
+          "corr": 1.0,
+          "snr_db": 125.3
+        },
+        "librosa_x1.5": {
+          "len": 155400,
+          "maxabsdiff": 1.20647919654715e-05,
+          "rel_to_absmax": 2.593561938807972e-05,
+          "corr": 1.0,
+          "snr_db": 122.0
+        }
+      },
+      "natural": {
+        "native_exact": {
+          "len": 108600,
+          "maxabsdiff": 7.664209441315961e-06,
+          "rel_to_absmax": 1.5892949019125217e-05,
+          "corr": 1.0,
+          "snr_db": 126.5
+        },
+        "librosa_x1.5": {
+          "len": 108600,
+          "maxabsdiff": 7.664209441315961e-06,
+          "rel_to_absmax": 1.5892949019125217e-05,
+          "corr": 1.0,
+          "snr_db": 122.9
+        }
+      }
+    },
+    "whisper": {
+      "evalA": {
+        "ref": "Hello. This is the first generation of Caedral Voice.",
+        "hyp_full": "Hello, this is the first generation of key drill voice.",
+        "wer_full": 0.3333,
+        "hyp_native": "Hello, this is the first generation of key drill voice.",
+        "wer_native": 0.3333,
+        "transcripts_identical": true,
+        "delta_wer": 0.0
+      },
+      "avx": {
+        "ref": "The CPU supports AVX2 instructions but not AVX-512.",
+        "hyp_full": "The CPU supports AVX2 instructions, but not AVX512.",
+        "wer_full": 0.25,
+        "hyp_native": "The CPU supports AVX2 instructions, but not AVX512.",
+        "wer_native": 0.25,
+        "transcripts_identical": true,
+        "delta_wer": 0.0
+      },
+      "numbers": {
+        "ref": "The invoice totals $1,247.83, due within 30 days.",
+        "hyp_full": "The invoice totals $1,247.83, due within 30 days.",
+        "wer_full": 0.0,
+        "hyp_native": "The invoice totals $1,247.83 due within 30 days.",
+        "wer_native": 0.125,
+        "transcripts_identical": false,
+        "delta_wer": 0.125
+      },
+      "natural": {
+        "ref": "Artificial intelligence should sound natural, expressive, and human.",
+        "hyp_full": "Artificial intelligence should sound natural, expressive and human.",
+        "wer_full": 0.125,
+        "hyp_native": "Artificial intelligence should sound natural, expressive and human.",
+        "wer_native": 0.125,
+        "transcripts_identical": true,
+        "delta_wer": 0.0
+      }
+    }
+  },
+  "timing": {
+    "split_model_build_s": 0.0,
+    "sentence": "Hello. This is the first generation of Caedral Voice.",
+    "audio_s": 3.95,
+    "warmup": 2,
+    "reps": 8,
+    "full_graph_median_s": 3.8035,
+    "split_graph_median_s": 3.942,
+    "native_istft_median_ms": 10.284,
+    "librosa_istft_median_ms": 21.01,
+    "split_plus_native_median_s": 3.9523,
+    "split_plus_librosa_median_s": 3.963,
+    "speedup_vs_full": 0.9623,
+    "in_graph_istft_implied_ms": -138.58,
+    "abab_rigorous": {
+      "method": "3 interleaved ABAB rounds x4 reps each after shared warmup; same process, alternating order per rep",
+      "rounds": [
+        {
+          "round": 1,
+          "full_median_s": 2.584,
+          "split_native_median_s": 2.6328,
+          "ratio_split_over_full": 1.0189
+        },
+        {
+          "round": 2,
+          "full_median_s": 3.1203,
+          "split_native_median_s": 2.7629,
+          "ratio_split_over_full": 0.8855
+        },
+        {
+          "round": 3,
+          "full_median_s": 2.2221,
+          "split_native_median_s": 2.3148,
+          "ratio_split_over_full": 1.0417
+        }
+      ],
+      "grand_median_full_s": 2.584,
+      "grand_median_split_native_s": 2.6328,
+      "grand_ratio_split_over_full": 1.0189,
+      "verdict_speed": "KILL"
+    }
+  },
+  "ort_kernel_profile": {
+    "istft_tail_nodes_ms_per_call": 8.058,
+    "forward_STFT_node_ms_per_call": 305.403,
+    "istft_noop_norm_chain_ms_per_call": 0.348,
+    "total_kernel_ms_per_call": 3084.3,
+    "matched_node_names": {
+      "istft_tail_nodes": [
+        "/decoder/decoder/generator/istft/stft/Add_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Concat_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Concat_2_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Concat_kernel_time",
+        "/decoder/decoder/generator/istft/stft/ConvTranspose_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Cos_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Div_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Equal_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Expand_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Expand_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Gather_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Gather_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Greater_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Mul_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Mul_4_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Mul_kernel_time",
+        "/decoder/decoder/generator/istft/stft/NonZero_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Reshape_kernel_time",
+        "/decoder/decoder/generator/istft/stft/ScatterND_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Shape_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Shape_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Sin_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Slice_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Slice_2_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Slice_3_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Slice_4_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Slice_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Squeeze_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Squeeze_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Transpose_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Unsqueeze_1_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Unsqueeze_2_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Unsqueeze_3_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Unsqueeze_kernel_time",
+        "/decoder/decoder/generator/istft/stft/Where_kernel_time"
+      ],
+      "forward_STFT_node": [
+        "/decoder/decoder/generator/STFT_kernel_time"
+      ]
+    }
+  },
+  "runtime_s": 128.0,
+  "openvino_split_probe": {
+    "skipped": false,
+    "convert_s": 3.46,
+    "compile_s": 2.44,
+    "first_infer_s": 1.416,
+    "warm_median_s": 1.7395,
+    "spec_shape": [
+      1,
+      22,
+      18961
+    ],
+    "end_to_end_maxdiff_vs_ort_full": 0.19070595502853394,
+    "status": "CHECK",
+    "note": "E0025 crashed inside istft/stft/Expand; that subgraph is absent from the split model",
+    "spec_maxdiff_vs_ort_split": 8.274250030517578,
+    "spec_rel_to_absmax": 0.4741636971934092,
+    "spec_diff_diagnosis": "divergence originates INSIDE the split graph under OV execution (upstream of the cut tensor): scattered frames/channels differ up to 47% of absmax - an OpenVINO-vs-ORT graph-execution difference, NOT an artifact of the native iSTFT step",
+    "audio_vs_ort_full": {
+      "maxdiff": 0.1981,
+      "corr": 0.957,
+      "snr_db": 10.1
+    },
+    "whisper_transcript_ov_render": "Hello, this is the first generation of key drill voice.",
+    "whisper_transcript_ort_full": "Hello, this is the first generation of key drill",
+    "quality_gate": "NOT PASSED (corr 0.957 << 1.0); execution blocker from E0025 is gone, numerics need dedicated investigation"
+  },
+  "verdict": {
+    "equivalence": "KEEP - proven mathematically equivalent",
+    "equivalence_evidence": {
+      "native_exact_replication": "maxabsdiff <= 1.21e-05 across 4 sentences (audio absmax ~0.44), corr == 1.0, length identical",
+      "librosa_x1.5": "identical diffs to exact replication; librosa needs amplitude factor 1.5 (hann^2 COLA sum folded into graph basis)",
+      "whisper": "transcripts identical for 3/4 sentences; 1 punctuation-only jitter (+0.125 WER) at SNR > 90 dB - ASR noise, not audible difference",
+      "root_formula": "audio = 4.0 * overlap_add(einsum(basis, spec))[10:-10]; graph normalization chain (Greater/NonZero/Gather/Div/ScatterND) only touches samples [0:10] and [-10:], which center-trim discards -> provably dead code for the output"
+    },
+    "speed": "KILL - not faster on ORT-CPU",
+    "speed_evidence": {
+      "in_graph_istft_tail_kernel_ms_per_call": 8.058,
+      "native_istft_ms": 10.284,
+      "librosa_istft_ms": 21.01,
+      "abab_grand_ratio_split_over_full": 1.0189,
+      "note": "operator-profile claim of ~170 ms/call iSTFT does not reproduce: direct kernel profiling shows istft tail = 8.1 ms/call; the expensive STFT-family node is the FORWARD STFT (305 ms/call, ~10% of kernels) which feeds the source-envelope branch and stays in-graph"
+    },
+    "openvino_bonus": "SPLIT EXECUTES where fused model crashes; quality divergent, unproven",
+    "overall": "KILL as a speed optimization for ORT-CPU production path; KEEP the finding that the iSTFT subgraph is exactly replicable natively and that pruning it removes the E0025 OpenVINO crash node (revisit if OpenVINO numerics are ever fixed)"
+  }
+}

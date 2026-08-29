@@ -1,0 +1,33 @@
+[ENV] {"memory.max": "max", "memory.current": "9560064", "memory.swap.max": "max", "memory.swap.events": "high 0\nmax 0\nfail 0", "cpu.max": "max 100000", "cpu.stat_initial": {"usage_usec": 302268, "user_usec": 214769, "system_usec": 87498, "nice_usec": 0, "nr_periods": 0, "nr_throttled": 0, "throttled_usec": 0, "nr_bursts": 0, "burst_usec": 0}, "memory.events_initial": {"low": 0, "high": 0, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "cgroup_controllers": "cpuset cpu io memory hugetlb pids rdma", "swaptotal_kb": 3145728, "nproc_visible": 16, "python": "3.13.15"}
+[COLD] {"script_to_imports_s": 1.433, "engine_ctor_s": 3.492, "warmup_s": 1.116, "warmup_success": true, "rss_after_load_mb": 511, "rss_after_warmup_mb": 514, "vmhwm_peak_mb": 607, "load_succeeded": true}
+[REP 1/1] {"rep": 1, "success": true, "error": null, "wall_s": 22.54, "audio_s": 29.824, "rtf": 0.7558, "realtime_multiplier": 1.323, "cpu_time_s": 135.25, "throttled_usec_delta": 0, "nr_throttled_delta": 0, "oom_events_delta": 0, "rss_before_mb": 514, "rss_after_mb": 515, "vmhwm_peak_mb": 1029, "memory_current_mb": 506}
+[SUMMARY] {
+  "succeeded": 1,
+  "failed": 0,
+  "gen_p50_s": 22.54,
+  "gen_p95_s": 22.54,
+  "gen_min_s": 22.54,
+  "gen_max_s": 22.54,
+  "rtf_p50": 0.7558,
+  "rtf_p95": 0.7558,
+  "peak_rss_max_mb": 1029,
+  "final_memory_events": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "final_cpu_stat": {
+    "usage_usec": 154214515,
+    "user_usec": 129558194,
+    "system_usec": 24656320,
+    "nice_usec": 0,
+    "nr_periods": 0,
+    "nr_throttled": 0,
+    "throttled_usec": 0,
+    "nr_bursts": 0,
+    "burst_usec": 0
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "label": "current-best",
+  "warning": "PROTOTYPE - NOT PRODUCTION QUALITY",
+  "checkpoint": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\pilot-tiny-15k\\checkpoints\\step_000001000.pt",
+  "step": 1000,
+  "architecture": "CAEDRAL-NAR tiny use_flow params~8.7M (E0006 MAS+flow)",
+  "decoder": "pretrained Vocos charactr/mel-24khz via 80->100 mel-band interpolation (approximation)",
+  "frontend": "lexicon+g2pen shippable ladder (E0001/E0004)",
+  "sample_rate": 24000,
+  "git_commit": "a7598516dd15fac6fe3bde09b37017e86d316e28",
+  "machine": {
+    "os": {
+      "system": "Windows",
+      "release": "11",
+      "version": "10.0.26200",
+      "machine": "AMD64"
+    },
+    "cpu": {
+      "model": "13th Gen Intel(R) Core(TM) i7-13620H",
+      "arch": "X86_64",
+      "bits": 64,
+      "count_logical": 16,
+      "hz_advertised": "2.9180 GHz",
+      "flags": [
+        "3dnow",
+        "3dnowprefetch",
+        "abm",
+        "acpi",
+        "adx",
+        "aes",
+        "apic",
+        "avx",
+        "avx2",
+        "bmi1",
+        "bmi2",
+        "clflush",
+        "clflushopt",
+        "clwb",
+        "cmov",
+        "cx16",
+        "cx8",
+        "de",
+        "dts",
+        "erms",
+        "est",
+        "f16c",
+        "fma",
+        "fpu",
+        "fxsr",
+        "gfni",
+        "ht",
+        "hypervisor",
+        "ia64",
+        "intel_pt",
+        "invpcid",
+        "lahf_lm",
+        "mca",
+        "mce",
+        "mmx",
+        "monitor",
+        "movbe",
+        "msr",
+        "mtrr",
+        "osxsave",
+        "pae",
+        "pat",
+        "pbe",
+        "pcid",
+        "pclmulqdq",
+        "pdcm",
+        "pge",
+        "pni",
+        "popcnt",
+        "pse",
+        "pse36",
+        "rdpid",
+        "rdrnd",
+        "rdseed",
+        "sep",
+        "serial",
+        "sha",
+        "smap",
+        "smep",
+        "ss",
+        "sse",
+        "sse2",
+        "sse4_1",
+        "sse4_2",
+        "ssse3",
+        "tm",
+        "tm2",
+        "tsc",
+        "tscdeadline",
+        "umip",
+        "vaes",
+        "vme",
+        "vpclmulqdq",
+        "x2apic",
+        "xsave",
+        "xtpr"
+      ],
+      "isa": {
+        "SSE4_2": true,
+        "AVX": true,
+        "AVX2": true,
+        "AVX512F": false,
+        "FMA3": true,
+        "BMI2": true,
+        "AVX_VNNI": null
+      },
+      "error": "KeyError('python_fallback')"
+    },
+    "memory": {
+      "total_bytes": 25414197248,
+      "available_bytes": 5448691712,
+      "swap_total_bytes": 52394541056
+    },
+    "python": {
+      "version": "3.13.15",
+      "implementation": "CPython",
+      "executable": "C:\\Users\\leona\\Downloads\\caedral-voice\\.venv\\Scripts\\python.exe"
+    }
+  },
+  "generated_at": "2026-08-22T19:32:18.117705+00:00",
+  "rows": [
+    {
+      "file": "caedral-preview-current-best-spk0-neutral.wav",
+      "speaker": "103",
+      "speaker_id": 0,
+      "section": "neutral",
+      "chars": 53,
+      "skipped_tokens": [
+        "\u025d\u02d0"
+      ],
+      "audio_seconds": 1.696,
+      "rtf_full_infer": 0.0622
+    },
+    {
+      "file": "caedral-preview-current-best-spk0-conversational.wav",
+      "speaker": "103",
+      "speaker_id": 0,
+      "section": "conversational",
+      "chars": 60,
+      "skipped_tokens": [
+        "i\u02d0",
+        "u\u02d0",
+        "\u0254\u02d0"
+      ],
+      "audio_seconds": 1.728,
+      "rtf_full_infer": 0.044
+    },
+    {
+      "file": "caedral-preview-current-best-spk0-expressive.wav",
+      "speaker": "103",
+      "speaker_id": 0,
+      "section": "expressive",
+      "chars": 56,
+      "skipped_tokens": [
+        "i\u02d0",
+        "u\u02d0",
+        "\u0254\u02d0"
+      ],
+      "audio_seconds": 1.696,
+      "rtf_full_infer": 0.0456
+    },
+    {
+      "file": "caedral-preview-current-best-spk1-neutral.wav",
+      "speaker": "1034",
+      "speaker_id": 1,
+      "section": "neutral",
+      "chars": 53,
+      "skipped_tokens": [
+        "\u025d\u02d0"
+      ],
+      "audio_seconds": 1.952,
+      "rtf_full_infer": 0.0455
+    },
+    {
+      "file": "caedral-preview-current-best-spk1-conversational.wav",
+      "speaker": "1034",
+      "speaker_id": 1,
+      "section": "conversational",
+      "chars": 60,
+      "skipped_tokens": [
+        "i\u02d0",
+        "u\u02d0",
+        "\u0254\u02d0"
+      ],
+      "audio_seconds": 1.899,
+      "rtf_full_infer": 0.045
+    },
+    {
+      "file": "caedral-preview-current-best-spk1-expressive.wav",
+      "speaker": "1034",
+      "speaker_id": 1,
+      "section": "expressive",
+      "chars": 56,
+      "skipped_tokens": [
+        "i\u02d0",
+        "u\u02d0",
+        "\u0254\u02d0"
+      ],
+      "audio_seconds": 1.877,
+      "rtf_full_infer": 0.0432
+    }
+  ],
+  "known_limitations": [
+    "trained on 1.66 h / 10 speakers only",
+    "style table has no style-labeled data (style_id=0 neutral)",
+    "mel adapter approximation vs vocos native features",
+    "expected quality: babble-to-rudimentary at early steps"
+  ]
+}

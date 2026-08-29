@@ -1,0 +1,60 @@
+{
+  "report_scope": "CAEDRAL VOICE V1 — REAL SERVER DEPLOYMENT + FIRE TEST",
+  "host": "144.91.116.147",
+  "hostname": "mail.caedral.com",
+  "os": "Ubuntu 26.04 LTS",
+  "kernel": "7.0.0-22-generic",
+  "uptime_at_test_s": 6971541,
+  "cpu_model": "AMD EPYC Processor (with IBPB)",
+  "cpus_logical": 6,
+  "threads_per_core": 1,
+  "ram_total_mb": 11955,
+  "ram_available_mb_pre_deploy": 6529,
+  "swap_total_mb": 4095,
+  "swap_used_mb_pre_deploy": 3083,
+  "disk_root": {"size": "96G", "used_pct_pre_deploy": "73%", "free_pre_deploy": "27G"},
+  "docker_version": "29.5.2",
+  "compose_version": "5.1.4",
+  "containers_running_pre_deploy": 29,
+  "existing_load_before": {
+    "load_avg_1_5_15": [2.09, 2.41, 2.08],
+    "psi_cpu_some_avg10": 5.35,
+    "psi_mem_some_avg10": 0.0,
+    "top_containers_mem_mib": {
+      "caedral-model-inference-1": 661,
+      "zennitex-backend": 623,
+      "n8n-n8n-1": 541,
+      "caedral-embedding-api": 388,
+      "stalwart": 190
+    },
+    "pre_existing_unhealthy": ["caedral-discord-bot-discord-bot-1 (unhealthy BEFORE any Voice change)"]
+  },
+  "voice_deployment": {
+    "path": "/opt/caedral/services/voice-api/releases/v1",
+    "image": "caedral-voice:v1 (787 MB)",
+    "container": "caedral-voice-api",
+    "publish": "127.0.0.1:8600->8000/tcp (localhost-only)",
+    "cgroup_verified_inside_container": {
+      "memory.max": "1399996416",
+      "memory.swap.max": "0",
+      "cpu.max_p1": "100000 100000",
+      "cpu.max_p3": "200000 100000"
+    },
+    "internal_secret": "CONFIGURED (root-owned .env chmod 600, value never printed)",
+    "image_content_hashes_verified": true
+  },
+  "canonical_request": {
+    "file": "canonical-input.txt",
+    "chars": 548,
+    "audio_reference_s": 29.82,
+    "sha256_text_prefix": "9fa32ab54b55e8a3",
+    "voice": "caedral-f1",
+    "speed": 1.0
+  },
+  "reference_local_fire_test_for_comparison": {
+    "profile": "1400MB/1vCPU local constrained",
+    "p50_s": 66.09, "p95_s": 92.88, "rtf_p50": 2.216, "rtf_p95": 3.114,
+    "peak_rss_mb": 1023, "sustainable_rpm": 0.91
+  },
+  "snapshot_utc": "2026-08-25T14:05:08Z"
+}

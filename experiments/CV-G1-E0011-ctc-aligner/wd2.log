@@ -1,0 +1,18 @@
+[model] best.pt: params=1,610,412 epoch=1 best_token_er=0.2604736310934823
+[self-check] max |standalone - PilotDataset| mel diff over <= 25 rows = 0.00e+00
+[write] 2000/30917 utts (aligned 1965, uniform 35) 12/s eta 40.0 min
+[write] 4000/30917 utts (aligned 3965, uniform 35) 12/s eta 37.3 min
+[write] 6000/30917 utts (aligned 5964, uniform 36) 12/s eta 35.4 min
+[write] 8000/30917 utts (aligned 7958, uniform 42) 12/s eta 32.8 min
+[write] 10000/30917 utts (aligned 9945, uniform 55) 12/s eta 29.5 min
+[write] 12000/30917 utts (aligned 11945, uniform 55) 12/s eta 26.4 min
+[write] 14000/30917 utts (aligned 13924, uniform 76) 12/s eta 23.5 min
+[write] 16000/30917 utts (aligned 15913, uniform 87) 12/s eta 20.7 min
+[write] 18000/30917 utts (aligned 17902, uniform 98) 12/s eta 17.9 min
+[write] 20000/30917 utts (aligned 19894, uniform 106) 12/s eta 15.1 min
+[write] 22000/30917 utts (aligned 21892, uniform 108) 12/s eta 12.4 min
+[write] 24000/30917 utts (aligned 23876, uniform 124) 12/s eta 9.6 min
+[write] 26000/30917 utts (aligned 25870, uniform 130) 12/s eta 6.9 min
+[write] 28000/30917 utts (aligned 27868, uniform 132) 12/s eta 4.1 min
+[write] 30000/30917 utts (aligned 29854, uniform 146) 12/s eta 1.3 min
+[done] {"checkpoint": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\CV-G1-E0011-ctc-aligner\\checkpoints\\best.pt", "rows_written": 30917, "aligned": 30764, "uniform_fallback": 153, "empty_phonemes": 0, "phones_per_sec": {"p01": 8.52, "p50": 14.6, "p99": 20.99, "min": 2.47, "max": 32.07}, "in_8_25_pct": 99.34, "wall_s": 2614.3, "versions": {"python": "3.13.15", "torch": "2.6.0+cpu"}}

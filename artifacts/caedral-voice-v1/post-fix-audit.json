@@ -1,0 +1,70 @@
+{
+  "caedral-m1": {
+    "control": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.344
+    },
+    "technical": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.495
+    },
+    "numbers": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2,
+      "dnsmos": 3.407
+    }
+  },
+  "caedral-m2": {
+    "control": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.491
+    },
+    "technical": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.483
+    },
+    "numbers": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.481
+    }
+  },
+  "caedral-f1": {
+    "control": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.442
+    },
+    "technical": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.49
+    },
+    "numbers": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.465
+    }
+  },
+  "caedral-f2": {
+    "control": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.508
+    },
+    "technical": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.548
+    },
+    "numbers": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.478
+    }
+  }
+}

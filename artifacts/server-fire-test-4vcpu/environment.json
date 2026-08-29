@@ -1,0 +1,22 @@
+{
+"hostname": "mail.caedral.com",
+"kernel": "7.0.0-22-generic",
+"uptime_s": 6983098.01,
+"os": "Ubuntu 26.04 LTS",
+"cpu_model": "AMD EPYC Processor (with IBPB)",
+"cpus_logical": 6,
+"load_avg": "4.91 3.02 2.33",
+"mem_total_mb": 11955,
+"mem_available_mb": 6215,
+"swap_total_mb": 4095,
+"swap_used_mb": 3228,
+"disk_root_pct": "73%",
+"disk_root_free": "27G",
+"docker_version": "29.5.2",
+"compose_version": "5.1.4",
+"containers_running": 30,
+"containers_total": 30,
+"psi_cpu_some_avg10": "33.95",
+"psi_mem_some_avg10": "0.00",
+"snapshot_utc": "2026-08-25T17:17:45Z"
+}

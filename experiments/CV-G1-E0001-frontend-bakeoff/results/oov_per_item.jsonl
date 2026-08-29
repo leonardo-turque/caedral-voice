@@ -1,0 +1,101 @@
+{"item_id": "conv_001", "category": "short_conversational", "word_tokens": 13, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "conv_002", "category": "short_conversational", "word_tokens": 12, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "conv_003", "category": "short_conversational", "word_tokens": 5, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "conv_004", "category": "short_conversational", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "conv_005", "category": "short_conversational", "word_tokens": 7, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "conv_006", "category": "short_conversational", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "conv_007", "category": "short_conversational", "word_tokens": 9, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "conv_008", "category": "short_conversational", "word_tokens": 10, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "para_001", "category": "long_paragraph", "word_tokens": 66, "raw_lexicon_misses": 2, "missed_words": ["awnings", "streetlights"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "para_002", "category": "long_paragraph", "word_tokens": 61, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "para_003", "category": "long_paragraph", "word_tokens": 70, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "para_004", "category": "long_paragraph", "word_tokens": 70, "raw_lexicon_misses": 1, "missed_words": ["unspooling"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "tech_001", "category": "technical_programming", "word_tokens": 15, "raw_lexicon_misses": 1, "missed_words": ["inlines"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "tech_002", "category": "technical_programming", "word_tokens": 17, "raw_lexicon_misses": 2, "missed_words": ["sharded", "postgres"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "tech_003", "category": "technical_programming", "word_tokens": 17, "raw_lexicon_misses": 2, "missed_words": ["hyperthreading", "cpus"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "tech_004", "category": "technical_programming", "word_tokens": 29, "raw_lexicon_misses": 3, "missed_words": ["json", "hmac", "backoff"], "rule_fallback_tokens_in_stream": 3}
+{"item_id": "tech_005", "category": "technical_programming", "word_tokens": 15, "raw_lexicon_misses": 6, "missed_words": ["quantized", "int", "multiplications", "simd", "vectorization", "simd"], "rule_fallback_tokens_in_stream": 5}
+{"item_id": "tech_006", "category": "technical_programming", "word_tokens": 18, "raw_lexicon_misses": 1, "missed_words": ["ci"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "num_001", "category": "numbers_dates_currency", "word_tokens": 18, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_002", "category": "numbers_dates_currency", "word_tokens": 17, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_003", "category": "numbers_dates_currency", "word_tokens": 17, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_004", "category": "numbers_dates_currency", "word_tokens": 20, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_005", "category": "numbers_dates_currency", "word_tokens": 19, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_006", "category": "numbers_dates_currency", "word_tokens": 27, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_007", "category": "numbers_dates_currency", "word_tokens": 19, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_008", "category": "numbers_dates_currency", "word_tokens": 14, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_009", "category": "numbers_dates_currency", "word_tokens": 19, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "num_010", "category": "numbers_dates_currency", "word_tokens": 24, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "acr_001", "category": "acronyms_initialisms", "word_tokens": 12, "raw_lexicon_misses": 1, "missed_words": ["dsn"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "acr_002", "category": "acronyms_initialisms", "word_tokens": 10, "raw_lexicon_misses": 1, "missed_words": ["faq"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "acr_003", "category": "acronyms_initialisms", "word_tokens": 11, "raw_lexicon_misses": 1, "missed_words": ["microservice"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "acr_004", "category": "acronyms_initialisms", "word_tokens": 16, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "acr_005", "category": "acronyms_initialisms", "word_tokens": 15, "raw_lexicon_misses": 4, "missed_words": ["avx", "avx", "vnni", "avx"], "rule_fallback_tokens_in_stream": 4}
+{"item_id": "acr_006", "category": "acronyms_initialisms", "word_tokens": 9, "raw_lexicon_misses": 1, "missed_words": ["covid"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "acr_007", "category": "acronyms_initialisms", "word_tokens": 15, "raw_lexicon_misses": 2, "missed_words": ["sla", "uptime"], "rule_fallback_tokens_in_stream": 2}
+{"item_id": "acr_008", "category": "acronyms_initialisms", "word_tokens": 14, "raw_lexicon_misses": 3, "missed_words": ["shortener", "redis", "ttl"], "rule_fallback_tokens_in_stream": 2}
+{"item_id": "nm_001", "category": "names_places", "word_tokens": 11, "raw_lexicon_misses": 2, "missed_words": ["rajesh", "yuki"], "rule_fallback_tokens_in_stream": 2}
+{"item_id": "nm_002", "category": "names_places", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "nm_003", "category": "names_places", "word_tokens": 10, "raw_lexicon_misses": 4, "missed_words": ["ng's", "vaswani", "hochreiter", "schmidhuber"], "rule_fallback_tokens_in_stream": 3}
+{"item_id": "nm_004", "category": "names_places", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "nm_005", "category": "names_places", "word_tokens": 13, "raw_lexicon_misses": 1, "missed_words": ["kwame"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "nm_006", "category": "names_places", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pho_001", "category": "difficult_phonemes", "word_tokens": 17, "raw_lexicon_misses": 1, "missed_words": ["seashores"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "pho_002", "category": "difficult_phonemes", "word_tokens": 13, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pho_003", "category": "difficult_phonemes", "word_tokens": 12, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pho_004", "category": "difficult_phonemes", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pho_005", "category": "difficult_phonemes", "word_tokens": 13, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pho_006", "category": "difficult_phonemes", "word_tokens": 6, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pho_007", "category": "difficult_phonemes", "word_tokens": 7, "raw_lexicon_misses": 1, "missed_words": ["sheikh's"], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pho_008", "category": "difficult_phonemes", "word_tokens": 6, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_001", "category": "heteronyms", "word_tokens": 15, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_002", "category": "heteronyms", "word_tokens": 9, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_003", "category": "heteronyms", "word_tokens": 14, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_004", "category": "heteronyms", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_005", "category": "heteronyms", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_006", "category": "heteronyms", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_007", "category": "heteronyms", "word_tokens": 9, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_008", "category": "heteronyms", "word_tokens": 9, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_009", "category": "heteronyms", "word_tokens": 8, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "het_010", "category": "heteronyms", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pun_001", "category": "punctuation_heavy", "word_tokens": 8, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pun_002", "category": "punctuation_heavy", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pun_003", "category": "punctuation_heavy", "word_tokens": 15, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pun_004", "category": "punctuation_heavy", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "pun_005", "category": "punctuation_heavy", "word_tokens": 14, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "qex_001", "category": "questions_exclamations", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "qex_002", "category": "questions_exclamations", "word_tokens": 7, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "qex_003", "category": "questions_exclamations", "word_tokens": 7, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "qex_004", "category": "questions_exclamations", "word_tokens": 4, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "qex_005", "category": "questions_exclamations", "word_tokens": 9, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "qex_006", "category": "questions_exclamations", "word_tokens": 12, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "emo_001", "category": "emotional_expressive", "word_tokens": 13, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "emo_002", "category": "emotional_expressive", "word_tokens": 7, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "emo_003", "category": "emotional_expressive", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "emo_004", "category": "emotional_expressive", "word_tokens": 12, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "emo_005", "category": "emotional_expressive", "word_tokens": 9, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "emo_006", "category": "emotional_expressive", "word_tokens": 13, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "emo_007", "category": "emotional_expressive", "word_tokens": 5, "raw_lexicon_misses": 1, "missed_words": ["shh"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "emo_008", "category": "emotional_expressive", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "dlg_001", "category": "dialogue", "word_tokens": 31, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "dlg_002", "category": "dialogue", "word_tokens": 24, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "frm_001", "category": "formal_prose", "word_tokens": 24, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "frm_002", "category": "formal_prose", "word_tokens": 30, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "frm_003", "category": "formal_prose", "word_tokens": 26, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "inf_001", "category": "informal_casual", "word_tokens": 10, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "inf_002", "category": "informal_casual", "word_tokens": 13, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "inf_003", "category": "informal_casual", "word_tokens": 13, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "inf_004", "category": "informal_casual", "word_tokens": 4, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "long_001", "category": "longform", "word_tokens": 966, "raw_lexicon_misses": 2, "missed_words": ["sidecar", "streetlamps"], "rule_fallback_tokens_in_stream": 2}
+{"item_id": "edge_001", "category": "edge_cases", "word_tokens": 0, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "edge_002", "category": "edge_cases", "word_tokens": 0, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "edge_003", "category": "edge_cases", "word_tokens": 1, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "edge_004", "category": "edge_cases", "word_tokens": 97, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "edge_005", "category": "edge_cases", "word_tokens": 0, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "edge_006", "category": "edge_cases", "word_tokens": 8, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "edge_007", "category": "edge_cases", "word_tokens": 11, "raw_lexicon_misses": 0, "missed_words": [], "rule_fallback_tokens_in_stream": 0}
+{"item_id": "edge_008", "category": "edge_cases", "word_tokens": 14, "raw_lexicon_misses": 2, "missed_words": ["xtwo", "ytwo"], "rule_fallback_tokens_in_stream": 2}
+{"item_id": "edge_009", "category": "edge_cases", "word_tokens": 7, "raw_lexicon_misses": 1, "missed_words": ["ellipses"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "edge_010", "category": "edge_cases", "word_tokens": 5, "raw_lexicon_misses": 1, "missed_words": ["emojis"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "edge_011", "category": "edge_cases", "word_tokens": 1, "raw_lexicon_misses": 1, "missed_words": ["supercalifragilisticexpialidociousantidisestablishmentarianismpneumonoultramicroscopicsilicovolcanoconiosis"], "rule_fallback_tokens_in_stream": 1}
+{"item_id": "edge_012", "category": "edge_cases", "word_tokens": 6, "raw_lexicon_misses": 2, "missed_words": ["whitespace", "chars"], "rule_fallback_tokens_in_stream": 1}

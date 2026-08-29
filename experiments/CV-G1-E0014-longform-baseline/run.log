@@ -1,0 +1,69 @@
+step_000008000.pt embeds non-tensor pickle objects (e.g. RNG state); loading with weights_only=False -- local trusted artifacts only
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[chunker] long_001 -> 28 chunks (band 25-31, design [24,32]); chars min/mean/max = 103/201.8/291 (hard max 420); pass=True
+[chunker] para_001 -> 2 chunks (single-paragraph sanity, all<=420: True)
+[engine] step_000008000.pt (step 8000) voice=103 index=0 threads=4 load+warmup=24.2s
+skipped 17 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 18 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 3 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0']
+skipped 11 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 7 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 6 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0254\u02d0']
+skipped 12 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 12 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0']
+skipped 5 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0']
+skipped 16 frontend symbol(s) not in phoneme vocab: ['i\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 12 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 9 frontend symbol(s) not in phoneme vocab: ['i\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 10 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 10 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 7 frontend symbol(s) not in phoneme vocab: ['i\u02d0', '\u0254\u02d0']
+skipped 3 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0']
+skipped 11 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 10 frontend symbol(s) not in phoneme vocab: ['i\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 13 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 7 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0254\u02d0']
+skipped 11 frontend symbol(s) not in phoneme vocab: ['u\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 15 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 13 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 10 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0']
+skipped 25 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+skipped 6 frontend symbol(s) not in phoneme vocab: ['i\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 13 frontend symbol(s) not in phoneme vocab: ['i\u02d0', 'u\u02d0', '\u0251\u02d0', '\u0254\u02d0', '\u025d\u02d0']
+skipped 9 frontend symbol(s) not in phoneme vocab: ['i\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+[synth] long_001: 207.027s audio, wall 45.615s, eff RTF 0.2203
+skipped 7 frontend symbol(s) not in phoneme vocab: ['i\u02d0', '\u0251\u02d0', '\u0254\u02d0']
+[control] 1 chunk(s) (expected 1), 3.403s audio, wall 0.726s
+[asr] loading faster-whisper small.en + base.en (int8)...
+[asr] chunk 000 minWER=0.392 (small=0.392 base=0.431) rep=0.000 comp=1.04
+[asr] chunk 001 minWER=0.260 (small=0.260 base=0.380) rep=0.159 comp=0.92
+[asr] chunk 002 minWER=0.091 (small=0.136 base=0.091) rep=0.000 comp=0.95
+[asr] chunk 003 minWER=0.323 (small=0.452 base=0.323) rep=0.000 comp=0.94
+[asr] chunk 004 minWER=0.286 (small=0.286 base=0.381) rep=0.000 comp=0.86
+[asr] chunk 005 minWER=0.458 (small=0.542 base=0.458) rep=0.000 comp=1.00
+[asr] chunk 006 minWER=0.317 (small=0.317 base=0.463) rep=0.000 comp=1.00
+[asr] chunk 007 minWER=0.303 (small=0.333 base=0.303) rep=0.071 comp=0.91
+[asr] chunk 008 minWER=0.172 (small=0.172 base=0.345) rep=0.000 comp=1.00
+[asr] chunk 009 minWER=0.500 (small=0.500 base=0.520) rep=0.000 comp=0.96
+[asr] chunk 010 minWER=0.333 (small=0.333 base=0.433) rep=0.000 comp=0.93
+[asr] chunk 011 minWER=0.303 (small=0.303 base=0.303) rep=0.000 comp=0.94
+[asr] chunk 012 minWER=0.143 (small=0.143 base=0.321) rep=0.000 comp=1.00
+[asr] chunk 013 minWER=0.105 (small=0.105 base=0.289) rep=0.000 comp=1.03
+[asr] chunk 014 minWER=0.210 (small=0.289 base=0.210) rep=0.000 comp=1.05
+[asr] chunk 015 minWER=0.154 (small=0.154 base=0.346) rep=0.000 comp=1.00
+[asr] chunk 016 minWER=0.667 (small=0.667 base=0.667) rep=0.000 comp=1.19
+[asr] chunk 017 minWER=0.310 (small=0.448 base=0.310) rep=0.000 comp=1.03
+[asr] chunk 018 minWER=0.317 (small=0.317 base=0.317) rep=0.000 comp=1.07
+[asr] chunk 019 minWER=0.483 (small=0.483 base=0.586) rep=0.000 comp=1.00
+[asr] chunk 020 minWER=0.457 (small=0.486 base=0.457) rep=0.000 comp=1.00
+[asr] chunk 021 minWER=0.353 (small=0.353 base=0.882) rep=0.000 comp=1.03
+[asr] chunk 022 minWER=0.308 (small=0.333 base=0.308) rep=0.000 comp=0.95
+[asr] chunk 023 minWER=0.281 (small=0.281 base=0.281) rep=0.000 comp=0.94
+[asr] chunk 024 minWER=0.500 (small=0.500 base=0.522) rep=0.045 comp=1.00
+[asr] chunk 025 minWER=0.292 (small=0.292 base=0.333) rep=0.000 comp=1.00
+[asr] chunk 026 minWER=0.250 (small=0.269 base=0.250) rep=0.000 comp=1.00
+[asr] chunk 027 minWER=0.154 (small=0.154 base=0.282) rep=0.000 comp=0.97
+[asr] chunk 000 minWER=0.389 (small=0.667 base=0.389) rep=0.000 comp=0.83
+[summary] chunks=28 wall=45.615s audio=207.027s eff_rtf=0.2203 minWER med=0.3054 min=0.0909 max=0.6667 var=0.017346 rep_doc=0.022 clip_peak=0.4669 gates=FAIL: wer_variance_le_0_0025,no_chunk_min_wer_gt_0_15,rep_fraction_per_chunk_le_0_02,rep_fraction_docwide_le_0_01
+[summary] control: chunks=1 short_path_ok=True minWER=0.3889
+[done] results -> C:\Users\leona\Downloads\caedral-voice\experiments\CV-G1-E0014-longform-baseline\results.json

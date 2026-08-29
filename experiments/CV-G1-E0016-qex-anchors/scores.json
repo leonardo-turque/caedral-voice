@@ -1,0 +1,935 @@
+[
+  {
+    "file": "kokoro-af_heart-qex_002.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-af_heart-qex_002.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:47:32.008763+00:00",
+    "audio_seconds": 1.899,
+    "sample_rate": 24000,
+    "rms": 0.077483,
+    "spectral_flatness": 0.0354,
+    "dnsmos_ovrl": 3.338,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "What happens if we press this button?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 19.49,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-af_heart-qex_003.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-af_heart-qex_003.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:47:48.618310+00:00",
+    "audio_seconds": 1.835,
+    "sample_rate": 24000,
+    "rms": 0.080526,
+    "spectral_flatness": 0.0318,
+    "dnsmos_ovrl": 3.416,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "You're coming to the party, aren't you?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 21.26,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-af_heart-qex_004.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-af_heart-qex_004.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:48:00.457263+00:00",
+    "audio_seconds": 1.237,
+    "sample_rate": 24000,
+    "rms": 0.07869,
+    "spectral_flatness": 0.0523,
+    "dnsmos_ovrl": 3.338,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "We actually did it.",
+    "rep_fraction": 0.0,
+    "hyp_words": 4,
+    "chars_per_sec": 15.36,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-af_heart-qex_005.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-af_heart-qex_005.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:48:15.138380+00:00",
+    "audio_seconds": 2.389,
+    "sample_rate": 24000,
+    "rms": 0.077712,
+    "spectral_flatness": 0.0339,
+    "dnsmos_ovrl": 3.418,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Get out, no wait, come back, I was joking.",
+    "rep_fraction": 0.0,
+    "hyp_words": 9,
+    "chars_per_sec": 18.42,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-af_heart-qex_006.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-af_heart-qex_006.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:48:39.128633+00:00",
+    "audio_seconds": 3.136,
+    "sample_rate": 24000,
+    "rms": 0.077715,
+    "spectral_flatness": 0.0374,
+    "dnsmos_ovrl": 3.408,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "who would have thought a simple question could cause all this trouble.",
+    "rep_fraction": 0.0,
+    "hyp_words": 12,
+    "chars_per_sec": 22.32,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-am_michael-qex_002.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-am_michael-qex_002.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:48:56.985101+00:00",
+    "audio_seconds": 2.197,
+    "sample_rate": 24000,
+    "rms": 0.071993,
+    "spectral_flatness": 0.0366,
+    "dnsmos_ovrl": 3.375,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "What happens if we press this button?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 16.84,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-am_michael-qex_003.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-am_michael-qex_003.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:49:17.107052+00:00",
+    "audio_seconds": 2.24,
+    "sample_rate": 24000,
+    "rms": 0.067711,
+    "spectral_flatness": 0.023,
+    "dnsmos_ovrl": 3.153,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "You're coming to the party, aren't you?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 17.41,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-am_michael-qex_004.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-am_michael-qex_004.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:49:30.041017+00:00",
+    "audio_seconds": 1.536,
+    "sample_rate": 24000,
+    "rms": 0.074346,
+    "spectral_flatness": 0.0219,
+    "dnsmos_ovrl": 3.285,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "We actually did it.",
+    "rep_fraction": 0.0,
+    "hyp_words": 4,
+    "chars_per_sec": 12.37,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-am_michael-qex_005.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-am_michael-qex_005.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:49:51.094739+00:00",
+    "audio_seconds": 2.773,
+    "sample_rate": 24000,
+    "rms": 0.066787,
+    "spectral_flatness": 0.0247,
+    "dnsmos_ovrl": 3.389,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.1111,
+    "min_wer": 0.0,
+    "hypothesis": "Get out, no wait, come back, I was joking.",
+    "rep_fraction": 0.0,
+    "hyp_words": 9,
+    "chars_per_sec": 15.87,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "kokoro-am_michael-qex_006.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\kokoro-am_michael-qex_006.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:50:13.518314+00:00",
+    "audio_seconds": 3.755,
+    "sample_rate": 24000,
+    "rms": 0.064423,
+    "spectral_flatness": 0.031,
+    "dnsmos_ovrl": 3.458,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "who would have thought a simple question could cause all this trouble.",
+    "rep_fraction": 0.0,
+    "hyp_words": 12,
+    "chars_per_sec": 18.64,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-lessac-qex_002.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-lessac-qex_002.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:50:33.235078+00:00",
+    "audio_seconds": 2.15,
+    "sample_rate": 22050,
+    "rms": 0.155003,
+    "spectral_flatness": 0.001,
+    "dnsmos_ovrl": 3.256,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "What happens if we press this button?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 17.21,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-lessac-qex_003.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-lessac-qex_003.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:50:56.281244+00:00",
+    "audio_seconds": 2.325,
+    "sample_rate": 22050,
+    "rms": 0.125048,
+    "spectral_flatness": 0.0004,
+    "dnsmos_ovrl": 3.111,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "You're coming to the party, aren't you?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 16.78,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-lessac-qex_004.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-lessac-qex_004.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:51:15.019737+00:00",
+    "audio_seconds": 1.257,
+    "sample_rate": 22050,
+    "rms": 0.141143,
+    "spectral_flatness": 0.0007,
+    "dnsmos_ovrl": 2.584,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "We actually did it.",
+    "rep_fraction": 0.0,
+    "hyp_words": 4,
+    "chars_per_sec": 15.12,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-lessac-qex_005.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-lessac-qex_005.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:51:44.146576+00:00",
+    "audio_seconds": 3.779,
+    "sample_rate": 22050,
+    "rms": 0.155191,
+    "spectral_flatness": 0.0004,
+    "dnsmos_ovrl": 3.132,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Get out! No, wait, come back, I was joking.",
+    "rep_fraction": 0.0,
+    "hyp_words": 9,
+    "chars_per_sec": 11.64,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-lessac-qex_006.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-lessac-qex_006.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:52:05.072451+00:00",
+    "audio_seconds": 3.195,
+    "sample_rate": 22050,
+    "rms": 0.149086,
+    "spectral_flatness": 0.0009,
+    "dnsmos_ovrl": 3.194,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "who would have thought a simple question could cause all this trouble.",
+    "rep_fraction": 0.0,
+    "hyp_words": 12,
+    "chars_per_sec": 21.91,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-ryan-qex_002.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-ryan-qex_002.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:52:25.732150+00:00",
+    "audio_seconds": 1.756,
+    "sample_rate": 22050,
+    "rms": 0.164262,
+    "spectral_flatness": 0.0407,
+    "dnsmos_ovrl": 3.137,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "What happens if we press this button?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 21.07,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-ryan-qex_003.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-ryan-qex_003.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:52:44.673075+00:00",
+    "audio_seconds": 1.907,
+    "sample_rate": 22050,
+    "rms": 0.158847,
+    "spectral_flatness": 0.005,
+    "dnsmos_ovrl": 2.986,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "You're coming to the party, aren't you?",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 20.45,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-ryan-qex_004.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-ryan-qex_004.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:52:59.083654+00:00",
+    "audio_seconds": 1.152,
+    "sample_rate": 22050,
+    "rms": 0.187369,
+    "spectral_flatness": 0.0272,
+    "dnsmos_ovrl": 2.488,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "We actually did it.",
+    "rep_fraction": 0.0,
+    "hyp_words": 4,
+    "chars_per_sec": 16.49,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-ryan-qex_005.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-ryan-qex_005.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:53:16.987424+00:00",
+    "audio_seconds": 2.873,
+    "sample_rate": 22050,
+    "rms": 0.185384,
+    "spectral_flatness": 0.011,
+    "dnsmos_ovrl": 2.913,
+    "reference_given": true,
+    "wer_small_en": 0.2222,
+    "wer_base_en": 0.2222,
+    "min_wer": 0.2222,
+    "hypothesis": "No, wait! Come back! I was joking!",
+    "rep_fraction": 0.0,
+    "hyp_words": 7,
+    "chars_per_sec": 15.32,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "piper-ryan-qex_006.wav",
+    "path": "experiments\\CV-G1-E0016-qex-anchors\\audio\\piper-ryan-qex_006.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:53:31.810075+00:00",
+    "audio_seconds": 3.033,
+    "sample_rate": 22050,
+    "rms": 0.1783,
+    "spectral_flatness": 0.022,
+    "dnsmos_ovrl": 3.278,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Who would have thought a simple question could cause all this trouble?",
+    "rep_fraction": 0.0,
+    "hyp_words": 12,
+    "chars_per_sec": 23.08,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-qex_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-qex_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:53:47.180178+00:00",
+    "audio_seconds": 2.795,
+    "sample_rate": 24000,
+    "rms": 0.070646,
+    "spectral_flatness": 0.0316,
+    "dnsmos_ovrl": 3.278,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Are you seriously telling me this whole thing was your idea?",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 21.47,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-qex_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-qex_001.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-23T00:54:03.413197+00:00",
+    "audio_seconds": 3.456,
+    "sample_rate": 24000,
+    "rms": 0.058673,
+    "spectral_flatness": 0.0338,
+    "dnsmos_ovrl": 3.197,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Are you seriously telling me this whole thing was your idea?",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 17.36,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-piper-lessac-qex_001.wav",
+    "path": "benchmarks\\results\\natgate\\piper\\natgate-piper-lessac-qex_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-23T00:54:22.574397+00:00",
+    "audio_seconds": 3.648,
+    "sample_rate": 22050,
+    "rms": 0.096474,
+    "spectral_flatness": 0.0005,
+    "dnsmos_ovrl": 3.397,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Are you seriously telling me this whole thing was your idea?",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 16.45,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  }
+]

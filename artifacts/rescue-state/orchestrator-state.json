@@ -1,0 +1,11 @@
+{
+  "started_at_utc": "2026-08-23T17:22:13.453125Z",
+  "processed": [
+    1000
+  ],
+  "verdicts": {},
+  "worker_pid": null,
+  "phase": "WATCHING",
+  "hang_evidence": [],
+  "challenger_launched": null
+}

@@ -1,0 +1,291 @@
+{
+  "experiment": "CV-G1-E0027-memory",
+  "part": "A-memory-decomposition",
+  "date": "2026-08-23",
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16
+  },
+  "versions": {
+    "python": "3.13.15",
+    "onnxruntime": "1.29.0",
+    "kokoro_onnx": "0.6.1"
+  },
+  "model": {
+    "path": "models/kokoro/kokoro-v1.0.onnx",
+    "size_mb": 310.5,
+    "voices_size_mb": 26.9
+  },
+  "sentence": "Hello. This is the first generation of Caedral Voice.",
+  "voice": "af_heart",
+  "method_note": "Ladder: fresh subprocess per rung loads stages 0..N; marginal cost of stage N = RSS(N) - RSS(N-1) across clean processes. Walk: one process accumulates all stages, recording RSS after each — mirrors production long-lived engine heap.",
+  "ladder": [
+    {
+      "worker_max_stage": 0,
+      "threads": 4,
+      "stages": [
+        {
+          "stage": "imports",
+          "rss_mb": 51.2,
+          "commit_mb": 514.9
+        }
+      ]
+    },
+    {
+      "worker_max_stage": 1,
+      "threads": 4,
+      "stages": [
+        {
+          "stage": "imports",
+          "rss_mb": 51.1,
+          "commit_mb": 514.8
+        },
+        {
+          "stage": "session",
+          "rss_mb": 386.4,
+          "commit_mb": 867.7,
+          "create_s": 1.32
+        }
+      ]
+    },
+    {
+      "worker_max_stage": 2,
+      "threads": 4,
+      "stages": [
+        {
+          "stage": "imports",
+          "rss_mb": 51.4,
+          "commit_mb": 515.1
+        },
+        {
+          "stage": "session",
+          "rss_mb": 386.2,
+          "commit_mb": 867.7,
+          "create_s": 1.22
+        },
+        {
+          "stage": "wrapper_voices",
+          "rss_mb": 397.6,
+          "commit_mb": 877.4,
+          "load_s": 0.0,
+          "rss_after_from_session_lazy_mb": 396.4,
+          "rss_after_voice_style_mb": 397.6,
+          "voices_type": "NpzFile",
+          "n_voices": 54,
+          "one_voice_shape": [
+            510,
+            1,
+            256
+          ],
+          "one_voice_mb": 0.5,
+          "all_voices_disk_mb": 26.9
+        }
+      ]
+    },
+    {
+      "worker_max_stage": 3,
+      "threads": 4,
+      "stages": [
+        {
+          "stage": "imports",
+          "rss_mb": 51.3,
+          "commit_mb": 515.1
+        },
+        {
+          "stage": "session",
+          "rss_mb": 386.6,
+          "commit_mb": 868.0,
+          "create_s": 1.52
+        },
+        {
+          "stage": "wrapper_voices",
+          "rss_mb": 397.5,
+          "commit_mb": 877.2,
+          "load_s": 0.0,
+          "rss_after_from_session_lazy_mb": 396.2,
+          "rss_after_voice_style_mb": 397.5,
+          "voices_type": "NpzFile",
+          "n_voices": 54,
+          "one_voice_shape": [
+            510,
+            1,
+            256
+          ],
+          "one_voice_mb": 0.5,
+          "all_voices_disk_mb": 26.9
+        },
+        {
+          "stage": "frontend_ctor",
+          "rss_mb": 476.4,
+          "commit_mb": 955.4,
+          "ctor_s": 0.43
+        }
+      ]
+    },
+    {
+      "worker_max_stage": 4,
+      "threads": 4,
+      "stages": [
+        {
+          "stage": "imports",
+          "rss_mb": 51.3,
+          "commit_mb": 515.1
+        },
+        {
+          "stage": "session",
+          "rss_mb": 386.9,
+          "commit_mb": 868.3,
+          "create_s": 1.5
+        },
+        {
+          "stage": "wrapper_voices",
+          "rss_mb": 397.7,
+          "commit_mb": 877.4,
+          "load_s": 0.0,
+          "rss_after_from_session_lazy_mb": 396.4,
+          "rss_after_voice_style_mb": 397.7,
+          "voices_type": "NpzFile",
+          "n_voices": 54,
+          "one_voice_shape": [
+            510,
+            1,
+            256
+          ],
+          "one_voice_mb": 0.5,
+          "all_voices_disk_mb": 26.9
+        },
+        {
+          "stage": "frontend_ctor",
+          "rss_mb": 476.5,
+          "commit_mb": 955.6,
+          "ctor_s": 0.42
+        },
+        {
+          "stage": "g2p_warmup",
+          "rss_mb": 476.5,
+          "commit_mb": 955.6,
+          "in_lexicon_phonemize_s": 0.001,
+          "oov_g2pen_warmup_s": 0.0,
+          "note": "OOV word forces g2p_en NLTK LSTM build"
+        }
+      ]
+    },
+    {
+      "worker_max_stage": 5,
+      "threads": 4,
+      "stages": [
+        {
+          "stage": "imports",
+          "rss_mb": 51.1,
+          "commit_mb": 514.7
+        },
+        {
+          "stage": "session",
+          "rss_mb": 386.8,
+          "commit_mb": 868.0,
+          "create_s": 1.29
+        },
+        {
+          "stage": "wrapper_voices",
+          "rss_mb": 397.5,
+          "commit_mb": 877.3,
+          "load_s": 0.0,
+          "rss_after_from_session_lazy_mb": 396.3,
+          "rss_after_voice_style_mb": 397.5,
+          "voices_type": "NpzFile",
+          "n_voices": 54,
+          "one_voice_shape": [
+            510,
+            1,
+            256
+          ],
+          "one_voice_mb": 0.5,
+          "all_voices_disk_mb": 26.9
+        },
+        {
+          "stage": "frontend_ctor",
+          "rss_mb": 476.2,
+          "commit_mb": 955.0,
+          "ctor_s": 0.5
+        },
+        {
+          "stage": "g2p_warmup",
+          "rss_mb": 476.2,
+          "commit_mb": 955.0,
+          "in_lexicon_phonemize_s": 0.002,
+          "oov_g2pen_warmup_s": 0.0,
+          "note": "OOV word forces g2p_en NLTK LSTM build"
+        },
+        {
+          "stage": "synth",
+          "rss_mb": 548.4,
+          "commit_mb": 1054.5,
+          "synth_s": 2.421,
+          "audio_s": 3.179,
+          "rtf_one_shot": 0.762,
+          "peak_rss_during_synth_mb": 548.4,
+          "peak_commit_during_synth_mb": 1054.5
+        }
+      ]
+    }
+  ],
+  "walk": {
+    "worker_max_stage": 5,
+    "threads": 4,
+    "stages": [
+      {
+        "stage": "imports",
+        "rss_mb": 51.2,
+        "commit_mb": 514.8
+      },
+      {
+        "stage": "session",
+        "rss_mb": 386.3,
+        "commit_mb": 867.6,
+        "create_s": 1.76
+      },
+      {
+        "stage": "wrapper_voices",
+        "rss_mb": 397.5,
+        "commit_mb": 877.2,
+        "load_s": 0.0,
+        "rss_after_from_session_lazy_mb": 396.3,
+        "rss_after_voice_style_mb": 397.5,
+        "voices_type": "NpzFile",
+        "n_voices": 54,
+        "one_voice_shape": [
+          510,
+          1,
+          256
+        ],
+        "one_voice_mb": 0.5,
+        "all_voices_disk_mb": 26.9
+      },
+      {
+        "stage": "frontend_ctor",
+        "rss_mb": 476.1,
+        "commit_mb": 954.9,
+        "ctor_s": 0.36
+      },
+      {
+        "stage": "g2p_warmup",
+        "rss_mb": 476.2,
+        "commit_mb": 954.9,
+        "in_lexicon_phonemize_s": 0.001,
+        "oov_g2pen_warmup_s": 0.0,
+        "note": "OOV word forces g2p_en NLTK LSTM build"
+      },
+      {
+        "stage": "synth",
+        "rss_mb": 548.3,
+        "commit_mb": 1054.4,
+        "synth_s": 1.799,
+        "audio_s": 3.179,
+        "rtf_one_shot": 0.566,
+        "peak_rss_during_synth_mb": 548.2,
+        "peak_commit_during_synth_mb": 1054.4
+      }
+    ]
+  }
+}

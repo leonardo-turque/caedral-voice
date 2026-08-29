@@ -1,0 +1,102 @@
+{
+  "cases": {
+    "AVX2": "AVX two",
+    "AVX-512": "AVX-five hundred twelve",
+    "CPU": "CPU",
+    "GPU": "GPU",
+    "GPT-5": "GPT-five",
+    "RTX 5090": "RTX five thousand ninety",
+    "Python 3.13": "Python three point one three",
+    "$29.99": "twenty-nine dollars and ninety-nine cents",
+    "99.9%": "ninety-nine point nine percent",
+    "10GB": "ten GB",
+    "3.5GHz": "three point five GHz",
+    "3.13": "three point one three",
+    "2026-08-23": "two oh two six oh eight two three",
+    "caedral.com": "caedral.com",
+    "support@caedral.com": "support at caedral dot com",
+    "HTTP/2": "HTTP/two"
+  },
+  "sentences": {
+    "evalA": {
+      "text": "Hello. This is the first generation of Caedral Voice.",
+      "normalized": "Hello. This is the first generation of Caedral Voice.",
+      "mapped_stream": "həlˈoʊ . ðˈɪs ˈɪz ðə fˈɜrːs tdʒˌɛnɚˈeɪʃə nˈʌ vkˈɛdrə lvˈɔɪ s",
+      "phoneme_string": "h ə l ˈ o ʊ ‖ ð ˈ ɪ s ˈ ɪ z ð ə f ˈ ɝː s t d ʒ ˌ ɛ n ɚ ˈ e ɪ ʃ ə n ˈ ʌ v k ˈ ɛ d r ə l v ˈ ɔ ɪ s",
+      "words": [
+        "həlˈoʊ",
+        "ðˈɪs",
+        "ˈɪz",
+        "ðə",
+        "fˈɝːst",
+        "dʒˌɛnɚˈeɪʃən",
+        "ˈʌv",
+        "kˈɛdrəl",
+        "vˈɔɪs"
+      ]
+    },
+    "propernoun": {
+      "text": "Welcome to Caedral, where every voice tells a story.",
+      "normalized": "Welcome to Caedral, where every voice tells a story.",
+      "mapped_stream": "wˈɛlkəm tˈuː kˈɛdrəl  wˈɛr ˈɛvɚiː vˈɔɪs tˈɛlz ə stˈɔːriː ",
+      "phoneme_string": "w ˈ ɛ l k ə m t ˈ uː k ˈ ɛ d r ə l | w ˈ ɛ r ˈ ɛ v ɚ iː v ˈ ɔ ɪ s t ˈ ɛ l z ə s t ˈ ɔː r iː",
+      "words": [
+        "wˈɛlkəm",
+        "tˈuː",
+        "kˈɛdrəl",
+        "wˈɛr",
+        "ˈɛvɚiː",
+        "vˈɔɪs",
+        "tˈɛlz",
+        "ə",
+        "stˈɔːriː"
+      ]
+    },
+    "numbers": {
+      "text": "The invoice totals $1,247.83, due within 30 days.",
+      "normalized": "The invoice totals one thousand two hundred forty-seven dollars and eighty-three cents, due within thirty days.",
+      "mapped_stream": "ðə ˈɪnvɔɪs tˈoʊtəlz wˈʌn θˈaʊzənd tˈuː hˈʌndrəd fˈɔːrtiː sˈɛvən dˈɑːlɚz ənd ˈeɪtiː θrˈiː sˈɛnts  dˈuː wɪðˈɪn θˈɜrːdˌiː dˈeɪz ",
+      "phoneme_string": "ð ə ˈ ɪ n v ɔ ɪ s t ˈ o ʊ t ə l z w ˈ ʌ n θ ˈ a ʊ z ə n d t ˈ uː h ˈ ʌ n d r ə d f ˈ ɔː r t iː s ˈ ɛ v ə n d ˈ ɑː l ɚ z ə n d ˈ e ɪ t iː θ r ˈ iː s ˈ ɛ n t s | d ˈ uː w ɪ ð ˈ ɪ n θ ˈ ɝː d ˌ iː d ˈ e ɪ z",
+      "words": [
+        "ðə",
+        "ˈɪnvɔɪs",
+        "tˈoʊtəlz",
+        "wˈʌn",
+        "θˈaʊzənd",
+        "tˈuː",
+        "hˈʌndrəd",
+        "fˈɔːrtiː",
+        "sˈɛvən",
+        "dˈɑːlɚz",
+        "ənd",
+        "ˈeɪtiː",
+        "θrˈiː",
+        "sˈɛnts",
+        "dˈuː",
+        "wɪðˈɪn",
+        "θˈɝːdˌiː",
+        "dˈeɪz"
+      ]
+    },
+    "abbrev": {
+      "text": "The CPU supports AVX2 instructions but not AVX-512.",
+      "normalized": "The CPU supports AVX two instructions but not AVX-five hundred twelve.",
+      "mapped_stream": "ðə sˌiːpˌiːjˈuː səpˈɔːrts ˈævks tˈuː ˌɪnstrˈʌkʃənz bˈʌt nˈɑːt ˈævks fˈaɪv hˈʌndrəd twˈɛlv ",
+      "phoneme_string": "ð ə s ˌ iː p ˌ iː j ˈ uː s ə p ˈ ɔː r t s ˈ æ v k s t ˈ uː ˌ ɪ n s t r ˈ ʌ k ʃ ə n z b ˈ ʌ t n ˈ ɑː t ˈ æ v k s f ˈ a ɪ v h ˈ ʌ n d r ə d t w ˈ ɛ l v",
+      "words": [
+        "ðə",
+        "sˌiːpˌiːjˈuː",
+        "səpˈɔːrts",
+        "ˈævks",
+        "tˈuː",
+        "ˌɪnstrˈʌkʃənz",
+        "bˈʌt",
+        "nˈɑːt",
+        "ˈævks",
+        "fˈaɪv",
+        "hˈʌndrəd",
+        "twˈɛlv"
+      ]
+    }
+  }
+}

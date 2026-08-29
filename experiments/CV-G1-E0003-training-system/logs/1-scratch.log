@@ -1,0 +1,1 @@
+[scratch] {"global_step": 30, "epochs_completed": 3, "best_value": 0.2032894492149353, "best_step": 30, "nan_events": 0, "wall_s": 0.114, "out_dir": "experiments\\CV-G1-E0003-training-system", "phase_wall_s": 1.538}

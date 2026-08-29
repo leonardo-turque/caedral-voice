@@ -1,0 +1,47 @@
+# requirements-arch.txt — Arch Linux bring-up for the CV-G1 training core
+# (experiment CV-G1-E0019-archport; audit: docs/arch/ARCH-PORTABILITY-AUDIT.md)
+#
+# Scope: packages ACTUALLY IMPORTED by the training core
+#   (caedral_voice/training/*, caedral_voice/model/*,
+#    experiments/CV-G1-E0013-regressor/train_regressor.py)
+# and by the gate tests (tests/test_training.py, tests/test_mel_cache.py,
+# tests/test_regressor_pipeline.py). Every entry verified by grep against the
+# import graph; versions pinned to the current Windows venv (major-pin or
+# exact for the torch pair).
+#
+# NOTE on the torch lines: "+cpu" local-version pins force the CPU wheel from
+# download.pytorch.org regardless of index preference, mirroring this project's
+# torch 2.6.0+cpu baseline. For a CUDA build instead, comment the two "+cpu"
+# lines and uncomment the pair below them (FOUNDER DECISION — changes numerics
+# vs the r1/r3 CPU run).
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch==2.6.0+cpu
+torchaudio==2.6.0+cpu
+# CUDA alternative (uncomment to use; remove the two lines above):
+# torch==2.6.0
+# torchaudio==2.6.0
+
+numpy>=2.5,<3          # venv has 2.5.2; seed.py/mel_cache.py/tests
+pytest>=9,<10          # venv has 9.1.1; gate-test runner only
+
+# ----------------------------------------------------------------------
+# OPTIONAL — data-preprocessing parity (data/scripts/pipeline_lib.py and
+# friends). NOT imported by the training core; uncomment ONLY if you will
+# re-run corpus preprocessing/phonemization on Arch. Requires the system
+# package `libsndfile` (installed by scripts/arch/bootstrap-dev.sh).
+# ----------------------------------------------------------------------
+# soundfile>=0.14,<1    # venv 0.14.0 — preprocess.py/pipeline_lib.py
+# scipy>=1.18,<2        # venv 1.18.1 — pipeline_lib resample fallback
+# pyloudnorm>=0.2,<0.3  # venv 0.2.0 — BS.1770 loudness normalization
+# soxr>=1.1,<2          # venv 1.1.0 — preferred resampler (scipy fallback ok)
+# requests>=2,<3        # download_ljspeech.py only
+#
+# NOT included, deliberately:
+#   psutil        — benchmarks/harness + inference/cli only (portable APIs);
+#                   add manually if running benchmarks on Arch
+#   g2p_en / nltk — INFERENCE + phonemize_manifest.py only; training consumes
+#                   frozen phoneme strings from *.phonemes.jsonl, verified.
+#                   If ever re-phonemizing: pip install g2p_en nltk, then
+#                   python -c "import nltk; nltk.download('averaged_perceptron_tagger_eng'); nltk.download('cmudict')"

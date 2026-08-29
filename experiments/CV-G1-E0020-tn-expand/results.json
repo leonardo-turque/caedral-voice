@@ -1,0 +1,104 @@
+[
+  {
+    "variant": "old",
+    "voice": "af_heart",
+    "file": "experiments\\CV-G1-E0020-tn-expand\\audio\\e0020-old-af_heart.wav",
+    "seconds": 4.86,
+    "vs_literal_ref": {
+      "class": "PARTIAL_SPEECH",
+      "min_wer": 0.3333,
+      "dnsmos_ovrl": 3.432,
+      "hypothesis": "The CPU supports AFCS II instructions, but not AFCS 512."
+    },
+    "vs_spoken_ref": {
+      "class": "BABBLE",
+      "min_wer": 0.7222,
+      "dnsmos_ovrl": 3.432
+    }
+  },
+  {
+    "variant": "old",
+    "voice": "am_michael",
+    "file": "experiments\\CV-G1-E0020-tn-expand\\audio\\e0020-old-am_michael.wav",
+    "seconds": 5.01,
+    "vs_literal_ref": {
+      "class": "PARTIAL_SPEECH",
+      "min_wer": 0.3333,
+      "dnsmos_ovrl": 3.493,
+      "hypothesis": "The CPU supports AFK's two instructions but not AFK's 512."
+    },
+    "vs_spoken_ref": {
+      "class": "BABBLE",
+      "min_wer": 0.6667,
+      "dnsmos_ovrl": 3.493
+    }
+  },
+  {
+    "variant": "new_a",
+    "voice": "af_heart",
+    "file": "experiments\\CV-G1-E0020-tn-expand\\audio\\e0020-new_a-af_heart.wav",
+    "seconds": 5.78,
+    "vs_literal_ref": {
+      "class": "INTELLIGIBLE",
+      "min_wer": 0.2222,
+      "dnsmos_ovrl": 3.503,
+      "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+    },
+    "vs_spoken_ref": {
+      "class": "BABBLE",
+      "min_wer": 0.7222,
+      "dnsmos_ovrl": 3.503
+    }
+  },
+  {
+    "variant": "new_a",
+    "voice": "am_michael",
+    "file": "experiments\\CV-G1-E0020-tn-expand\\audio\\e0020-new_a-am_michael.wav",
+    "seconds": 6.17,
+    "vs_literal_ref": {
+      "class": "INTELLIGIBLE",
+      "min_wer": 0.2222,
+      "dnsmos_ovrl": 3.582,
+      "hypothesis": "The CPU supports AVX-2 instructions, but not AVX-512."
+    },
+    "vs_spoken_ref": {
+      "class": "BABBLE",
+      "min_wer": 0.6111,
+      "dnsmos_ovrl": 3.582
+    }
+  },
+  {
+    "variant": "new_b",
+    "voice": "af_heart",
+    "file": "experiments\\CV-G1-E0020-tn-expand\\audio\\e0020-new_b-af_heart.wav",
+    "seconds": 5.31,
+    "vs_literal_ref": {
+      "class": "PARTIAL_SPEECH",
+      "min_wer": 0.4444,
+      "dnsmos_ovrl": 3.576,
+      "hypothesis": "The CPU supports a VX2 instructions, but not a VX512."
+    },
+    "vs_spoken_ref": {
+      "class": "BABBLE",
+      "min_wer": 0.6111,
+      "dnsmos_ovrl": 3.576
+    }
+  },
+  {
+    "variant": "new_b",
+    "voice": "am_michael",
+    "file": "experiments\\CV-G1-E0020-tn-expand\\audio\\e0020-new_b-am_michael.wav",
+    "seconds": 5.5,
+    "vs_literal_ref": {
+      "class": "PARTIAL_SPEECH",
+      "min_wer": 0.4444,
+      "dnsmos_ovrl": 3.539,
+      "hypothesis": "The CPU supports a VX2 instructions, but not a VX512."
+    },
+    "vs_spoken_ref": {
+      "class": "BABBLE",
+      "min_wer": 0.6111,
+      "dnsmos_ovrl": 3.539
+    }
+  }
+]

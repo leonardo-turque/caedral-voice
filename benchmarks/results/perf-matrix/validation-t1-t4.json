@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "benchmark": "perf_matrix",
+  "purpose": "Measured RTF / TTFA / peak-RSS / steady-RAM per torch intra-op thread count for CaedralEngine; comparison_row objects mirror the natgate comparison-template.json fields (rtf / ram_mb / size_mb) for a plain join.",
+  "measured_at": "2026-08-22T23:35:36.481761+00:00",
+  "git_commit": "be1ba64c1ff7848785c09bfe8d3f8522351bf732",
+  "machine": {
+    "os": {
+      "system": "Windows",
+      "release": "11",
+      "version": "10.0.26200",
+      "machine": "AMD64"
+    },
+    "cpu": {
+      "model": "13th Gen Intel(R) Core(TM) i7-13620H",
+      "arch": "X86_64",
+      "bits": 64,
+      "count_logical": 16,
+      "hz_advertised": "2.9180 GHz",
+      "flags": [
+        "3dnow",
+        "3dnowprefetch",
+        "abm",
+        "acpi",
+        "adx",
+        "aes",
+        "apic",
+        "avx",
+        "avx2",
+        "bmi1",
+        "bmi2",
+        "clflush",
+        "clflushopt",
+        "clwb",
+        "cmov",
+        "cx16",
+        "cx8",
+        "de",
+        "dts",
+        "erms",
+        "est",
+        "f16c",
+        "fma",
+        "fpu",
+        "fxsr",
+        "gfni",
+        "ht",
+        "hypervisor",
+        "ia64",
+        "intel_pt",
+        "invpcid",
+        "lahf_lm",
+        "mca",
+        "mce",
+        "mmx",
+        "monitor",
+        "movbe",
+        "msr",
+        "mtrr",
+        "osxsave",
+        "pae",
+        "pat",
+        "pbe",
+        "pcid",
+        "pclmulqdq",
+        "pdcm",
+        "pge",
+        "pni",
+        "popcnt",
+        "pse",
+        "pse36",
+        "rdpid",
+        "rdrnd",
+        "rdseed",
+        "sep",
+        "serial",
+        "sha",
+        "smap",
+        "smep",
+        "ss",
+        "sse",
+        "sse2",
+        "sse4_1",
+        "sse4_2",
+        "ssse3",
+        "tm",
+        "tm2",
+        "tsc",
+        "tscdeadline",
+        "umip",
+        "vaes",
+        "vme",
+        "vpclmulqdq",
+        "x2apic",
+        "xsave",
+        "xtpr"
+      ],
+      "isa": {
+        "SSE4_2": true,
+        "AVX": true,
+        "AVX2": true,
+        "AVX512F": false,
+        "FMA3": true,
+        "BMI2": true,
+        "AVX_VNNI": null
+      }
+    },
+    "memory": {
+      "total_bytes": 25414197248,
+      "available_bytes": 2858876928,
+      "swap_total_bytes": 60949430272
+    },
+    "python": {
+      "version": "3.13.15",
+      "implementation": "CPython",
+      "executable": "C:\\Users\\leona\\Downloads\\caedral-voice\\.venv\\Scripts\\python.exe"
+    }
+  },
+  "run_dir": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\pilot-tiny-15k",
+  "checkpoint_path": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\pilot-tiny-15k\\checkpoints\\last.pt",
+  "checkpoint_sha256": "24ddd43ab3768ccc26f158af497a675986d2721441a8948ec23c99546a39ce21",
+  "checkpoint_size_mb": 89.8,
+  "model_id": "caedral-pilot-tiny-15k",
+  "sample_rate_hz": 24000,
+  "warm_repeats": 3,
+  "sentences_source": "C:\\Users\\leona\\Downloads\\caedral-voice\\benchmarks\\preview-sentences.json",
+  "sentences": [
+    {
+      "id": "neutral_001",
+      "category": "neutral",
+      "text": "Hello. This is the first generation of Caedral Voice."
+    },
+    {
+      "id": "conversational_001",
+      "category": "conversational",
+      "text": "Hey, so basically that's the whole story. What do you think?"
+    }
+  ],
+  "thread_configs": [
+    {
+      "threads": 1,
+      "torch_num_threads_after_load": 1,
+      "torch_num_interop_threads": 10,
+      "engine_load_seconds": 35.43,
+      "baseline_rss_bytes": 716058624,
+      "peak_rss_bytes_sampler_max": 716103680,
+      "steady_rss_bytes_after_gc": 615759872,
+      "rss_note": "peaks from the harness 5 ms sampler within THIS process (allocator state carries across configs; compare each config against its own baseline_rss_bytes). Win32 PeakWorkingSetSize is process-lifetime and reported once at top level, never per config.",
+      "sentences": [
+        {
+          "id": "neutral_001",
+          "category": "neutral",
+          "chars": 53,
+          "n_sentence_chunks": 2,
+          "cold_first_synth": {
+            "definition": "first TIMED synth of this input after the explicit engine warmup (excludes engine load and one-time warmup costs)",
+            "wall_seconds": 0.7662,
+            "cpu_seconds": 0.7344,
+            "audio_seconds": 2.165,
+            "rtf": 0.3538,
+            "perf": {
+              "wall_seconds": 0.7661536999512464,
+              "cpu_seconds": 0.734375,
+              "peak_rss_bytes": 716103680,
+              "baseline_rss_bytes": 716058624,
+              "post_rss_bytes": 632770560,
+              "samples": 153,
+              "native_peak_rss_bytes": 769703936,
+              "native_post_rss_bytes": 632770560
+            }
+          },
+          "warm": {
+            "repeats": 3,
+            "runs": [
+              {
+                "wall_seconds": 1.3065,
+                "cpu_seconds": 0.75,
+                "audio_seconds": 2.165,
+                "rtf": 0.6034
+              },
+              {
+                "wall_seconds": 1.299,
+                "cpu_seconds": 0.6406,
+                "audio_seconds": 2.165,
+                "rtf": 0.5999
+              },
+              {
+                "wall_seconds": 0.4921,
+                "cpu_seconds": 0.4844,
+                "audio_seconds": 2.165,
+                "rtf": 0.2273
+              }
+            ],
+            "wall_median_seconds": 1.299,
+            "audio_seconds_median": 2.165,
+            "rtf_median": 0.5999,
+            "rtf_min": 0.2273,
+            "rtf_max": 0.6034
+          },
+          "ttfa": {
+            "upper_bound_seconds": 1.299,
+            "upper_bound_definition": "warm FULL-sentence synth wall (whole clip ready before first byte reaches the caller)",
+            "streaming_method": "sentence_split_chunk1_synth",
+            "streaming_estimate_seconds": 0.3791,
+            "streaming_definition": "wall-to-first-chunk-audio: sentence-split text, warm chunk-1 shapes, then time synthesizing chunk 1 alone (RUNTIME-01 design path)",
+            "chunk1_chars": 6
+          }
+        },
+        {
+          "id": "conversational_001",
+          "category": "conversational",
+          "chars": 60,
+          "n_sentence_chunks": 2,
+          "cold_first_synth": {
+            "definition": "first TIMED synth of this input after the explicit engine warmup (excludes engine load and one-time warmup costs)",
+            "wall_seconds": 0.6689,
+            "cpu_seconds": 0.5781,
+            "audio_seconds": 1.973,
+            "rtf": 0.3389,
+            "perf": {
+              "wall_seconds": 0.6688543999334797,
+              "cpu_seconds": 0.578125,
+              "peak_rss_bytes": 636706816,
+              "baseline_rss_bytes": 632975360,
+              "post_rss_bytes": 636686336,
+              "samples": 133,
+              "native_peak_rss_bytes": 769703936,
+              "native_post_rss_bytes": 636686336
+            }
+          },
+          "warm": {
+            "repeats": 3,
+            "runs": [
+              {
+                "wall_seconds": 0.8434,
+                "cpu_seconds": 0.5156,
+                "audio_seconds": 1.973,
+                "rtf": 0.4274
+              },
+              {
+                "wall_seconds": 0.5882,
+                "cpu_seconds": 0.5,
+                "audio_seconds": 1.973,
+                "rtf": 0.2981
+              },
+              {
+                "wall_seconds": 1.2049,
+                "cpu_seconds": 0.6094,
+                "audio_seconds": 1.973,
+                "rtf": 0.6106
+              }
+            ],
+            "wall_median_seconds": 0.8434,
+            "audio_seconds_median": 1.973,
+            "rtf_median": 0.4274,
+            "rtf_min": 0.2981,
+            "rtf_max": 0.6106
+          },
+          "ttfa": {
+            "upper_bound_seconds": 0.8434,
+            "upper_bound_definition": "warm FULL-sentence synth wall (whole clip ready before first byte reaches the caller)",
+            "streaming_method": "sentence_split_chunk1_synth",
+            "streaming_estimate_seconds": 0.6027,
+            "streaming_definition": "wall-to-first-chunk-audio: sentence-split text, warm chunk-1 shapes, then time synthesizing chunk 1 alone (RUNTIME-01 design path)",
+            "chunk1_chars": 41
+          }
+        }
+      ],
+      "summary": {
+        "rtf_warm_median": 0.5136,
+        "ttfa_upper_bound_seconds_median": 1.0712,
+        "ttfa_streaming_estimate_seconds_median": 0.4909,
+        "ram_mb_baseline": 716.1,
+        "ram_mb_peak": 716.1,
+        "ram_mb_steady_after_gc": 615.8
+      },
+      "comparison_row": {
+        "model": "caedral-pilot-tiny-15k (threads=1)",
+        "status": "measured",
+        "dnsmos_median": null,
+        "dnsmos_min": null,
+        "wer_median": null,
+        "rtf": 0.5136,
+        "ram_mb": 716.1,
+        "size_mb": 89.8,
+        "detail": {
+          "threads": 1,
+          "rtf_definition": "median over sentences of median warm RTF (3 timed repeats/sentence; excludes engine load and explicit warmup)",
+          "ram_note": "max sampler peak RSS across measured runs in a shared process; see rss_note on the config",
+          "ttfa_note": "see per-sentence ttfa block: upper bound (full synth) and RUNTIME-01 streaming estimate (chunk-1-only synth)"
+        }
+      }
+    },
+    {
+      "threads": 4,
+      "torch_num_threads_after_load": 4,
+      "torch_num_interop_threads": 10,
+      "engine_load_seconds": 5.44,
+      "baseline_rss_bytes": 715997184,
+      "peak_rss_bytes_sampler_max": 716017664,
+      "steady_rss_bytes_after_gc": 622133248,
+      "rss_note": "peaks from the harness 5 ms sampler within THIS process (allocator state carries across configs; compare each config against its own baseline_rss_bytes). Win32 PeakWorkingSetSize is process-lifetime and reported once at top level, never per config.",
+      "sentences": [
+        {
+          "id": "neutral_001",
+          "category": "neutral",
+          "chars": 53,
+          "n_sentence_chunks": 2,
+          "cold_first_synth": {
+            "definition": "first TIMED synth of this input after the explicit engine warmup (excludes engine load and one-time warmup costs)",
+            "wall_seconds": 0.3958,
+            "cpu_seconds": 0.5625,
+            "audio_seconds": 2.165,
+            "rtf": 0.1828,
+            "perf": {
+              "wall_seconds": 0.39578709995839745,
+              "cpu_seconds": 0.5625,
+              "peak_rss_bytes": 716017664,
+              "baseline_rss_bytes": 715997184,
+              "post_rss_bytes": 637595648,
+              "samples": 79,
+              "native_peak_rss_bytes": 771710976,
+              "native_post_rss_bytes": 637595648
+            }
+          },
+          "warm": {
+            "repeats": 3,
+            "runs": [
+              {
+                "wall_seconds": 0.4142,
+                "cpu_seconds": 0.4531,
+                "audio_seconds": 2.165,
+                "rtf": 0.1913
+              },
+              {
+                "wall_seconds": 0.3477,
+                "cpu_seconds": 0.5312,
+                "audio_seconds": 2.165,
+                "rtf": 0.1606
+              },
+              {
+                "wall_seconds": 0.3939,
+                "cpu_seconds": 0.9062,
+                "audio_seconds": 2.165,
+                "rtf": 0.1819
+              }
+            ],
+            "wall_median_seconds": 0.3939,
+            "audio_seconds_median": 2.165,
+            "rtf_median": 0.1819,
+            "rtf_min": 0.1606,
+            "rtf_max": 0.1913
+          },
+          "ttfa": {
+            "upper_bound_seconds": 0.3939,
+            "upper_bound_definition": "warm FULL-sentence synth wall (whole clip ready before first byte reaches the caller)",
+            "streaming_method": "sentence_split_chunk1_synth",
+            "streaming_estimate_seconds": 0.3913,
+            "streaming_definition": "wall-to-first-chunk-audio: sentence-split text, warm chunk-1 shapes, then time synthesizing chunk 1 alone (RUNTIME-01 design path)",
+            "chunk1_chars": 6
+          }
+        },
+        {
+          "id": "conversational_001",
+          "category": "conversational",
+          "chars": 60,
+          "n_sentence_chunks": 2,
+          "cold_first_synth": {
+            "definition": "first TIMED synth of this input after the explicit engine warmup (excludes engine load and one-time warmup costs)",
+            "wall_seconds": 0.5873,
+            "cpu_seconds": 0.75,
+            "audio_seconds": 1.973,
+            "rtf": 0.2976,
+            "perf": {
+              "wall_seconds": 0.587332799914293,
+              "cpu_seconds": 0.75,
+              "peak_rss_bytes": 643231744,
+              "baseline_rss_bytes": 637554688,
+              "post_rss_bytes": 643170304,
+              "samples": 117,
+              "native_peak_rss_bytes": 771710976,
+              "native_post_rss_bytes": 643170304
+            }
+          },
+          "warm": {
+            "repeats": 3,
+            "runs": [
+              {
+                "wall_seconds": 0.7103,
+                "cpu_seconds": 0.5938,
+                "audio_seconds": 1.973,
+                "rtf": 0.36
+              },
+              {
+                "wall_seconds": 0.4442,
+                "cpu_seconds": 0.9062,
+                "audio_seconds": 1.973,
+                "rtf": 0.2251
+              },
+              {
+                "wall_seconds": 0.3895,
+                "cpu_seconds": 0.6094,
+                "audio_seconds": 1.973,
+                "rtf": 0.1974
+              }
+            ],
+            "wall_median_seconds": 0.4442,
+            "audio_seconds_median": 1.973,
+            "rtf_median": 0.2251,
+            "rtf_min": 0.1974,
+            "rtf_max": 0.36
+          },
+          "ttfa": {
+            "upper_bound_seconds": 0.4442,
+            "upper_bound_definition": "warm FULL-sentence synth wall (whole clip ready before first byte reaches the caller)",
+            "streaming_method": "sentence_split_chunk1_synth",
+            "streaming_estimate_seconds": 0.3149,
+            "streaming_definition": "wall-to-first-chunk-audio: sentence-split text, warm chunk-1 shapes, then time synthesizing chunk 1 alone (RUNTIME-01 design path)",
+            "chunk1_chars": 41
+          }
+        }
+      ],
+      "summary": {
+        "rtf_warm_median": 0.2035,
+        "ttfa_upper_bound_seconds_median": 0.419,
+        "ttfa_streaming_estimate_seconds_median": 0.3531,
+        "ram_mb_baseline": 716.0,
+        "ram_mb_peak": 716.0,
+        "ram_mb_steady_after_gc": 622.1
+      },
+      "comparison_row": {
+        "model": "caedral-pilot-tiny-15k (threads=4)",
+        "status": "measured",
+        "dnsmos_median": null,
+        "dnsmos_min": null,
+        "wer_median": null,
+        "rtf": 0.2035,
+        "ram_mb": 716.0,
+        "size_mb": 89.8,
+        "detail": {
+          "threads": 4,
+          "rtf_definition": "median over sentences of median warm RTF (3 timed repeats/sentence; excludes engine load and explicit warmup)",
+          "ram_note": "max sampler peak RSS across measured runs in a shared process; see rss_note on the config",
+          "ttfa_note": "see per-sentence ttfa block: upper bound (full synth) and RUNTIME-01 streaming estimate (chunk-1-only synth)"
+        }
+      }
+    }
+  ],
+  "process_lifetime": {
+    "native_peak_rss_bytes": 771710976,
+    "note": "Win32 PeakWorkingSetSize covers this ENTIRE process (all thread configs); valid per-config only when each config runs in a fresh process."
+  },
+  "protocol_notes": [
+    "fresh engine per thread config; previous engine unloaded via del + gc.collect() before the next build",
+    "explicit untimed warmup synth precedes all timing; 'cold_first_synth' therefore excludes engine warmup by design",
+    "intra-op threads only (torch.set_num_threads); inter-op pool left at library default; synthesis is serialized by the engine lock, so N threads = parallelism INSIDE ops, not concurrent requests",
+    "RTF = wall / audio_seconds, <1.0 faster than real time",
+    "TTFA has two flavors per sentence: full-synth upper bound and harness-side sentence-split chunk-1 streaming estimate (RUNTIME-01 design path)"
+  ]
+}

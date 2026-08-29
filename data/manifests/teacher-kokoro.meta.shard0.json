@@ -1,0 +1,31 @@
+{
+  "seen": 8000,
+  "processed": 6245,
+  "kept": 5964,
+  "rejected": {
+    "too_short_audio": 260,
+    "too_long_audio": 16,
+    "too_long_text": 1,
+    "clipped_audio": 2,
+    "duplicate_text": 2
+  },
+  "audio_seconds": 32293.621000000014,
+  "wall_seconds": 31157.7,
+  "synth_seconds": 30993.881408200166,
+  "per_voice_counts": {
+    "am_fenrir": 590,
+    "am_michael": 604,
+    "am_puck": 582,
+    "bm_george": 611,
+    "af_heart": 588,
+    "af_bella": 581,
+    "bf_alice": 608,
+    "bf_emma": 608,
+    "am_adam": 587,
+    "af_nicole": 605
+  },
+  "done": true,
+  "shard": 0,
+  "pid": 24532,
+  "updated": "2026-08-23T12:48:21Z"
+}

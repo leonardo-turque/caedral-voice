@@ -1,0 +1,44 @@
+{
+ "experiment": "CLOSE-GAPS-01/gap2",
+ "date": "2026-08-23",
+ "model": "kokoro-v1.0-noistft.onnx",
+ "sentence": "Hello. This is the first generation of Caedral Voice.",
+ "voice": "af_sky",
+ "threads": 4,
+ "machine": {
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpus": 16
+ },
+ "versions": {
+  "onnxruntime": "1.29.0",
+  "openvino": "2026.3.0-22451-8a17657b995-releases/2026/3"
+ },
+ "conversion": {
+  "ok": true,
+  "convert_s": 1.87,
+  "ir_mb": 311.15
+ },
+ "comparison": {
+  "shape": [
+   1,
+   22,
+   18961
+  ],
+  "absmax_ort": 8.9941,
+  "maxabsdiff": 4.24105,
+  "rel_to_absmax": 0.47154,
+  "corr": 0.90132,
+  "snr_db": 7.4
+ },
+ "rtf": {
+  "ort_noistft_rtf": 0.4741,
+  "ov_noistft_rtf": 0.3531,
+  "median_wall_s": {
+   "ort": 1.8729,
+   "ov": 1.3946
+  },
+  "improvement_pct": 34.3
+ },
+ "verdict": "KILL",
+ "verdict_reason": "corr 0.9013 < 0.99 (quality risk)"
+}

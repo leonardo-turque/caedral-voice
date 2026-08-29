@@ -1,0 +1,46 @@
+{
+  "environment": "FIRE TEST EXECUTION ENVIRONMENT",
+  "date_utc": "2026-08-24",
+  "isolation": {
+    "method": "Docker (linux/amd64 server 29.7.2) containers on WSL2; hard cgroup v2 limits",
+    "flags_profile_a": "--memory=1000000000b --memory-swap=1000000000b --cpus=1.0",
+    "flags_profile_b": "--memory=500000000b --memory-swap=500000000b --cpus=0.5",
+    "cgroup_values_verified_from_inside_container": true,
+    "swap_policy": "memory.swap.max=0 inside every test container (no swap spill possible); WSL2 VM reports SwapTotal 3145728 kB but cgroup swap is disabled by memory-swap==memory"
+  },
+  "host": {
+    "os": "Windows 11 Home 10.0.26200",
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2 (i7-13620H, 6P+4E), 16 logical CPUs, AVX2/FMA3, no AVX-512",
+    "ram_gb": 24
+  },
+  "container_runtime_seen_by_benchmark": {
+    "python": "3.13.15",
+    "onnxruntime": "1.29.0",
+    "kokoro-onnx": "0.6.1",
+    "numpy": "2.2.6",
+    "nproc_visible": 16,
+    "note": "intra_op threads stay at the frozen production value 6 in ALL profiles; the CPU QUOTA (not thread count) enforces 1.0/0.5 vCPU"
+  },
+  "image": {
+    "tag": "caedral-voice:v1",
+    "base": "python:3.13-slim",
+    "user": "caedral (uid 10001, non-root)",
+    "contents": "frozen engine subset + FastAPI service + pinned runtime deps + baked model/voices/frontend data; NO torch, NO whisper/DNSMOS/ASR, NO training stack"
+  },
+  "canonical_request": {
+    "text_file": "artifacts/fire-test/canonical-input.txt",
+    "sha256": "9fa32ab54b55e8a36155a530c4e9069c85ead7e850e378180c3efa03f125fa9c",
+    "chars": 548,
+    "measured_output_duration_s_host_pretest": 29.82,
+    "accepted_window_s": [29.0, 31.0],
+    "voice": "caedral-f1", "speed": 1.0
+  },
+  "ambient_conditions": {
+    "main_caedral_platform_containers_running_on_same_host_during_test": [
+      "caedral-api-gateway", "caedral-model-inference", "caedral-postgres",
+      "caedral-redis", "caedral-site", "caedral-openrouter-provider",
+      "caedral-model-status-service", "caedral-embedding-api", "n8n", "mailpit"
+    ],
+    "note": "User production services were left untouched; they contribute ambient load on the host but cannot violate the tested container's own cgroup quotas."
+  }
+}

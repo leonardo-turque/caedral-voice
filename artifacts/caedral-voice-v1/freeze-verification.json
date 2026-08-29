@@ -1,0 +1,235 @@
+{
+  "checks": {
+    "asset_hashes": {
+      "kokoro-onnx": {
+        "expected": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+        "actual": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+        "match": true
+      },
+      "voices-bin": {
+        "expected": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "actual": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+        "match": true
+      },
+      "engine-py": {
+        "expected": "9e548ecc8ef64f7f63ba9007d6339f5f34188cd6778cbcf31f9878bba1740d2b",
+        "actual": "9e548ecc8ef64f7f63ba9007d6339f5f34188cd6778cbcf31f9878bba1740d2b",
+        "match": true
+      },
+      "kokoro-map-py": {
+        "expected": "84cbedc99ce9f3c480beddfed483501e094909a85094aa5bccc5435e65a63e04",
+        "actual": "84cbedc99ce9f3c480beddfed483501e094909a85094aa5bccc5435e65a63e04",
+        "match": true
+      },
+      "normalize-py": {
+        "expected": "bab5d92582f6913b017d96e227ec98807ad95f4a302fc20685572aa36d37af94",
+        "actual": "bab5d92582f6913b017d96e227ec98807ad95f4a302fc20685572aa36d37af94",
+        "match": true
+      },
+      "g2p-py": {
+        "expected": "746334c508877383ed527988f4d778505e8c34dcaf525d57ce2a49fe549381cc",
+        "actual": "746334c508877383ed527988f4d778505e8c34dcaf525d57ce2a49fe549381cc",
+        "match": true
+      }
+    },
+    "wavs": {
+      "count_expected": 20,
+      "count_ok": 20,
+      "detail": {
+        "caedral-m1/01-normal": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 83456,
+          "seconds": 3.48,
+          "listening_pack_copy": true
+        },
+        "caedral-m1/02-technical": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 148480,
+          "seconds": 6.19,
+          "listening_pack_copy": true
+        },
+        "caedral-m1/03-numbers": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 171008,
+          "seconds": 7.13,
+          "listening_pack_copy": true
+        },
+        "caedral-m1/04-proper-names": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 85504,
+          "seconds": 3.56,
+          "listening_pack_copy": true
+        },
+        "caedral-m1/05-long-form": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 391168,
+          "seconds": 16.3,
+          "listening_pack_copy": true
+        },
+        "caedral-m2/01-normal": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 88064,
+          "seconds": 3.67,
+          "listening_pack_copy": true
+        },
+        "caedral-m2/02-technical": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 138240,
+          "seconds": 5.76,
+          "listening_pack_copy": true
+        },
+        "caedral-m2/03-numbers": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 153600,
+          "seconds": 6.4,
+          "listening_pack_copy": true
+        },
+        "caedral-m2/04-proper-names": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 87552,
+          "seconds": 3.65,
+          "listening_pack_copy": true
+        },
+        "caedral-m2/05-long-form": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 315392,
+          "seconds": 13.14,
+          "listening_pack_copy": true
+        },
+        "caedral-f1/01-normal": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 78848,
+          "seconds": 3.29,
+          "listening_pack_copy": true
+        },
+        "caedral-f1/02-technical": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 132608,
+          "seconds": 5.53,
+          "listening_pack_copy": true
+        },
+        "caedral-f1/03-numbers": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 154112,
+          "seconds": 6.42,
+          "listening_pack_copy": true
+        },
+        "caedral-f1/04-proper-names": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 79360,
+          "seconds": 3.31,
+          "listening_pack_copy": true
+        },
+        "caedral-f1/05-long-form": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 345088,
+          "seconds": 14.38,
+          "listening_pack_copy": true
+        },
+        "caedral-f2/01-normal": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 87552,
+          "seconds": 3.65,
+          "listening_pack_copy": true
+        },
+        "caedral-f2/02-technical": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 135680,
+          "seconds": 5.65,
+          "listening_pack_copy": true
+        },
+        "caedral-f2/03-numbers": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 158720,
+          "seconds": 6.61,
+          "listening_pack_copy": true
+        },
+        "caedral-f2/04-proper-names": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 86016,
+          "seconds": 3.58,
+          "listening_pack_copy": true
+        },
+        "caedral-f2/05-long-form": {
+          "exists": true,
+          "channels": 1,
+          "sampwidth": 2,
+          "rate": 24000,
+          "frames": 314368,
+          "seconds": 13.1,
+          "listening_pack_copy": true
+        }
+      }
+    },
+    "single_session": {
+      "inference_sessions_in_process_after_load": 1,
+      "wrapper_holds_same_object": true,
+      "fused_outputs": [
+        "audio"
+      ],
+      "sessions_after_synth": 1
+    }
+  },
+  "verdict": {
+    "asset_hashes": true,
+    "wavs_20": true,
+    "single_shared_session": true
+  }
+}

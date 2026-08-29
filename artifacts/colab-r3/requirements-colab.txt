@@ -1,0 +1,22 @@
+# CAEDRAL VOICE -- Colab r3 dependencies (COLAB-BUILD-01)
+# Colab already ships: torch/torchaudio (CUDA build -- DO NOT reinstall),
+# numpy, psutil. This file adds ONLY what the training path needs beyond that,
+# pinned to the exact versions verified on the local Windows toolchain
+# (.venv, torch 2.6.0+cpu, Python 3.13) so the deterministic preprocessing
+# pipeline reproduces byte-identical processed audio (manifest sha256 gate).
+#
+# Install target: Python 3.11 on Colab; every pin below ships cp311 manylinux
+# wheels and is compatible with any torch 2.x CUDA build.
+soundfile==0.14.0
+soxr==1.1.0
+pyloudnorm==0.2.0
+scipy==1.18.1
+g2p_en==2.1.0
+nltk>=3.9,<3.12
+psutil==7.2.2
+
+# NLTK model data (NOT pip-installable): COLAB_BOOTSTRAP.py prefetches
+# 'cmudict' + 'averaged_perceptron_tagger(_eng)' after install. Only needed if
+# phonemes are ever regenerated on Colab -- the frozen .phonemes.jsonl ships
+# inside code-package.zip, so the g2p_en fallback normally never fires.
+# NOT needed: phonemizer/espeak (GPL, never touched), librosa, vocos.

@@ -1,0 +1,12 @@
+[aligner] threads=6 torch=2.6.0+cpu python=3.13.15
+[data] librittsr-clean100: 30917 utt (44.11 h)
+[data] vocab=43 classes=44 (blank id 43)
+[data] usable=30917 skipped=0
+[data] CTC-feasible=30810 (dropped 107: subsampled frames < minimal CTC path)
+[split] train=29146 val=1664
+[model] CTCAligner params=1,610,412
+[sched] steps/epoch=11639 total=174585
+[epoch 0] train_lpt=1.3744 val_lpt=1.0374 token_er=0.3189 wall=6321s step=11639
+[ckpt] best.pt updated (token_er=0.3189)
+[epoch 1] train_lpt=0.9392 val_lpt=0.8420 token_er=0.2605 wall=4989s step=23306
+[ckpt] best.pt updated (token_er=0.2605)

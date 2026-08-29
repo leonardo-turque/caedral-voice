@@ -1,0 +1,63 @@
+{
+  "clip": "1034_121119_000071_000000",
+  "P1_prior_text_sensitivity": {
+    "mean_abs_diff_mp_true_vs_shuffled": 0.761,
+    "within_seq_std_of_mp": 0.7266,
+    "ratio": 1.0474,
+    "reading": "<0.1 => prior nearly text-independent"
+  },
+  "P2_sigma_and_residual": {
+    "prior_scale_exp_logs_p_mean": 0.79925,
+    "prior_scale_exp_logs_p_std": 0.78157,
+    "standardized_residual_mean_abs": 0.8039,
+    "data_z_std_across_frames": 1.5089,
+    "mp_mean_abs": 0.6833
+  },
+  "P3_durations": {
+    "pred_first20": [
+      2,
+      6,
+      2,
+      1,
+      1,
+      1,
+      18,
+      25,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      9,
+      1,
+      1,
+      1
+    ],
+    "mas_first20": [
+      2,
+      7,
+      2,
+      1,
+      1,
+      1,
+      20,
+      30,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      11,
+      1,
+      1,
+      1
+    ],
+    "corr_pred_vs_mas": 0.998
+  }
+}

@@ -1,0 +1,817 @@
+[
+  {
+    "file": "natgate-kokoro-af_heart-acr_005.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-acr_005.wav",
+    "class": "PARTIAL_SPEECH",
+    "measured_at": "2026-08-22T21:24:53.597082+00:00",
+    "audio_seconds": 7.125,
+    "sample_rate": 24000,
+    "rms": 0.075592,
+    "spectral_flatness": 0.029,
+    "dnsmos_ovrl": 3.514,
+    "reference_given": true,
+    "wer_small_en": 0.3333,
+    "wer_base_en": 0.4167,
+    "min_wer": 0.3333,
+    "hypothesis": "The CPU supports AVX2 and AVXVNNI instructions, but not AVX512.",
+    "rep_fraction": 0.0,
+    "hyp_words": 10,
+    "chars_per_sec": 8.98,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-conv_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-conv_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:24:59.723165+00:00",
+    "audio_seconds": 3.264,
+    "sample_rate": 24000,
+    "rms": 0.073424,
+    "spectral_flatness": 0.0243,
+    "dnsmos_ovrl": 3.453,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Hey, did you already eat? Or should we grab something on the way?",
+    "rep_fraction": 0.0,
+    "hyp_words": 13,
+    "chars_per_sec": 19.91,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-emo_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-emo_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:25:07.743258+00:00",
+    "audio_seconds": 3.733,
+    "sample_rate": 24000,
+    "rms": 0.075722,
+    "spectral_flatness": 0.0356,
+    "dnsmos_ovrl": 3.363,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0769,
+    "min_wer": 0.0,
+    "hypothesis": "I can't believe you kept this secret from me for three entire years.",
+    "rep_fraction": 0.0,
+    "hyp_words": 13,
+    "chars_per_sec": 18.21,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-frm_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-frm_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:25:15.538437+00:00",
+    "audio_seconds": 11.051,
+    "sample_rate": 24000,
+    "rms": 0.069647,
+    "spectral_flatness": 0.0326,
+    "dnsmos_ovrl": 3.55,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "This report examines the quarterly performance of the portfolio across three asset classes, with particular attention to risk-adjusted returns under volatile market conditions.",
+    "rep_fraction": 0.0,
+    "hyp_words": 24,
+    "chars_per_sec": 15.93,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-het_002.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-het_002.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:25:22.439073+00:00",
+    "audio_seconds": 2.283,
+    "sample_rate": 24000,
+    "rms": 0.077938,
+    "spectral_flatness": 0.035,
+    "dnsmos_ovrl": 3.343,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "The wind was too strong to wind the clock.",
+    "rep_fraction": 0.0,
+    "hyp_words": 9,
+    "chars_per_sec": 18.4,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-nm_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-nm_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:25:32.748541+00:00",
+    "audio_seconds": 4.053,
+    "sample_rate": 24000,
+    "rms": 0.075186,
+    "spectral_flatness": 0.0423,
+    "dnsmos_ovrl": 3.468,
+    "reference_given": true,
+    "wer_small_en": 0.0909,
+    "wer_base_en": 0.1818,
+    "min_wer": 0.0909,
+    "hypothesis": "Siobhan met Rajesh and Yuki at the cafe on Worcester Boulevard.",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 15.54,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-num_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-num_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:25:39.801633+00:00",
+    "audio_seconds": 5.803,
+    "sample_rate": 24000,
+    "rms": 0.073872,
+    "spectral_flatness": 0.0287,
+    "dnsmos_ovrl": 3.507,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "The invoice totals $1,247.83, due within 30 days.",
+    "rep_fraction": 0.0,
+    "hyp_words": 10,
+    "chars_per_sec": 8.44,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-pho_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-pho_001.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-22T21:25:46.604292+00:00",
+    "audio_seconds": 4.907,
+    "sample_rate": 24000,
+    "rms": 0.072082,
+    "spectral_flatness": 0.0456,
+    "dnsmos_ovrl": 3.458,
+    "reference_given": true,
+    "wer_small_en": 0.2353,
+    "wer_base_en": 0.2353,
+    "min_wer": 0.2353,
+    "hypothesis": "She sells seashells by the seashore, and the shells she sells are surely from seashores.",
+    "rep_fraction": 0.0,
+    "hyp_words": 15,
+    "chars_per_sec": 18.34,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-qex_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-qex_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:25:53.220050+00:00",
+    "audio_seconds": 2.795,
+    "sample_rate": 24000,
+    "rms": 0.070646,
+    "spectral_flatness": 0.0316,
+    "dnsmos_ovrl": 3.278,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Are you seriously telling me this whole thing was your idea?",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 21.47,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-af_heart-tech_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-af_heart-tech_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:26:01.817003+00:00",
+    "audio_seconds": 7.957,
+    "sample_rate": 24000,
+    "rms": 0.076532,
+    "spectral_flatness": 0.0296,
+    "dnsmos_ovrl": 3.5,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "The compiler inlines the recursive function, then applies tail call optimization before emitting intermediate representation.",
+    "rep_fraction": 0.0,
+    "hyp_words": 15,
+    "chars_per_sec": 15.71,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-acr_005.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-acr_005.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-22T21:26:10.961948+00:00",
+    "audio_seconds": 7.808,
+    "sample_rate": 24000,
+    "rms": 0.062601,
+    "spectral_flatness": 0.0294,
+    "dnsmos_ovrl": 3.448,
+    "reference_given": true,
+    "wer_small_en": 0.3333,
+    "wer_base_en": 0.1667,
+    "min_wer": 0.1667,
+    "hypothesis": "The CPU supports AVX2 and AVX VNNI instructions, but not AVX512.",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 8.2,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: base.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-conv_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-conv_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:26:19.038986+00:00",
+    "audio_seconds": 3.819,
+    "sample_rate": 24000,
+    "rms": 0.064867,
+    "spectral_flatness": 0.0196,
+    "dnsmos_ovrl": 3.369,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Hey, did you already eat? Or should we grab something on the way?",
+    "rep_fraction": 0.0,
+    "hyp_words": 13,
+    "chars_per_sec": 17.02,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-emo_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-emo_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:26:28.185740+00:00",
+    "audio_seconds": 4.053,
+    "sample_rate": 24000,
+    "rms": 0.063037,
+    "spectral_flatness": 0.0411,
+    "dnsmos_ovrl": 3.397,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "I can't believe you kept this secret from me for three entire years.",
+    "rep_fraction": 0.0,
+    "hyp_words": 13,
+    "chars_per_sec": 16.78,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-frm_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-frm_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:26:35.586662+00:00",
+    "audio_seconds": 11.669,
+    "sample_rate": 24000,
+    "rms": 0.060934,
+    "spectral_flatness": 0.0313,
+    "dnsmos_ovrl": 3.513,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "This report examines the quarterly performance of the portfolio across three asset classes, with particular attention to risk-adjusted returns under volatile market conditions.",
+    "rep_fraction": 0.0,
+    "hyp_words": 24,
+    "chars_per_sec": 15.08,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-het_002.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-het_002.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:26:42.372053+00:00",
+    "audio_seconds": 2.517,
+    "sample_rate": 24000,
+    "rms": 0.069147,
+    "spectral_flatness": 0.0283,
+    "dnsmos_ovrl": 3.23,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "The wind was too strong to wind the clock.",
+    "rep_fraction": 0.0,
+    "hyp_words": 9,
+    "chars_per_sec": 16.68,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-nm_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-nm_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:26:50.299535+00:00",
+    "audio_seconds": 4.416,
+    "sample_rate": 24000,
+    "rms": 0.065092,
+    "spectral_flatness": 0.0322,
+    "dnsmos_ovrl": 3.43,
+    "reference_given": true,
+    "wer_small_en": 0.0909,
+    "wer_base_en": 0.0909,
+    "min_wer": 0.0909,
+    "hypothesis": "Siobhan met Rajesh and Yuki at the cafe on Worcester Boulevard.",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 14.27,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-num_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-num_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:26:57.891413+00:00",
+    "audio_seconds": 6.528,
+    "sample_rate": 24000,
+    "rms": 0.062056,
+    "spectral_flatness": 0.0344,
+    "dnsmos_ovrl": 3.499,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "The invoice totals $1,247.83 due within 30 days.",
+    "rep_fraction": 0.0,
+    "hyp_words": 10,
+    "chars_per_sec": 7.51,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-pho_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-pho_001.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-22T21:27:04.707565+00:00",
+    "audio_seconds": 5.419,
+    "sample_rate": 24000,
+    "rms": 0.060382,
+    "spectral_flatness": 0.0536,
+    "dnsmos_ovrl": 3.447,
+    "reference_given": true,
+    "wer_small_en": 0.1176,
+    "wer_base_en": 0.1176,
+    "min_wer": 0.1176,
+    "hypothesis": "She sells sea shells by the seashore and the shells she sells are surely from seashores.",
+    "rep_fraction": 0.0,
+    "hyp_words": 16,
+    "chars_per_sec": 16.61,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-qex_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-qex_001.wav",
+    "class": "INTELLIGIBLE",
+    "measured_at": "2026-08-22T21:27:12.892931+00:00",
+    "audio_seconds": 3.456,
+    "sample_rate": 24000,
+    "rms": 0.058673,
+    "spectral_flatness": 0.0338,
+    "dnsmos_ovrl": 3.197,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "Are you seriously telling me this whole thing was your idea?",
+    "rep_fraction": 0.0,
+    "hyp_words": 11,
+    "chars_per_sec": 17.36,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  },
+  {
+    "file": "natgate-kokoro-am_michael-tech_001.wav",
+    "path": "benchmarks\\results\\natgate\\kokoro\\natgate-kokoro-am_michael-tech_001.wav",
+    "class": "NATURAL",
+    "measured_at": "2026-08-22T21:27:22.517792+00:00",
+    "audio_seconds": 8.661,
+    "sample_rate": 24000,
+    "rms": 0.059729,
+    "spectral_flatness": 0.035,
+    "dnsmos_ovrl": 3.509,
+    "reference_given": true,
+    "wer_small_en": 0.0,
+    "wer_base_en": 0.0,
+    "min_wer": 0.0,
+    "hypothesis": "The compiler inlines the recursive function, then applies tail call optimization before emitting intermediate representation.",
+    "rep_fraction": 0.0,
+    "hyp_words": 15,
+    "chars_per_sec": 14.43,
+    "rate_plausible": true,
+    "notes": [
+      "best ASR: small.en",
+      "CANDIDATE ONLY - human confirmation required"
+    ],
+    "thresholds": {
+      "silence_rms": 0.0001,
+      "flatness_noise_max": 0.5,
+      "natural_max_wer": 0.1,
+      "natural_max_rep_fraction": 0.02,
+      "natural_min_dnsmos_ovrl": 3.2,
+      "intelligible_max_wer": 0.3,
+      "partial_max_wer": 0.6,
+      "rate_plausible_chars_per_sec": [
+        5.0,
+        30.0
+      ],
+      "rate_extreme_chars_per_sec": [
+        3.0,
+        50.0
+      ]
+    }
+  }
+]

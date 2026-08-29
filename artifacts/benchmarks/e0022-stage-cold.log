@@ -1,0 +1,21 @@
+[parent] cold-load worker ...
+{
+  "imports_s": 0.031,
+  "model_load_s": 1.858,
+  "session_create_s": 1.417,
+  "wrapper_setup_s": 0.002,
+  "frontend_ctor_s": 0.438,
+  "g2p_warmup_s": 0.779,
+  "cold_first_synth_wall_s": 2.086,
+  "cold_first_synth_audio_s": 3.477,
+  "cold_first_synth_rtf": 0.5999,
+  "process_start_to_first_audio_s": 6.634
+}
+[parent] thread sweep threads=2 ...
+[parent] threads=2: rtf_median=1.1323 (min 0.9705) warm_rss=774.2MB
+[parent] thread sweep threads=4 ...
+[parent] threads=4: rtf_median=0.8914 (min 0.6903) warm_rss=775.6MB
+[parent] thread sweep threads=6 ...
+[parent] threads=6: rtf_median=0.6297 (min 0.5952) warm_rss=776.0MB
+[parent] BEST_THREADS=6 (partial saved -> caedral-voice-v1-full.partial.json)
+BEST_THREADS=6

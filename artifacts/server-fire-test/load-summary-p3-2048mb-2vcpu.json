@@ -1,0 +1,246 @@
+{
+  "theory_rpm": 1.6116,
+  "gen_p50_s_source": 37.23,
+  "ladder-0.25x": {
+    "target_rpm": 0.4029,
+    "submitted": 3,
+    "completed_200": 3,
+    "failed": 0,
+    "statuses": {
+      "200": 3
+    },
+    "wall_window_s": 334.7,
+    "achieved_rpm": 0.5378,
+    "e2e_p50_s": 36.704,
+    "e2e_max_s": 36.806,
+    "svc_p50_s": 24.28338762214984,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        287.9,
+        0,
+        657.0,
+        12
+      ],
+      [
+        289.9,
+        0,
+        657.0,
+        12
+      ],
+      [
+        291.9,
+        0,
+        657.0,
+        12
+      ],
+      [
+        294.0,
+        0,
+        657.0,
+        12
+      ],
+      [
+        296.0,
+        0,
+        657.0,
+        12
+      ]
+    ]
+  },
+  "ladder-0.50x": {
+    "target_rpm": 0.8058,
+    "submitted": 5,
+    "completed_200": 5,
+    "failed": 0,
+    "statuses": {
+      "200": 5
+    },
+    "wall_window_s": 338.2,
+    "achieved_rpm": 0.887,
+    "e2e_p50_s": 39.03,
+    "e2e_max_s": 43.336,
+    "svc_p50_s": 22.798165137614678,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        288.5,
+        0,
+        659.0,
+        17
+      ],
+      [
+        290.5,
+        0,
+        659.0,
+        17
+      ],
+      [
+        292.5,
+        0,
+        659.0,
+        17
+      ],
+      [
+        294.5,
+        0,
+        659.0,
+        17
+      ],
+      [
+        296.5,
+        0,
+        659.0,
+        17
+      ]
+    ]
+  },
+  "ladder-0.75x": {
+    "target_rpm": 1.2087,
+    "submitted": 7,
+    "completed_200": 7,
+    "failed": 0,
+    "statuses": {
+      "200": 7
+    },
+    "wall_window_s": 326.4,
+    "achieved_rpm": 1.2868,
+    "e2e_p50_s": 33.605,
+    "e2e_max_s": 38.974,
+    "svc_p50_s": 26.55387355298308,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        288.7,
+        0,
+        672.0,
+        24
+      ],
+      [
+        290.7,
+        0,
+        672.0,
+        24
+      ],
+      [
+        292.8,
+        0,
+        672.0,
+        24
+      ],
+      [
+        294.8,
+        0,
+        672.0,
+        24
+      ],
+      [
+        296.8,
+        0,
+        672.0,
+        24
+      ]
+    ]
+  },
+  "ladder-1.00x": {
+    "target_rpm": 1.6116,
+    "submitted": 9,
+    "completed_200": 9,
+    "failed": 0,
+    "statuses": {
+      "200": 9
+    },
+    "wall_window_s": 333.0,
+    "achieved_rpm": 1.6217,
+    "e2e_p50_s": 30.488,
+    "e2e_max_s": 36.608,
+    "svc_p50_s": 29.2639842983317,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        257.9,
+        0,
+        673.0,
+        32
+      ],
+      [
+        259.9,
+        0,
+        673.0,
+        32
+      ],
+      [
+        292.4,
+        0,
+        673.0,
+        33
+      ],
+      [
+        294.4,
+        0,
+        673.0,
+        33
+      ],
+      [
+        296.4,
+        0,
+        673.0,
+        33
+      ]
+    ]
+  },
+  "ladder-1.25x": {
+    "target_rpm": 2.0145,
+    "submitted": 10,
+    "completed_200": 10,
+    "failed": 0,
+    "statuses": {
+      "200": 10
+    },
+    "wall_window_s": 331.5,
+    "achieved_rpm": 1.8099,
+    "e2e_p50_s": 65.23,
+    "e2e_max_s": 88.573,
+    "svc_p50_s": 27.504898731217992,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        31.5,
+        0,
+        673.0,
+        35
+      ]
+    ]
+  },
+  "concurrency-2": {
+    "burst_size": 2,
+    "completed_200": 2,
+    "failed": 0,
+    "e2e_each_s": [
+      60.58,
+      60.58
+    ],
+    "burst_makespan_s": 60.59,
+    "parallel_speedup_x": 2.0,
+    "all_riff_ok": true
+  },
+  "concurrency-4": {
+    "burst_size": 4,
+    "completed_200": 4,
+    "failed": 0,
+    "e2e_each_s": [
+      126.31,
+      126.32,
+      126.32,
+      126.39
+    ],
+    "burst_makespan_s": 126.4,
+    "parallel_speedup_x": 3.998,
+    "all_riff_ok": true
+  }
+}

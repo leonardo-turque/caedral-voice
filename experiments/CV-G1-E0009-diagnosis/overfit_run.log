@@ -1,0 +1,32 @@
+[overfit] threads=4 steps=2000 lr=0.0002 warmup=50 seed=1234
+[data] usable=16 total=21.83s vocab=43 skipped_symbols={}
+[data] batches/epoch=6 (max_utts=3, max_frames=600)
+[model] tiny(use_flow=True) params=8,733,094
+[step 100] flow=46.89 dur=0.079 pps=12.3 | 1.61 it/s ETA 19.7 min
+[step 200] flow=38.65 dur=0.036 pps=14.0 | 1.37 it/s ETA 21.9 min
+[step 300] flow=19.60 dur=0.013 pps=14.9 | 1.37 it/s ETA 20.7 min
+[step 400] flow=24.64 dur=0.008 pps=14.2 | 1.43 it/s ETA 18.7 min
+[step 500] flow=0.86 dur=0.012 pps=14.9 | 1.41 it/s ETA 17.7 min
+[step 600] flow=-3.96 dur=0.001 pps=12.3 | 1.41 it/s ETA 16.6 min
+[step 700] flow=7.27 dur=0.011 pps=14.0 | 1.40 it/s ETA 15.5 min
+[step 800] flow=0.75 dur=0.002 pps=13.6 | 1.43 it/s ETA 14.0 min
+[step 900] flow=-12.89 dur=0.001 pps=12.3 | 1.41 it/s ETA 13.0 min
+[step 1000] flow=-12.56 dur=0.003 pps=13.6 | 1.43 it/s ETA 11.7 min
+[step 1100] flow=-1.23 dur=0.003 pps=14.2 | 1.47 it/s ETA 10.2 min
+[step 1200] flow=-24.20 dur=0.005 pps=14.9 | 1.49 it/s ETA 9.0 min
+[step 1300] flow=-37.87 dur=0.016 pps=14.9 | 1.50 it/s ETA 7.8 min
+[step 1400] flow=-26.61 dur=0.001 pps=13.6 | 1.52 it/s ETA 6.6 min
+[step 1500] flow=-44.74 dur=0.006 pps=12.3 | 1.52 it/s ETA 5.5 min
+[step 1600] flow=-24.53 dur=0.001 pps=13.7 | 1.54 it/s ETA 4.3 min
+[step 1700] flow=-27.27 dur=0.001 pps=14.0 | 1.55 it/s ETA 3.2 min
+[step 1800] flow=-38.54 dur=0.000 pps=14.2 | 1.57 it/s ETA 2.1 min
+[step 1900] flow=-56.70 dur=0.000 pps=14.9 | 1.57 it/s ETA 1.1 min
+[step 2000] flow=-33.94 dur=0.001 pps=14.2 | 1.58 it/s ETA 0.0 min
+[done] {"global_step": 2000, "epochs_completed": 333, "best_value": null, "best_step": null, "nan_events": 0, "wall_s": 1266.199, "out_dir": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\CV-G1-E0009-diagnosis\\overfit"} fit_wall=1267.7s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[decode] 1081_128618_000027_000000: best=1.0 (ns0.667)
+[decode] 1081_128618_000013_000000: best=1.0 (ns0.333)
+[decode] 1034_121119_000053_000000: best=0.5 (ns0.333)
+[decode] 1034_121119_000071_000000: best=1.0 (ns0.333)
+[out] C:\Users\leona\Downloads\caedral-voice\experiments\CV-G1-E0009-diagnosis\overfit\results.json
+[verdict] FAIL

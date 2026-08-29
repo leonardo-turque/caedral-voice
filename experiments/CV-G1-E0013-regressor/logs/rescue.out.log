@@ -1,0 +1,25 @@
+[regressor] threads=5 torch=2.6.0+cpu python=3.13.15
+[data] durations: C:\Users\leona\Downloads\caedral-voice\data\manifests\all-durations.jsonl (44417 rows)
+[data] librittsr-clean100: 30917 utt (44.11 h)
+[data] teacher-kokoro: 15498 utt (22.66 h, 15498 teacher)
+[data] speakers=257 vocab_size=43
+[data] mel disk cache ON -> data\cache\mel-v1 (v1)
+[data] SKIPPED 1998 rows (t04_2836_5355_000089_000001: no phoneme row; t05_2836_5355_000090_000001: no phoneme row; t06_2836_5355_000091_000001: no phoneme row; t07_2836_5355_000092_000000: no phoneme row; t08_2836_5355_000093_000000: no phoneme row ...)
+[data] usable utterances=44417 audio=63.681 h
+[split] train=42068 val=2349 (stratified by speaker, stride 20)
+[model] expanding speaker table 40 -> 257 (corpus exceeds the 40-slot floor)
+[model] regressor-medium params=15,942,707 (trainable 15,942,707) pitch=on energy=on
+[model] device=cpu amp=False dataloader_workers=0 pin_memory=False
+[melcache] 1000 items processed (hits=1000 computed=0 stale=0 invalid=0) elapsed=484.8s
+[melcache] 2000 items processed (hits=2000 computed=0 stale=0 invalid=0) elapsed=1050.4s
+[melcache] 3000 items processed (hits=3000 computed=0 stale=0 invalid=0) elapsed=1498.3s
+[melcache] 4000 items processed (hits=4000 computed=0 stale=0 invalid=0) elapsed=1567.0s
+[melcache] 5000 items processed (hits=5000 computed=0 stale=0 invalid=0) elapsed=1682.4s
+[melcache] 6000 items processed (hits=6000 computed=0 stale=0 invalid=0) elapsed=2093.1s
+[melcache] 7000 items processed (hits=7000 computed=0 stale=0 invalid=0) elapsed=2391.3s
+[melcache] 8000 items processed (hits=8000 computed=0 stale=0 invalid=0) elapsed=2711.7s
+[melcache] 9000 items processed (hits=9000 computed=0 stale=0 invalid=0) elapsed=3263.2s
+[melcache] 10000 items processed (hits=10000 computed=0 stale=0 invalid=0) elapsed=3612.2s
+[melcache] 11000 items processed (hits=11000 computed=0 stale=0 invalid=0) elapsed=4148.4s
+[melcache] final stats: {'hits': 11844, 'misses': 0, 'computed': 0, 'stale_version': 0, 'invalid': 0, 'bytes_written': 0, 'read_errors': 0}
+[done] {"global_step": 3000, "epochs_completed": 0, "best_value": 0.9552775050853861, "best_step": 3000, "nan_events": 0, "wall_s": 5207.006, "out_dir": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\rescue-prosody", "wall_total_s": 5222.45, "mel_cache_stats": {"hits": 11844, "misses": 0, "computed": 0, "stale_version": 0, "invalid": 0, "bytes_written": 0, "read_errors": 0}}

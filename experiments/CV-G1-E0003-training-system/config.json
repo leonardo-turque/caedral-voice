@@ -1,0 +1,42 @@
+{
+  "exp_id": "CV-G1-E0003-training-system",
+  "cfg": {
+    "experiment_root": "experiments",
+    "run_id": [
+      "split-part1",
+      "split-part2",
+      "continuous (fresh reference)"
+    ],
+    "seed": 20260822,
+    "max_steps": 60,
+    "warmup_steps": 6,
+    "grad_clip": 1.0,
+    "loss_fn": "mse",
+    "log_every": 1,
+    "val_every_steps": 15,
+    "val_at_end": true,
+    "checkpoint_every_steps": 15,
+    "keep_step_checkpoints": 2,
+    "best_key": "val_loss",
+    "best_mode": "min"
+  },
+  "task": {
+    "kind": "synthetic linear regression + tanh MLP",
+    "n_train": 128,
+    "n_val": 32,
+    "dim": 16,
+    "batch": 16,
+    "batches_per_epoch": 8,
+    "optimizer": "Adam lr=1e-2"
+  },
+  "seed": 20260822,
+  "versions": {
+    "python": "3.13.15",
+    "machine": "Windows-11-10.0.26200-SP0"
+  },
+  "code_sha256": {
+    "seed.py": "c196eeea75d53f07737f8645de6237086e8303dc840f3287bb1bea9c088b4977",
+    "trainer.py": "ab35007d08350bfd54eb99e68af7cdb47df6e583547891d5675ca6473294359b",
+    "run_experiment.py": "1210daa3abbdd69fd9d1282c1f4db17426ce9ec65d22e11de3b0dfbcc6b16ac5"
+  }
+}

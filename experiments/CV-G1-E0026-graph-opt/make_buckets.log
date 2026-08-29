@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\leona\Downloads\caedral-voice\experiments\CV-G1-E0026-graph-opt\make_buckets.py", line 36, in <module>
+    dim.param = ""            # clear dim_param
+    ^^^^^^^^^
+AttributeError: Protocol message Dimension has no "param" field.

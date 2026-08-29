@@ -1,0 +1,270 @@
+{
+  "experiment": "CV-G1-E0027-memory",
+  "part": "B-session-memory-configs",
+  "date": "2026-08-23",
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16
+  },
+  "sentence": "Hello. This is first generation of Caedral Voice.",
+  "voice": "af_heart",
+  "threads_intra_op": 4,
+  "reps_per_config": 5,
+  "method_note": "Fresh subprocess per config; SessionOptions fixed at creation. RTF = median of 5 reps on frozen sentence after warmup synth. Warm RSS = steady-state working set after reps; peak sampled at 10 ms.",
+  "rtf_gate": 0.55,
+  "configs": [
+    {
+      "config": "base",
+      "spec": {},
+      "threads_intra_op": 4,
+      "ambient_cpu_pct": 14.0,
+      "session_create_s": 1.09,
+      "wrapper_load_s": 0.0,
+      "warmup_first_synth_s": 1.756,
+      "audio_s": 3.029,
+      "walls_s": [
+        2.1228,
+        2.0477,
+        2.1148,
+        2.0123,
+        1.9764
+      ],
+      "wall_median_s": 2.0477,
+      "rtf_median": 0.676,
+      "rss_after_load_mb": 547.7,
+      "commit_after_load_mb": 1056.2,
+      "warm_rss_mb": 620.8,
+      "warm_commit_mb": 1188.7,
+      "peak_rss_during_reps_mb": 620.8,
+      "passes_rtf_gate": false
+    },
+    {
+      "config": "mem_pattern_off",
+      "spec": {
+        "enable_mem_pattern": false
+      },
+      "threads_intra_op": 4,
+      "ambient_cpu_pct": 24.9,
+      "session_create_s": 1.12,
+      "wrapper_load_s": 0.0,
+      "warmup_first_synth_s": 1.882,
+      "audio_s": 3.029,
+      "walls_s": [
+        2.2114,
+        2.0901,
+        1.9626,
+        1.837,
+        1.8526
+      ],
+      "wall_median_s": 1.9626,
+      "rtf_median": 0.6479,
+      "rss_after_load_mb": 546.7,
+      "commit_after_load_mb": 1055.1,
+      "warm_rss_mb": 547.5,
+      "warm_commit_mb": 1055.8,
+      "peak_rss_during_reps_mb": 548.6,
+      "passes_rtf_gate": false
+    },
+    {
+      "config": "cpu_arena_off",
+      "spec": {
+        "enable_cpu_mem_arena": false
+      },
+      "threads_intra_op": 4,
+      "ambient_cpu_pct": 18.5,
+      "session_create_s": 1.01,
+      "wrapper_load_s": 0.0,
+      "warmup_first_synth_s": 2.667,
+      "audio_s": 3.029,
+      "walls_s": [
+        2.0549,
+        1.9936,
+        2.0936,
+        1.9935,
+        1.8574
+      ],
+      "wall_median_s": 1.9936,
+      "rtf_median": 0.6581,
+      "rss_after_load_mb": 480.4,
+      "commit_after_load_mb": 937.8,
+      "warm_rss_mb": 480.4,
+      "warm_commit_mb": 937.8,
+      "peak_rss_during_reps_mb": 550.0,
+      "passes_rtf_gate": false
+    },
+    {
+      "config": "arena_same",
+      "spec": {
+        "arena_extend_strategy": "kSameAsRequested"
+      },
+      "threads_intra_op": 4,
+      "ambient_cpu_pct": 21.9,
+      "session_create_s": 0.99,
+      "wrapper_load_s": 0.0,
+      "warmup_first_synth_s": 1.536,
+      "audio_s": 3.029,
+      "walls_s": [
+        1.9535,
+        1.8541,
+        1.7775,
+        2.1933,
+        1.9449
+      ],
+      "wall_median_s": 1.9449,
+      "rtf_median": 0.642,
+      "rss_after_load_mb": 547.7,
+      "commit_after_load_mb": 1056.1,
+      "warm_rss_mb": 620.7,
+      "warm_commit_mb": 1188.6,
+      "peak_rss_during_reps_mb": 620.7,
+      "passes_rtf_gate": false
+    },
+    {
+      "config": "opt_disabled",
+      "spec": {
+        "graph_optimization_level": "ORT_DISABLE_ALL"
+      },
+      "threads_intra_op": 4,
+      "ambient_cpu_pct": 10.1,
+      "session_create_s": 0.8,
+      "wrapper_load_s": 0.0,
+      "warmup_first_synth_s": 1.51,
+      "audio_s": 3.029,
+      "walls_s": [
+        1.9311,
+        2.0199,
+        1.8687,
+        2.1274,
+        2.3715
+      ],
+      "wall_median_s": 2.0199,
+      "rtf_median": 0.6668,
+      "rss_after_load_mb": 546.7,
+      "commit_after_load_mb": 1055.4,
+      "warm_rss_mb": 620.5,
+      "warm_commit_mb": 1188.6,
+      "peak_rss_during_reps_mb": 620.5,
+      "passes_rtf_gate": false
+    },
+    {
+      "config": "combo_a",
+      "spec": {
+        "enable_mem_pattern": false,
+        "arena_extend_strategy": "kSameAsRequested"
+      },
+      "threads_intra_op": 4,
+      "ambient_cpu_pct": 10.8,
+      "session_create_s": 1.01,
+      "wrapper_load_s": 0.0,
+      "warmup_first_synth_s": 1.708,
+      "audio_s": 3.029,
+      "walls_s": [
+        1.9702,
+        2.1817,
+        2.0499,
+        1.9462,
+        2.2281
+      ],
+      "wall_median_s": 2.0499,
+      "rtf_median": 0.6767,
+      "rss_after_load_mb": 547.3,
+      "commit_after_load_mb": 1055.6,
+      "warm_rss_mb": 548.8,
+      "warm_commit_mb": 1056.8,
+      "peak_rss_during_reps_mb": 548.8,
+      "passes_rtf_gate": false
+    },
+    {
+      "config": "combo_b",
+      "spec": {
+        "enable_mem_pattern": false,
+        "enable_cpu_mem_arena": false,
+        "arena_extend_strategy": "kSameAsRequested"
+      },
+      "threads_intra_op": 4,
+      "ambient_cpu_pct": 38.4,
+      "session_create_s": 1.53,
+      "wrapper_load_s": 0.0,
+      "warmup_first_synth_s": 4.111,
+      "audio_s": 3.029,
+      "walls_s": [
+        4.2235,
+        4.6905,
+        4.1896,
+        3.7128,
+        3.5006
+      ],
+      "wall_median_s": 4.1896,
+      "rtf_median": 1.383,
+      "rss_after_load_mb": 479.5,
+      "commit_after_load_mb": 937.0,
+      "warm_rss_mb": 479.3,
+      "warm_commit_mb": 937.0,
+      "peak_rss_during_reps_mb": 540.4,
+      "passes_rtf_gate": false
+    }
+  ],
+  "versions": {
+    "python": "3.13.15",
+    "onnxruntime": "1.29.0",
+    "kokoro_onnx": "0.6.1"
+  },
+  "appendix_threads8": {
+    "note": "Same two configs re-run at intra_op=8 to contextualize the 0.55 RTF gate; ambient contention 32-39% during run.",
+    "configs": [
+      {
+        "config": "base",
+        "spec": {},
+        "threads_intra_op": 8,
+        "ambient_cpu_pct": 32.0,
+        "session_create_s": 1.4,
+        "wrapper_load_s": 0.0,
+        "warmup_first_synth_s": 1.9,
+        "audio_s": 3.029,
+        "walls_s": [
+          1.9656,
+          2.1575,
+          2.0384,
+          1.8414,
+          1.896
+        ],
+        "wall_median_s": 1.9656,
+        "rtf_median": 0.6489,
+        "rss_after_load_mb": 548.3,
+        "commit_after_load_mb": 1056.8,
+        "warm_rss_mb": 621.3,
+        "warm_commit_mb": 1189.1,
+        "peak_rss_during_reps_mb": 621.3,
+        "passes_rtf_gate": false
+      },
+      {
+        "config": "cpu_arena_off",
+        "spec": {
+          "enable_cpu_mem_arena": false
+        },
+        "threads_intra_op": 8,
+        "ambient_cpu_pct": 39.0,
+        "session_create_s": 1.41,
+        "wrapper_load_s": 0.0,
+        "warmup_first_synth_s": 2.449,
+        "audio_s": 3.029,
+        "walls_s": [
+          1.9003,
+          1.8192,
+          1.6937,
+          1.6231,
+          1.6686
+        ],
+        "wall_median_s": 1.6937,
+        "rtf_median": 0.5591,
+        "rss_after_load_mb": 481.6,
+        "commit_after_load_mb": 939.1,
+        "warm_rss_mb": 481.7,
+        "warm_commit_mb": 939.1,
+        "peak_rss_during_reps_mb": 551.7,
+        "passes_rtf_gate": false
+      }
+    ]
+  }
+}

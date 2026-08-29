@@ -1,0 +1,110 @@
+[
+  {
+    "file": "baseline-2416-evalA.wav",
+    "who": "baseline",
+    "speaker": "2416",
+    "sentence": "evalA",
+    "class": "INTELLIGIBLE",
+    "wer": 0.1111,
+    "dnsmos": 3.15
+  },
+  {
+    "file": "baseline-2416-evalB.wav",
+    "who": "baseline",
+    "speaker": "2416",
+    "sentence": "evalB",
+    "class": "INTELLIGIBLE",
+    "wer": 0.25,
+    "dnsmos": 2.8
+  },
+  {
+    "file": "baseline-6415-evalA.wav",
+    "who": "baseline",
+    "speaker": "6415",
+    "sentence": "evalA",
+    "class": "INTELLIGIBLE",
+    "wer": 0.1111,
+    "dnsmos": 2.75
+  },
+  {
+    "file": "baseline-6415-evalB.wav",
+    "who": "baseline",
+    "speaker": "6415",
+    "sentence": "evalB",
+    "class": "INTELLIGIBLE",
+    "wer": 0.0,
+    "dnsmos": 2.825
+  },
+  {
+    "file": "baseline-78-evalA.wav",
+    "who": "baseline",
+    "speaker": "78",
+    "sentence": "evalA",
+    "class": "INTELLIGIBLE",
+    "wer": 0.1111,
+    "dnsmos": 3.271
+  },
+  {
+    "file": "baseline-78-evalB.wav",
+    "who": "baseline",
+    "speaker": "78",
+    "sentence": "evalB",
+    "class": "INTELLIGIBLE",
+    "wer": 0.25,
+    "dnsmos": 3.123
+  },
+  {
+    "file": "rescue-2416-evalA.wav",
+    "who": "rescue",
+    "speaker": "2416",
+    "sentence": "evalA",
+    "class": "BABBLE",
+    "wer": 0.7778,
+    "dnsmos": 1.223
+  },
+  {
+    "file": "rescue-2416-evalB.wav",
+    "who": "rescue",
+    "speaker": "2416",
+    "sentence": "evalB",
+    "class": "BABBLE",
+    "wer": 1.0,
+    "dnsmos": 1.295
+  },
+  {
+    "file": "rescue-6415-evalA.wav",
+    "who": "rescue",
+    "speaker": "6415",
+    "sentence": "evalA",
+    "class": "BABBLE",
+    "wer": 0.6667,
+    "dnsmos": 1.215
+  },
+  {
+    "file": "rescue-6415-evalB.wav",
+    "who": "rescue",
+    "speaker": "6415",
+    "sentence": "evalB",
+    "class": "BABBLE",
+    "wer": 1.0,
+    "dnsmos": 1.395
+  },
+  {
+    "file": "rescue-78-evalA.wav",
+    "who": "rescue",
+    "speaker": "78",
+    "sentence": "evalA",
+    "class": "BABBLE",
+    "wer": 1.0,
+    "dnsmos": 1.254
+  },
+  {
+    "file": "rescue-78-evalB.wav",
+    "who": "rescue",
+    "speaker": "78",
+    "sentence": "evalB",
+    "class": "BABBLE",
+    "wer": 1.0,
+    "dnsmos": 1.312
+  }
+]

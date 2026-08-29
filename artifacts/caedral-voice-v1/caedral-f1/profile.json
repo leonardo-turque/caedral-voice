@@ -1,0 +1,8 @@
+{
+  "caedral_voice_id": "caedral-f1",
+  "base_kokoro_voice": "af_sky",
+  "base_provenance": "Kokoro v1.0 ONNX (Apache-2.0), https://github.com/thewh1teagle/kokoro-onnx",
+  "caedral_contribution": "text frontend, TN expansion, IPA->Kokoro vocab mapping, pronunciation overrides",
+  "persona": "natural balanced female",
+  "version": "v1.0"
+}

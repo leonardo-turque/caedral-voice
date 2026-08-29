@@ -1,0 +1,114 @@
+[
+  {
+    "voice": "af_heart",
+    "sentence": "evalA",
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.426
+    },
+    "mapped_v4": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.448
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "propernoun",
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.412
+    },
+    "mapped_v4": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.422
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "numbers",
+    "baseline": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.507
+    },
+    "mapped_v4": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2,
+      "dnsmos": 3.512
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "abbrev",
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.545
+    },
+    "mapped_v4": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.3333,
+      "dnsmos": 3.432
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "evalA",
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.467
+    },
+    "mapped_v4": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.393
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "propernoun",
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.499
+    },
+    "mapped_v4": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.53
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "numbers",
+    "baseline": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.499
+    },
+    "mapped_v4": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2,
+      "dnsmos": 3.408
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "abbrev",
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.454
+    },
+    "mapped_v4": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.3333,
+      "dnsmos": 3.493
+    }
+  }
+]

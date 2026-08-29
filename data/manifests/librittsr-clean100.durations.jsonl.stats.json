@@ -1,0 +1,20 @@
+{
+  "checkpoint": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\CV-G1-E0011-ctc-aligner\\checkpoints\\best.pt",
+  "rows_written": 30917,
+  "aligned": 30764,
+  "uniform_fallback": 153,
+  "empty_phonemes": 0,
+  "phones_per_sec": {
+    "p01": 8.52,
+    "p50": 14.6,
+    "p99": 20.99,
+    "min": 2.47,
+    "max": 32.07
+  },
+  "in_8_25_pct": 99.34,
+  "wall_s": 2614.3,
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.6.0+cpu"
+  }
+}

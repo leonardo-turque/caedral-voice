@@ -1,0 +1,70 @@
+{
+  "experiment": "CV-G1-E0025-openvino",
+  "task_id": "OPENVINO-01",
+  "date": "2026-08-23",
+  "verdict": "SKIP",
+  "verdict_reason": "OpenVINO cannot execute kokoro-v1.0.onnx: ovc converts the graph to IR, but the IR crashes at first inference on the CPU plugin (opset1::Broadcast inside /decoder/decoder/generator/istft/stft fails shape validation, dim 61 vs 19). Static-shape conversion crashes inside ovc itself (inconsistent Add shapes in the same istft subgraph); GPU plugin also fails (Interpolate linear_onnx rejects rank-3 input); OpenVINO 2025.4 fails even earlier (ONNX frontend rejects STFT-20 with dynamic signal shape). RTF/quality comparison vs ORT is therefore impossible - no honest numbers exist to report.",
+  "frozen_sentence": "Hello. This is the first generation of Caedral Voice.",
+  "voice": "af_sky",
+  "machine": {
+    "platform": "Windows-11-Home-SL / Python 3.13.15 venv",
+    "devices_available": ["CPU", "GPU"]
+  },
+  "install": {
+    "ok": true,
+    "wall_s": 16,
+    "py313_compatible": true,
+    "versions_tested": ["2026.3.0-22451", "2025.4.0-20398"],
+    "note": "pip install openvino succeeded in ~16 s for both releases; no wheel/build issues on py3.13"
+  },
+  "conversion": [
+    {
+      "openvino": "2026.3.0",
+      "mode": "dynamic shapes (as exported)",
+      "convert_ok": true,
+      "convert_wall_s": 4.4,
+      "ir_size_mb": {"xml": 1.65, "bin": 309.53},
+      "compile_cpu_ok": true,
+      "compile_cpu_wall_s": 2.39,
+      "first_inference": "CRASH",
+      "error": "[CPU] Broadcast node '/decoder/decoder/generator/istft/stft/Expand': Input shape dimension equal 61 cannot be broadcasted (numpy mode) to 19. Allowed input dimension value would be 1 or 19"
+    },
+    {
+      "openvino": "2026.3.0",
+      "mode": "static shapes frozen to frozen-sentence feed (tokens[1,61], style[1,256], speed[1])",
+      "convert_ok": false,
+      "error": "During ovc shape inference: opset1::Add '/decoder/decoder/generator/istft/stft/Add' argument shapes are inconsistent: Reshape -> i64[61,1] vs Transpose -> i64[19,1]"
+    },
+    {
+      "openvino": "2026.3.0",
+      "mode": "dynamic IR on GPU plugin (diagnostic only; mission target is CPU)",
+      "compile_gpu_ok": true,
+      "first_inference": "CRASH",
+      "error": "[GPU] Interpolate mode 'linear_onnx' supports only 2D or 4D, 5D tensors (got rank-3)"
+    },
+    {
+      "openvino": "2025.4.0",
+      "mode": "dynamic shapes (downgrade probe)",
+      "convert_ok": false,
+      "error": "[ONNX Frontend] Conversion failed for STFT-20 '/decoder/decoder/generator/STFT': Shape of signal input must be static with the rank equal to 3"
+    }
+  ],
+  "rtf": {
+    "ort_fp32": "NOT MEASURED - OpenVINO never produced audio; A/B void",
+    "openvino_fp32": "N/A - model does not execute",
+    "task_baseline_band_ort": [0.62, 0.82]
+  },
+  "quality": {
+    "wer_vs_reference": "N/A - no OpenVINO render possible",
+    "dnsmos_ovrl": "N/A",
+    "ort_baseline_dnsmsos_band": [3.35, 3.55],
+    "wer_gate": "+/-0.10 of ORT baseline (unreachable)"
+  },
+  "method_tooling": {
+    "script": "bench_openvino.py",
+    "design": "Mirrors E0024 quant_bench.py: isolated subprocess workers, kokoro_onnx.Kokoro wrapper driven identically for both backends via an OpenVINOSessionShim (run/get_inputs/get_outputs/_model_path surface) so ONLY the graph executor differs; same Caedral frontend (lexicon+g2pen) + DEFAULT_VOCAB as production engine; 10 warm reps + discarded cold call @ INFERENCE_NUM_THREADS=4 vs intra_op_num_threads=4; two opposite-order rounds; repo-standard classify_preview dual-ASR minWER + DNSMOS scoring.",
+    "status": "Ready and unblocked if a future OpenVINO release fixes STFT/iSTFT execution; re-run parent to regenerate all numbers."
+  },
+  "root_cause_analysis": "The failure is localized to the fused iSTFT vocoder subgraph (/decoder/decoder/generator/istft/stft/*). The ONNX export computes STFT frame geometry through data-dependent shapes (duration predictor output), which ONNX Runtime evaluates correctly at runtime but OpenVINO resolves inconsistently across branches (61 vs 19) - both at runtime (CPU plugin) and at conversion-time constant folding (static probe). This is an upstream OpenVINO limitation, not a defect in the Kokoro export or the Caedral pipeline.",
+  "decision": "Keep ONNX Runtime CPU EP as the production backend. Re-evaluate OpenVINO only after a major version bump (watch OpenVINO changelogs for ONNX STFT/iSTFT support fixes); reconversion takes ~5 s."
+}

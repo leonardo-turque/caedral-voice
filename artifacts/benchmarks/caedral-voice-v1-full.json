@@ -1,0 +1,140 @@
+{
+  "machine": "i7-13620H 10C/16T, 24GB RAM, Windows 11",
+  "date": "2026-08-23",
+  "model": "Kokoro v1.0 ONNX (Apache-2.0)",
+  "voices": [
+    "caedral-m1/am_michael",
+    "caedral-m2/am_echo",
+    "caedral-f1/af_sky",
+    "caedral-f2/af_nova"
+  ],
+  "cold_load_seconds": 3.646,
+  "rss_after_load_mb": 641,
+  "warm_rss_mb": 1790.0,
+  "peak_rss_mb": 1790.0,
+  "thread_sweep": {},
+  "per_voice_rtf": {
+    "caedral-m1": [
+      {
+        "sentence": "control",
+        "rtf_median": 0.6816,
+        "audio_s": 3.48
+      },
+      {
+        "sentence": "technical",
+        "rtf_median": 0.9325,
+        "audio_s": 6.19
+      },
+      {
+        "sentence": "numbers",
+        "rtf_median": 0.8421,
+        "audio_s": 7.13
+      },
+      {
+        "sentence": "longform",
+        "rtf_median": 0.6362,
+        "audio_s": 16.3
+      }
+    ],
+    "caedral-m2": [
+      {
+        "sentence": "control",
+        "rtf_median": 0.8024,
+        "audio_s": 3.67
+      },
+      {
+        "sentence": "technical",
+        "rtf_median": 0.9454,
+        "audio_s": 5.76
+      },
+      {
+        "sentence": "numbers",
+        "rtf_median": 1.0974,
+        "audio_s": 6.4
+      },
+      {
+        "sentence": "longform",
+        "rtf_median": 0.963,
+        "audio_s": 13.14
+      }
+    ],
+    "caedral-f1": [
+      {
+        "sentence": "control",
+        "rtf_median": 0.7609,
+        "audio_s": 3.29
+      },
+      {
+        "sentence": "technical",
+        "rtf_median": 0.6079,
+        "audio_s": 5.53
+      },
+      {
+        "sentence": "numbers",
+        "rtf_median": 0.7896,
+        "audio_s": 6.42
+      },
+      {
+        "sentence": "longform",
+        "rtf_median": 0.8824,
+        "audio_s": 14.38
+      }
+    ],
+    "caedral-f2": [
+      {
+        "sentence": "control",
+        "rtf_median": 0.8889,
+        "audio_s": 3.65
+      },
+      {
+        "sentence": "technical",
+        "rtf_median": 0.9737,
+        "audio_s": 5.65
+      },
+      {
+        "sentence": "numbers",
+        "rtf_median": 0.6304,
+        "audio_s": 6.61
+      },
+      {
+        "sentence": "longform",
+        "rtf_median": 0.6308,
+        "audio_s": 13.1
+      }
+    ]
+  },
+  "speed_validation": {
+    "0.25x": {
+      "audio_s": 16.6,
+      "peak": 0.6,
+      "finite": true,
+      "clipped": false
+    },
+    "0.5x": {
+      "audio_s": 7.32,
+      "peak": 0.689,
+      "finite": true,
+      "clipped": false
+    },
+    "1.0x": {
+      "audio_s": 3.48,
+      "peak": 0.589,
+      "finite": true,
+      "clipped": false
+    },
+    "1.5x": {
+      "audio_s": 2.37,
+      "peak": 0.411,
+      "finite": true,
+      "clipped": false
+    },
+    "2.0x": {
+      "audio_s": 1.9,
+      "peak": 0.44,
+      "finite": true,
+      "clipped": false
+    }
+  },
+  "model_disk_mb": 310.5,
+  "total_assets_mb": 354
+}

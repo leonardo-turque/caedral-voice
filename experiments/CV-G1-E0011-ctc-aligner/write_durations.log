@@ -1,0 +1,5 @@
+[model] best.pt: params=1,610,412 epoch=1 best_token_er=0.2604736310934823
+[self-check] max |standalone - PilotDataset| mel diff over <= 25 rows = 0.00e+00
+[write] 2000/30917 utts (aligned 1965, uniform 35) 15/s eta 32.5 min
+[write] 4000/30917 utts (aligned 3965, uniform 35) 15/s eta 29.9 min
+[write] 6000/30917 utts (aligned 5964, uniform 36) 14/s eta 29.7 min

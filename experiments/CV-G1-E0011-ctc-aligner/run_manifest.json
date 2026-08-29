@@ -1,0 +1,51 @@
+{
+  "exp_id": "CV-G1-E0011-ctc-aligner",
+  "run_id": "aligner-20260822-191552",
+  "manifests": [
+    "librittsr-clean100"
+  ],
+  "usable_utterances": 30917,
+  "ctc_feasible": 30810,
+  "infeasible_dropped": 107,
+  "skipped_rows": 0,
+  "train_utterances": 29146,
+  "val_utterances": 1664,
+  "vocab_size": 43,
+  "num_classes_with_blank": 44,
+  "blank_id": 43,
+  "model_params": 1610412,
+  "mel": {
+    "sample_rate": 24000,
+    "n_mels": 80,
+    "hop": 256,
+    "n_fft": 1024
+  },
+  "time_subsample": 2,
+  "args": {
+    "manifests": "librittsr-clean100",
+    "epochs": 15,
+    "threads": 6,
+    "lr": 0.0003,
+    "warmup": 500,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 1e-06,
+    "grad_clip": 1.0,
+    "seed": 1234,
+    "val_frac": 0.05,
+    "max_frames": 1600,
+    "max_utts": 16,
+    "bucket": 32,
+    "patience": 3,
+    "min_delta": 0.003,
+    "log_every": 50,
+    "limit_train": 0,
+    "limit_val": 0,
+    "fresh": true,
+    "exp_id": "CV-G1-E0011-ctc-aligner"
+  },
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.6.0+cpu",
+    "machine": "Windows-11-10.0.26200-SP0"
+  }
+}

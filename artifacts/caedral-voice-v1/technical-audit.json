@@ -1,0 +1,118 @@
+{
+  "caedral-m1": {
+    "technical": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.552
+    },
+    "all": {
+      "control": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.401
+      },
+      "longform": {
+        "class": "NATURAL",
+        "wer": 0.0769,
+        "dnsmos": 3.485
+      },
+      "numbers": {
+        "class": "NATURAL",
+        "wer": 0.0,
+        "dnsmos": 3.481
+      },
+      "propernoun": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.406
+      }
+    }
+  },
+  "caedral-m2": {
+    "technical": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.496
+    },
+    "all": {
+      "control": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.55
+      },
+      "longform": {
+        "class": "NATURAL",
+        "wer": 0.0769,
+        "dnsmos": 3.54
+      },
+      "numbers": {
+        "class": "NATURAL",
+        "wer": 0.0,
+        "dnsmos": 3.494
+      },
+      "propernoun": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.532
+      }
+    }
+  },
+  "caedral-f1": {
+    "technical": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.425
+    },
+    "all": {
+      "control": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.469
+      },
+      "longform": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1026,
+        "dnsmos": 3.535
+      },
+      "numbers": {
+        "class": "NATURAL",
+        "wer": 0.0,
+        "dnsmos": 3.408
+      },
+      "propernoun": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.2222,
+        "dnsmos": 3.49
+      }
+    }
+  },
+  "caedral-f2": {
+    "technical": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.457
+    },
+    "all": {
+      "control": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.618
+      },
+      "longform": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1282,
+        "dnsmos": 3.471
+      },
+      "numbers": {
+        "class": "NATURAL",
+        "wer": 0.0,
+        "dnsmos": 3.454
+      },
+      "propernoun": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.472
+      }
+    }
+  }
+}

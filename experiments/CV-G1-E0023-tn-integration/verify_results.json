@@ -1,0 +1,37 @@
+[
+  {
+    "input": "The CPU supports AVX2 instructions but not AVX-512.",
+    "normalized": "The C P U supports AVX two instructions but not AVX five hundred twelve.",
+    "phonemes": "ðə sˈiː pˈiː jˈuː səpˈɔːrts eɪ vˈiː ˈɛks tˈuː ˌɪnstrˈʌkʃənz bˈʌt nˈɑːt eɪ vˈiː ˈɛks fˈaɪv hˈʌndrəd twˈɛlv.",
+    "skipped": [],
+    "phonemize_ms": 0.34
+  },
+  {
+    "input": "RTX 5090 costs $29.99 at 3.5 GHz with 10 GB VRAM.",
+    "normalized": "R T X fifty ninety costs twenty-nine dollars and ninety-nine cents at three point five gigahertz with ten gigabytes VRAM.",
+    "phonemes": "ˈɑːr tˈiː ˈɛks fˈɪftiː nˈaɪntiː kˈɑːsts twˈɛntiː nˈaɪn dˈɑːlɚz ənd nˈaɪntiː nˈaɪn sˈɛnts ˈæt θrˈiː pˈɔɪnt fˈaɪv ɡˈɪɡəhɚts wˈɪð tˈɛn ɡˈɪɡəbˌaɪts vˈiːɹæm.",
+    "skipped": [],
+    "phonemize_ms": 2.58
+  },
+  {
+    "input": "Python 3.13 and CUDA 12.8 support HTTP/2.",
+    "normalized": "Python three point thirteen and CUDA twelve point eight support HTTP version two.",
+    "phonemes": "pˈaɪθɑːn θrˈiː pˈɔɪnt θˈɜrːtˈiːn ənd kˈuːdə twˈɛlv pˈɔɪnt ˈeɪt səpˈɔːrt eɪtʃ tˈiː tˈiː pˈiː vˈɜrːʒən tˈuː.",
+    "skipped": [],
+    "phonemize_ms": 0.22
+  },
+  {
+    "input": "Visit https://caedral.com or email support@caedral.com",
+    "normalized": "Visit caedral dot com or email support at caedral dot com",
+    "phonemes": "vˈɪzɪt kəˈdɹɑːl dˈɑːt kˈɑːm ˈɔːr iːmˈeɪl səpˈɔːrt ˈæt kəˈdɹɑːl dˈɑːt kˈɑːm",
+    "skipped": [],
+    "phonemize_ms": 0.18
+  },
+  {
+    "input": "GPT-5 achieves 99.9% on 2026-08-23 benchmarks.",
+    "normalized": "GPT five achieves ninety-nine point nine percent on August twenty-third twenty twenty-six benchmarks.",
+    "phonemes": "dʒˈiː pˈiː tˈiː fˈaɪv ətʃˈiːvz nˈaɪntiː nˈaɪn pˈɔɪnt nˈaɪn pɚsˈɛnt ˈɑːn ˈɑːɡəst twˈɛntiː θˈɜrːd twˈɛntiː twˈɛntiː sˈɪks bˈɛntʃmˌɑːrks.",
+    "skipped": [],
+    "phonemize_ms": 0.26
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "file": "rescue-s1000-spk78-evalA.wav",
+    "step": 1000,
+    "speaker": "78",
+    "sentence": "evalA",
+    "class": "BABBLE",
+    "min_wer": 0.8889,
+    "dnsmos": 1.362
+  },
+  {
+    "file": "rescue-s1000-spk78-evalB.wav",
+    "step": 1000,
+    "speaker": "78",
+    "sentence": "evalB",
+    "class": "BABBLE",
+    "min_wer": 0.75,
+    "dnsmos": 1.174
+  },
+  {
+    "file": "rescue-s1000-spk2416-evalA.wav",
+    "step": 1000,
+    "speaker": "2416",
+    "sentence": "evalA",
+    "class": "PARTIAL_SPEECH",
+    "min_wer": 0.5556,
+    "dnsmos": 1.315
+  },
+  {
+    "file": "rescue-s1000-spk2416-evalB.wav",
+    "step": 1000,
+    "speaker": "2416",
+    "sentence": "evalB",
+    "class": "BABBLE",
+    "min_wer": 0.875,
+    "dnsmos": 1.253
+  },
+  {
+    "file": "rescue-s1000-spk6415-evalA.wav",
+    "step": 1000,
+    "speaker": "6415",
+    "sentence": "evalA",
+    "class": "BABBLE",
+    "min_wer": 1.2222,
+    "dnsmos": 0.962
+  },
+  {
+    "file": "rescue-s1000-spk6415-evalB.wav",
+    "step": 1000,
+    "speaker": "6415",
+    "sentence": "evalB",
+    "class": "BABBLE",
+    "min_wer": 0.875,
+    "dnsmos": 1.174
+  }
+]

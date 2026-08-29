@@ -1,0 +1,2 @@
+[resume] restored from disk: {'resumed_from': 'C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\CV-G1-E0003-training-system\\checkpoints\\last.pt', 'global_step': 30, 'epoch': 3, 'batches_consumed_in_epoch': 6, 'best_value': 0.2032894492149353, 'best_step': 30}
+[resume] {"global_step": 60, "epochs_completed": 7, "best_value": 0.09078830853104591, "best_step": 60, "nan_events": 0, "wall_s": 0.201, "out_dir": "experiments\\CV-G1-E0003-training-system", "phase_wall_s": 1.685}

@@ -1,0 +1,46 @@
+{
+  "profile": "A",
+  "label": "1GB / 1 vCPU",
+  "specified_limits": {"memory_bytes": 1000000000, "cpus": 1.0},
+  "actual_cgroup_enforcement": {
+    "memory.max": 999997440,
+    "memory.swap.max": 0,
+    "cpu.max": "100000 100000 (= quota/period = 1.0 vCPU)",
+    "verified_from_inside_container": true
+  },
+  "runtime_config": {
+    "engine": "frozen V1 (ORT CPU, ENABLE_ALL, intra_op=6, cpu_arena=false)",
+    "model_sha256_prefix": "7d5df8ecf7d4",
+    "voice": "caedral-f1", "speed": 1.0, "sample_rate": 24000,
+    "canonical_input_sha256": "9fa32ab54b55e8a36155a530c4e9069c85ead7e850e378180c3efa03f125fa9c"
+  },
+  "model_load": {
+    "pass": true,
+    "cold_engine_ctor_s": 5.391,
+    "warmup_s": 6.517,
+    "rss_after_load_mb": 507,
+    "rss_after_warmup_mb": 511,
+    "vmhwm_peak_during_load_mb": 623
+  },
+  "generation_30s": {
+    "possible": false,
+    "outcome": "OOM KILL during FIRST canonical ~30 s generation",
+    "docker_exit_code": 137,
+    "state_oomkilled": true,
+    "reps_completed": 0,
+    "note": "Process died after [COLD] line, before first rep persisted; kernel killed PID when fused-graph batch activations crossed memory.max. Consistent with host-measured engine-only long-form peak of 1136 MB (artifacts/benchmarks/v1-rtf-ram-recheck.json) > 1000 MB budget."
+  },
+  "memory_events": {
+    "oom_kill_observed": true,
+    "swap_spill": "none possible (memory.swap.max=0)"
+  },
+  "theoretical_serial_rpm": null,
+  "measured_sustainable_rpm": 0,
+  "recommended_production_rpm": 0,
+  "verdict": "UNSUPPORTED as specified",
+  "limiting_resource": "MEMORY during inference (not during load)",
+  "supplementary_data_point": {
+    "note": "Outside specified profile; see profile-aplus-1.4gb-1vcpu.json for the measured smallest-viable boundary.",
+    "tested_memory_bytes": 1400000000
+  }
+}

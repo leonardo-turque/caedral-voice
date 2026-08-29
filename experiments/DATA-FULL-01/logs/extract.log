@@ -1,0 +1,12 @@
+streaming train_clean_100.tar.gz -> C:\Users\leona\Downloads\caedral-voice\data\raw\librittsr-full
+  ... 3909 wavs written, 30 speakers touched, 30s elapsed
+  ... 7669 wavs written, 62 speakers touched, 60s elapsed
+  ... 11173 wavs written, 87 speakers touched, 90s elapsed
+  ... 14449 wavs written, 112 speakers touched, 120s elapsed
+  ... 18438 wavs written, 146 speakers touched, 150s elapsed
+  ... 21536 wavs written, 165 speakers touched, 180s elapsed
+  ... 23915 wavs written, 180 speakers touched, 210s elapsed
+  ... 27258 wavs written, 203 speakers touched, 240s elapsed
+  ... 30427 wavs written, 226 speakers touched, 270s elapsed
+  ... 32377 wavs written, 240 speakers touched, 300s elapsed
+done in 316s: 33232 wavs + 33233 txts written, 0 files already present (resume skips), 0 speakers skipped (complete), 247 speakers completed this run, 0 incomplete -> C:\Users\leona\Downloads\caedral-voice\data\raw\librittsr-full

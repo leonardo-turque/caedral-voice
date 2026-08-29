@@ -1,0 +1,134 @@
+{
+  "experiment": "CV-G1-E0024-int8",
+  "task_id": "QUANT-01",
+  "date": "2026-08-23",
+  "frozen_sentence": "Hello. This is the first generation of Caedral Voice.",
+  "voice": "af_sky",
+  "method": {
+    "quantization": "onnxruntime.quantization.quantize_dynamic, weight_type=QInt8, dynamic (activations quantized at runtime)",
+    "session": "4 intra-op threads, inter_op=1, CPU EP, graph opt ENABLE_ALL, fresh subprocess per model",
+    "rtf": "engine.synth() wall / audio seconds, median of 10 warm reps after 1 discarded cold call; 2 rounds in opposite order to cancel thermal drift",
+    "quality": "dual-ASR minWER (faster-whisper small.en/base.en int8) + speechmos DNSMOS ovrl @16k (repo-standard classify_preview scorers)"
+  },
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cpus": 16
+  },
+  "versions": {
+    "python": "3.13.15",
+    "onnxruntime": "1.29.0"
+  },
+  "size": {
+    "fp32_mb": 310.45,
+    "int8_mb": 87.69,
+    "reduction_pct": 71.8,
+    "ratio": 3.54
+  },
+  "quantization": {
+    "ok": true,
+    "error": null,
+    "wall_s": 10.35,
+    "output": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\CV-G1-E0024-int8\\kokoro-v1.0.int8.onnx",
+    "out_size_mb": 87.69
+  },
+  "rtf": {
+    "fp32": {
+      "reps_total": 20,
+      "median_wall_s": 1.889,
+      "audio_s": 3.2853,
+      "rtf_median": 0.575,
+      "min_wall_s": 1.7688,
+      "max_wall_s": 2.1674,
+      "round_medians_s": {
+        "round1": 1.858,
+        "round2": 2.0793
+      },
+      "cold_rtf": 0.554,
+      "walls_all_s": [
+        1.8657,
+        1.8763,
+        1.7876,
+        1.7909,
+        1.7688,
+        1.7719,
+        1.8734,
+        1.8577,
+        1.8584,
+        1.8731,
+        2.0572,
+        1.9017,
+        1.9866,
+        2.1674,
+        2.1213,
+        1.9977,
+        2.0777,
+        2.0808,
+        2.0975,
+        2.1591
+      ]
+    },
+    "int8": {
+      "reps_total": 20,
+      "median_wall_s": 18.8392,
+      "audio_s": 3.2427,
+      "rtf_median": 5.8097,
+      "min_wall_s": 15.9005,
+      "max_wall_s": 23.3027,
+      "round_medians_s": {
+        "round1": 18.9419,
+        "round2": 18.8392
+      },
+      "cold_rtf": 6.455,
+      "walls_all_s": [
+        19.6615,
+        16.7091,
+        15.9005,
+        18.4053,
+        19.9478,
+        19.4785,
+        17.3549,
+        17.071,
+        21.9514,
+        19.5204,
+        18.1645,
+        18.9583,
+        22.539,
+        19.6836,
+        18.237,
+        17.6057,
+        18.1825,
+        23.3027,
+        18.7461,
+        18.9324
+      ]
+    },
+    "speedup_ratio": 0.099,
+    "speedup_pct": -90.1,
+    "note": "speedup>1 means int8 is FASTER (lower RTF)"
+  },
+  "quality": {
+    "fp32": {
+      "class": "INTELLIGIBLE",
+      "min_wer": 0.1111,
+      "wer_small_en": 0.1111,
+      "wer_base_en": 0.1111,
+      "dnsmos_ovrl": 3.442,
+      "hypothesis": "Hello, this is the first generation of Kaedral voice.",
+      "rep_fraction": 0.0,
+      "spectral_flatness": 0.0107
+    },
+    "int8": {
+      "class": "INTELLIGIBLE",
+      "min_wer": 0.1111,
+      "wer_small_en": 0.2222,
+      "wer_base_en": 0.1111,
+      "dnsmos_ovrl": 3.282,
+      "hypothesis": "Hello, this is the first generation of Kydral Voice.",
+      "rep_fraction": 0.0,
+      "spectral_flatness": 0.0114
+    }
+  },
+  "verdict": "KILL",
+  "verdict_reason": "perf regression: RTF 0.575 -> 5.8097 (-90.1%, 10.1x slower); quality gates passed (WER 0.1111 <= 0.3, DNSMOS 3.282 >= 2.8) but int8 is not deployable for latency",
+}

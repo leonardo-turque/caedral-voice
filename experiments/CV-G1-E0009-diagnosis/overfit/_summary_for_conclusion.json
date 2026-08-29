@@ -1,0 +1,317 @@
+{
+  "verdict": "FAIL",
+  "gates": {
+    "gate1_flow_ratio": {
+      "flow_loss_step200": 38.6526,
+      "flow_loss_step2000": -33.9443,
+      "window_mean_191_210": 34.6298,
+      "window_mean_1981_2000": -47.8185,
+      "ratio": -0.8782,
+      "threshold": 0.15,
+      "pass": true
+    },
+    "gate2_phones_per_sec": {
+      "mean": 16.16,
+      "min": 12.26,
+      "max": 25.34,
+      "range": [
+        8.0,
+        25.0
+      ],
+      "pass": true,
+      "per_utterance": [
+        {
+          "id": "1081_128618_000027_000000",
+          "n_phones": 12,
+          "pred_frames": 73,
+          "gt_frames_est": 90,
+          "audio_s_pred": 0.779,
+          "gt_duration_s": 0.92,
+          "phones_per_sec": 15.41
+        },
+        {
+          "id": "1081_128618_000029_000000",
+          "n_phones": 12,
+          "pred_frames": 91,
+          "gt_frames_est": 94,
+          "audio_s_pred": 0.971,
+          "gt_duration_s": 0.96,
+          "phones_per_sec": 12.36
+        },
+        {
+          "id": "1081_128618_000007_000000",
+          "n_phones": 13,
+          "pred_frames": 80,
+          "gt_frames_est": 101,
+          "audio_s_pred": 0.853,
+          "gt_duration_s": 1.04,
+          "phones_per_sec": 15.23
+        },
+        {
+          "id": "1081_128618_000003_000000",
+          "n_phones": 16,
+          "pred_frames": 122,
+          "gt_frames_est": 116,
+          "audio_s_pred": 1.301,
+          "gt_duration_s": 1.202494,
+          "phones_per_sec": 12.3
+        },
+        {
+          "id": "1081_128618_000023_000000",
+          "n_phones": 19,
+          "pred_frames": 125,
+          "gt_frames_est": 123,
+          "audio_s_pred": 1.333,
+          "gt_duration_s": 1.272245,
+          "phones_per_sec": 14.25
+        },
+        {
+          "id": "1081_128618_000005_000000",
+          "n_phones": 17,
+          "pred_frames": 130,
+          "gt_frames_est": 135,
+          "audio_s_pred": 1.387,
+          "gt_duration_s": 1.40195,
+          "phones_per_sec": 12.26
+        },
+        {
+          "id": "1081_128618_000013_000000",
+          "n_phones": 21,
+          "pred_frames": 114,
+          "gt_frames_est": 154,
+          "audio_s_pred": 1.216,
+          "gt_duration_s": 1.6,
+          "phones_per_sec": 17.27
+        },
+        {
+          "id": "1081_128618_000024_000003",
+          "n_phones": 57,
+          "pred_frames": 306,
+          "gt_frames_est": 378,
+          "audio_s_pred": 3.264,
+          "gt_duration_s": 3.996054,
+          "phones_per_sec": 17.46
+        },
+        {
+          "id": "1034_121119_000001_000001",
+          "n_phones": 6,
+          "pred_frames": 41,
+          "gt_frames_est": 64,
+          "audio_s_pred": 0.437,
+          "gt_duration_s": 0.64,
+          "phones_per_sec": 13.72
+        },
+        {
+          "id": "1034_121119_000019_000001",
+          "n_phones": 10,
+          "pred_frames": 37,
+          "gt_frames_est": 69,
+          "audio_s_pred": 0.395,
+          "gt_duration_s": 0.69356,
+          "phones_per_sec": 25.34
+        },
+        {
+          "id": "1034_121119_000053_000000",
+          "n_phones": 15,
+          "pred_frames": 87,
+          "gt_frames_est": 93,
+          "audio_s_pred": 0.928,
+          "gt_duration_s": 0.950113,
+          "phones_per_sec": 16.16
+        },
+        {
+          "id": "1034_121119_000064_000008",
+          "n_phones": 17,
+          "pred_frames": 100,
+          "gt_frames_est": 99,
+          "audio_s_pred": 1.067,
+          "gt_duration_s": 1.022902,
+          "phones_per_sec": 15.94
+        },
+        {
+          "id": "1034_121119_000070_000000",
+          "n_phones": 21,
+          "pred_frames": 108,
+          "gt_frames_est": 124,
+          "audio_s_pred": 1.152,
+          "gt_duration_s": 1.28,
+          "phones_per_sec": 18.23
+        },
+        {
+          "id": "1034_121119_000064_000009",
+          "n_phones": 18,
+          "pred_frames": 109,
+          "gt_frames_est": 133,
+          "audio_s_pred": 1.163,
+          "gt_duration_s": 1.380136,
+          "phones_per_sec": 15.48
+        },
+        {
+          "id": "1034_121119_000018_000000",
+          "n_phones": 20,
+          "pred_frames": 104,
+          "gt_frames_est": 162,
+          "audio_s_pred": 1.109,
+          "gt_duration_s": 1.690159,
+          "phones_per_sec": 18.03
+        },
+        {
+          "id": "1034_121119_000071_000000",
+          "n_phones": 30,
+          "pred_frames": 147,
+          "gt_frames_est": 170,
+          "audio_s_pred": 1.568,
+          "gt_duration_s": 1.781179,
+          "phones_per_sec": 19.13
+        }
+      ]
+    },
+    "gate3_decode": {
+      "dir": "experiments\\CV-G1-E0009-diagnosis\\overfit\\audio",
+      "clips": [
+        "1081_128618_000027_000000",
+        "1081_128618_000013_000000",
+        "1034_121119_000053_000000",
+        "1034_121119_000071_000000"
+      ]
+    },
+    "gate4_asr": {
+      "model": "faster-whisper small.en int8",
+      "wer_threshold": 0.35,
+      "n_clips_pass": 0,
+      "required": 3,
+      "pass": false
+    }
+  },
+  "train": {
+    "steps": 2000,
+    "optimizer": "AdamW lr 2e-4 betas (0.9,0.98) wd 1e-6",
+    "schedule": "warmup 50 then constant",
+    "batching": "max_utts=3 max_frames=600",
+    "epochs_completed": 333,
+    "nan_events": 0,
+    "wall_s": 1267.7,
+    "it_s": 1.578
+  },
+  "suspect_probes": {
+    "mel_norm_train_vs_infer": {
+      "gt_logmel_stats": {
+        "mean": -1.816,
+        "std": 2.076,
+        "min": -6.48,
+        "max": 4.509
+      },
+      "inferred_mel_stats_ns0667": {
+        "mean": -1.706,
+        "std": 1.201,
+        "min": -5.657,
+        "max": 2.059
+      },
+      "note": "same transform family expected: power=1 mel, natural log, floor 1e-5; large offset/scale gap here would indicate a train/infer space mismatch"
+    },
+    "expand_tokens_mask_padding": {
+      "batch": 1,
+      "sum_durations": 73,
+      "mask_true_frames": 73,
+      "expanded_T": 73,
+      "n_mel_frames_reported": 73,
+      "consistent": true,
+      "pad_frames_in_batch": 0,
+      "wav_len_equals_T_times_hop": true
+    }
+  },
+  "decode_best": [
+    {
+      "id": "1081_128618_000027_000000",
+      "text": "BAKED PERCH",
+      "best_variant": "ns0.667",
+      "best_wer": 1.0,
+      "wer_gt_audio_ceiling": 1.0,
+      "wer": {
+        "ns0.667": 1.0,
+        "ns0.333": 1.0,
+        "ns0.1": 1.0,
+        "tfd_ns0.667": 1.0,
+        "tfd_ns0.1": 1.0,
+        "GT_AUDIO": 1.0
+      },
+      "hypotheses": {
+        "ns0.667": "",
+        "ns0.333": "Thank you.",
+        "ns0.1": "",
+        "tfd_ns0.667": "Thank you.",
+        "tfd_ns0.1": "",
+        "GT_AUDIO": "Think to perch."
+      }
+    },
+    {
+      "id": "1081_128618_000013_000000",
+      "text": "PERCH A L'ALLEMANDE",
+      "best_variant": "ns0.333",
+      "best_wer": 1.0,
+      "wer_gt_audio_ceiling": 1.333,
+      "wer": {
+        "ns0.667": 1.333,
+        "ns0.333": 1.0,
+        "ns0.1": 1.0,
+        "tfd_ns0.667": 1.0,
+        "tfd_ns0.1": 1.0,
+        "GT_AUDIO": 1.333
+      },
+      "hypotheses": {
+        "ns0.667": "Shh.  Blah, blah, blah.",
+        "ns0.333": "of",
+        "ns0.1": "Shklaaaaaa",
+        "tfd_ns0.667": "Okay.",
+        "tfd_ns0.1": "Thank you.",
+        "GT_AUDIO": "Bruges à la l'Amand."
+      }
+    },
+    {
+      "id": "1034_121119_000053_000000",
+      "text": "\"Well, I own it.\"",
+      "best_variant": "ns0.333",
+      "best_wer": 0.5,
+      "wer_gt_audio_ceiling": 0.0,
+      "wer": {
+        "ns0.667": 0.75,
+        "ns0.333": 0.5,
+        "ns0.1": 0.75,
+        "tfd_ns0.667": 1.0,
+        "tfd_ns0.1": 1.0,
+        "GT_AUDIO": 0.0
+      },
+      "hypotheses": {
+        "ns0.667": "I am in it.",
+        "ns0.333": "I am it.",
+        "ns0.1": "Oh, I am dead.",
+        "tfd_ns0.667": "",
+        "tfd_ns0.1": "and",
+        "GT_AUDIO": "Well, I own it."
+      }
+    },
+    {
+      "id": "1034_121119_000071_000000",
+      "text": "\"His dishonor reflects upon us.\"",
+      "best_variant": "ns0.333",
+      "best_wer": 1.0,
+      "wer_gt_audio_ceiling": 0.2,
+      "wer": {
+        "ns0.667": 1.4,
+        "ns0.333": 1.0,
+        "ns0.1": 1.0,
+        "tfd_ns0.667": 1.0,
+        "tfd_ns0.1": 1.0,
+        "GT_AUDIO": 0.2
+      },
+      "hypotheses": {
+        "ns0.667": "Just don't look back at my ass.",
+        "ns0.333": "It's perfect sloth.",
+        "ns0.1": "It's not fucks math.",
+        "tfd_ns0.667": "just a couple of minutes.",
+        "tfd_ns0.1": "Just move up.",
+        "GT_AUDIO": "His dishonour reflects upon us."
+      }
+    }
+  ]
+}

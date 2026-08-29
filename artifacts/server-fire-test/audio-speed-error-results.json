@@ -1,0 +1,158 @@
+{
+  "voices": [
+    {
+      "voice": "caedral-f1",
+      "status": 200,
+      "file": "welcome-caedral-f1.wav",
+      "bytes": 76844,
+      "props": {
+        "rate": 24000,
+        "channels": 1,
+        "sampwidth": 2,
+        "seconds": 1.6,
+        "riff_ok": true
+      },
+      "gen_wall_s": null,
+      "rtf_hdr": null,
+      "client_wall_s": 8.298
+    },
+    {
+      "voice": "caedral-f2",
+      "status": 200,
+      "file": "welcome-caedral-f2.wav",
+      "bytes": 96300,
+      "props": {
+        "rate": 24000,
+        "channels": 1,
+        "sampwidth": 2,
+        "seconds": 2.005,
+        "riff_ok": true
+      },
+      "gen_wall_s": null,
+      "rtf_hdr": null,
+      "client_wall_s": 9.084
+    },
+    {
+      "voice": "caedral-m1",
+      "status": 200,
+      "file": "welcome-caedral-m1.wav",
+      "bytes": 70700,
+      "props": {
+        "rate": 24000,
+        "channels": 1,
+        "sampwidth": 2,
+        "seconds": 1.472,
+        "riff_ok": true
+      },
+      "gen_wall_s": null,
+      "rtf_hdr": null,
+      "client_wall_s": 7.5
+    },
+    {
+      "voice": "caedral-m2",
+      "status": 200,
+      "file": "welcome-caedral-m2.wav",
+      "bytes": 92204,
+      "props": {
+        "rate": 24000,
+        "channels": 1,
+        "sampwidth": 2,
+        "seconds": 1.92,
+        "riff_ok": true
+      },
+      "gen_wall_s": null,
+      "rtf_hdr": null,
+      "client_wall_s": 9.703
+    }
+  ],
+  "speed_sweep": [
+    {
+      "speed": 0.75,
+      "status": 200,
+      "props": {
+        "rate": 24000,
+        "channels": 1,
+        "sampwidth": 2,
+        "seconds": 4.331,
+        "riff_ok": true
+      },
+      "gen_wall_s": null,
+      "rtf_hdr": null
+    },
+    {
+      "speed": 1.0,
+      "status": 200,
+      "props": {
+        "rate": 24000,
+        "channels": 1,
+        "sampwidth": 2,
+        "seconds": 3.093,
+        "riff_ok": true
+      },
+      "gen_wall_s": null,
+      "rtf_hdr": null
+    },
+    {
+      "speed": 1.25,
+      "status": 200,
+      "props": {
+        "rate": 24000,
+        "channels": 1,
+        "sampwidth": 2,
+        "seconds": 2.752,
+        "riff_ok": true
+      },
+      "gen_wall_s": null,
+      "rtf_hdr": null
+    }
+  ],
+  "errors": [
+    {
+      "probe": "invalid_model",
+      "status": 400,
+      "code": "UNKNOWN_MODEL"
+    },
+    {
+      "probe": "invalid_voice",
+      "status": 400,
+      "code": "UNKNOWN_VOICE"
+    },
+    {
+      "probe": "empty_input",
+      "status": 400,
+      "code": "EMPTY_INPUT"
+    },
+    {
+      "probe": "input_too_large",
+      "status": 400,
+      "code": "INPUT_TOO_LONG"
+    },
+    {
+      "probe": "invalid_speed",
+      "status": 400,
+      "code": "INVALID_SPEED"
+    },
+    {
+      "probe": "invalid_format",
+      "status": 400,
+      "code": "UNSUPPORTED_FORMAT"
+    },
+    {
+      "probe": "unsupported_language",
+      "status": 400,
+      "code": "UNSUPPORTED_LANGUAGE"
+    },
+    {
+      "probe": "malformed_json",
+      "status": 400,
+      "code": "MALFORMED_JSON"
+    },
+    {
+      "probe": "internal_auth_failed",
+      "status": 401,
+      "code": "UNAUTHORIZED"
+    }
+  ],
+  "speed_ratio_slow_over_default": 1.4,
+  "speed_ratio_fast_over_default": 0.89
+}

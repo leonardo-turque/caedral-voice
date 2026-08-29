@@ -1,0 +1,587 @@
+{
+  "report": "v1-asr-mismatch",
+  "date_utc": "2026-08-24T15:43:55.292318+00:00",
+  "asr_pair": [
+    "faster-whisper small.en int8",
+    "faster-whisper base.en int8"
+  ],
+  "note": "Read-only audit of FROZEN wavs; classes recomputed from minWER band only (no DNSMOS re-run); freeze-audit classes remain authoritative.",
+  "rows": [
+    {
+      "voice": "caedral-m1",
+      "sentence": "02-technical",
+      "role": "control-pass",
+      "reference": "The CPU supports AVX2 instructions but not AVX-512.",
+      "asr": {
+        "base.en": {
+          "transcript": "The CPU supports AVX-2 instructions, but not AVX-512.",
+          "wer": 0.2222,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "avx",
+                "2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not",
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not",
+                "avx",
+                "512"
+              ]
+            }
+          ]
+        },
+        "small.en": {
+          "transcript": "The CPU supports a VX2 instructions, but not a VX512.",
+          "wer": 0.4444,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "a",
+                "vx2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "a",
+                "vx512"
+              ]
+            }
+          ]
+        }
+      },
+      "best_asr": "base.en",
+      "min_wer": 0.2222,
+      "class_at_freeze": "INTELLIGIBLE"
+    },
+    {
+      "voice": "caedral-m2",
+      "sentence": "02-technical",
+      "role": "open-item",
+      "reference": "The CPU supports AVX2 instructions but not AVX-512.",
+      "asr": {
+        "base.en": {
+          "transcript": "The CPU supports a VX2 instructions, but not a VX512.",
+          "wer": 0.4444,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "a",
+                "vx2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "a",
+                "vx512"
+              ]
+            }
+          ]
+        },
+        "small.en": {
+          "transcript": "The CPU supports a VX2 instructions, but not a VX512.",
+          "wer": 0.4444,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "a",
+                "vx2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "a",
+                "vx512"
+              ]
+            }
+          ]
+        }
+      },
+      "best_asr": "base.en",
+      "min_wer": 0.4444,
+      "class_at_freeze": "PARTIAL_SPEECH"
+    },
+    {
+      "voice": "caedral-f1",
+      "sentence": "02-technical",
+      "role": "open-item",
+      "reference": "The CPU supports AVX2 instructions but not AVX-512.",
+      "asr": {
+        "base.en": {
+          "transcript": "The CPU supports a VX2 instructions, but not a VX512.",
+          "wer": 0.4444,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "a",
+                "vx2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "a",
+                "vx512"
+              ]
+            }
+          ]
+        },
+        "small.en": {
+          "transcript": "The CPU supports a VX2 instructions, but not a VX512.",
+          "wer": 0.4444,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "a",
+                "vx2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "a",
+                "vx512"
+              ]
+            }
+          ]
+        }
+      },
+      "best_asr": "base.en",
+      "min_wer": 0.4444,
+      "class_at_freeze": "PARTIAL_SPEECH"
+    },
+    {
+      "voice": "caedral-f2",
+      "sentence": "02-technical",
+      "role": "open-item",
+      "reference": "The CPU supports AVX2 instructions but not AVX-512.",
+      "asr": {
+        "base.en": {
+          "transcript": "The CPU supports a VX2 instructions, but not a VX512.",
+          "wer": 0.4444,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "a",
+                "vx2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "a",
+                "vx512"
+              ]
+            }
+          ]
+        },
+        "small.en": {
+          "transcript": "The CPU supports a VX2 instructions, but not a VX512.",
+          "wer": 0.4444,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "the",
+                "cpu",
+                "supports"
+              ],
+              "hyp": [
+                "the",
+                "cpu",
+                "supports"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx2"
+              ],
+              "hyp": [
+                "a",
+                "vx2"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "instructions",
+                "but",
+                "not"
+              ],
+              "hyp": [
+                "instructions",
+                "but",
+                "not"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "avx",
+                "512"
+              ],
+              "hyp": [
+                "a",
+                "vx512"
+              ]
+            }
+          ]
+        }
+      },
+      "best_asr": "base.en",
+      "min_wer": 0.4444,
+      "class_at_freeze": "PARTIAL_SPEECH"
+    },
+    {
+      "voice": "caedral-f1",
+      "sentence": "04-proper-names",
+      "role": "open-item",
+      "reference": "Welcome to Caedral, where every voice tells a story.",
+      "asr": {
+        "base.en": {
+          "transcript": "Welcome to Kedral, where every voice tells a starty.",
+          "wer": 0.2222,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "welcome",
+                "to"
+              ],
+              "hyp": [
+                "welcome",
+                "to"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "caedral"
+              ],
+              "hyp": [
+                "kedral"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "where",
+                "every",
+                "voice",
+                "tells",
+                "a"
+              ],
+              "hyp": [
+                "where",
+                "every",
+                "voice",
+                "tells",
+                "a"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "story"
+              ],
+              "hyp": [
+                "starty"
+              ]
+            }
+          ]
+        },
+        "small.en": {
+          "transcript": "Welcome to Kaedral, where every voice tells a startie.",
+          "wer": 0.2222,
+          "ops": [
+            {
+              "op": "ok",
+              "ref": [
+                "welcome",
+                "to"
+              ],
+              "hyp": [
+                "welcome",
+                "to"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "caedral"
+              ],
+              "hyp": [
+                "kaedral"
+              ]
+            },
+            {
+              "op": "ok",
+              "ref": [
+                "where",
+                "every",
+                "voice",
+                "tells",
+                "a"
+              ],
+              "hyp": [
+                "where",
+                "every",
+                "voice",
+                "tells",
+                "a"
+              ]
+            },
+            {
+              "op": "SUB",
+              "ref": [
+                "story"
+              ],
+              "hyp": [
+                "startie"
+              ]
+            }
+          ]
+        }
+      },
+      "best_asr": "base.en",
+      "min_wer": 0.2222,
+      "class_at_freeze": "INTELLIGIBLE"
+    }
+  ]
+}

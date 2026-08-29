@@ -1,0 +1,356 @@
+{
+  "group": "VOICE-STATE",
+  "kind": "Files",
+  "generated_utc": "2026-08-23T15:40:05.0547763Z",
+  "source_root": "C:\\Users\\leona\\Downloads\\caedral-voice",
+  "git_commit": "683862c3ecb20e109af809d1fce9877938809d70",
+  "manifest_only": false,
+  "zip": "VOICE-STATE.zip",
+  "zip_bytes": 449722,
+  "zip_sha256": "535babe0655ca4371dc3c6b6e5db20a238fb53a782eea303bc635e3f50cb3d35",
+  "file_count": 68,
+  "total_bytes": 1185490,
+  "skipped_locked": [],
+  "files": [
+    {
+      "path": "artifacts/caedral-voice-v1/provenance/PLACEHOLDER.md",
+      "bytes": 1780,
+      "sha256": "bd33c14955df2c3c09419c4f8ed68d1bd1d05b1e8beb5b5ce0605b955d4f7313"
+    },
+    {
+      "path": "artifacts/caedral-voice-v1/provenance/release-gates.json",
+      "bytes": 4398,
+      "sha256": "bb6a95bd95333c84a3cf9233a76c487f78c950f16075e7bfe9f8a26d996e440e"
+    },
+    {
+      "path": "artifacts/caedral-voice-v1/provenance/voices-provenance.json",
+      "bytes": 9266,
+      "sha256": "f0e3398a8f808d6ba6aa1831c7906f740d208285e35c9c0ab4cb965b5fc37f7d"
+    },
+    {
+      "path": "docs/arch/ARCH-PORTABILITY-AUDIT.md",
+      "bytes": 6366,
+      "sha256": "53fb794a6a022a304d4d63a881c756fec2219698a8d6a15369efb070fb30fa68"
+    },
+    {
+      "path": "docs/architecture/ARCH-NOTES-G1.md",
+      "bytes": 1687,
+      "sha256": "832e679fdb0306475436037ebf5a6bc03c641b8ec4f07cc44c1a93bc45ea1aae"
+    },
+    {
+      "path": "docs/architecture/CONVERGENCE-RECIPES.md",
+      "bytes": 10645,
+      "sha256": "57661e16780f35ebde0ce4622fd60e7b2e91e1500b53674c5ff8815201ee8c4d"
+    },
+    {
+      "path": "docs/architecture/LONGFORM-DESIGN.md",
+      "bytes": 10739,
+      "sha256": "05bc19439047336c3da4c65fc026dab5ecbd0eeeb9cbb008c3cb4f1018e50222"
+    },
+    {
+      "path": "docs/architecture/ONNX-EXPORT-PLAN-G1.md",
+      "bytes": 12360,
+      "sha256": "bb9af18bc15d7c0b21dd6b927693ad56f5e7b8c4dfca5c987c6045f39e9895b5"
+    },
+    {
+      "path": "docs/architecture/QUANTIZATION-PLAN-G1.md",
+      "bytes": 18353,
+      "sha256": "6617115894a5645da2050e0111047f2354657bd93041addff8f08fb40fb64b45"
+    },
+    {
+      "path": "docs/architecture/STYLE-BOOTSTRAP-G1.md",
+      "bytes": 17984,
+      "sha256": "2ec94016ff61d49a8f79417bf74d79ac04065d1b29cd2a2a32b264640552db65"
+    },
+    {
+      "path": "docs/benchmarks/BASELINE-MEASURED.md",
+      "bytes": 4441,
+      "sha256": "0325d38a925778428af1eebcaf87a57dc421ebe86a7ea3384b0378f607f77dfb"
+    },
+    {
+      "path": "docs/benchmarks/INDEPENDENT-REVIEW-PROTOCOL.md",
+      "bytes": 12679,
+      "sha256": "e1ffb74dca39d4e381c8ccdfae0b2334f67b124a45d64546dde30ad7d0dcf04e"
+    },
+    {
+      "path": "docs/benchmarks/NATURALNESS-GATE.md",
+      "bytes": 6944,
+      "sha256": "94f33b75e1db3e546308861d7c4ade46279c87953858cc45ed29729df53dda3e"
+    },
+    {
+      "path": "docs/benchmarks/PROSODY-EVAL.md",
+      "bytes": 13288,
+      "sha256": "4cb4e278b474a32bb3f8db5cf5fee42a14101aeb6b454ebcbf97220ab9be5b9a"
+    },
+    {
+      "path": "docs/benchmarks/TORTURE-LAB-PLAN.md",
+      "bytes": 33118,
+      "sha256": "30a5fdd345fb6e8b6dba611d8c87edf6225b01386ad40c607f7ec7b8338c7dd7"
+    },
+    {
+      "path": "docs/CAEDRAL-VOICE-V1-FINAL-REPORT.md",
+      "bytes": 14341,
+      "sha256": "9f558cc8f773fe35b1105a1d285e5bcb2db906e6ac28d5e792d83d6a62712488"
+    },
+    {
+      "path": "docs/checkpoints/PHASE-A-ENVIRONMENT.md",
+      "bytes": 2427,
+      "sha256": "7d2d5f8ada8ff05e6a43ed4c84831d4e539cb42ee3458a708bdeac042cdcfbe5"
+    },
+    {
+      "path": "docs/checkpoints/PHASE-B-RESEARCH.md",
+      "bytes": 4136,
+      "sha256": "525049f77f3f6e260476cada060abe9c78dd3c97a27e2147b737cdaff7f41bdc"
+    },
+    {
+      "path": "docs/checkpoints/PHASE-C-BENCHMARKS.md",
+      "bytes": 3576,
+      "sha256": "b4d61116cde41d631870207cce12f0abe658e9e554dfa4512897e185921a71fa"
+    },
+    {
+      "path": "docs/CURRENT-STATE-REPORT.md",
+      "bytes": 4529,
+      "sha256": "48ea681d91772cc42bec20b73f299ca413cc3d474dc4884da26ce956aa74b3bc"
+    },
+    {
+      "path": "docs/data/DATA-PILOT-ACQUISITION.md",
+      "bytes": 16621,
+      "sha256": "17e3a85eae09fa02cef1ff08a89c35d4161dbcfe9e385b63689beab0d842e017"
+    },
+    {
+      "path": "docs/data/DATASET-SURVEY.md",
+      "bytes": 18817,
+      "sha256": "610bc39a395356ceebcd4a73c972924159730cfb36d66d9163c164071f541fdd"
+    },
+    {
+      "path": "docs/data/DECODER-LICENSES.md",
+      "bytes": 17123,
+      "sha256": "b3dc61ec48aa188684808ed3d4fdd2d50066b80b05f1ee5c89fff908761352e0"
+    },
+    {
+      "path": "docs/data/LICENSE-MATRIX.md",
+      "bytes": 17878,
+      "sha256": "7fc8f37d17c361d553d49ce5463da7dc83e05e523d889cb9e233041232b510d5"
+    },
+    {
+      "path": "docs/data/VOICE-SLATE-V1.md",
+      "bytes": 5916,
+      "sha256": "9bc00479f955dd53c78155ad08df2fa5d7c3ed1878c4a8268b8020170ba0d75e"
+    },
+    {
+      "path": "docs/EXECUTION-QUEUE.md",
+      "bytes": 3997,
+      "sha256": "1707a06c9cdf0b0e4f4d71da5cc52a54d25d6cff4cf27f2bc4ffe93f2332dde2"
+    },
+    {
+      "path": "docs/inference/RUNTIME-DESIGN.md",
+      "bytes": 27236,
+      "sha256": "83e19929ac15d929f42094ff7799e1469e2d53ac22331a2e06cae4be8c49de13"
+    },
+    {
+      "path": "docs/MASTER-PLAN.md",
+      "bytes": 9722,
+      "sha256": "b14cfd7ac6824180a0f4535322ba26776dffdb875b1c699d30cb48927d655556"
+    },
+    {
+      "path": "docs/OPENCODE-HANDOFF.md",
+      "bytes": 8839,
+      "sha256": "88cd6ef803f6c962a5f6efcce28f4daad3caba79cfc1677e7504da5540cabe2e"
+    },
+    {
+      "path": "docs/releases/PRE-ARCH-VOICE-MIGRATION.md",
+      "bytes": 18458,
+      "sha256": "188140e4e18f8f8ed625fcfef4f53508cb9d64f3d52431c6e5e2729f6d43a81b"
+    },
+    {
+      "path": "docs/research/ACOUSTIC-ARCHITECTURES.md",
+      "bytes": 44777,
+      "sha256": "861585d16b62740e43006c2242bbbbd5e1010aad4edc24ebc31f4d65c2cccfbe"
+    },
+    {
+      "path": "docs/research/BASELINE-MATRIX.md",
+      "bytes": 40981,
+      "sha256": "13fa81efe4ddf1333f968bdf6aa460699323d2aa1123cd1727a0c4a507a540dc"
+    },
+    {
+      "path": "docs/research/CPU-INFERENCE-OPTIMIZATION.md",
+      "bytes": 52668,
+      "sha256": "8abd0122f768f633b8e51f72eea75c5456128272b549159d03feea4d392890e9"
+    },
+    {
+      "path": "docs/research/EVALUATION-BENCHMARKS.md",
+      "bytes": 46414,
+      "sha256": "7e635a08b4f1872da953df9d730d94fefa589ed88726b41d966c6dfb7adccd85"
+    },
+    {
+      "path": "docs/research/FIRECRAWL-WORKFLOW.md",
+      "bytes": 2576,
+      "sha256": "b4afe28b96f24751bcd74559bc9f5aadde680df977422dedae16c681cee4bbb0"
+    },
+    {
+      "path": "docs/research/MULTI-SPEAKER-PROSODY-STYLE.md",
+      "bytes": 59751,
+      "sha256": "b3768261a0d81fd3d292798744fcd31c7f377ce3437339894c942536e5308039"
+    },
+    {
+      "path": "docs/research/SOURCES.md",
+      "bytes": 3104,
+      "sha256": "dc245979364ee93ca4442ccf240d37263dc14b2d6f2852b286cc1bcaaa48978e"
+    },
+    {
+      "path": "docs/research/STATE-OF-THE-ART.md",
+      "bytes": 14141,
+      "sha256": "632f3963a0fad84948d9bcfc8f05a59b44354a84bdccb3d31e3f38e25c1bfb36"
+    },
+    {
+      "path": "docs/research/TEXT-FRONTEND.md",
+      "bytes": 50123,
+      "sha256": "f1e8f61a595f9202489e9902b1336495f8d98014d612bef0e45eb7dcd400c60e"
+    },
+    {
+      "path": "docs/research/VOCODERS-DECODERS.md",
+      "bytes": 43481,
+      "sha256": "16b2db54b60c3b983c7a18865a967873512dcb86f8b724d7b86f1eec9942a665"
+    },
+    {
+      "path": "docs/research/WEB-SOURCE-INDEX.md",
+      "bytes": 20546,
+      "sha256": "05bb0c5844e090786c0e349c92f4991934e2b2e6a3b35730137f8d1faf146cac"
+    },
+    {
+      "path": "docs/training/FIRST-CAEDRAL-VOICE.md",
+      "bytes": 1394,
+      "sha256": "936b1367d7d92df35b718cf4aba1e3526b4b6412b32c2e56a01a773099d9ddde"
+    },
+    {
+      "path": "docs/training/PILOT-PLAN.md",
+      "bytes": 3126,
+      "sha256": "74d29c18157bb1e983b37acec45bbb10229ed629655042dedaf9f9c67a32322d"
+    },
+    {
+      "path": "docs/training/TEACHER-DATA-ENGINE.md",
+      "bytes": 18102,
+      "sha256": "288827798dde1308dd37146c091dbeae636367cc07551bf93f9b3e8830aa8366"
+    },
+    {
+      "path": "experiments/CV-G1-E0001-frontend-bakeoff/conclusion.md",
+      "bytes": 8027,
+      "sha256": "70683b324e2c57bc74a8905e58497dd8aaf885ddecc647b93257abcc3950bcc1"
+    },
+    {
+      "path": "experiments/CV-G1-E0002-nar-prototype/conclusion.md",
+      "bytes": 8839,
+      "sha256": "1b94ea7c319a3cf81fa0f818afce30e205fbe2a648b2137bf21b0558d1f24c11"
+    },
+    {
+      "path": "experiments/CV-G1-E0003-training-system-fresh/metrics.jsonl",
+      "bytes": 16586,
+      "sha256": "c89fa07c11c136e26f274b236c885696ec204770df7dda951014dda816f5bae4"
+    },
+    {
+      "path": "experiments/CV-G1-E0003-training-system/conclusion.md",
+      "bytes": 6414,
+      "sha256": "8714e6c4ecd0220d4710797812e7230ab19b1580e062826c9743745e41ed8e78"
+    },
+    {
+      "path": "experiments/CV-G1-E0003-training-system/metrics.jsonl",
+      "bytes": 17368,
+      "sha256": "90a326d9aec15c144a59f9e8bc11cb444d1233a6aa737e657bd99d61aea2b195"
+    },
+    {
+      "path": "experiments/CV-G1-E0004-g2pen-fallback/conclusion.md",
+      "bytes": 1643,
+      "sha256": "ed25b35d96aa71f1a33ee3e79af2816b18b7b1ef315913bc096a9c7bb79f690b"
+    },
+    {
+      "path": "experiments/CV-G1-E0005-alignment-strategy/conclusion.md",
+      "bytes": 1788,
+      "sha256": "4fef9dee3b45fc42e6729286830f5bd604d8d972e14d5ac9f04b76dea32ecd19"
+    },
+    {
+      "path": "experiments/CV-G1-E0006-mas-flow-decoder/conclusion.md",
+      "bytes": 8773,
+      "sha256": "d39580a782ec3566e6ed9da34b12548b8e225119a13ee743bb2cb9ca69deb263"
+    },
+    {
+      "path": "experiments/CV-G1-E0007-pilot-training/smoke-a/metrics.jsonl",
+      "bytes": 7454,
+      "sha256": "65b6791aa8ff22124eae45c02be9f0686415755c388f5d32f80864b962248097"
+    },
+    {
+      "path": "experiments/CV-G1-E0009-diagnosis/overfit/conclusion.md",
+      "bytes": 4421,
+      "sha256": "62b7f318ed3fae99f17b7c186da2d140e6e6d69727d4803e3cb23e5bbb947d82"
+    },
+    {
+      "path": "experiments/CV-G1-E0009-diagnosis/overfit/metrics.jsonl",
+      "bytes": 49879,
+      "sha256": "0737878360cb721dc49a5f4cce4a6ae39934382258a2bf6d18f362df3cc28d29"
+    },
+    {
+      "path": "experiments/CV-G1-E0011-ctc-aligner/metrics.jsonl",
+      "bytes": 63842,
+      "sha256": "4425025ccefeb627eb19a7cb51bbf9152db376db62484915ea4068587bc37d1a"
+    },
+    {
+      "path": "experiments/CV-G1-E0012-teacher-gen/conclusion.md",
+      "bytes": 3244,
+      "sha256": "8d64bee179f7018897655d335e4014c77432ae1cee50f582b587af0b7a311a4f"
+    },
+    {
+      "path": "experiments/CV-G1-E0013-regressor/smoke-a/metrics.jsonl",
+      "bytes": 4566,
+      "sha256": "ea4c8c7a0ab2c0ebc7b801cee1249c91aee53fb4ef5007c5e02b8c38f290466f"
+    },
+    {
+      "path": "experiments/CV-G1-E0015-speaker-distinctness/conclusion.md",
+      "bytes": 3355,
+      "sha256": "5481485a082f73b241b07fd8044791361e849214c8c0a1417c7d723e39d23fd7"
+    },
+    {
+      "path": "experiments/CV-G1-E0016-qex-anchors/conclusion.md",
+      "bytes": 9172,
+      "sha256": "655bf895bf3df05f94074abd72406e9d8ade280ef781aaeec1489d473e8c8b5d"
+    },
+    {
+      "path": "experiments/CV-G1-E0017-onnx-export/conclusion.md",
+      "bytes": 6014,
+      "sha256": "64afd0ac873244ae9019893f8362b5a09c3e753b27211594c6ad2a33180984b5"
+    },
+    {
+      "path": "experiments/CV-G1-E0018-melcache/conclusion.md",
+      "bytes": 5273,
+      "sha256": "1447478f3f45c3732d41607bd97367c9dd73b4cbf2c45cf0bd741486f453d788"
+    },
+    {
+      "path": "experiments/DATA-FULL-01/conclusion.md",
+      "bytes": 4036,
+      "sha256": "e927d9f2960215668c0d6e4a0237cdb76f43ac0a0e2ee2746fce858a30294961"
+    },
+    {
+      "path": "experiments/EXPERIMENT-INDEX.md",
+      "bytes": 13734,
+      "sha256": "ace585755103d56c103f232473a79a589d3de2e233aced64c3263b40e288ff33"
+    },
+    {
+      "path": "experiments/pilot-tiny-15k/metrics.jsonl",
+      "bytes": 42920,
+      "sha256": "1d819cfe6afc8eea7c6e24263943ea64930ee37f127aa1fcadc8ec02d1d49a24"
+    },
+    {
+      "path": "experiments/r1/metrics.jsonl",
+      "bytes": 11369,
+      "sha256": "e896eb261b953e861d2e2284ae9c4a6c5af6d0b1a2cd370ea4abb4e88feecefd"
+    },
+    {
+      "path": "experiments/r2/metrics.jsonl",
+      "bytes": 89229,
+      "sha256": "b22b22c9a5c86b72536c3d2a9b32ccd65082159bb4c75ed679901ccd3d88d8d9"
+    },
+    {
+      "path": "experiments/r3/metrics.jsonl",
+      "bytes": 58696,
+      "sha256": "a2abdd88202753347590aaf68e5f398fd2c4346fd271334a458e64216ece5bc8"
+    }
+  ]
+}

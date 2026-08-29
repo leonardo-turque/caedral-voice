@@ -1,0 +1,103 @@
+[parent] round1 fp32@t4 ...
+[parent]   fp32@t4: med 2.0282s rtf 0.6174
+[parent] round1 opt@t4 ...
+[parent]   opt@t4: med 2.0679s rtf 0.6294
+[parent] round1 conservative@t4 ...
+[parent]   conservative@t4: med 2.207s rtf 0.6718
+[parent] round2 conservative@t4 ...
+[parent]   conservative@t4: med 2.1572s rtf 0.6566
+[parent] round2 opt@t4 ...
+[parent]   opt@t4: med 2.275s rtf 0.6925
+[parent] round2 fp32@t4 ...
+[parent]   fp32@t4: med 2.1547s rtf 0.6558
+[parent] round1 fp32@t6 ...
+[parent]   fp32@t6: med 2.0557s rtf 0.6257
+[parent] round1 opt@t6 ...
+[parent]   opt@t6: med 1.9948s rtf 0.6072
+[parent] round1 conservative@t6 ...
+[parent]   conservative@t6: med 2.0219s rtf 0.6154
+[parent] round2 conservative@t6 ...
+[parent]   conservative@t6: med 1.9791s rtf 0.6024
+[parent] round2 opt@t6 ...
+[parent]   opt@t6: med 2.0076s rtf 0.6111
+[parent] round2 fp32@t6 ...
+[parent]   fp32@t6: med 2.3925s rtf 0.7282
+[parent] round1 dynamic-natural@t6 ...
+[parent]   dynamic-natural@t6: med 2.9882s rtf 0.7378
+[parent] round1 static-L100@t6 ...
+[parent]   static-L100@t6: med 5.0434s rtf 1.2453
+[parent] round1 static-L300@t6 ...
+[parent]   static-L300@t6: med 10.8631s rtf 2.6822
+[parent] round1 static-L512@t6 ...
+[parent]   static-L512@t6: med 17.1887s rtf 4.2441
+[parent] round2 static-L512@t6 ...
+[parent]   static-L512@t6: med 11.2932s rtf 2.7884
+[parent] round2 static-L300@t6 ...
+[parent]   static-L300@t6: med 6.9101s rtf 1.7062
+[parent] round2 static-L100@t6 ...
+[parent]   static-L100@t6: med 2.9479s rtf 0.7279
+[parent] round2 dynamic-natural@t6 ...
+[parent]   dynamic-natural@t6: med 1.8078s rtf 0.4464
+{
+  "configs": {
+    "fp32@t4": 0.6346,
+    "opt@t4": 0.6476,
+    "conservative@t4": 0.6607,
+    "fp32@t6": 0.6723,
+    "opt@t6": 0.6072,
+    "conservative@t6": 0.6042,
+    "dynamic-natural@t6": 0.5669,
+    "static-L100@t6": 0.858,
+    "static-L300@t6": 2.0444,
+    "static-L512@t6": 3.0251
+  },
+  "deltas": {
+    "opt@t4": {
+      "baseline_rtf": 0.6346,
+      "variant_rtf": 0.6476,
+      "speedup_pct": -2.01,
+      "rtf_delta": 0.013
+    },
+    "conservative@t4": {
+      "baseline_rtf": 0.6346,
+      "variant_rtf": 0.6607,
+      "speedup_pct": -3.95,
+      "rtf_delta": 0.0261
+    },
+    "opt@t6": {
+      "baseline_rtf": 0.6723,
+      "variant_rtf": 0.6072,
+      "speedup_pct": 10.72,
+      "rtf_delta": -0.0651
+    },
+    "conservative@t6": {
+      "baseline_rtf": 0.6723,
+      "variant_rtf": 0.6042,
+      "speedup_pct": 11.27,
+      "rtf_delta": -0.0681
+    },
+    "static-L100-vs-dynamic-natural": {
+      "dynamic_rtf": 0.5669,
+      "static_rtf": 0.858,
+      "speedup_pct": -33.93
+    },
+    "static-L300-vs-dynamic-natural": {
+      "dynamic_rtf": 0.5669,
+      "static_rtf": 2.0444,
+      "speedup_pct": -72.27
+    },
+    "static-L512-vs-dynamic-natural": {
+      "dynamic_rtf": 0.5669,
+      "static_rtf": 3.0251,
+      "speedup_pct": -81.26
+    }
+  },
+  "targets": {
+    "gate_rtf_max": 0.4,
+    "stretch_rtf_max": 0.2,
+    "best_config": "dynamic-natural@t6",
+    "best_rtf": 0.5669,
+    "gate_met": false,
+    "stretch_met": false
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "corpus_id": "caedral-eval-corpus",
+  "version": "1.0",
+  "frozen_date": "2026-08-22",
+  "license_note": "Original text authored for this project; no third-party copyrighted content.",
+  "usage_rules": [
+    "Render item text verbatim after JSON decode. No normalization or substitution.",
+    "edge_case items may be rejected by a frontend; clean rejection is the expected behavior where noted.",
+    "Never edit this file to improve scores. New version files only."
+  ],
+  "categories": [
+    {
+      "id": "short_conversational",
+      "description": "Everyday spoken English, 4-12 words.",
+      "items": [
+        {"id": "conv_001", "text": "Hey, did you already eat, or should we grab something on the way?"},
+        {"id": "conv_002", "text": "I'll call you back in five minutes, I'm still in the meeting."},
+        {"id": "conv_003", "text": "No way. That's actually hilarious."},
+        {"id": "conv_004", "text": "Can you send me the link when you get a chance?"},
+        {"id": "conv_005", "text": "It's fine, honestly. Don't worry about it."},
+        {"id": "conv_006", "text": "So anyway, that's why we ended up taking the train home."},
+        {"id": "conv_007", "text": "Yeah, I saw it this morning. Pretty wild, right?"},
+        {"id": "conv_008", "text": "Let me know if you need anything else from me."}
+      ]
+    },
+    {
+      "id": "long_paragraph",
+      "description": "Multi-sentence paragraphs, 250-600 characters.",
+      "items": [
+        {"id": "para_001", "text": "The morning market opened early, as it always did on Saturdays. Vendors arranged their stalls under striped awnings while the streetlights were still on, and by seven o'clock the narrow road smelled of bread, wet stone, and strong coffee. Most customers were regulars who barely needed to speak; a nod, a held-up finger, and the exact amount of change was already waiting on the counter."},
+        {"id": "para_002", "text": "Sleep researchers have long argued about what happens to memory during the night. The dominant view is that the brain replays fragments of the day at high speed, strengthening useful connections and letting the rest fade. What remains controversial is the selection mechanism: why does one awkward conversation survive for decades while an entire productive afternoon can vanish without a trace?"},
+        {"id": "para_003", "text": "Before you begin assembling the shelf, lay out every part on a flat surface and check it against the parts list. It is far easier to notice a missing bolt now than halfway through. Tighten each connection only until it is snug; the final tightening happens once the whole frame stands square. If a panel seems warped, set it aside and use the spare — forcing it will split the wood."},
+        {"id": "para_004", "text": "The ferry left the harbor at dusk, its deck lights reflecting off water the color of slate. For the first twenty minutes the coastline stayed close enough to pick out individual houses, their windows glowing yellow against the darkening hills. Then the land simply let go, and there was nothing left to see but the wake unspooling behind the ship and, far ahead, the low white shape of the island."}
+      ]
+    },
+    {
+      "id": "technical_programming",
+      "description": "Technical and programming vocabulary.",
+      "items": [
+        {"id": "tech_001", "text": "The compiler inlines the recursive function, then applies tail-call optimization before emitting intermediate representation."},
+        {"id": "tech_002", "text": "We migrated the database to a sharded Postgres cluster with asynchronous replication and point-in-time recovery."},
+        {"id": "tech_003", "text": "The kernel schedules threads per core, but hyperthreading means two logical CPUs may share one execution unit."},
+        {"id": "tech_004", "text": "Set the Content-Type header to application/json, sign the request with HMAC-SHA256, and retry on HTTP 429 with exponential backoff."},
+        {"id": "tech_005", "text": "The quantized model runs int8 matrix multiplications with SIMD vectorization across four SIMD lanes."},
+        {"id": "tech_006", "text": "Our CI pipeline runs unit tests, then integration tests inside a container, then deploys behind a feature flag."}
+      ]
+    },
+    {
+      "id": "numbers_dates_currency",
+      "description": "Numerical expressions requiring text normalization.",
+      "items": [
+        {"id": "num_001", "text": "The invoice totals $1,247.83, due within 30 days."},
+        {"id": "num_002", "text": "Attendance reached 48,213 people, up 12.5% from last year."},
+        {"id": "num_003", "text": "She was born on February 29th, 1996, which only comes around every four years."},
+        {"id": "num_004", "text": "Call 555-0142 between 9:30 AM and 5:00 PM Eastern Time."},
+        {"id": "num_005", "text": "The recipe calls for 350g of flour, 2 eggs, and 180 ml of milk."},
+        {"id": "num_006", "text": "In 1947, prices rose by roughly 14%; by Q3 2026 inflation had cooled to about 2.1%."},
+        {"id": "num_007", "text": "That apartment costs €2,400 a month, not including utilities of around €150."},
+        {"id": "num_008", "text": "The marathon record now stands at 2 hours, 0 minutes and 35 seconds."},
+        {"id": "num_009", "text": "Dial +44 20 7946 0958 if you're calling from abroad."},
+        {"id": "num_010", "text": "Version 2.11.3 fixed 47 bugs and added support for up to 16,384 simultaneous connections."}
+      ]
+    },
+    {
+      "id": "acronyms_initialisms",
+      "description": "Acronyms with mixed pronunciation styles (letter-by-letter vs lexicalized).",
+      "items": [
+        {"id": "acr_001", "text": "The NASA probe transmitted data through the DSN antenna array in California."},
+        {"id": "acr_002", "text": "Please read the FAQ before opening an issue on GitHub."},
+        {"id": "acr_003", "text": "An API gateway routes each HTTP request to the right microservice."},
+        {"id": "acr_004", "text": "She earned her PhD in AI from MIT, then joined a startup working on AR interfaces."},
+        {"id": "acr_005", "text": "The CPU supports AVX2 and AVX-VNNI instructions but not AVX-512."},
+        {"id": "acr_006", "text": "COVID changed how the WHO coordinates global health responses."},
+        {"id": "acr_007", "text": "Our SLA guarantees 99.9% uptime measured monthly by an independent auditor."},
+        {"id": "acr_008", "text": "The URL shortener stores each ID in Redis with a TTL of 30 days."}
+      ]
+    },
+    {
+      "id": "names_places",
+      "description": "Proper nouns, foreign-origin names, place names.",
+      "items": [
+        {"id": "nm_001", "text": "Siobhan met Rajesh and Yuki at the café on Worcester Boulevard."},
+        {"id": "nm_002", "text": "The flight from São Paulo to Zürich stops briefly in Lisbon."},
+        {"id": "nm_003", "text": "Professor Ng's lecture covered work by Vaswani, Hochreiter, and Schmidhuber."},
+        {"id": "nm_004", "text": "Worcestershire sauce originated in Worcester, but few outsiders pronounce either correctly."},
+        {"id": "nm_005", "text": "Kwame Achebe reports from Lagos, with contributions from Mei-Ling Chen in Taipei."},
+        {"id": "nm_006", "text": "They drove through Albuquerque, Santa Fe, and finally Truth or Consequences."}
+      ]
+    },
+    {
+      "id": "difficult_phonemes",
+      "description": "Tongue-twisters and phonemically dense material.",
+      "items": [
+        {"id": "pho_001", "text": "She sells sea shells by the sea shore, and the shells she sells are surely from seashores."},
+        {"id": "pho_002", "text": "The thirty-third thirsty thrush thrust three thousand thistles through its thick throat."},
+        {"id": "pho_003", "text": "Red lorry, yellow lorry, red lorry, yellow lorry, rarely really rolling along."},
+        {"id": "pho_004", "text": "Irish wristwatch, Swiss wristwatch, which wristwatch is a Swiss Irish wristwatch?"},
+        {"id": "pho_005", "text": "A proper copper coffee pot from the pop-up shop on Copper Street."},
+        {"id": "pho_006", "text": "Six slippery snails slid silently seaward."},
+        {"id": "pho_007", "text": "The sixth sick sheikh's sixth sheep's sick."},
+        {"id": "pho_008", "text": "Peggy Babcock, Peggy Babcock, Peggy Babcock."}
+      ]
+    },
+    {
+      "id": "heteronyms",
+      "description": "Same spelling, different pronunciation/meaning — requires context disambiguation.",
+      "items": [
+        {"id": "het_001", "text": "I had to bow to the pressure and take a bow at the same time."},
+        {"id": "het_002", "text": "The wind was too strong to wind the clock."},
+        {"id": "het_003", "text": "After a tear rolled down her cheek, she began to tear the letter apart."},
+        {"id": "het_004", "text": "They decided to close the door near the close of business."},
+        {"id": "het_005", "text": "The lead singer will lead the band through the lead sheet."},
+        {"id": "het_006", "text": "Please object if you see the strange object in the garden."},
+        {"id": "het_007", "text": "Farmers produce produce that city dwellers barely think about."},
+        {"id": "het_008", "text": "The dove dove into the river as evening fell."},
+        {"id": "het_009", "text": "He wound the bandage around the wound carefully."},
+        {"id": "het_010", "text": "Does the dry desert desert travelers, or do travelers desert reason?"}
+      ]
+    },
+    {
+      "id": "punctuation_heavy",
+      "description": "Text where punctuation must drive pausing without breaking flow.",
+      "items": [
+        {"id": "pun_001", "text": "Wait — no, don't! Stop... just... stop. Okay? Okay."},
+        {"id": "pun_002", "text": "\"Did he really say,\" she paused, \"that the meeting was cancelled?\""},
+        {"id": "pun_003", "text": "First: read the manual. Second: try it yourself. Third — and this matters — ask for help."},
+        {"id": "pun_004", "text": "Yes; no; maybe; absolutely not; fine, whatever you think is best."},
+        {"id": "pun_005", "text": "The results (all three trials, mind you) were consistent: within 2% — remarkable, really."}
+      ]
+    },
+    {
+      "id": "questions_exclamations",
+      "description": "Intonation-sensitive forms.",
+      "items": [
+        {"id": "qex_001", "text": "Are you seriously telling me this whole thing was your idea?"},
+        {"id": "qex_002", "text": "What happens if we press this button?"},
+        {"id": "qex_003", "text": "You're coming to the party, aren't you?"},
+        {"id": "qex_004", "text": "We actually did it!"},
+        {"id": "qex_005", "text": "Get out! No — wait, come back, I was joking!"},
+        {"id": "qex_006", "text": "Who would have thought a simple question could cause all this trouble?"}
+      ]
+    },
+    {
+      "id": "emotional_expressive",
+      "description": "Sentences implying distinct emotional delivery.",
+      "items": [
+        {"id": "emo_001", "text": "I can't believe you kept this secret from me for three entire years.", "suggested_style": "serious"},
+        {"id": "emo_002", "text": "We won! We actually won the championship!", "suggested_style": "excited"},
+        {"id": "emo_003", "text": "It's okay. Breathe. Everything is going to be alright, I promise.", "suggested_style": "calm"},
+        {"id": "emo_004", "text": "Oh, come on. You promised you'd be here, and now you're leaving?", "suggested_style": "frustrated"},
+        {"id": "emo_005", "text": "Welcome, everyone, to another episode of our little show.", "suggested_style": "warm"},
+        {"id": "emo_006", "text": "And on the third day, the storm finally broke over the valley below.", "suggested_style": "dramatic"},
+        {"id": "emo_007", "text": "Shh... the baby's finally asleep.", "suggested_style": "soft"},
+        {"id": "emo_008", "text": "Alright team, deep breath — this is the pitch that changes everything.", "suggested_style": "energetic"}
+      ]
+    },
+    {
+      "id": "dialogue",
+      "description": "Multi-turn exchanges for conversational continuity testing.",
+      "items": [
+        {"id": "dlg_001", "text": "\"You're late.\" \"I know, I know — the train sat outside the station for twenty minutes.\" \"Twenty minutes? It took you an hour.\" \"Fine. The train AND my alarm conspired against me.\""},
+        {"id": "dlg_002", "text": "\"Do you want the good news first, or the bad news?\" \"Good news.\" \"We found your keys.\" \"And the bad news?\" \"In the freezer.\""}
+      ]
+    },
+    {
+      "id": "formal_prose",
+      "description": "Professional/narration register.",
+      "items": [
+        {"id": "frm_001", "text": "This report examines the quarterly performance of the portfolio across three asset classes, with particular attention to risk-adjusted returns under volatile market conditions."},
+        {"id": "frm_002", "text": "Ladies and gentlemen, thank you for joining us today. Over the next forty minutes, I will outline our strategy, address your most pressing concerns, and conclude with a question period."},
+        {"id": "frm_003", "text": "The committee has reviewed all submitted proposals and recommends approval of the revised plan, subject to the conditions outlined in Appendix C of the final document."}
+      ]
+    },
+    {
+      "id": "informal_casual",
+      "description": "Relaxed, colloquial register with fillers and contractions.",
+      "items": [
+        {"id": "inf_001", "text": "Nah, man, that movie was kinda mid, not gonna lie."},
+        {"id": "inf_002", "text": "So I'm like, okay, whatever, and then she just walks off. Like, what?"},
+        {"id": "inf_003", "text": "Gonna grab a coffee, wanna come? There's a new place by the station."},
+        {"id": "inf_004", "text": "Ugh, Monday again. Already?"}
+      ]
+    },
+    {
+      "id": "longform",
+      "description": "Single continuous narration (~1,900 words) for long-form consistency testing.",
+      "items": [
+        {"id": "long_001", "text": "There is a particular hour on a small island when the day has not quite decided what it wants to become. The fishing boats are already out, their lights dissolving into a horizon the color of brushed steel, and yet the bakery on the corner has only just unlocked its door. The woman who runs it has been awake since four, as her mother was, and her grandmother before her, and she will tell you, if you ask, that the secret to good bread is not the flour and it is not the water and it is certainly not the oven. It is the willingness to be awake at an hour when the rest of the town has no intention of joining you.\n\nBy six, the square smells of yeast and diesel and salt. Men in rubber boots argue cheerfully about the weather with the certainty of people who have never once been right. A dog of no distinguishable breed patrols the benches for abandoned breakfasts, moving with the unhurried confidence of an official inspector. Above them all, gulls wheel and complain, conducting their endless litigation over scraps and territory and ancient grudges no human will ever fully understand.\n\nThe school opens at half past eight, which means the children are already in the harbor by seven, daring each other toward the edge of the pier in clothes they were told to keep dry. In summer the water forgives them. In October it does not, and every year there is exactly one child who needs reminding of this, and every year the town pretends, collectively and with great discipline, not to enjoy it.\n\nDown the coast road, past the chapel with the leaning gate, the road climbs through pines that smell of resin and rain and then breaks suddenly onto open moor. From up here the island reveals its whole geography at once: the curved arm of the harbor, the silver scar of the airstrip built in a hurry during a war most residents only half remember, the scattered white houses connected by lanes that follow sheep trails older than any map. On clear days you can see the mainland, a thin gray suggestion on the northern horizon, close enough to feel reachable and far enough to feel like a different country.\n\nThe ferry arrives twice a day in winter and four times in summer, and its arrival remains, after all these years, an event. Shopkeepers adjust their window displays. Someone puts fresh coffee on. Teenagers who claim to find the island unbearable materialize at the railings of the pier with suspicious punctuality, watching for unfamiliar faces with the intensity of customs officers. When the ramp comes down, the same ritual unfolds: crates of vegetables and newspapers and, once a month, something enormous and inexplicable — a piano, a greenhouse, a motorcycle sidecar — that will occupy the town's conversation for a week.\n\nTourists come between May and September. They photograph the lighthouse, which is automated now and houses batteries instead of a keeper, and they ask, always, whether the water is cold. The answer is yes. It is always yes. The islanders have developed a dozen ways of saying it, from the blunt to the poetic, but the meaning never changes, and neither does the temperature. Some visitors swim anyway, emerging gasping and triumphant, converted instantly into evangelists for an experience everyone else continues politely to decline.\n\nIn the evenings the harbor pub fills with a mixture of fishermen, builders, retirees, and the occasional stranded sailor telling a story that grows more detailed with each retelling. The television above the bar shows football matches nobody locally cares about, which suits everyone fine; it provides light and the impression of company without imposing opinions. Conversations overlap rather than compete. Arguments begin and dissolve and reassemble under different names. At closing time the room empties in stages, the way a tide goes out, leaving chairs askew and one or two souls reluctant to admit the night has ended.\n\nWinter strips the island down to its essentials. The population, never large, contracts further as boats are hauled up and cottages shuttered. Wind arrives that makes the walk to the shop an act of commitment. Electricity fails, usually briefly, always memorably, and neighbors check on neighbors with a thoroughness that would embarrass any emergency service. And then, without ceremony, somewhere in late February, the light changes. The days stretch. The first lambs appear, absurd and brand-new in the fields. Boats go back in the water, and the bakery woman, awake since four as always, adds a seasonal bread to the shelf and refuses to explain the recipe.\n\nIf you ask the residents why they stay — and visitors do ask, usually around the second drink — you will receive answers ranging from family to stubbornness to a shrug that contains multitudes. But watch them on an ordinary Tuesday, nodding to each other across the square, arguing about parking with people whose grandparents argued about moorings, and you will understand that the question itself is slightly wrong. Nobody stays on an island because of a list of advantages. They stay because the place fits some shape inside them the way a key fits a lock, imperfectly, with a familiar wiggle, but unmistakably.\n\nThe last boat of the day leaves at seven. From the pier you can watch it shrink toward the mainland until its lights merge with the shore's, and behind you the streetlamps hum on one by one, and the square empties, and the dog of no particular breed completes its final inspection. Somewhere out on the water the fishing boats are coming home. Tomorrow the bread will rise, the gulls will litigate, the children will test the sea's patience, and the island will go on being precisely, stubbornly, what it is."}
+      ]
+    },
+    {
+      "id": "edge_cases",
+      "description": "Hostile/degenerate inputs. Clean rejection or graceful handling is REQUIRED behavior; note expected outcome per item.",
+      "items": [
+        {"id": "edge_001", "text": "", "expected": "reject_or_silence"},
+        {"id": "edge_002", "text": "   ", "expected": "reject_or_silence"},
+        {"id": "edge_003", "text": "a", "expected": "synthesize"},
+        {"id": "edge_004", "text": "hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello", "expected": "synthesize_no_collapse"},
+        {"id": "edge_005", "text": "!!!???...,;;;---", "expected": "silence_or_minimal"},
+        {"id": "edge_006", "text": "THIS IS SHOUTING AND it MIXES cases Abruptly.", "expected": "synthesize"},
+        {"id": "edge_007", "text": "Visit https://example.com/some/very/long/path?q=caedral+voice&lang=en#section-42 or email someone@example.org.", "expected": "read_gracefully"},
+        {"id": "edge_008", "text": "2 + 2 = 4, but x^2 - y^2 = (x-y)(x+y).", "expected": "read_gracefully"},
+        {"id": "edge_009", "text": "“Smart quotes” — and em-dashes… plus ellipses…", "expected": "synthesize"},
+        {"id": "edge_010", "text": "😀🎉🚀 voices 🗣️ with emojis 🎵 sprinkled in 🔥", "expected": "skip_emoji_read_text"},
+        {"id": "edge_011", "text": "Supercalifragilisticexpialidociousantidisestablishmentarianismpneumonoultramicroscopicsilicovolcanoconiosis", "expected": "attempt_or_fail_cleanly"},
+        {"id": "edge_012", "text": "\t\n\r mixed whitespace\t\tand control chars\r\nhere\n\n", "expected": "sanitize_then_synthesize"}
+      ]
+    }
+  ]
+}

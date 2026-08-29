@@ -1,0 +1,29 @@
+{
+  "baseline_profile": "VOCODER_BASELINE_PROFILE",
+  "date": "2026-08-23",
+  "total_kernel_time_ms": 21848.3,
+  "breakdown": {
+    "STFT_iSTFT": {
+      "ms": 2547.2,
+      "pct": 11.7
+    },
+    "ConvTranspose": {
+      "ms": 575.1,
+      "pct": 2.6
+    },
+    "Conv_resblocks_total": {
+      "ms": "~15000",
+      "pct": "~70"
+    },
+    "encoder_predictors": {
+      "ms": "<1000",
+      "pct": "<5"
+    }
+  },
+  "top_nodes": [
+    "/decoder/decoder/generator/STFT",
+    "/decoder/decoder/generator/ups.1/ConvTranspose",
+    "/decoder/decoder/generator/resblocks.{4,5}/convs*",
+    "/decoder/decoder/generator/noise_res.1/convs*"
+  ]
+}

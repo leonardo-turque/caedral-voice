@@ -1,0 +1,17 @@
+{
+ "experiment": "CV-G1-E0015-speaker-distinctness",
+ "date": "2026-08-22",
+ "python": "3.13.15",
+ "torch": "2.6.0+cpu",
+ "sklearn": "1.9.0",
+ "resemblyzer": "0.1.4 (installed --no-deps; VAD via webrtcvad-wheels 2.0.14)",
+ "n_embeddings": 150,
+ "embed_seconds": 55.7,
+ "wall_seconds_total": 58.0,
+ "rss_mb": {
+  "before_load": 32.4,
+  "peak_with_model": 431.0,
+  "after_unload": 424.1
+ },
+ "commit_policy": "nothing committed (per task)"
+}

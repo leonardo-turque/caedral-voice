@@ -1,0 +1,17 @@
+{
+  "frames_L": 18961,
+  "y_raw_len": 94820,
+  "H1_convtranspose_manual_maxdiff": 7.450580596923828e-08,
+  "H2_windowsum_env_maxdiff": 0.03674575768707976,
+  "H2_rel": 0.3333333858526538,
+  "H3_full_native_maxdiff": 0.14698303074831903,
+  "H3_rel_to_absmax": 0.3333333858526538,
+  "H3_corr": 1.0000005596770765,
+  "librosa_len": 94800,
+  "librosa_alpha_fit": 1.4999999209012147,
+  "librosa_scaled_maxdiff": 4.681938009546699e-06,
+  "librosa_scaled_rel": 1.0617866845777257e-05,
+  "librosa_corr_raw": 0.999999999999772,
+  "librosa_interior_maxdiff": 4.981297640482829e-07,
+  "librosa_badzone_count": 0
+}

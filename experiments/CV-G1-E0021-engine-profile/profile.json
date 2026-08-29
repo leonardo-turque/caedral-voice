@@ -1,0 +1,169 @@
+{
+  "experiment": "CV-G1-E0021-engine-profile",
+  "date": "2026-08-23",
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "physical_cpus": 16
+  },
+  "versions": {
+    "kokoro_onnx": "0.6.1",
+    "onnxruntime": "1.29.0",
+    "python": "3.13.15"
+  },
+  "model": {
+    "path": "models\\kokoro\\kokoro-v1.0.onnx",
+    "size_mb": 310.5,
+    "voices": "models\\kokoro\\voices-v1.0.bin",
+    "voice_used": "af_heart",
+    "fused_acoustic_vocoder": true
+  },
+  "sentences": {
+    "evalA": "Hello. This is the first generation of Caedral Voice.",
+    "propernoun": "Welcome to Caedral, where every voice tells a story.",
+    "numbers": "The invoice totals $1,247.83, due within 30 days."
+  },
+  "method": {
+    "cold_definition": "first engine.synth() after construction + NLTK g2p warmup (isolates ORT graph init); g2p_warmup_s reported separately",
+    "warm_definition": "median of 10 synth() calls per sentence",
+    "phase_probes_per_sentence": 5,
+    "thread_order_note": "configs run sequentially in fresh subprocesses, order 2->4; RTF variance across runs is thermal/contention-sensitive"
+  },
+  "thread_configs": [
+    {
+      "mode": "worker",
+      "threads": 2,
+      "internal_startup": {
+        "imports_s": 0.029,
+        "session_create_s": 1.28,
+        "wrapper_setup_s": 0.004,
+        "frontend_ctor_s": 0.734,
+        "g2p_warmup_s": 8.243,
+        "t_first_audio_cold_call_done": 370.22
+      },
+      "cold": {
+        "sentence": "evalA",
+        "wall_s": 3.8958,
+        "audio_s": 2.7947,
+        "rtf": 1.394
+      },
+      "warm": {
+        "per_sentence": [
+          {
+            "sentence": "evalA",
+            "reps": 10,
+            "median_wall_s": 5.0455,
+            "audio_s": 2.7947,
+            "rtf_median": 1.8054
+          },
+          {
+            "sentence": "propernoun",
+            "reps": 10,
+            "median_wall_s": 4.9891,
+            "audio_s": 2.752,
+            "rtf_median": 1.8129
+          },
+          {
+            "sentence": "numbers",
+            "reps": 10,
+            "median_wall_s": 10.2808,
+            "audio_s": 5.9947,
+            "rtf_median": 1.715
+          }
+        ],
+        "headline_median_wall_s": 5.5609,
+        "headline_audio_s": 2.7947,
+        "headline_rtf": 1.9898
+      },
+      "phases_median_s": {
+        "frontend_phonemize": 0.003637,
+        "frontend_cache_lookup": 2.1e-05,
+        "tokenize": 1.9e-05,
+        "session_run_acoustic": 4.715226,
+        "wav_serialize": 0.000546,
+        "create_total_is_phonemes": 4.734157
+      },
+      "vocoder_decode_if_any": null,
+      "model_outputs": [
+        "audio"
+      ],
+      "rss": {
+        "baseline_after_load_mb": 611.2,
+        "peak_during_synth_mb": 1044.3,
+        "delta_mb": 433.1
+      },
+      "parent_spawn_wall_total_s": 371.536
+    },
+    {
+      "mode": "worker",
+      "threads": 4,
+      "internal_startup": {
+        "imports_s": 0.05,
+        "session_create_s": 1.601,
+        "wrapper_setup_s": 0.002,
+        "frontend_ctor_s": 0.483,
+        "g2p_warmup_s": 4.873,
+        "t_first_audio_cold_call_done": 227.723
+      },
+      "cold": {
+        "sentence": "evalA",
+        "wall_s": 2.2145,
+        "audio_s": 2.7947,
+        "rtf": 0.7924
+      },
+      "warm": {
+        "per_sentence": [
+          {
+            "sentence": "evalA",
+            "reps": 10,
+            "median_wall_s": 2.5348,
+            "audio_s": 2.7947,
+            "rtf_median": 0.907
+          },
+          {
+            "sentence": "propernoun",
+            "reps": 10,
+            "median_wall_s": 2.2898,
+            "audio_s": 2.752,
+            "rtf_median": 0.832
+          },
+          {
+            "sentence": "numbers",
+            "reps": 10,
+            "median_wall_s": 5.5553,
+            "audio_s": 5.9947,
+            "rtf_median": 0.9267
+          }
+        ],
+        "headline_median_wall_s": 2.5348,
+        "headline_audio_s": 2.7947,
+        "headline_rtf": 0.907
+      },
+      "phases_median_s": {
+        "frontend_phonemize": 0.002988,
+        "frontend_cache_lookup": 2.3e-05,
+        "tokenize": 2e-05,
+        "session_run_acoustic": 2.658026,
+        "wav_serialize": 0.000638,
+        "create_total_is_phonemes": 2.683519
+      },
+      "vocoder_decode_if_any": null,
+      "model_outputs": [
+        "audio"
+      ],
+      "rss": {
+        "baseline_after_load_mb": 612.4,
+        "peak_during_synth_mb": 1043.8,
+        "delta_mb": 431.4
+      },
+      "parent_spawn_wall_total_s": 228.823
+    }
+  ],
+  "startup_to_first_audio": {
+    "spawn_wall_total_s": 6.578,
+    "child_imports_s": 0.03551609999703942,
+    "child_model_load_s": 2.254850699995586,
+    "child_t_first_audio_s": 5.869533199998841,
+    "note": "short sentence 'Hello.' rendered once, then exit"
+  }
+}

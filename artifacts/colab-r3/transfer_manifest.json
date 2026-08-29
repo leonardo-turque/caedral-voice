@@ -1,0 +1,18 @@
+{
+  "contents": {
+    "code_files": 67,
+    "librittsr_manifest_rows": 30917,
+    "teacher_wavs": 15501
+  },
+  "files": {
+    "code-package.zip": {
+      "bytes": 18675618,
+      "sha256": "baab591c7f96acab753ec41b24aa8004889900c37b31a01c43d00d27669dd9f7"
+    },
+    "teacher-kokoro.zip": {
+      "bytes": 3270946734,
+      "sha256": "6dade3b7951f437e619488b160c3b4994658733c908b650916720eb01cf7de3e"
+    }
+  },
+  "generated_utc": "2026-08-23T13:23:39Z"
+}

@@ -1,0 +1,116 @@
+[parent] quantizing fp32 -> int8 ...
+[parent] [round1] benchmarking fp32 (C:\Users\leona\Downloads\caedral-voice\models\kokoro\kokoro-v1.0.onnx) ...
+[parent]   fp32 round1: median 1.858s rtf 0.5656
+[parent] [round1] benchmarking int8 (C:\Users\leona\Downloads\caedral-voice\experiments\CV-G1-E0024-int8\kokoro-v1.0.int8.onnx) ...
+[parent]   int8 round1: median 18.9419s rtf 5.8415
+[parent] [round2] benchmarking int8 (C:\Users\leona\Downloads\caedral-voice\experiments\CV-G1-E0024-int8\kokoro-v1.0.int8.onnx) ...
+[parent]   int8 round2: median 18.8392s rtf 5.8098
+[parent] [round2] benchmarking fp32 (C:\Users\leona\Downloads\caedral-voice\models\kokoro\kokoro-v1.0.onnx) ...
+[parent]   fp32 round2: median 2.0793s rtf 0.6329
+[parent] scoring quality (whisper x2 + DNSMOS) ...
+{
+  "size": {
+    "fp32_mb": 310.45,
+    "int8_mb": 87.69,
+    "reduction_pct": 71.8,
+    "ratio": 3.54
+  },
+  "rtf": {
+    "fp32": {
+      "reps_total": 20,
+      "median_wall_s": 1.889,
+      "audio_s": 3.2853,
+      "rtf_median": 0.575,
+      "min_wall_s": 1.7688,
+      "max_wall_s": 2.1674,
+      "round_medians_s": {
+        "round1": 1.858,
+        "round2": 2.0793
+      },
+      "cold_rtf": 0.554,
+      "walls_all_s": [
+        1.8657,
+        1.8763,
+        1.7876,
+        1.7909,
+        1.7688,
+        1.7719,
+        1.8734,
+        1.8577,
+        1.8584,
+        1.8731,
+        2.0572,
+        1.9017,
+        1.9866,
+        2.1674,
+        2.1213,
+        1.9977,
+        2.0777,
+        2.0808,
+        2.0975,
+        2.1591
+      ]
+    },
+    "int8": {
+      "reps_total": 20,
+      "median_wall_s": 18.8392,
+      "audio_s": 3.2427,
+      "rtf_median": 5.8097,
+      "min_wall_s": 15.9005,
+      "max_wall_s": 23.3027,
+      "round_medians_s": {
+        "round1": 18.9419,
+        "round2": 18.8392
+      },
+      "cold_rtf": 6.455,
+      "walls_all_s": [
+        19.6615,
+        16.7091,
+        15.9005,
+        18.4053,
+        19.9478,
+        19.4785,
+        17.3549,
+        17.071,
+        21.9514,
+        19.5204,
+        18.1645,
+        18.9583,
+        22.539,
+        19.6836,
+        18.237,
+        17.6057,
+        18.1825,
+        23.3027,
+        18.7461,
+        18.9324
+      ]
+    },
+    "speedup_ratio": 0.099,
+    "speedup_pct": -90.1,
+    "note": "speedup>1 means int8 is FASTER (lower RTF)"
+  },
+  "quality": {
+    "fp32": {
+      "class": "INTELLIGIBLE",
+      "min_wer": 0.1111,
+      "wer_small_en": 0.1111,
+      "wer_base_en": 0.1111,
+      "dnsmos_ovrl": 3.442,
+      "hypothesis": "Hello, this is the first generation of Kaedral voice.",
+      "rep_fraction": 0.0,
+      "spectral_flatness": 0.0107
+    },
+    "int8": {
+      "class": "INTELLIGIBLE",
+      "min_wer": 0.1111,
+      "wer_small_en": 0.2222,
+      "wer_base_en": 0.1111,
+      "dnsmos_ovrl": 3.282,
+      "hypothesis": "Hello, this is the first generation of Kydral Voice.",
+      "rep_fraction": 0.0,
+      "spectral_flatness": 0.0114
+    }
+  },
+  "verdict": "KEEP"
+}

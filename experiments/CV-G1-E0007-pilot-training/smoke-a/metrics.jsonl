@@ -1,0 +1,38 @@
+{"type": "event", "event": "seed", "seed": 1234, "num_threads": 4, "ts": "2026-08-22T18:54:17Z"}
+{"type": "event", "event": "fit_start", "run_id": "pilot-20260822-155417", "resumed": false, "global_step": 0, "max_steps": 60, "ts": "2026-08-22T18:54:17Z"}
+{"type": "pilot_train", "step": 5, "flow_loss": 419.84234619140625, "dur_loss": 0.6456629037857056, "phones_per_sec": 18.26923076923077, "n_phones": 304, "n_frames": 1560, "ts": "2026-08-22T18:54:25Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 5, "epoch": 0, "loss": 420.4880065917969, "loss_window_avg": 435.7515869140625, "lr": 1.5e-06, "grad_norm": 3931.480224609375, "wall_s": 7.528, "ts": "2026-08-22T18:54:25Z"}
+{"type": "pilot_train", "step": 10, "flow_loss": 424.86328125, "dur_loss": 0.7908759713172913, "phones_per_sec": 19.165407854984892, "n_phones": 203, "n_frames": 993, "ts": "2026-08-22T18:54:34Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 10, "epoch": 0, "loss": 425.6541442871094, "loss_window_avg": 421.91054077148436, "lr": 2.7500000000000004e-06, "grad_norm": 3872.75, "wall_s": 16.2876, "ts": "2026-08-22T18:54:34Z"}
+{"type": "pilot_train", "step": 15, "flow_loss": 373.8590087890625, "dur_loss": 0.5018191933631897, "phones_per_sec": 18.99624765478424, "n_phones": 216, "n_frames": 1066, "ts": "2026-08-22T18:54:43Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 15, "epoch": 0, "loss": 374.36083984375, "loss_window_avg": 426.94459228515626, "lr": 4.000000000000001e-06, "grad_norm": 3654.6435546875, "wall_s": 25.2191, "ts": "2026-08-22T18:54:43Z"}
+{"type": "pilot_train", "step": 20, "flow_loss": 423.1045837402344, "dur_loss": 0.4474359452724457, "phones_per_sec": 18.313389391979303, "n_phones": 151, "n_frames": 773, "ts": "2026-08-22T18:54:50Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 20, "epoch": 0, "loss": 423.5520324707031, "loss_window_avg": 399.0672668457031, "lr": 5.25e-06, "grad_norm": 4501.3369140625, "wall_s": 32.2468, "ts": "2026-08-22T18:54:50Z"}
+{"type": "event", "event": "checkpoint_saved", "step": 20, "path": "step_000000020.pt", "ts": "2026-08-22T18:54:50Z"}
+{"type": "pilot_train", "step": 25, "flow_loss": 307.5249938964844, "dur_loss": 0.30777519941329956, "phones_per_sec": 16.455616850551657, "n_phones": 175, "n_frames": 997, "ts": "2026-08-22T18:54:56Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 25, "epoch": 0, "loss": 307.832763671875, "loss_window_avg": 362.55882568359374, "lr": 6.5000000000000004e-06, "grad_norm": 2496.207763671875, "wall_s": 39.0041, "ts": "2026-08-22T18:54:56Z"}
+{"type": "pilot_train", "step": 30, "flow_loss": 379.3567199707031, "dur_loss": 0.5727150440216064, "phones_per_sec": 18.378712871287128, "n_phones": 297, "n_frames": 1515, "ts": "2026-08-22T18:55:04Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 30, "epoch": 0, "loss": 379.929443359375, "loss_window_avg": 348.44874877929686, "lr": 7.75e-06, "grad_norm": 3215.722412109375, "wall_s": 46.3749, "ts": "2026-08-22T18:55:04Z"}
+{"type": "pilot_train", "step": 35, "flow_loss": 308.604736328125, "dur_loss": 0.4514239728450775, "phones_per_sec": 19.090583173996176, "n_phones": 213, "n_frames": 1046, "ts": "2026-08-22T18:55:09Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 35, "epoch": 0, "loss": 309.05615234375, "loss_window_avg": 310.2909423828125, "lr": 9e-06, "grad_norm": 2598.614013671875, "wall_s": 51.8526, "ts": "2026-08-22T18:55:09Z"}
+{"type": "pilot_train", "step": 40, "flow_loss": 264.9084167480469, "dur_loss": 0.6197586059570312, "phones_per_sec": 15.907258064516128, "n_phones": 263, "n_frames": 1550, "ts": "2026-08-22T18:55:15Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 40, "epoch": 0, "loss": 265.5281677246094, "loss_window_avg": 270.13946838378905, "lr": 1.025e-05, "grad_norm": 1500.5263671875, "wall_s": 57.335, "ts": "2026-08-22T18:55:15Z"}
+{"type": "event", "event": "checkpoint_saved", "step": 40, "path": "step_000000040.pt", "ts": "2026-08-22T18:55:15Z"}
+{"type": "pilot_train", "step": 45, "flow_loss": 221.25857543945312, "dur_loss": 0.39988312125205994, "phones_per_sec": 15.980113636363637, "n_phones": 225, "n_frames": 1320, "ts": "2026-08-22T18:55:27Z"}
+{"type": "train", "run_id": "pilot-20260822-155417", "step": 45, "epoch": 0, "loss": 221.65846252441406, "loss_window_avg": 253.69693298339843, "lr": 1.1500000000000002e-05, "grad_norm": 1157.056640625, "wall_s": 69.7304, "ts": "2026-08-22T18:55:27Z"}
+{"type": "event", "event": "resume", "global_step": 40, "epoch": 0, "batches_consumed_in_epoch": 40, "best_value": null, "ts": "2026-08-22T18:57:52Z"}
+{"type": "event", "event": "checkpoint_saved", "step": 40, "path": "step_000000040.pt", "ts": "2026-08-22T18:57:54Z"}
+{"type": "event", "event": "fit_start", "run_id": "pilot-20260822-155752", "resumed": true, "global_step": 40, "max_steps": 60, "ts": "2026-08-22T18:57:54Z"}
+{"type": "pilot_train", "step": 45, "flow_loss": 221.25857543945312, "dur_loss": 0.39988312125205994, "phones_per_sec": 15.980113636363637, "n_phones": 225, "n_frames": 1320, "ts": "2026-08-22T18:58:07Z"}
+{"type": "train", "run_id": "pilot-20260822-155752", "step": 45, "epoch": 0, "loss": 221.65846252441406, "loss_window_avg": 253.69693298339843, "lr": 1.1500000000000002e-05, "grad_norm": 1157.056640625, "wall_s": 12.6937, "ts": "2026-08-22T18:58:07Z"}
+{"type": "pilot_train", "step": 50, "flow_loss": 217.25057983398438, "dur_loss": 0.3646232485771179, "phones_per_sec": 18.32014192139738, "n_phones": 179, "n_frames": 916, "ts": "2026-08-22T18:58:14Z"}
+{"type": "train", "run_id": "pilot-20260822-155752", "step": 50, "epoch": 0, "loss": 217.61520385742188, "loss_window_avg": 215.7965545654297, "lr": 1.2750000000000002e-05, "grad_norm": 994.9447021484375, "wall_s": 19.9731, "ts": "2026-08-22T18:58:14Z"}
+{"type": "pilot_train", "step": 55, "flow_loss": 199.08615112304688, "dur_loss": 0.34278830885887146, "phones_per_sec": 16.28837361201829, "n_phones": 266, "n_frames": 1531, "ts": "2026-08-22T18:58:23Z"}
+{"type": "train", "run_id": "pilot-20260822-155752", "step": 55, "epoch": 0, "loss": 199.42893981933594, "loss_window_avg": 205.11776428222657, "lr": 1.4000000000000001e-05, "grad_norm": 644.7905883789062, "wall_s": 29.4855, "ts": "2026-08-22T18:58:23Z"}
+{"type": "pilot_train", "step": 60, "flow_loss": 172.28131103515625, "dur_loss": 0.3834088444709778, "phones_per_sec": 16.62917737789203, "n_phones": 207, "n_frames": 1167, "ts": "2026-08-22T18:58:33Z"}
+{"type": "train", "run_id": "pilot-20260822-155752", "step": 60, "epoch": 0, "loss": 172.6647186279297, "loss_window_avg": 184.77214965820312, "lr": 1.525e-05, "grad_norm": 308.98724365234375, "wall_s": 38.8918, "ts": "2026-08-22T18:58:33Z"}
+{"type": "event", "event": "checkpoint_saved", "step": 60, "path": "step_000000060.pt", "ts": "2026-08-22T18:58:34Z"}
+{"type": "val", "run_id": "pilot-20260822-155752", "step": 60, "epoch": 0, "wall_s": 801872.3511, "val_loss": 178.82993698120117, "best_updated": true, "ts": "2026-08-22T18:58:51Z"}
+{"type": "event", "event": "best_updated", "step": 60, "best_key": "val_loss", "best_value": 178.82993698120117, "ts": "2026-08-22T18:58:51Z"}
+{"type": "pilot_val", "step": 60, "flow_loss_mean": 178.82993698120117, "dur_loss_mean": 0.4059434746476737, "batches": 44, "ts": "2026-08-22T18:58:51Z"}
+{"type": "event", "event": "fit_end", "run_id": "pilot-20260822-155752", "global_step": 60, "ts": "2026-08-22T18:58:51Z"}

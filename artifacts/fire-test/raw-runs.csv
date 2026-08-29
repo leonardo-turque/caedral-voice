@@ -1,0 +1,12 @@
+profile,phase,rep,wall_s,audio_s,rtf,realtime_multiplier,cpu_time_s,nr_throttled_delta,throttled_usec_delta,rss_before_mb,rss_after_mb,vmhwm_peak_mb,memory_current_mb,success
+profile-aplus-1.4gb-1vcpu,generation,1,92.884,29.824,3.1144,0.321,88.11,929,498622746,520,522,1023,516,True
+profile-aplus-1.4gb-1vcpu,generation,2,65.999,29.824,2.213,0.452,64.41,660,342300580,522,547,1023,540,True
+profile-aplus-1.4gb-1vcpu,generation,3,62.709,29.824,2.1026,0.476,61.44,628,323624525,547,547,1023,540,True
+profile-aplus-1.4gb-1vcpu,generation,4,66.094,29.824,2.2161,0.451,64.16,661,344506534,547,547,1023,553,True
+profile-aplus-1.4gb-1vcpu,generation,5,90.904,29.824,3.048,0.328,87.62,909,469004271,547,547,1023,540,True
+profile-aplus-1.4gb-1vcpu,generation,6,88.802,29.824,2.9775,0.336,85.97,888,460562008,547,547,1023,540,True
+profile-aplus-1.4gb-1vcpu,generation,7,61.799,29.824,2.0721,0.483,60.58,618,317721031,547,547,1023,541,True
+profile-aplus-1.4gb-1vcpu,generation,8,70.795,29.824,2.3738,0.421,68.99,708,366084590,547,547,1023,542,True
+profile-aplus-1.4gb-1vcpu,generation,9,55.391,29.824,1.8573,0.538,54.24,554,284902371,547,547,1023,553,True
+profile-aplus-1.4gb-1vcpu,generation,10,55.991,29.824,1.8774,0.533,54.67,560,289460405,547,547,1023,541,True
+profile-aplus-1.4gb-1vcpu,cold-load,0,,,,,,,,,519,622,,True

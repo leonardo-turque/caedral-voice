@@ -1,0 +1,122 @@
+[
+  {
+    "voice": "af_heart",
+    "sentence": "evalA",
+    "skipped": [],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.426
+    },
+    "mapped_v2": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.347
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "propernoun",
+    "skipped": [],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.412
+    },
+    "mapped_v2": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.466
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "numbers",
+    "skipped": [],
+    "baseline": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.507
+    },
+    "mapped_v2": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.452
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "abbrev",
+    "skipped": [],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.545
+    },
+    "mapped_v2": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.3333,
+      "dnsmos": 3.479
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "evalA",
+    "skipped": [],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.467
+    },
+    "mapped_v2": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.382
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "propernoun",
+    "skipped": [],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.499
+    },
+    "mapped_v2": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.378
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "numbers",
+    "skipped": [],
+    "baseline": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.499
+    },
+    "mapped_v2": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.481
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "abbrev",
+    "skipped": [],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.454
+    },
+    "mapped_v2": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.3333,
+      "dnsmos": 3.381
+    }
+  }
+]

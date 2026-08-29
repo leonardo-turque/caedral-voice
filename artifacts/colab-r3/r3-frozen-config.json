@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-08-23",
+  "source": "E0013 r2 best.pt (r3 continues same experiment)",
+  "cfg": {
+    "exp_id": "r2",
+    "experiment_root": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments",
+    "run_id": "regressor-20260823-005146",
+    "seed": 1234,
+    "reseed_on_fit": true,
+    "num_threads": 6,
+    "deterministic_algorithms": true,
+    "max_steps": 15000,
+    "grad_clip": 1.0,
+    "warmup_steps": 1000,
+    "min_lr_ratio": 0.1,
+    "log_every": 100,
+    "val_every_steps": 1000,
+    "val_every_epochs": 0,
+    "val_at_end": true,
+    "val_max_batches": 0,
+    "checkpoint_every_steps": 1000,
+    "checkpoint_every_epochs": 0,
+    "keep_step_checkpoints": 2,
+    "best_key": "val_loss",
+    "best_mode": "min"
+  },
+  "model_param_count": 15942707,
+  "val_mel_l1_best": 0.8647432296943292
+}

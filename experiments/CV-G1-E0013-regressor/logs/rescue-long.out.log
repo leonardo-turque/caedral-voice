@@ -1,0 +1,20 @@
+[regressor] threads=6 torch=2.6.0+cpu python=3.13.15
+[data] durations: C:\Users\leona\Downloads\caedral-voice\data\manifests\all-durations.jsonl (44417 rows)
+[data] librittsr-clean100: 30917 utt (44.11 h)
+[data] teacher-kokoro: 15498 utt (22.66 h, 15498 teacher)
+[data] speakers=257 vocab_size=43
+[data] mel disk cache ON -> data\cache\mel-v1 (v1)
+[data] SKIPPED 1998 rows (t04_2836_5355_000089_000001: no phoneme row; t05_2836_5355_000090_000001: no phoneme row; t06_2836_5355_000091_000001: no phoneme row; t07_2836_5355_000092_000000: no phoneme row; t08_2836_5355_000093_000000: no phoneme row ...)
+[data] usable utterances=44417 audio=63.681 h
+[split] train=42068 val=2349 (stratified by speaker, stride 20)
+[model] expanding speaker table 40 -> 257 (corpus exceeds the 40-slot floor)
+[model] regressor-medium params=15,942,707 (trainable 15,942,707) pitch=on energy=on
+[model] device=cpu amp=False dataloader_workers=0 pin_memory=False
+[melcache] 1000 items processed (hits=1000 computed=0 stale=0 invalid=0) elapsed=696.9s
+[melcache] 2000 items processed (hits=2000 computed=0 stale=0 invalid=0) elapsed=1446.9s
+[melcache] 3000 items processed (hits=3000 computed=0 stale=0 invalid=0) elapsed=1982.9s
+[melcache] 4000 items processed (hits=4000 computed=0 stale=0 invalid=0) elapsed=2081.8s
+[melcache] 5000 items processed (hits=5000 computed=0 stale=0 invalid=0) elapsed=2198.9s
+[melcache] 6000 items processed (hits=6000 computed=0 stale=0 invalid=0) elapsed=2728.0s
+[melcache] 7000 items processed (hits=7000 computed=0 stale=0 invalid=0) elapsed=3250.6s
+[melcache] 8000 items processed (hits=8000 computed=0 stale=0 invalid=0) elapsed=3754.2s

@@ -1,0 +1,73 @@
+{
+  "project_version": "caedral-voice-g1",
+  "generated_at_utc": "2026-08-23T15:19:51.921678+00:00",
+  "git_commit": "see git log (post-COLAB-BUILD-01 commit)",
+  "experiment_id": "CV-G1-E0013-regressor r3 (real clean100 44.11h + teacher snapshot ~19.6h)",
+  "experiment_status": "RUNNING on Windows CPU (PID 21728 at state-write time; re-verify)",
+  "current_step": null,
+  "latest_verified_checkpoint": {
+    "path": "experiments/r3/checkpoints/best.pt",
+    "sha256_16": "c1c8478b0e649a32",
+    "size_mb": 185.3,
+    "global_step": 8000,
+    "loads_clean": true,
+    "optimizer": true,
+    "scheduler": true
+  },
+  "previous_good_checkpoint": {
+    "path": "experiments/r2/checkpoints/best.pt",
+    "sha256_16": "c55ac1e909074272",
+    "val_mel_l1": 0.8647432296943292,
+    "step": 15000
+  },
+  "rolling_checkpoint": {
+    "path": "experiments/r3/checkpoints/last.pt",
+    "sha256_16": "cb0af758437f69a7"
+  },
+  "teacher_manifest": "data/manifests/teacher-kokoro.jsonl",
+  "teacher_wavs_on_disk": 15498,
+  "teacher_hours_final_generation": 17.87,
+  "durations_manifests": [
+    "data/manifests/librittsr-clean100.durations.jsonl",
+    "data/manifests/teacher-kokoro.durations.jsonl",
+    "data/manifests/all-durations.jsonl"
+  ],
+  "frozen_corpus_manifests": [
+    "data/manifests/librittsr-clean100.jsonl",
+    "data/manifests/librittsr-clean100.phonemes.jsonl",
+    "data/manifests/teacher-kokoro.phonemes.jsonl"
+  ],
+  "mel_disk_cache": {
+    "path": "data/cache/mel-v1",
+    "regenerable": true
+  },
+  "architecture_config": "embedded in checkpoint cfg + artifacts/colab-r3/r3-frozen-config.json",
+  "python_version": "3.13.15",
+  "torch_version": "2.6.0+cpu",
+  "resume_command_windows": "cmd /c .venv\\Scripts\\python.exe -X utf8 experiments\\CV-G1-E0013-regressor\\train_regressor.py --manifests librittsr-clean100,teacher-kokoro --durations data/manifests/all-durations.jsonl --mel-cache-dir data/cache/mel-v1 --steps 20000 --threads 6 --exp-id r3  (auto-resumes from checkpoints/last.pt)",
+  "resume_command_arch": "SEE experiments/CV-G1-E0013-regressor/RESUME-R3-LINUX.md + scripts/arch/bootstrap-dev.sh [ARCH-PORT-01]",
+  "remaining_dag_after_resume": [
+    "finish 20k steps",
+    "generate 15-voice previews",
+    "audit stack vs DNSMOS gate 3.15",
+    "longform+prosody+perf matrix",
+    "adversarial review",
+    "package V1",
+    "final report"
+  ],
+  "enhanced_base_status": {
+    "baseline_kokoro_stock": "NATURAL/INTELLIGIBLE, DNSMOS 3.35-3.55",
+    "naive_ipa_injection": "FAILED - vocab mismatch; needs IPA->Kokoro-vocab mapping layer",
+    "rtf_anomaly": "re-measure needed at idle (thermal/contention suspected)"
+  },
+  "v1_speaker_acoustic_finding": {
+    "finding": "Technical sentences PARTIAL_SPEECH for m2/f1/f2 despite identical phoneme input",
+    "root_cause": "Kokoro voice embeddings render letter-spelled acronyms differently per voice",
+    "evidence": "byte-for-byte identical phoneme strings confirmed across 4 voices",
+    "m1_status": "INTELLIGIBLE WER=0.22 (passes)",
+    "m2_f1_f2_status": "PARTIAL_SPEECH WER=0.44 (known limitation)",
+    "fixable_via_frontend": false,
+    "fix_requires": "acoustic model fine-tuning on technical text (V2 scope)",
+    "documented_in": "docs/releases/V1-SPEAKER-ACOUSTIC-FINDING.md"
+  }
+}

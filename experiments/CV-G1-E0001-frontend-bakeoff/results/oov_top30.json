@@ -1,0 +1,129 @@
+{
+  "total_word_tokens_after_normalization": 2493,
+  "raw_lexicon_misses": 50,
+  "raw_miss_rate": 0.0201,
+  "rule_fallback_tokens_in_phoneme_stream": 42,
+  "rule_fallback_rate_vs_raw_misses": 0.84,
+  "top30_oov": [
+    {
+      "word": "avx",
+      "count": 3
+    },
+    {
+      "word": "simd",
+      "count": 2
+    },
+    {
+      "word": "awnings",
+      "count": 1
+    },
+    {
+      "word": "backoff",
+      "count": 1
+    },
+    {
+      "word": "chars",
+      "count": 1
+    },
+    {
+      "word": "ci",
+      "count": 1
+    },
+    {
+      "word": "covid",
+      "count": 1
+    },
+    {
+      "word": "cpus",
+      "count": 1
+    },
+    {
+      "word": "dsn",
+      "count": 1
+    },
+    {
+      "word": "ellipses",
+      "count": 1
+    },
+    {
+      "word": "emojis",
+      "count": 1
+    },
+    {
+      "word": "faq",
+      "count": 1
+    },
+    {
+      "word": "hmac",
+      "count": 1
+    },
+    {
+      "word": "hochreiter",
+      "count": 1
+    },
+    {
+      "word": "hyperthreading",
+      "count": 1
+    },
+    {
+      "word": "inlines",
+      "count": 1
+    },
+    {
+      "word": "int",
+      "count": 1
+    },
+    {
+      "word": "json",
+      "count": 1
+    },
+    {
+      "word": "kwame",
+      "count": 1
+    },
+    {
+      "word": "microservice",
+      "count": 1
+    },
+    {
+      "word": "multiplications",
+      "count": 1
+    },
+    {
+      "word": "ng's",
+      "count": 1
+    },
+    {
+      "word": "postgres",
+      "count": 1
+    },
+    {
+      "word": "quantized",
+      "count": 1
+    },
+    {
+      "word": "rajesh",
+      "count": 1
+    },
+    {
+      "word": "redis",
+      "count": 1
+    },
+    {
+      "word": "schmidhuber",
+      "count": 1
+    },
+    {
+      "word": "seashores",
+      "count": 1
+    },
+    {
+      "word": "sharded",
+      "count": 1
+    },
+    {
+      "word": "sheikh's",
+      "count": 1
+    }
+  ]
+}

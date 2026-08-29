@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-08-23",
+  "checkpoint_step": 9000,
+  "checkpoint": "experiments/r3/checkpoints/last.pt snapshot (r3-frozen-last.pt)",
+  "sigma_note": "deterministic regressor decode; vocos decode deterministic; no seed sensitivity in this architecture path",
+  "voices": [
+    {
+      "voice": "voice-01",
+      "speaker": "spk78",
+      "persona": "male grave narrator (F0 ~95 Hz)",
+      "tag": "r3-snapshot-spk78-evalB-spd1.05",
+      "wav_sha256": "7124f371cc6826a8a03a9f4ed6ab65ddb43ff5a9c7f923dce68a1a0aebad1e5e"
+    },
+    {
+      "voice": "voice-02",
+      "speaker": "spk2416",
+      "persona": "female professional (F0 ~181 Hz)",
+      "tag": "r3-snapshot-spk2416-evalA-spd1.05",
+      "wav_sha256": "594488ee57c8ef3ef9fffdf0d4b5cc136e883a2ccb512715226081fe14e4b23c"
+    },
+    {
+      "voice": "voice-03",
+      "speaker": "spk696",
+      "persona": "female warm-bright (F0 ~170 Hz)",
+      "tag": "r3-snapshot-spk696-evalA-spd1.05",
+      "wav_sha256": "2a035b7c93b0509badd5c124cb3e2f01d1167a3a483cc8f606c5068981e5002b"
+    }
+  ]
+}

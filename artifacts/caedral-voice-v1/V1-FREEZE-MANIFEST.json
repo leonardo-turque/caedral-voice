@@ -1,0 +1,47 @@
+{
+  "version": "Caedral Voice V1",
+  "date_utc": "2026-08-24T13:05:57.500773+00:00",
+  "git_commit": "cff0784a7d89",
+  "foundation": {
+    "model": "Kokoro v1.0 ONNX (Apache-2.0)",
+    "attribution": "Caedral-developed voice engine/frontend/runtime built on an attributed open-weight Kokoro foundation",
+    "license": "Apache-2.0"
+  },
+  "engine_config": {
+    "backend": "ONNX Runtime CPU",
+    "graph_optimization": "ENABLE_ALL",
+    "threads": 6,
+    "cpu_arena": false,
+    "mem_pattern": true,
+    "execution_mode": "sequential"
+  },
+  "sample_rate": 24000,
+  "voice_ids": [
+    "caedral-m1",
+    "caedral-m2",
+    "caedral-f1",
+    "caedral-f2"
+  ],
+  "voice_lineage": {
+    "caedral-m1": "am_michael",
+    "caedral-m2": "am_echo",
+    "caedral-f1": "af_sky",
+    "caedral-f2": "af_nova"
+  },
+  "asset_hashes_sha256": {
+    "kokoro-onnx": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+    "voices-bin": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+    "engine-py": "9e548ecc8ef64f7f63ba9007d6339f5f34188cd6778cbcf31f9878bba1740d2b",
+    "kokoro-map-py": "84cbedc99ce9f3c480beddfed483501e094909a85094aa5bccc5435e65a63e04",
+    "normalize-py": "bab5d92582f6913b017d96e227ec98807ad95f4a302fc20685572aa36d37af94",
+    "g2p-py": "746334c508877383ed527988f4d778505e8c34dcaf525d57ce2a49fe549381cc"
+  },
+  "known_limitations": [
+    "Technical sentences PARTIAL_SPEECH for m2/f1/f2 (speaker-acoustic variation, identical phoneme input confirmed)",
+    "No streaming/TTFA yet (full-buffer synthesis only)",
+    "RTF varies 0.59\u20131.10 depending on sentence complexity"
+  ],
+  "benchmark": {
+    "thread_results": {}
+  }
+}

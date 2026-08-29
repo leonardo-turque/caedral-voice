@@ -1,0 +1,8 @@
+[preprocess] librittsr-clean100: seen=33232 kept=30917 rejected=2315
+  DUPLICATE_TRANSCRIPT: 588
+  TOO_LONG: 1705
+  TOO_QUIET: 9
+  TOO_SHORT: 13
+[preprocess] wrote C:\Users\leona\Downloads\caedral-voice\data\manifests\librittsr-clean100.jsonl
+[preprocess] wrote C:\Users\leona\Downloads\caedral-voice\data\manifests\librittsr-clean100.rejected.jsonl
+[preprocess] wrote C:\Users\leona\Downloads\caedral-voice\data\manifests\librittsr-clean100.meta.json

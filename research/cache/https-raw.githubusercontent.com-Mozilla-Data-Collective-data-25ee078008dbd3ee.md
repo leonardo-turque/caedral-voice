@@ -1,0 +1,181 @@
+---
+url: https://raw.githubusercontent.com/Mozilla-Data-Collective/datacollective-python/main/README.md
+title: 
+retrieved_at: 2026-08-22T19:16:05Z
+api_version: v2
+---
+
+<p align="center">
+  <picture>
+    <!-- When the user prefers dark mode, show the white logo -->
+    <source media="(prefers-color-scheme: dark)" srcset="./docs/mdc_logo_white.png">
+    <!-- When the user prefers light mode, show the black logo -->
+    <source media="(prefers-color-scheme: light)" srcset="./docs/mdc_logo.png">
+    <!-- Fallback: default to the black logo -->
+    <img src="./docs/mdc_logo.png" width="35%" alt="Project logo"/>
+  </picture>
+</p>
+
+<div align="center">
+
+[![Published](https://github.com/Mozilla-Data-Collective/datacollective-python/actions/workflows/publish.yml/badge.svg)](https://github.com/Mozilla-Data-Collective/datacollective-python/actions/workflows/publish.yml/)
+[![Docs](https://github.com/Mozilla-Data-Collective/datacollective-python/actions/workflows/docs.yml/badge.svg)](https://github.com/Mozilla-Data-Collective/datacollective-python/actions/workflows/docs.yml/)
+[![Tests](https://github.com/Mozilla-Data-Collective/datacollective-python/actions/workflows/tests.yml/badge.svg)](https://github.com/Mozilla-Data-Collective/datacollective-python/actions/workflows/tests.yml/)
+
+</div>
+
+# Mozilla Data Collective Python Client Library
+
+The official Python SDK for accessing and contributing to the [Mozilla Data Collective](https://mozilladatacollective.com/) platform.
+
+
+> [!WARNING]
+> Our platform is evolving rapidly. Expect breaking changes while the Python SDK is on 0.X.X versions. 
+> Please ensure you are always on the latest version available.
+
+## Installation
+
+```bash
+pip install datacollective
+```
+
+## Quick Start
+
+**IMPORTANT NOTE:** Before trying to access any dataset, make sure you have thoroughly **read and agreed** to the specific dataset's conditions & licensing terms.
+
+1. **Get your API key** from the Mozilla Data Collective [dashboard](https://mozilladatacollective.com/api-reference)
+
+2. **Set the API key in your environment variable**:
+
+**Option A:** Run this command in your terminal (replace `your-api-key-here` with your actual API key):
+
+```
+export MDC_API_KEY=your-api-key-here
+```
+
+**Option B:** Create a `.env` file in your project directory and add this line:
+
+```
+MDC_API_KEY=your-api-key-here
+```
+
+3. **Get your dataset ID and/or slug from the dataset's page at the MDC website**.
+
+> [!TIP]
+> You can find the dataset's **ID** and/or **slug** from its page on the MDC platform. Click the **Download** button and select **API / Python Access**, then switch to the **Python Library** tab on the pop-up modal. The **Dataset ID** and **Dataset Slug** appear at the bottom of the modal. Both can be used interchangeably in the Python library, but the slug is a more user-friendly identifier.
+
+4. **Save a dataset locally**:
+```
+from datacollective import download_dataset
+
+dataset_path = download_dataset("your-dataset-id")
+```
+
+> [!NOTE]
+> `download_dataset` was previously called `save_dataset_to_disk`. The old name still works for backward compatibility, but it is deprecated and new code should use `download_dataset`.
+
+> [!TIP]
+> **Automatic Resume:** If a download is interrupted (e.g., due to a network error or it gets stopped it manually), the next time you try download the same dataset at the same folder location, we will automatically resume from where the download left off!
+
+> [!TIP]
+> Set `enable_logging=True` to emit detailed SDK logs to the console and a local log file at `~/.mozdata/datacollective.log` with timestamped entries, a per-session id, and retention of 5 backup files at 10 MB each.
+
+
+5. **Get information & metadata about a dataset**:
+
+```
+from datacollective import get_dataset_details
+
+details = get_dataset_details("your-dataset-id")
+```
+
+6. **Load the dataset into a pandas DataFrame _(**Alpha version:** Only certain MDC datasets are supported right now)_**:
+
+```
+from datacollective import load_dataset
+
+dataset = load_dataset("your-dataset-id")
+```
+
+7. **Or load it as a HuggingFace `Dataset` object** (requires the optional `hf` extra: `pip install / uv add "datacollective[hf]"`):
+
+```
+from datacollective import load_dataset
+
+dataset = load_dataset("your-dataset-id", return_format="hf")
+```
+
+Returns a `Dataset`, or a `DatasetDict` keyed by split name for datasets with multiple splits. See [our docs](https://Mozilla-Data-Collective.github.io/datacollective-python/#return-as-huggingface-dataset-object) for more details, including how to lazily decode audio with the `Audio()` feature.
+
+## Programmatic submissions and uploads
+
+> [!ΝΟΤΕ]
+> In order to be able to upload datasets in the MDC platform you will first need to Request Access to Upload by 
+> navigating to your [profile](https://mozilladatacollective.com/profile/uploads) under the `Upload` tab. 
+> Only the credentials (API keys) created **_after_** your request has been approved will be able to upload datasets. 
+> Any credentials created before your request was approved will not be able to upload datasets.
+
+You can create dataset submissions and upload files with resumable uploads into the MDC platform programmatically using our Python SDK:
+
+```python
+from datacollective import DatasetSubmission, License, Task, create_submission_with_upload
+
+submission = DatasetSubmission(
+    name="Dataset Name",
+    longDescription="A detailed description of the dataset.",
+    shortDescription="A brief description of the dataset.",
+    locale="en-US",
+    task=Task.ASR,
+    format="TSV",
+    licenseAbbreviation=License.CC_BY_4_0,
+    other="This text should provide a detailed description of the dataset, "
+          "including its contents, structure, and any relevant information "
+          "that would help users understand what the dataset is about "
+          "and how it can be used.",
+    restrictions="Any restrictions you want to impose on the dataset",
+    forbiddenUsage="Use cases that are not allowed with this dataset",
+    additionalConditions="Any additional conditions for using the dataset",
+    pointOfContactFullName="Jane Doe",
+    pointOfContactEmail="jane@example.com",
+    fundedByFullName="Funder Name",
+    fundedByEmail="funder@example.com",
+    legalContactFullName="Legal Name",
+    legalContactEmail="legal@example.com",
+    createdByFullName="Creator Name",
+    createdByEmail="creator@example.com",
+    intendedUsage="Describe the intended usage of the dataset, including "
+                  "potential applications and use cases.",
+    ethicalReviewProcess="Describe the ethical review process that was "
+                         "followed for this dataset, including any approvals "
+                         "or considerations related to data collection and usage.",
+    isPaid=False,  # True = the dataset is compensated and requires `basePriceCents`,
+                   # False (default) = the dataset is free to access
+    exclusivityOptOut=False,  # True = This dataset is non-exclusive to Mozilla Data Collective, 
+                              # False = Dataset is exclusively hosted in Mozilla Data Collective
+    agreeToSubmit=True,  # True = You confirm that you have the right to submit this dataset and 
+                         # that all information provided in the datasheet is accurate. 
+                         # Required to be True to complete the submission process
+)
+
+response = create_submission_with_upload(
+    file_path="/path/to/dataset.tar.gz",
+    submission=submission
+)
+
+print(response)
+```
+
+For predefined licenses, pass `licenseAbbreviation=License.<VALUE>` and leave `licenseUrl` and `license` unset. For custom licenses, pass a custom string to `license` and optionally include `licenseUrl` and `licenseAbbreviation`.
+
+To publish a compensated dataset, set `isPaid=True` and a `basePriceCents` price in **USD cents** (US Dollars), e.g. `basePriceCents=100_000` for $1,000.00.
+> [!TIP]
+> To also attach an optional sample of your dataset, pass `sample_file_path="/path/to/dataset-sample.tar.gz"` to `create_submission_with_upload`, or upload it separately with `upload_sample_file(file_path=..., submission_id=...)`.
+
+> [!TIP]
+> To upload a new `.tar.gz` version to an already approved dataset, call `upload_dataset_file(file_path=..., submission_id=...)` directly. Find the submission under **Profile → Uploads**, open the approved dataset, and copy the value after `/profile/submissions/` in the URL. Note that this value is the submission ID, which is different from the public dataset ID.
+
+## For more details, visit [our docs](https://Mozilla-Data-Collective.github.io/datacollective-python/)
+
+## License
+
+This project is released under [MPL (Mozilla Public License) 2.0](./LICENSE).

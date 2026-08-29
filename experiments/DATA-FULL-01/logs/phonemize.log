@@ -1,0 +1,3 @@
+phonemizing 30917 utterances from librittsr-clean100.jsonl
+wrote librittsr-clean100.phonemes.jsonl in 55.7s (555 utt/s)
+pronunciation sources: {'lexicon': 481389, 'g2pen': 6028, 'morphology': 1125, 'rule_fallback': 1535} | g2pen share: 1.23%

@@ -1,0 +1,115 @@
+{
+  "experiment_id": "CV-G1-E0001",
+  "items_total": 101,
+  "items_skipped_gracefully": [
+    {
+      "item_id": "edge_001",
+      "reason": "empty_input"
+    },
+    {
+      "item_id": "edge_002",
+      "reason": "empty_input"
+    }
+  ],
+  "a_length_ratio": {
+    "definition": "One token per IPA base symbol incl. stress marks ˈ ˌ; length mark ː merges into its vowel; pause marks | ‖ counted separately.",
+    "mean_ratio_chars_to_phonemes_excl_pauses": 0.9443,
+    "mean_ratio_chars_to_phonemes_incl_pauses": 0.9628,
+    "per_category_mean_ratio_excl_pauses": {
+      "acronyms_initialisms": 1.0236,
+      "dialogue": 0.767,
+      "difficult_phonemes": 0.815,
+      "edge_cases": 0.852,
+      "emotional_expressive": 0.8513,
+      "formal_prose": 0.9109,
+      "heteronyms": 0.8403,
+      "informal_casual": 0.829,
+      "long_paragraph": 0.8565,
+      "longform": 0.8614,
+      "names_places": 0.8734,
+      "numbers_dates_currency": 1.5657,
+      "punctuation_heavy": 0.8397,
+      "questions_exclamations": 0.8695,
+      "short_conversational": 0.8634,
+      "technical_programming": 0.9917
+    }
+  },
+  "b_oov": {
+    "word_tokens_after_normalization": 2493,
+    "raw_lexicon_misses": 50,
+    "raw_miss_rate": 0.0201,
+    "rule_fallback_tokens": 42,
+    "top30_file": "results/oov_top30.json"
+  },
+  "c_latency_batch1_ms": {
+    "normalize": {
+      "median_ms": 0.061,
+      "mean_ms": 0.1099,
+      "min_ms": 0.0169,
+      "max_ms": 3.2652
+    },
+    "g2p": {
+      "median_ms": 0.1256,
+      "mean_ms": 0.2672,
+      "min_ms": 0.021,
+      "max_ms": 10.3284
+    },
+    "total": {
+      "median_ms": 0.1865,
+      "mean_ms": 0.3771,
+      "min_ms": 0.0464,
+      "max_ms": 13.5936
+    }
+  },
+  "d_heteronyms": {
+    "targets_total_occurrences": 22,
+    "targets_flagged": 22,
+    "flag_recall": 1.0,
+    "non_target_flags": {
+      "began": 1,
+      "business": 1,
+      "will": 1,
+      "in": 1,
+      "around": 1,
+      "travelers": 2
+    }
+  },
+  "e_reference_comparison": {
+    "sampled_items": [
+      "acr_001",
+      "acr_006",
+      "conv_004",
+      "dlg_001",
+      "edge_004",
+      "edge_009",
+      "emo_003",
+      "emo_008",
+      "het_002",
+      "het_007",
+      "inf_003",
+      "nm_003",
+      "num_002",
+      "num_007",
+      "para_003",
+      "pho_004",
+      "pun_001",
+      "qex_001",
+      "tech_001",
+      "tech_006"
+    ],
+    "aligned_word_pairs": 395,
+    "stress_matching_pairs": 240,
+    "agreement_rate_strict": 0.6076,
+    "ref_marked_pairs": 295,
+    "agree_when_ref_marks_stress": 240,
+    "agreement_rate_ref_marked_only": 0.8136,
+    "method": "Both outputs fed OUR normalized text. Per aligned word pair (positional, up to min word count), compare the set of vowels immediately following a primary stress mark ˈ; a pair agrees when the stressed-nuclei sets are equal. Onset-cluster placement differences of ˈ itself are thus ignored; WHICH vowel carries primary stress must match.",
+    "caveat": "Strict rate penalizes CMUdict citation stress on function words that espeak leaves unmarked in context; the ref_marked_only rate isolates content-word stress placement agreement."
+  },
+  "f_tn_accuracy": {
+    "gold_checks_total": 26,
+    "gold_checks_passed": 26,
+    "accuracy": 1.0,
+    "detail_file": "results/tn_accuracy.jsonl"
+  }
+}

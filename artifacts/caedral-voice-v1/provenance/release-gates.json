@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "file": "release-gates.json",
+    "kind": "TEMPLATE — founder gates, frozen before V1 measurement",
+    "created": "2026-08-22",
+    "fill_rule": "Every field whose value is null or \"PENDING\" is a TODO marker. Write measured values in place, set status to PASS/FAIL, and record the producing experiment + artifact path. The package ships only when every gate in 'gates' is PASS.",
+    "protocol_refs": [
+      "docs/benchmarks/NATURALNESS-GATE.md (GATE-NAT-01, frozen 2026-08-22, anchors measured on this machine)",
+      "docs/architecture/LONGFORM-DESIGN.md + experiments/CV-G1-E0014-longform-baseline/",
+      "docs/data/VOICE-SLATE-V1.md",
+      "docs/research/EVALUATION-BENCHMARKS.md (G4 speaker similarity)"
+    ]
+  },
+
+  "naturalness_median_target": "competitive_with_best_measured_baseline",
+  "baseline_anchors": {
+    "kokoro_dnsmos_median": 3.450,
+    "piper": 3.382
+  },
+  "min_voices_approved": 13,
+  "longform_variance_max": 0.0025,
+  "artifact_classes_allowed": [],
+  "cpu_only": true,
+
+  "gates": {
+    "naturalness": {
+      "thresholds_frozen": {
+        "dnsmos_ovrl_median_min": 3.15,
+        "dnsmos_ovrl_min_floor": 2.85
+      },
+      "producing_experiment": "GATE-NAT-01 run on caedral-v1 (natgate)",
+      "command": "benchmarks/run_natgate.py generate --engine caedral-v1 && scripts/classify_preview.py ... && benchmarks/run_natgate.py compare",
+      "measured_dnsmos_ovrl_median": null,
+      "measured_dnsmos_ovrl_min": null,
+      "artifact": null,
+      "status": "PENDING"
+    },
+    "voices_approved": {
+      "requirement": ">= min_voices_approved of 15 catalog voices pass the human listening gate",
+      "producing_experiment": "human listening gate over CV-G1-E0013 final model renders (slate: docs/data/VOICE-SLATE-V1.md)",
+      "measured_voices_approved": null,
+      "per_voice_verdicts": "TODO_FILL_WHEN_MEASURED",
+      "artifact": null,
+      "status": "PENDING"
+    },
+    "longform_variance": {
+      "threshold": "<= longform_variance_max (population variance of per-chunk dual-ASR minWER over long_001)",
+      "producing_experiment": "CV-G1-E0014 protocol re-run on V1 model",
+      "reference_anchor_fail": {
+        "note": "diagnostic prototype, recorded for honesty — V1 must beat this",
+        "measured_variance": 0.0173,
+        "source": "experiments/CV-G1-E0014-longform-baseline/results.json"
+      },
+      "measured_variance": null,
+      "measured_worst_chunk_minwer": null,
+      "artifact": null,
+      "status": "PENDING"
+    },
+    "intelligibility": {
+      "requirement": "WER median comparable to anchors at corpus defaults (anchors: Kokoro WER med 0.00 / max 0.33 = known acr_005 hyphen artifact; Piper med 0.00)",
+      "producing_experiment": "natgate scoring stage (dual-ASR minWER, faster-whisper small.en + base.en int8)",
+      "measured_wer_median": null,
+      "measured_cer_median": null,
+      "artifact": null,
+      "status": "PENDING"
+    },
+    "speaker_similarity": {
+      "requirement": "per-voice ECAPA-TDNN cosine gen-vs-reference with anchor delta; drift flag if delta < -0.08 (EVALUATION-BENCHMARKS G4)",
+      "producing_experiment": "V1 eval extension of natgate harness (ECAPA-TDNN, Apache-2.0)",
+      "measured_per_voice_sim": null,
+      "artifact": null,
+      "status": "PENDING"
+    },
+    "performance_profiles": {
+      "requirement": "RTF < 1.0 single-thread viable; RAM within deployment profile caps (A <=4GB / B <=2GB / C <=1GB); TTFA reported at threads {1,2,4,default}; CPU-only box",
+      "producing_experiment": "thread sweep on V1 (fresh-process runs per OMP_NUM_THREADS)",
+      "measured_rtf_by_threads": null,
+      "measured_peak_rss_mb": null,
+      "measured_ttfa_s": null,
+      "artifact": null,
+      "status": "PENDING"
+    }
+  },
+
+  "provenance_constraints": {
+    "artifact_classes_allowed": [],
+    "meaning": "No artifact classes outside the allow-list may enter the shipped package. Concretely prohibited today: jik876 HiFi-GAN original checkpoints (NO STATED LICENSE), Piper-derived training data (GPL gray, TEACHER-DATA-ENGINE Path B EXCLUDED), any CC-BY-NC weights (Emilia/F5-TTS class). Teacher audio (Kokoro) is training-data-only and never ships.",
+    "cpu_only": true,
+    "honesty_charter": "Every number labeled MEASURED / REPORTED BY THIRD PARTY / ESTIMATED / HYPOTHESIS; failed targets publish the measured minimum instead."
+  }
+}

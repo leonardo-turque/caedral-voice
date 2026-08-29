@@ -1,0 +1,367 @@
+{
+  "experiment": "CV-G1-E0026-graph-opt",
+  "task_id": "GRAPH-OPT-01",
+  "date": "2026-08-23",
+  "frozen_sentence": "Hello. This is the first generation of Caedral Voice.",
+  "voice": "af_sky",
+  "method": {
+    "session": "CPUExecutionProvider, ENABLE_ALL (ORT default graph optimization), inter_op=1",
+    "rtf": "engine.synth() wall / audio seconds; median of pooled 2x10 warm reps (1 cold discarded per subprocess); two rounds in opposite order per thread tier to cancel thermal drift; fresh subprocess per config",
+    "buckets": "raw session mode: real tokens zero-padded to bucket length, output tail trimmed to unpadded useful samples; RTF uses useful audio seconds",
+    "baseline_reference": "RTF ~0.46 @6thr ENABLE_ALL measured in a prior session (task brief)"
+  },
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cpus": 16
+  },
+  "versions": {
+    "python": "3.13.15",
+    "onnxruntime": "1.29.0",
+    "onnx": "1.22.0"
+  },
+  "configs": {
+    "fp32@t4": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\models\\kokoro\\kokoro-v1.0.onnx",
+      "reps_total": 20,
+      "median_wall_s": 2.085,
+      "audio_s": 3.2853,
+      "rtf_median": 0.6346,
+      "round_medians_s": {
+        "r1": 2.0282,
+        "r2": 2.1547
+      },
+      "cold_rtf": 0.8352,
+      "n_tokens_unpadded": 59
+    },
+    "opt@t4": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-opt.onnx",
+      "reps_total": 20,
+      "median_wall_s": 2.1276,
+      "audio_s": 3.2853,
+      "rtf_median": 0.6476,
+      "round_medians_s": {
+        "r1": 2.0679,
+        "r2": 2.275
+      },
+      "cold_rtf": 0.8828,
+      "n_tokens_unpadded": 59
+    },
+    "conservative@t4": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-conservative.onnx",
+      "reps_total": 20,
+      "median_wall_s": 2.1707,
+      "audio_s": 3.2853,
+      "rtf_median": 0.6607,
+      "round_medians_s": {
+        "r1": 2.207,
+        "r2": 2.1572
+      },
+      "cold_rtf": 1.0949,
+      "n_tokens_unpadded": 59
+    },
+    "fp32@t6": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\models\\kokoro\\kokoro-v1.0.onnx",
+      "reps_total": 20,
+      "median_wall_s": 2.2087,
+      "audio_s": 3.2853,
+      "rtf_median": 0.6723,
+      "round_medians_s": {
+        "r1": 2.0557,
+        "r2": 2.3925
+      },
+      "cold_rtf": 0.8762,
+      "n_tokens_unpadded": 59
+    },
+    "opt@t6": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-opt.onnx",
+      "reps_total": 20,
+      "median_wall_s": 1.9948,
+      "audio_s": 3.2853,
+      "rtf_median": 0.6072,
+      "round_medians_s": {
+        "r1": 1.9948,
+        "r2": 2.0076
+      },
+      "cold_rtf": 1.0748,
+      "n_tokens_unpadded": 59
+    },
+    "conservative@t6": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-conservative.onnx",
+      "reps_total": 20,
+      "median_wall_s": 1.9849,
+      "audio_s": 3.2853,
+      "rtf_median": 0.6042,
+      "round_medians_s": {
+        "r1": 2.0219,
+        "r2": 1.9791
+      },
+      "cold_rtf": 0.9915,
+      "n_tokens_unpadded": 59
+    },
+    "dynamic-natural@t6": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-conservative.onnx",
+      "reps_total": 20,
+      "median_wall_s": 2.2958,
+      "audio_useful_s": 4.05,
+      "produced_samples_median": 97200.0,
+      "rtf_median": 0.5669,
+      "round_medians_s": {
+        "r1": 2.9882,
+        "r2": 1.8078
+      },
+      "cold_rtf": 0.5186
+    },
+    "static-L100@t6": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-static-L100.onnx",
+      "reps_total": 20,
+      "median_wall_s": 3.4751,
+      "audio_useful_s": 4.05,
+      "produced_samples_median": 151800.0,
+      "rtf_median": 0.858,
+      "round_medians_s": {
+        "r1": 5.0434,
+        "r2": 2.9479
+      },
+      "cold_rtf": 1.0572
+    },
+    "static-L300@t6": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-static-L300.onnx",
+      "reps_total": 20,
+      "median_wall_s": 8.2797,
+      "audio_useful_s": 4.05,
+      "produced_samples_median": 324000.0,
+      "rtf_median": 2.0444,
+      "round_medians_s": {
+        "r1": 10.8631,
+        "r2": 6.9101
+      },
+      "cold_rtf": 2.7841
+    },
+    "static-L512@t6": {
+      "model": "C:\\Users\\leona\\Downloads\\caedral-voice\\artifacts\\optimized\\kokoro-static-L512.onnx",
+      "reps_total": 20,
+      "median_wall_s": 12.2518,
+      "audio_useful_s": 4.05,
+      "produced_samples_median": 529200.0,
+      "rtf_median": 3.0251,
+      "round_medians_s": {
+        "r1": 17.1887,
+        "r2": 11.2932
+      },
+      "cold_rtf": 4.049
+    }
+  },
+  "bucket_setup": {
+    "n_tokens_unpadded": 59,
+    "natural_window_len": 61,
+    "expected_raw_samples": 97200,
+    "expected_audio_s": 4.05,
+    "style_row_index": 58,
+    "note": "raw-block RTFs use raw output length (no wrapper trim); not directly comparable to engine-mode rows"
+  },
+  "deltas": {
+    "opt@t4": {
+      "baseline_rtf": 0.6346,
+      "variant_rtf": 0.6476,
+      "speedup_pct": -2.01,
+      "rtf_delta": 0.013
+    },
+    "conservative@t4": {
+      "baseline_rtf": 0.6346,
+      "variant_rtf": 0.6607,
+      "speedup_pct": -3.95,
+      "rtf_delta": 0.0261
+    },
+    "opt@t6": {
+      "baseline_rtf": 0.6723,
+      "variant_rtf": 0.6072,
+      "speedup_pct": 10.72,
+      "rtf_delta": -0.0651
+    },
+    "conservative@t6": {
+      "baseline_rtf": 0.6723,
+      "variant_rtf": 0.6042,
+      "speedup_pct": 11.27,
+      "rtf_delta": -0.0681
+    },
+    "static-L100-vs-dynamic-natural": {
+      "dynamic_rtf": 0.5669,
+      "static_rtf": 0.858,
+      "speedup_pct": -33.93
+    },
+    "static-L300-vs-dynamic-natural": {
+      "dynamic_rtf": 0.5669,
+      "static_rtf": 2.0444,
+      "speedup_pct": -72.27
+    },
+    "static-L512-vs-dynamic-natural": {
+      "dynamic_rtf": 0.5669,
+      "static_rtf": 3.0251,
+      "speedup_pct": -81.26
+    }
+  },
+  "targets": {
+    "gate_rtf_max": 0.4,
+    "stretch_rtf_max": 0.2,
+    "best_config": "dynamic-natural@t6",
+    "best_rtf": 0.5669,
+    "gate_met": false,
+    "stretch_met": false
+  },
+  "wall_total_min": 17.9,
+  "graph_stats": {
+    "baseline": {
+      "nodes": 2464,
+      "initializers": 554,
+      "file_mb": 310.45
+    },
+    "kokoro-opt-onnxsim-v2": {
+      "nodes": 2544,
+      "initializers": 553,
+      "op_deltas_vs_baseline": {
+        "MatMul->Gemm": "+76/-76",
+        "Reshape": "+128",
+        "Concat": "+44",
+        "Slice": "+39",
+        "Shape": "+20",
+        "Div": "-12",
+        "Sqrt": "-24",
+        "Unsqueeze": "-10",
+        "Gather": "-9",
+        "Cast": "-12",
+        "ConstantOfShape": "-5"
+      },
+      "note": "onnxsim canonicalization GROWS the graph; transpose-fusion passes also break ORT load (Gemm_11 shape unification) and were disabled in v2"
+    },
+    "kokoro-conservative": {
+      "nodes": 2464,
+      "initializers": 546,
+      "removed": "8 duplicate initializers (52 B)",
+      "dead_nodes_removed": 0,
+      "unused_initializers_removed": 0
+    },
+    "buckets": {
+      "100": {
+        "bucket_tokens": 100,
+        "nodes": 2464,
+        "initializers": 546,
+        "value_info_fixed": 3,
+        "shape_inference": true,
+        "loads": true,
+        "load_msg": "len=161400",
+        "mb": 310.45,
+        "wall_s": 7.7,
+        "file": "artifacts\\optimized\\kokoro-static-L100.onnx"
+      },
+      "300": {
+        "bucket_tokens": 300,
+        "nodes": 2464,
+        "initializers": 546,
+        "value_info_fixed": 3,
+        "shape_inference": true,
+        "loads": true,
+        "load_msg": "len=593400",
+        "mb": 310.45,
+        "wall_s": 20.2,
+        "file": "artifacts\\optimized\\kokoro-static-L300.onnx"
+      },
+      "512": {
+        "bucket_tokens": 512,
+        "nodes": 2464,
+        "initializers": 546,
+        "value_info_fixed": 3,
+        "shape_inference": true,
+        "loads": true,
+        "load_msg": "len=864600",
+        "mb": 310.45,
+        "wall_s": 30.3,
+        "file": "artifacts\\optimized\\kokoro-static-L512.onnx"
+      }
+    },
+    "structural_census": {
+      "transpose_after_transpose_pairs": 0,
+      "cast_after_cast_pairs": 0,
+      "identity_nodes": 0,
+      "dropout_nodes": 0,
+      "unused_initializers": 0,
+      "duplicate_initializers": 8,
+      "unused_output_tensors": 12,
+      "note": "graph is already free of naive redundant patterns; Sin x51 are Snake-activation terms (Gemm-fed, not foldable); position_embeddings cap window at 512"
+    }
+  },
+  "equivalence": {
+    "conservative-vs-baseline": {
+      "label": "baseline-vs-conservative",
+      "tolerance": 0.0001,
+      "worst_max_abs_diff": 0.0,
+      "pass": true
+    },
+    "onnxsim-v2-vs-baseline": {
+      "label": "baseline-vs-onnxsim-v2",
+      "tolerance": 0.0001,
+      "worst_max_abs_diff": 0.10362586006522179,
+      "pass": false
+    },
+    "static-L100-vs-conservative-dynamic": {
+      "label": "cons-dynamic-vs-static-L100",
+      "tolerance": 0.0001,
+      "worst_max_abs_diff": 0.09767433442175388,
+      "pass": false
+    },
+    "static-L300-vs-conservative-dynamic": {
+      "label": "cons-dynamic-vs-static-L300",
+      "tolerance": 0.0001,
+      "worst_max_abs_diff": 0.42772161960601807,
+      "pass": false
+    },
+    "static-L512-vs-conservative-dynamic": {
+      "label": "cons-dynamic-vs-static-L512",
+      "tolerance": 0.0001,
+      "worst_max_abs_diff": 0.41061931848526,
+      "pass": false
+    }
+  },
+  "verdicts": {
+    "manual_zero_loss_cleanup (dedup+prune, kokoro-conservative.onnx)": {
+      "quality": "BITWISE IDENTICAL to baseline (max|d|=0 on 4 input cases incl real frontend tokens)",
+      "rtf": {
+        "t4": 0.6607,
+        "t6": 0.6042
+      },
+      "decision_t4": "KILL: slower (-4.0%): RTF 0.6346 -> 0.6607",
+      "decision_t6_raw_pooled": "KEEP: RTF 0.6723 -> 0.6042 (+11.3%)",
+      "caveat_t6": "fp32@t6 round2 (0.7282) is a thermal-spike outlier; clean-round pairing r1: cons 0.6154 vs fp32 0.6257 (+1.7%); r2 pairing confounded by the spike. True effect ~0-2%, not a deployable speed claim.",
+      "overall": "KEEP as hygiene only (bitwise-exact, 8 dup initializers removed); NO RTF gain beyond thermal noise"
+    },
+    "onnxsim_canonicalization (kokoro-opt.onnx)": {
+      "quality": "FAILS equivalence gate: max|d| up to 0.104 (r>=0.9964) - chaotic amplification through transformer+vocoder; also needed transpose-fusion passes disabled to even load (Gemm_11 shape error)",
+      "rtf": {
+        "t4": 0.6476,
+        "t6": 0.6072
+      },
+      "decision": "KILL (violates zero-loss rule; its +10.7% @t6 vs the spiked fp32 baseline sits in the same thermal-noise band as conservative - no reliable gain)"
+    },
+    "shape_specialization_buckets (static L100/L300/L512)": {
+      "quality": "FAILS strict equivalence vs dynamic natural render (max|d| up to 0.43 from ORT plan changes under static shape declarations; graphs are pure dim edits of an exact base)",
+      "rtf_vs_dynamic_natural": {
+        "L100": {
+          "dynamic_rtf": 0.5669,
+          "static_rtf": 0.858,
+          "speedup_pct": -33.93
+        },
+        "L300": {
+          "dynamic_rtf": 0.5669,
+          "static_rtf": 2.0444,
+          "speedup_pct": -72.27
+        },
+        "L512": {
+          "dynamic_rtf": 0.5669,
+          "static_rtf": 3.0251,
+          "speedup_pct": -81.26
+        }
+      },
+      "decision": "KILL decisively: padding compute swamps any planning gain (-34% / -72% / -81%). Architectural cap found: position_embeddings [512,128] -> no variant can exceed a 512-token window"
+    }
+  }
+}

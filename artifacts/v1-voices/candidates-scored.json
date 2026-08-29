@@ -1,0 +1,646 @@
+{
+  "scored_at": "2026-08-23",
+  "total_clips": 52,
+  "candidates": [
+    {
+      "voice": "af_bella",
+      "gender": "F",
+      "median_wer": 0.1736,
+      "max_wer": 0.25,
+      "median_dnsmos": 3.38,
+      "min_dnsmos": 3.34,
+      "sentences": [
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "A",
+          "file": "af_bella_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.364,
+          "duration_s": 3.48,
+          "hypothesis": "Hello, this is the first generation of Kedral Voice."
+        },
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "B",
+          "file": "af_bella_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.4,
+          "duration_s": 5.5,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "C",
+          "file": "af_bella_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.396,
+          "duration_s": 6.1,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "D",
+          "file": "af_bella_D.wav",
+          "wer": 0.0,
+          "dnsmos": 3.34,
+          "duration_s": 4.1,
+          "hypothesis": "Artificial intelligence should sound natural, expressive, and human."
+        }
+      ]
+    },
+    {
+      "voice": "af_heart",
+      "gender": "F",
+      "median_wer": 0.1875,
+      "max_wer": 0.3333,
+      "median_dnsmos": 3.466,
+      "min_dnsmos": 3.364,
+      "sentences": [
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "A",
+          "file": "af_heart_A.wav",
+          "wer": 0.3333,
+          "dnsmos": 3.424,
+          "duration_s": 3.31,
+          "hypothesis": "Hello, this is the first generation of key drill voice."
+        },
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "B",
+          "file": "af_heart_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.543,
+          "duration_s": 5.21,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "C",
+          "file": "af_heart_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.507,
+          "duration_s": 5.8,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "D",
+          "file": "af_heart_D.wav",
+          "wer": 0.125,
+          "dnsmos": 3.364,
+          "duration_s": 3.82,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human."
+        }
+      ]
+    },
+    {
+      "voice": "af_kore",
+      "gender": "F",
+      "median_wer": 0.125,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.425,
+      "min_dnsmos": 3.355,
+      "sentences": [
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "A",
+          "file": "af_kore_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.355,
+          "duration_s": 3.24,
+          "hypothesis": "Hello, this is the first generation of Kedral Voice."
+        },
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "B",
+          "file": "af_kore_B.wav",
+          "wer": 0.125,
+          "dnsmos": 3.456,
+          "duration_s": 5.74,
+          "hypothesis": "The CPU supports AVX2 instructions but not AVX512."
+        },
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "C",
+          "file": "af_kore_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.478,
+          "duration_s": 6.76,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "D",
+          "file": "af_kore_D.wav",
+          "wer": 0.125,
+          "dnsmos": 3.395,
+          "duration_s": 4.16,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human."
+        }
+      ]
+    },
+    {
+      "voice": "af_nicole",
+      "gender": "F",
+      "median_wer": 0.1111,
+      "max_wer": 0.25,
+      "median_dnsmos": 1.881,
+      "min_dnsmos": 1.788,
+      "sentences": [
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "A",
+          "file": "af_nicole_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 1.792,
+          "duration_s": 4.91,
+          "hypothesis": "Hello, this is the first generation of Kedral Voice."
+        },
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "B",
+          "file": "af_nicole_B.wav",
+          "wer": 0.25,
+          "dnsmos": 2.248,
+          "duration_s": 8.41,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "C",
+          "file": "af_nicole_C.wav",
+          "wer": 0.0,
+          "dnsmos": 1.788,
+          "duration_s": 8.66,
+          "hypothesis": "The invoice totals $1,247.83, due within 30 days."
+        },
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "D",
+          "file": "af_nicole_D.wav",
+          "wer": 0.0,
+          "dnsmos": 1.971,
+          "duration_s": 6.29,
+          "hypothesis": "Artificial intelligence should sound natural, expressive, and human."
+        }
+      ]
+    },
+    {
+      "voice": "af_nova",
+      "gender": "F",
+      "median_wer": 0.1875,
+      "max_wer": 0.3333,
+      "median_dnsmos": 3.441,
+      "min_dnsmos": 3.428,
+      "sentences": [
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "A",
+          "file": "af_nova_A.wav",
+          "wer": 0.3333,
+          "dnsmos": 3.48,
+          "duration_s": 3.63,
+          "hypothesis": "Hello, this is the first generation of key drill voice."
+        },
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "B",
+          "file": "af_nova_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.428,
+          "duration_s": 5.44,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "C",
+          "file": "af_nova_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.449,
+          "duration_s": 6.21,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "D",
+          "file": "af_nova_D.wav",
+          "wer": 0.125,
+          "dnsmos": 3.432,
+          "duration_s": 4.14,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human."
+        }
+      ]
+    },
+    {
+      "voice": "af_sky",
+      "gender": "F",
+      "median_wer": 0.1875,
+      "max_wer": 0.3333,
+      "median_dnsmos": 3.478,
+      "min_dnsmos": 3.286,
+      "sentences": [
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "A",
+          "file": "af_sky_A.wav",
+          "wer": 0.3333,
+          "dnsmos": 3.476,
+          "duration_s": 3.33,
+          "hypothesis": "Hello, this is the first generation of key drill voice."
+        },
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "B",
+          "file": "af_sky_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.481,
+          "duration_s": 5.23,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "C",
+          "file": "af_sky_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.497,
+          "duration_s": 5.82,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "D",
+          "file": "af_sky_D.wav",
+          "wer": 0.125,
+          "dnsmos": 3.286,
+          "duration_s": 3.93,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human."
+        }
+      ]
+    },
+    {
+      "voice": "am_adam",
+      "gender": "M",
+      "median_wer": 0.1736,
+      "max_wer": 0.25,
+      "median_dnsmos": 3.41,
+      "min_dnsmos": 3.298,
+      "sentences": [
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "A",
+          "file": "am_adam_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.298,
+          "duration_s": 3.05,
+          "hypothesis": "Hello, this is the first generation of Kedrel Voice."
+        },
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "B",
+          "file": "am_adam_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.38,
+          "duration_s": 5.16,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "C",
+          "file": "am_adam_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.441,
+          "duration_s": 5.76,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "D",
+          "file": "am_adam_D.wav",
+          "wer": 0.125,
+          "dnsmos": 3.446,
+          "duration_s": 3.78,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human."
+        }
+      ]
+    },
+    {
+      "voice": "am_echo",
+      "gender": "M",
+      "median_wer": 0.1736,
+      "max_wer": 0.25,
+      "median_dnsmos": 3.477,
+      "min_dnsmos": 3.468,
+      "sentences": [
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "A",
+          "file": "am_echo_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.483,
+          "duration_s": 3.58,
+          "hypothesis": "Hello, this is the first generation of Kedral Voice."
+        },
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "B",
+          "file": "am_echo_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.471,
+          "duration_s": 5.46,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "C",
+          "file": "am_echo_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.468,
+          "duration_s": 5.97,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "D",
+          "file": "am_echo_D.wav",
+          "wer": 0.0,
+          "dnsmos": 3.491,
+          "duration_s": 4.22,
+          "hypothesis": "Artificial intelligence should sound natural, expressive, and human."
+        }
+      ]
+    },
+    {
+      "voice": "am_eric",
+      "gender": "M",
+      "median_wer": 0.1736,
+      "max_wer": 0.375,
+      "median_dnsmos": 3.384,
+      "min_dnsmos": 3.342,
+      "sentences": [
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "A",
+          "file": "am_eric_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.402,
+          "duration_s": 3.05,
+          "hypothesis": "Hello, this is the first generation of Kedral Voice."
+        },
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "B",
+          "file": "am_eric_B.wav",
+          "wer": 0.375,
+          "dnsmos": 3.342,
+          "duration_s": 4.8,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX 512."
+        },
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "C",
+          "file": "am_eric_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.432,
+          "duration_s": 5.42,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "D",
+          "file": "am_eric_D.wav",
+          "wer": 0.125,
+          "dnsmos": 3.365,
+          "duration_s": 3.46,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human."
+        }
+      ]
+    },
+    {
+      "voice": "am_fenrir",
+      "gender": "M",
+      "median_wer": 0.6111,
+      "max_wer": 1.0,
+      "median_dnsmos": 3.47,
+      "min_dnsmos": 3.409,
+      "sentences": [
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "A",
+          "file": "am_fenrir_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.434,
+          "duration_s": 3.05,
+          "hypothesis": "Hello, this is the first generation of Kedral Voice."
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B",
+          "file": "am_fenrir_B.wav",
+          "wer": 0.125,
+          "dnsmos": null,
+          "duration_s": 5.53,
+          "hypothesis": "The CPU supports AVX-2 instructions but not AVX-512."
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B.wav.clamped",
+          "file": "am_fenrir_B.wav.clamped.wav",
+          "wer": 1.0,
+          "dnsmos": null,
+          "duration_s": 5.53,
+          "hypothesis": "The CPU supports AVX-2 instructions but not AVX-512."
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B.wav.clamped.wav.scaled",
+          "file": "am_fenrir_B.wav.clamped.wav.scaled.wav",
+          "wer": 1.0,
+          "dnsmos": 3.47,
+          "duration_s": 5.53,
+          "hypothesis": "The CPU supports AVX2 instructions but not AVX512."
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B.wav.scaled",
+          "file": "am_fenrir_B.wav.scaled.wav",
+          "wer": 1.0,
+          "dnsmos": 3.47,
+          "duration_s": 5.53,
+          "hypothesis": "The CPU supports AVX2 instructions but not AVX512."
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "C",
+          "file": "am_fenrir_C.wav",
+          "wer": 0.125,
+          "dnsmos": null,
+          "duration_s": 6.42,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "C.wav.scaled",
+          "file": "am_fenrir_C.wav.scaled.wav",
+          "wer": 1.0,
+          "dnsmos": 3.409,
+          "duration_s": 6.42,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "D",
+          "file": "am_fenrir_D.wav",
+          "wer": 0.125,
+          "dnsmos": 3.47,
+          "duration_s": 3.82,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human."
+        }
+      ]
+    },
+    {
+      "voice": "am_michael",
+      "gender": "M",
+      "median_wer": 0.2361,
+      "max_wer": 3.125,
+      "median_dnsmos": 3.49,
+      "min_dnsmos": 3.449,
+      "sentences": [
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "A",
+          "file": "am_michael_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.477,
+          "duration_s": 3.71,
+          "hypothesis": "Hello, this is the first generation of Kedral Voice."
+        },
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "B",
+          "file": "am_michael_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.449,
+          "duration_s": 5.78,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "C",
+          "file": "am_michael_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.504,
+          "duration_s": 6.53,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "D",
+          "file": "am_michael_D.wav",
+          "wer": 3.125,
+          "dnsmos": 3.514,
+          "duration_s": 4.37,
+          "hypothesis": "Artificial intelligence should sound natural, expressive and human.  //  //  // "
+        }
+      ]
+    },
+    {
+      "voice": "am_onyx",
+      "gender": "M",
+      "median_wer": 0.1736,
+      "max_wer": 0.25,
+      "median_dnsmos": 3.479,
+      "min_dnsmos": 3.367,
+      "sentences": [
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "A",
+          "file": "am_onyx_A.wav",
+          "wer": 0.2222,
+          "dnsmos": 3.458,
+          "duration_s": 3.63,
+          "hypothesis": "Hello, this is the first generation of Kidrel Voice."
+        },
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "B",
+          "file": "am_onyx_B.wav",
+          "wer": 0.25,
+          "dnsmos": 3.367,
+          "duration_s": 5.7,
+          "hypothesis": "The CPU supports AVX2 instructions, but not AVX512."
+        },
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "C",
+          "file": "am_onyx_C.wav",
+          "wer": 0.125,
+          "dnsmos": 3.499,
+          "duration_s": 6.14,
+          "hypothesis": "The invoice totals $1,247.83 due within 30 days."
+        },
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "D",
+          "file": "am_onyx_D.wav",
+          "wer": 0.0,
+          "dnsmos": 3.513,
+          "duration_s": 4.39,
+          "hypothesis": "Artificial intelligence should sound natural, expressive, and human."
+        }
+      ]
+    }
+  ]
+}

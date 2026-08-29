@@ -1,0 +1,224 @@
+{
+  "generated_at_utc": "2026-08-23T18:08:25.990552+00:00",
+  "machine": "i7-13620H CPU-only",
+  "model": "Kokoro v1.0 ONNX (Apache-2.0)",
+  "protocol": "3 voices x 4 frontend-stress sentences; baseline=stock phonemizer; enhanced=Caedral lexicon+g2pen phonemes via is_phonemes=True",
+  "results": [
+    {
+      "voice": "af_heart",
+      "sentence": "control",
+      "text": "Hello. This is the first generation of Caedral Voice.",
+      "caedral_phonemes": "h \u0259 l \u02c8 o \u028a \u2016 \u00f0 \u02c8 \u026a s \u02c8 \u026a z \u00f0 \u0259 f \u02c8 \u025d\u02d0 s t d \u0292 \u02cc \u025b n \u025a \u02c8 e \u026a \u0283 \u0259 n \u02c8 \u028c v k \u02c8 \u025b d r \u0259 l v \u02c8 \u0254 \u026a s",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.2222,
+        "dnsmos": 3.426,
+        "rtf": 4.189
+      },
+      "enhanced": {
+        "class": "PARTIAL_SPEECH",
+        "wer": 0.3333,
+        "dnsmos": 3.477,
+        "rtf": 5.871
+      }
+    },
+    {
+      "voice": "af_heart",
+      "sentence": "propernoun",
+      "text": "Welcome to Caedral, where every voice tells a story.",
+      "caedral_phonemes": "w \u02c8 \u025b l k \u0259 m t \u02c8 u\u02d0 k \u02c8 \u025b d r \u0259 l | w \u02c8 \u025b r \u02c8 \u025b v \u025a i\u02d0 v \u02c8 \u0254 \u026a s t \u02c8 \u025b l z \u0259 s t \u02c8 \u0254\u02d0 r i\u02d0",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.412,
+        "rtf": 2.566
+      },
+      "enhanced": {
+        "class": "BABBLE",
+        "wer": 0.7778,
+        "dnsmos": 3.356,
+        "rtf": 3.682
+      }
+    },
+    {
+      "voice": "af_heart",
+      "sentence": "numbers",
+      "text": "The invoice totals $1,247.83, due within 30 days.",
+      "caedral_phonemes": "\u00f0 \u0259 \u02c8 \u026a n v \u0254 \u026a s t \u02c8 o \u028a t \u0259 l z w \u02c8 \u028c n \u03b8 \u02c8 a \u028a z \u0259 n d t \u02c8 u\u02d0 h \u02c8 \u028c n d r \u0259 d f \u02c8 \u0254\u02d0 r t i\u02d0 s \u02c8 \u025b v \u0259 n d \u02c8 \u0251\u02d0 l \u025a z \u0259 n d \u02c8 e \u026a t i\u02d0 \u03b8 r \u02c8 i\u02d0 s \u02c8 \u025b n t s | d \u02c8 u\u02d0 w \u026a \u00f0 \u02c8 \u026a n \u03b8 \u02c8 \u025d\u02d0 d \u02cc i\u02d0 d \u02c8 e \u026a z",
+      "baseline": {
+        "class": "NATURAL",
+        "wer": 0.0,
+        "dnsmos": 3.507,
+        "rtf": 5.973
+      },
+      "enhanced": {
+        "class": "BABBLE",
+        "wer": 0.8,
+        "dnsmos": 2.818,
+        "rtf": 10.823
+      }
+    },
+    {
+      "voice": "af_heart",
+      "sentence": "abbrev",
+      "text": "The CPU supports AVX2 instructions but not AVX-512.",
+      "caedral_phonemes": "\u00f0 \u0259 s \u02cc i\u02d0 p \u02cc i\u02d0 j \u02c8 u\u02d0 s \u0259 p \u02c8 \u0254\u02d0 r t s \u02c8 \u00e6 v k s t \u02c8 u\u02d0 \u02cc \u026a n s t r \u02c8 \u028c k \u0283 \u0259 n z b \u02c8 \u028c t n \u02c8 \u0251\u02d0 t \u02c8 \u00e6 v k s f \u02c8 a \u026a v h \u02c8 \u028c n d r \u0259 d t w \u02c8 \u025b l v",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.2222,
+        "dnsmos": 3.545,
+        "rtf": 4.886
+      },
+      "enhanced": {
+        "class": "BABBLE",
+        "wer": 1.2222,
+        "dnsmos": 3.273,
+        "rtf": 6.283
+      }
+    },
+    {
+      "voice": "af_bella",
+      "sentence": "control",
+      "text": "Hello. This is the first generation of Caedral Voice.",
+      "caedral_phonemes": "h \u0259 l \u02c8 o \u028a \u2016 \u00f0 \u02c8 \u026a s \u02c8 \u026a z \u00f0 \u0259 f \u02c8 \u025d\u02d0 s t d \u0292 \u02cc \u025b n \u025a \u02c8 e \u026a \u0283 \u0259 n \u02c8 \u028c v k \u02c8 \u025b d r \u0259 l v \u02c8 \u0254 \u026a s",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.356,
+        "rtf": 3.605
+      },
+      "enhanced": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.249,
+        "rtf": 4.851
+      }
+    },
+    {
+      "voice": "af_bella",
+      "sentence": "propernoun",
+      "text": "Welcome to Caedral, where every voice tells a story.",
+      "caedral_phonemes": "w \u02c8 \u025b l k \u0259 m t \u02c8 u\u02d0 k \u02c8 \u025b d r \u0259 l | w \u02c8 \u025b r \u02c8 \u025b v \u025a i\u02d0 v \u02c8 \u0254 \u026a s t \u02c8 \u025b l z \u0259 s t \u02c8 \u0254\u02d0 r i\u02d0",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.422,
+        "rtf": 3.097
+      },
+      "enhanced": {
+        "class": "PARTIAL_SPEECH",
+        "wer": 0.4444,
+        "dnsmos": 3.204,
+        "rtf": 4.096
+      }
+    },
+    {
+      "voice": "af_bella",
+      "sentence": "numbers",
+      "text": "The invoice totals $1,247.83, due within 30 days.",
+      "caedral_phonemes": "\u00f0 \u0259 \u02c8 \u026a n v \u0254 \u026a s t \u02c8 o \u028a t \u0259 l z w \u02c8 \u028c n \u03b8 \u02c8 a \u028a z \u0259 n d t \u02c8 u\u02d0 h \u02c8 \u028c n d r \u0259 d f \u02c8 \u0254\u02d0 r t i\u02d0 s \u02c8 \u025b v \u0259 n d \u02c8 \u0251\u02d0 l \u025a z \u0259 n d \u02c8 e \u026a t i\u02d0 \u03b8 r \u02c8 i\u02d0 s \u02c8 \u025b n t s | d \u02c8 u\u02d0 w \u026a \u00f0 \u02c8 \u026a n \u03b8 \u02c8 \u025d\u02d0 d \u02cc i\u02d0 d \u02c8 e \u026a z",
+      "baseline": {
+        "class": "NATURAL",
+        "wer": 0.0,
+        "dnsmos": 3.386,
+        "rtf": 5.245
+      },
+      "enhanced": {
+        "class": "BABBLE",
+        "wer": 1.3,
+        "dnsmos": 3.074,
+        "rtf": 8.319
+      }
+    },
+    {
+      "voice": "af_bella",
+      "sentence": "abbrev",
+      "text": "The CPU supports AVX2 instructions but not AVX-512.",
+      "caedral_phonemes": "\u00f0 \u0259 s \u02cc i\u02d0 p \u02cc i\u02d0 j \u02c8 u\u02d0 s \u0259 p \u02c8 \u0254\u02d0 r t s \u02c8 \u00e6 v k s t \u02c8 u\u02d0 \u02cc \u026a n s t r \u02c8 \u028c k \u0283 \u0259 n z b \u02c8 \u028c t n \u02c8 \u0251\u02d0 t \u02c8 \u00e6 v k s f \u02c8 a \u026a v h \u02c8 \u028c n d r \u0259 d t w \u02c8 \u025b l v",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.2222,
+        "dnsmos": 3.41,
+        "rtf": 5.135
+      },
+      "enhanced": {
+        "class": "BABBLE",
+        "wer": 0.6667,
+        "dnsmos": 3.33,
+        "rtf": 7.671
+      }
+    },
+    {
+      "voice": "am_michael",
+      "sentence": "control",
+      "text": "Hello. This is the first generation of Caedral Voice.",
+      "caedral_phonemes": "h \u0259 l \u02c8 o \u028a \u2016 \u00f0 \u02c8 \u026a s \u02c8 \u026a z \u00f0 \u0259 f \u02c8 \u025d\u02d0 s t d \u0292 \u02cc \u025b n \u025a \u02c8 e \u026a \u0283 \u0259 n \u02c8 \u028c v k \u02c8 \u025b d r \u0259 l v \u02c8 \u0254 \u026a s",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.467,
+        "rtf": 3.892
+      },
+      "enhanced": {
+        "class": "PARTIAL_SPEECH",
+        "wer": 0.3333,
+        "dnsmos": 3.444,
+        "rtf": 3.766
+      }
+    },
+    {
+      "voice": "am_michael",
+      "sentence": "propernoun",
+      "text": "Welcome to Caedral, where every voice tells a story.",
+      "caedral_phonemes": "w \u02c8 \u025b l k \u0259 m t \u02c8 u\u02d0 k \u02c8 \u025b d r \u0259 l | w \u02c8 \u025b r \u02c8 \u025b v \u025a i\u02d0 v \u02c8 \u0254 \u026a s t \u02c8 \u025b l z \u0259 s t \u02c8 \u0254\u02d0 r i\u02d0",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.1111,
+        "dnsmos": 3.499,
+        "rtf": 2.568
+      },
+      "enhanced": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.2222,
+        "dnsmos": 3.371,
+        "rtf": 3.592
+      }
+    },
+    {
+      "voice": "am_michael",
+      "sentence": "numbers",
+      "text": "The invoice totals $1,247.83, due within 30 days.",
+      "caedral_phonemes": "\u00f0 \u0259 \u02c8 \u026a n v \u0254 \u026a s t \u02c8 o \u028a t \u0259 l z w \u02c8 \u028c n \u03b8 \u02c8 a \u028a z \u0259 n d t \u02c8 u\u02d0 h \u02c8 \u028c n d r \u0259 d f \u02c8 \u0254\u02d0 r t i\u02d0 s \u02c8 \u025b v \u0259 n d \u02c8 \u0251\u02d0 l \u025a z \u0259 n d \u02c8 e \u026a t i\u02d0 \u03b8 r \u02c8 i\u02d0 s \u02c8 \u025b n t s | d \u02c8 u\u02d0 w \u026a \u00f0 \u02c8 \u026a n \u03b8 \u02c8 \u025d\u02d0 d \u02cc i\u02d0 d \u02c8 e \u026a z",
+      "baseline": {
+        "class": "NATURAL",
+        "wer": 0.0,
+        "dnsmos": 3.499,
+        "rtf": 5.149
+      },
+      "enhanced": {
+        "class": "PARTIAL_SPEECH",
+        "wer": 0.4,
+        "dnsmos": 3.116,
+        "rtf": 6.899
+      }
+    },
+    {
+      "voice": "am_michael",
+      "sentence": "abbrev",
+      "text": "The CPU supports AVX2 instructions but not AVX-512.",
+      "caedral_phonemes": "\u00f0 \u0259 s \u02cc i\u02d0 p \u02cc i\u02d0 j \u02c8 u\u02d0 s \u0259 p \u02c8 \u0254\u02d0 r t s \u02c8 \u00e6 v k s t \u02c8 u\u02d0 \u02cc \u026a n s t r \u02c8 \u028c k \u0283 \u0259 n z b \u02c8 \u028c t n \u02c8 \u0251\u02d0 t \u02c8 \u00e6 v k s f \u02c8 a \u026a v h \u02c8 \u028c n d r \u0259 d t w \u02c8 \u025b l v",
+      "baseline": {
+        "class": "INTELLIGIBLE",
+        "wer": 0.2222,
+        "dnsmos": 3.454,
+        "rtf": 4.689
+      },
+      "enhanced": {
+        "class": "PARTIAL_SPEECH",
+        "wer": 0.5556,
+        "dnsmos": 3.474,
+        "rtf": 6.528
+      }
+    }
+  ]
+}

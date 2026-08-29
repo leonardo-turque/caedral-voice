@@ -1,0 +1,56 @@
+{
+  "machine": "i7-13620H 10C/16T, 24GB RAM, Windows 11, CPU-only",
+  "date": "2026-08-23",
+  "threads_1": {
+    "threads": 1,
+    "load_s": 5.031,
+    "rtf_median": 1.6558,
+    "rtf_min": 1.506,
+    "audio_s": 3.11,
+    "rss_warm_mb": 794
+  },
+  "threads_2": {
+    "threads": 2,
+    "load_s": 3.583,
+    "rtf_median": 0.9218,
+    "rtf_min": 0.8892,
+    "audio_s": 3.11,
+    "rss_warm_mb": 795
+  },
+  "threads_4": {
+    "threads": 4,
+    "load_s": 3.537,
+    "rtf_median": 0.7247,
+    "rtf_min": 0.6547,
+    "audio_s": 3.11,
+    "rss_warm_mb": 796
+  },
+  "speed_0.5x": {
+    "speed": 0.5,
+    "audio_s": 3.03,
+    "peak": 0.592,
+    "finite": true,
+    "clipped": false
+  },
+  "speed_1.0x": {
+    "speed": 1.0,
+    "audio_s": 1.47,
+    "peak": 0.572,
+    "finite": true,
+    "clipped": false
+  },
+  "speed_1.5x": {
+    "speed": 1.5,
+    "audio_s": 0.87,
+    "peak": 0.511,
+    "finite": true,
+    "clipped": false
+  },
+  "speed_2.0x": {
+    "speed": 2.0,
+    "audio_s": 0.75,
+    "peak": 0.362,
+    "finite": true,
+    "clipped": false
+  }
+}

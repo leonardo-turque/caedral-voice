@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "total_wall_s": 12.81,
+  "proof": {
+    "experiment": "CV-G1-E0003",
+    "claim": "30-step run + separate-process resume from last.pt reaches bitwise-identical state to an uninterrupted 60-step run",
+    "passed": true,
+    "checks": {
+      "both_at_step_60": true,
+      "model_weights_bitwise_identical": true,
+      "optimizer_state_identical": true,
+      "scheduler_position_identical": true,
+      "rng_states_identical": true,
+      "train_rows_complete_1_to_60_no_gaps": true,
+      "loss_trajectory_identical_across_join": true,
+      "lr_trajectory_identical_across_join": true,
+      "rotation_keeps_last_two_step_ckpts": true,
+      "best_tracked": true
+    },
+    "details": {
+      "model_max_abs_diff": 0.0,
+      "step_checkpoint_files": [
+        "step_000000045.pt",
+        "step_000000060.pt"
+      ],
+      "best": {
+        "best_value": 0.09078830853104591,
+        "best_step": 60,
+        "val_steps": [
+          15,
+          30,
+          30,
+          45,
+          60
+        ]
+      },
+      "nan_events_total": 0
+    },
+    "verified_at_utc": "2026-08-22T18:07:55Z"
+  }
+}

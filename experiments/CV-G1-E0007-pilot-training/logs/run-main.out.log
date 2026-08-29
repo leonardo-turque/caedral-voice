@@ -1,0 +1,7 @@
+[pilot] threads=4 torch=2.6.0+cpu python=3.13.15
+[data] librittsr-smoke-10spk: 1441 utt (1.66 h)
+[data] speakers=10 vocab_size=43
+[data] usable utterances=1441
+[data] usable audio=1.662 h
+[split] train=1293 val=148 (stratified by speaker, stride 10)
+[model] tiny.json(use_flow=True) params=8,733,094

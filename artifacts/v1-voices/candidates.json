@@ -1,0 +1,552 @@
+{
+  "candidates": [
+    {
+      "voice": "af_bella",
+      "gender": "F",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.371,
+      "min_dnsmos": 3.331,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.356
+        },
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.41
+        },
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.386
+        },
+        {
+          "voice": "af_bella",
+          "gender": "F",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.331
+        }
+      ]
+    },
+    {
+      "voice": "af_heart",
+      "gender": "F",
+      "median_wer": 0.1111,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.466,
+      "min_dnsmos": 3.356,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.426
+        },
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.545
+        },
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.507
+        },
+        {
+          "voice": "af_heart",
+          "gender": "F",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.356
+        }
+      ]
+    },
+    {
+      "voice": "af_kore",
+      "gender": "F",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.427,
+      "min_dnsmos": 3.356,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.356
+        },
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.461
+        },
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.484
+        },
+        {
+          "voice": "af_kore",
+          "gender": "F",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.393
+        }
+      ]
+    },
+    {
+      "voice": "af_nicole",
+      "gender": "F",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 1.889,
+      "min_dnsmos": 1.792,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 1.792
+        },
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 2.269
+        },
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "C",
+          "class": "INTELLIGIBLE",
+          "wer": 0.0,
+          "dnsmos": 1.797
+        },
+        {
+          "voice": "af_nicole",
+          "gender": "F",
+          "sentence": "D",
+          "class": "INTELLIGIBLE",
+          "wer": 0.0,
+          "dnsmos": 1.982
+        }
+      ]
+    },
+    {
+      "voice": "af_nova",
+      "gender": "F",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.443,
+      "min_dnsmos": 3.428,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.478
+        },
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.428
+        },
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.448
+        },
+        {
+          "voice": "af_nova",
+          "gender": "F",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.438
+        }
+      ]
+    },
+    {
+      "voice": "af_sky",
+      "gender": "F",
+      "median_wer": 0.1111,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.475,
+      "min_dnsmos": 3.283,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.48
+        },
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.47
+        },
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.494
+        },
+        {
+          "voice": "af_sky",
+          "gender": "F",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.283
+        }
+      ]
+    },
+    {
+      "voice": "am_adam",
+      "gender": "M",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.412,
+      "min_dnsmos": 3.299,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.299
+        },
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.384
+        },
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.44
+        },
+        {
+          "voice": "am_adam",
+          "gender": "M",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.446
+        }
+      ]
+    },
+    {
+      "voice": "am_echo",
+      "gender": "M",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.485,
+      "min_dnsmos": 3.475,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.487
+        },
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.475
+        },
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.482
+        },
+        {
+          "voice": "am_echo",
+          "gender": "M",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.489
+        }
+      ]
+    },
+    {
+      "voice": "am_eric",
+      "gender": "M",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.384,
+      "min_dnsmos": 3.341,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.403
+        },
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.341
+        },
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.43
+        },
+        {
+          "voice": "am_eric",
+          "gender": "M",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.365
+        }
+      ]
+    },
+    {
+      "voice": "am_fenrir",
+      "gender": "M",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.462,
+      "min_dnsmos": 3.41,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.43
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.462
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B.wav.clamped",
+          "class": "PARTIAL_SPEECH",
+          "wer": null,
+          "dnsmos": 3.462
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B.wav.clamped.wav.scaled",
+          "class": "PARTIAL_SPEECH",
+          "wer": null,
+          "dnsmos": 3.462
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "B.wav.scaled",
+          "class": "PARTIAL_SPEECH",
+          "wer": null,
+          "dnsmos": 3.462
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.41
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "C.wav.scaled",
+          "class": "PARTIAL_SPEECH",
+          "wer": null,
+          "dnsmos": 3.41
+        },
+        {
+          "voice": "am_fenrir",
+          "gender": "M",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.47
+        }
+      ]
+    },
+    {
+      "voice": "am_michael",
+      "gender": "M",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.483,
+      "min_dnsmos": 3.454,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.467
+        },
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.454
+        },
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.499
+        },
+        {
+          "voice": "am_michael",
+          "gender": "M",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.512
+        }
+      ]
+    },
+    {
+      "voice": "am_onyx",
+      "gender": "M",
+      "median_wer": 0.0556,
+      "max_wer": 0.2222,
+      "median_dnsmos": 3.479,
+      "min_dnsmos": 3.366,
+      "all_intelligible_or_better": true,
+      "sentences": [
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "A",
+          "class": "INTELLIGIBLE",
+          "wer": 0.1111,
+          "dnsmos": 3.458
+        },
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "B",
+          "class": "INTELLIGIBLE",
+          "wer": 0.2222,
+          "dnsmos": 3.366
+        },
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "C",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.499
+        },
+        {
+          "voice": "am_onyx",
+          "gender": "M",
+          "sentence": "D",
+          "class": "NATURAL",
+          "wer": 0.0,
+          "dnsmos": 3.513
+        }
+      ]
+    }
+  ]
+}

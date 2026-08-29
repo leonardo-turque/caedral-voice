@@ -1,0 +1,9 @@
+# Phase D dataset preprocessing toolkit -- NEW dependencies beyond the base
+# project environment (numpy/scipy/soundfile already present).
+# Install with:  .venv\Scripts\python.exe -m pip install -r requirements-d.txt
+#
+# pyloudnorm : ITU-R BS.1770 integrated loudness metering/normalization (-23 LUFS)
+# soxr       : high-quality deterministic resampler (preferred by the survey;
+#              preprocess falls back to scipy.signal.resample_poly if absent)
+pyloudnorm==0.2.0
+soxr==1.1.0

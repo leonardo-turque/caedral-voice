@@ -1,0 +1,22 @@
+{
+  "caedral-m1": {
+    "class": "INTELLIGIBLE",
+    "wer": 0.2222,
+    "dnsmos": 3.495
+  },
+  "caedral-m2": {
+    "class": "PARTIAL_SPEECH",
+    "wer": 0.4444,
+    "dnsmos": 3.483
+  },
+  "caedral-f1": {
+    "class": "PARTIAL_SPEECH",
+    "wer": 0.4444,
+    "dnsmos": 3.49
+  },
+  "caedral-f2": {
+    "class": "PARTIAL_SPEECH",
+    "wer": 0.4444,
+    "dnsmos": 3.548
+  }
+}

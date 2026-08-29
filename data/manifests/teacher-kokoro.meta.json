@@ -1,0 +1,139 @@
+{
+  "dataset": "teacher-kokoro",
+  "experiment": "CV-G1-E0012-teacher-gen",
+  "design_doc": "docs/training/TEACHER-DATA-ENGINE.md",
+  "git_commit": "69bdca34d0aebc5a65224b94da22ed3bce6bb453",
+  "created": "2026-08-23T04:09:03Z",
+  "text_source": {
+    "manifest": "data\\manifests\\librittsr-clean100.phonemes.jsonl",
+    "first_n_rows": 16000,
+    "corpus": "LibriTTS-R train-clean-100",
+    "license": "CC-BY-4.0 (text rights cleared by the real-data track)"
+  },
+  "teacher": {
+    "engine": "kokoro-onnx 0.6.1",
+    "model": "kokoro-v1.0.onnx",
+    "model_sha256": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5",
+    "voices_bin": "voices-v1.0.bin",
+    "voices_bin_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+    "license": "Apache-2.0 (code + weights)",
+    "authorization": "founder approved teacher models 'temporariamente durante desenvolvimento' (program record)",
+    "usage_statement": "Teacher audio is TRAINING DATA ONLY and is never shipped; only its statistical influence on from-scratch Caedral weights persists."
+  },
+  "slate": [
+    {
+      "slot": "t00",
+      "voice": "af_heart",
+      "cell": "F / US"
+    },
+    {
+      "slot": "t01",
+      "voice": "af_bella",
+      "cell": "F / US"
+    },
+    {
+      "slot": "t02",
+      "voice": "af_nicole",
+      "cell": "F / US"
+    },
+    {
+      "slot": "t03",
+      "voice": "bf_alice",
+      "cell": "F / UK"
+    },
+    {
+      "slot": "t04",
+      "voice": "bf_emma",
+      "cell": "F / UK"
+    },
+    {
+      "slot": "t05",
+      "voice": "am_adam",
+      "cell": "M / US"
+    },
+    {
+      "slot": "t06",
+      "voice": "am_fenrir",
+      "cell": "M / US"
+    },
+    {
+      "slot": "t07",
+      "voice": "am_michael",
+      "cell": "M / US"
+    },
+    {
+      "slot": "t08",
+      "voice": "am_puck",
+      "cell": "M / US"
+    },
+    {
+      "slot": "t09",
+      "voice": "bm_george",
+      "cell": "M / UK"
+    }
+  ],
+  "params": {
+    "speed": 1.0,
+    "target_sr": 24000,
+    "n_mels": 80,
+    "hop": 256,
+    "n_fft": 1024,
+    "pcm": "PCM16 mono",
+    "min_dur_s": 1.0,
+    "max_dur_s": 20.0,
+    "max_clipped_frac": 0.001,
+    "max_text_chars": 300,
+    "shards": 2,
+    "threads_per_worker": 3,
+    "round_robin_rule": "voice = SLATE[global_item_index % 10]"
+  },
+  "field_semantics": {
+    "lufs_note": "lufs_before/lufs_after carry an UNCALIBRATED RMS power dBFS proxy (no K-weighting); audio is raw synthesis output, no loudnorm applied at generation time.",
+    "sha256_audio": "sha256 of the stored PCM16 wav bytes",
+    "sha256_transcript": "sha256 of the normalized transcript text",
+    "source_id": "LibriTTS-R utterance id; joins to librittsr-clean100.phonemes.jsonl for the OUR-frontend input side"
+  },
+  "storage_layout": {
+    "wavs": "data/processed/teacher-kokoro/<id>.wav",
+    "shard_files": [
+      "teacher-kokoro.shard{i}.jsonl / .rejected.shard{i}.jsonl / .meta.shard{i}.json"
+    ],
+    "merged_views": [
+      "teacher-kokoro.jsonl",
+      "teacher-kokoro.rejected.jsonl",
+      "teacher-kokoro.meta.json"
+    ]
+  },
+  "last_update": "2026-08-23T12:48:21Z",
+  "totals": {
+    "seen": 16000,
+    "processed": 12635,
+    "kept": 12133,
+    "rejected_by_reason": {
+      "too_short_audio": 450,
+      "too_long_audio": 40,
+      "too_long_text": 4,
+      "clipped_audio": 5,
+      "duplicate_text": 3
+    },
+    "audio_seconds": 64343.99066666665,
+    "per_voice_counts": {
+      "am_fenrir": 1190,
+      "am_michael": 1230,
+      "am_puck": 1190,
+      "bm_george": 1241,
+      "af_heart": 1207,
+      "af_bella": 1183,
+      "bf_alice": 1238,
+      "bf_emma": 1235,
+      "am_adam": 1198,
+      "af_nicole": 1221
+    },
+    "wall_seconds": 62307.2,
+    "synth_seconds": 61976.136060500176,
+    "audio_hours": 17.8733,
+    "rows_in_manifest": 15498,
+    "rejected_rows_logged": 625,
+    "rtf_effective": 0.9632
+  }
+}

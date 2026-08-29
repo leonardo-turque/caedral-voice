@@ -1,0 +1,43 @@
+[regressor] threads=6 torch=2.6.0+cpu python=3.13.15
+[data] durations: C:\Users\leona\Downloads\caedral-voice\data\manifests\librittsr-clean100.durations.jsonl (30917 rows)
+[data] librittsr-clean100: 30917 utt (44.11 h)
+[data] teacher-kokoro: 3353 utt (4.76 h, 3353 teacher)
+[data] speakers=257 vocab_size=43
+[data] mel disk cache ON -> data\cache\mel-v1 (v1)
+[data] SKIPPED 3353 rows (t00_103_1241_000000_000001: no phoneme row; t01_103_1241_000004_000002: no phoneme row; t02_103_1241_000007_000001: no phoneme row; t03_103_1241_000008_000001: no phoneme row; t04_103_1241_000012_000002: no phoneme row ...)
+[data] usable utterances=30917 audio=44.112 h
+[split] train=29247 val=1670 (stratified by speaker, stride 20)
+[model] expanding speaker table 40 -> 257 (corpus exceeds the 40-slot floor)
+[model] regressor-medium params=15,942,707 (trainable 15,171,185) pitch=off energy=off
+[melcache] 1000 items processed (hits=1000 computed=0 stale=0 invalid=0) elapsed=389.6s
+[melcache] 2000 items processed (hits=2000 computed=0 stale=0 invalid=0) elapsed=666.5s
+[melcache] 3000 items processed (hits=3000 computed=0 stale=0 invalid=0) elapsed=972.8s
+[melcache] 4000 items processed (hits=4000 computed=0 stale=0 invalid=0) elapsed=1037.3s
+[melcache] 5000 items processed (hits=5000 computed=0 stale=0 invalid=0) elapsed=1386.4s
+[melcache] 6000 items processed (hits=6000 computed=0 stale=0 invalid=0) elapsed=1906.4s
+[melcache] 7000 items processed (hits=7000 computed=0 stale=0 invalid=0) elapsed=2402.6s
+[melcache] 8000 items processed (hits=8000 computed=0 stale=0 invalid=0) elapsed=2892.8s
+[melcache] 9000 items processed (hits=9000 computed=0 stale=0 invalid=0) elapsed=3571.7s
+[melcache] 10000 items processed (hits=10000 computed=0 stale=0 invalid=0) elapsed=4064.7s
+[melcache] 11000 items processed (hits=11000 computed=0 stale=0 invalid=0) elapsed=4571.8s
+[melcache] 12000 items processed (hits=12000 computed=0 stale=0 invalid=0) elapsed=5266.3s
+[melcache] 13000 items processed (hits=13000 computed=0 stale=0 invalid=0) elapsed=5807.4s
+[melcache] 14000 items processed (hits=14000 computed=0 stale=0 invalid=0) elapsed=6341.5s
+[melcache] 15000 items processed (hits=15000 computed=0 stale=0 invalid=0) elapsed=7024.5s
+[melcache] 16000 items processed (hits=16000 computed=0 stale=0 invalid=0) elapsed=7492.0s
+[melcache] 17000 items processed (hits=17000 computed=0 stale=0 invalid=0) elapsed=7974.6s
+[melcache] 18000 items processed (hits=18000 computed=0 stale=0 invalid=0) elapsed=8702.4s
+[melcache] 19000 items processed (hits=19000 computed=0 stale=0 invalid=0) elapsed=9174.4s
+[melcache] 20000 items processed (hits=20000 computed=0 stale=0 invalid=0) elapsed=9639.8s
+[melcache] 21000 items processed (hits=21000 computed=0 stale=0 invalid=0) elapsed=10091.4s
+[melcache] 22000 items processed (hits=22000 computed=0 stale=0 invalid=0) elapsed=10774.9s
+[melcache] 23000 items processed (hits=23000 computed=0 stale=0 invalid=0) elapsed=11239.8s
+[melcache] 24000 items processed (hits=24000 computed=0 stale=0 invalid=0) elapsed=11717.1s
+[melcache] 25000 items processed (hits=25000 computed=0 stale=0 invalid=0) elapsed=12438.6s
+[melcache] 26000 items processed (hits=26000 computed=0 stale=0 invalid=0) elapsed=12935.0s
+[melcache] 27000 items processed (hits=27000 computed=0 stale=0 invalid=0) elapsed=13437.7s
+[melcache] 28000 items processed (hits=28000 computed=0 stale=0 invalid=0) elapsed=14135.2s
+[melcache] 29000 items processed (hits=29000 computed=0 stale=0 invalid=0) elapsed=14597.9s
+[melcache] 30000 items processed (hits=30000 computed=0 stale=0 invalid=0) elapsed=15078.5s
+[melcache] final stats: {'hits': 30917, 'misses': 0, 'computed': 0, 'stale_version': 0, 'invalid': 0, 'bytes_written': 0, 'read_errors': 0}
+[done] {"global_step": 15000, "epochs_completed": 1, "best_value": 0.8647432296943292, "best_step": 15000, "nan_events": 0, "wall_s": 25525.507, "out_dir": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\r2", "wall_total_s": 25530.14, "mel_cache_stats": {"hits": 30917, "misses": 0, "computed": 0, "stale_version": 0, "invalid": 0, "bytes_written": 0, "read_errors": 0}}

@@ -1,0 +1,171 @@
+{
+  "wall_s_with_probes": 3.432,
+  "tensors": {
+    "/decoder/decoder/generator/Exp_output_0": {
+      "shape": [
+        1,
+        11,
+        18961
+      ],
+      "dtype": "float32",
+      "min": 2.0876733026987986e-29,
+      "max": 17.613513946533203,
+      "absmax": 17.613513946533203
+    },
+    "/decoder/decoder/generator/Sin_output_0": {
+      "shape": [
+        1,
+        11,
+        18961
+      ],
+      "dtype": "float32",
+      "min": -1.0,
+      "max": 1.0,
+      "absmax": 1.0
+    },
+    "/decoder/decoder/generator/istft/stft/Mul_output_0": {
+      "shape": [
+        1,
+        11,
+        18961
+      ],
+      "dtype": "float32",
+      "min": 2.0490984305454913e-29,
+      "max": 17.450197219848633,
+      "absmax": 17.450197219848633
+    },
+    "/decoder/decoder/generator/istft/stft/Mul_1_output_0": {
+      "shape": [
+        1,
+        11,
+        18961
+      ],
+      "dtype": "float32",
+      "min": -1.9575400352478027,
+      "max": 4.101526260375977,
+      "absmax": 4.101526260375977
+    },
+    "/decoder/decoder/generator/istft/stft/Concat_output_0": {
+      "shape": [
+        1,
+        22,
+        18961
+      ],
+      "dtype": "float32",
+      "min": -1.9575400352478027,
+      "max": 17.450197219848633,
+      "absmax": 17.450197219848633
+    },
+    "/decoder/decoder/generator/istft/stft/ConvTranspose_output_0": {
+      "shape": [
+        1,
+        1,
+        94820
+      ],
+      "dtype": "float32",
+      "min": -0.09813886880874634,
+      "max": 0.110237255692482,
+      "absmax": 0.110237255692482
+    },
+    "/decoder/decoder/generator/istft/stft/Squeeze_1_output_0": {
+      "shape": [
+        1,
+        94820
+      ],
+      "dtype": "float32",
+      "min": -0.09813886880874634,
+      "max": 0.110237255692482,
+      "absmax": 0.110237255692482
+    },
+    "/decoder/decoder/generator/istft/stft/Slice_1_output_0": {
+      "shape": [
+        20
+      ],
+      "dtype": "float32",
+      "min": 0.0,
+      "max": 1.0,
+      "absmax": 1.0
+    },
+    "/decoder/decoder/generator/istft/stft/Div_output_0": {
+      "shape": [
+        1,
+        19,
+        1
+      ],
+      "dtype": "float32",
+      "min": -2.479888735251734e-06,
+      "max": 2.733474389060575e-07,
+      "absmax": 2.479888735251734e-06
+    },
+    "/decoder/decoder/generator/istft/stft/Reshape_1_output_0": {
+      "shape": [
+        19,
+        1
+      ],
+      "dtype": "float32",
+      "min": -2.479888735251734e-06,
+      "max": 2.733474389060575e-07,
+      "absmax": 2.479888735251734e-06
+    },
+    "/decoder/decoder/generator/istft/stft/ScatterND_output_0": {
+      "shape": [
+        1,
+        94820
+      ],
+      "dtype": "float32",
+      "min": -0.09813886880874634,
+      "max": 0.110237255692482,
+      "absmax": 0.110237255692482
+    },
+    "/decoder/decoder/generator/istft/stft/Mul_4_output_0": {
+      "shape": [
+        1,
+        1,
+        94820
+      ],
+      "dtype": "float32",
+      "min": -0.39255547523498535,
+      "max": 0.440949022769928,
+      "absmax": 0.440949022769928
+    },
+    "/decoder/decoder/generator/istft/stft/Slice_3_output_0": {
+      "shape": [
+        1,
+        1,
+        94810
+      ],
+      "dtype": "float32",
+      "min": -0.39255547523498535,
+      "max": 0.440949022769928,
+      "absmax": 0.440949022769928
+    },
+    "/decoder/decoder/generator/istft/stft/Slice_4_output_0": {
+      "shape": [
+        1,
+        1,
+        94800
+      ],
+      "dtype": "float32",
+      "min": -0.39255547523498535,
+      "max": 0.440949022769928,
+      "absmax": 0.440949022769928
+    },
+    "audio": {
+      "shape": [
+        94800
+      ],
+      "dtype": "float32",
+      "min": -0.39255547523498535,
+      "max": 0.440949022769928,
+      "absmax": 0.440949022769928
+    }
+  },
+  "audio_len": 94800,
+  "slice4_shape": [
+    1,
+    1,
+    94800
+  ],
+  "slice4_ravel_absmax": 0.440949022769928,
+  "audio_vs_slice4_maxdiff": 0.0
+}

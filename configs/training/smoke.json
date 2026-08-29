@@ -1,0 +1,17 @@
+{
+  "exp_id": "smoke",
+  "experiment_root": "experiments",
+  "seed": 1234,
+  "max_steps": 60,
+  "warmup_steps": 5,
+  "min_lr_ratio": 0.0,
+  "grad_clip": 1.0,
+  "loss_fn": "mse",
+  "log_every": 10,
+  "val_every_steps": 15,
+  "val_at_end": true,
+  "checkpoint_every_steps": 20,
+  "keep_step_checkpoints": 2,
+  "best_key": "val_loss",
+  "best_mode": "min"
+}

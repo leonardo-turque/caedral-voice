@@ -1,0 +1,27 @@
+CV-G1-E0013 regressor — READY (pipeline smoke-validated 2026-08-22)
+
+PREREQUISITE (one file): data/manifests/librittsr-clean100.durations.jsonl
+from ALIGN-01 — rows {id, durations:[int] (one per vocab-encoded token),
+total_frames}, ids matching the clean100 manifest. Until it lands, append
+--synthetic-durations for another uniform-split smoke/validation run.
+Teacher rows (teacher-kokoro) activate automatically once their ids appear in
+the durations file; until then they are skipped gracefully with a recorded
+reason (no crash).
+
+LAUNCH (one command, cwd-independent, detached-safe; auto-resumes exactly from
+experiments/CV-G1-E0013-regressor/checkpoints/last.pt if present — pass
+--fresh to ignore):
+
+.venv/Scripts/python.exe -X utf8 experiments/CV-G1-E0013-regressor/train_regressor.py --manifests librittsr-clean100,teacher-kokoro --durations data/manifests/librittsr-clean100.durations.jsonl --steps 15000 --threads 4 --exp-id CV-G1-E0013-regressor
+
+MEASURED on this box (torch 2.6.0+cpu, 4 threads, 15.91M-param model):
+~2.1 s/step pure compute at 16 utts / 1200 frames; budget roughly 8-10 h for
+15000 steps (epoch 1 pays an audio-decode tax; mels are memoized in RAM after
+first touch). Atomic checkpoints every 1000 steps — safe to hard-kill and
+resume at any time. Warmup 1000, cosine to 0.1x peak, AdamW lr 1e-4.
+
+SMOKE EVIDENCE (synthetic uniform durations, real smoke mels):
+experiments/CV-G1-E0013-regressor/smoke-a/metrics.jsonl — 30 steps, 0 NaN
+events, train mel-L1 1.68 -> 1.55, duration MSE 1.57 -> 0.04, val mel-L1
+1.568 -> 1.544, duration-expansion contract exact (n_duration_adjusted=0 on
+every logged step). Tests: tests/test_regressor_pipeline.py, 11 passed.

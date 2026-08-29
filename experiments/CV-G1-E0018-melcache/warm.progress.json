@@ -1,0 +1,21 @@
+{
+  "experiment": "CV-G1-E0018-melcache",
+  "manifest": "librittsr-clean100",
+  "total": 300,
+  "done": 300,
+  "percent": 100.0,
+  "errors": 0,
+  "cache_stats": {
+    "hits": 300,
+    "misses": 0,
+    "computed": 0,
+    "stale_version": 0,
+    "invalid": 0,
+    "bytes_written": 0,
+    "read_errors": 0
+  },
+  "elapsed_s": 1.0,
+  "utts_per_s": 288.06,
+  "eta_s": 0.0,
+  "updated_utc": "2026-08-23T03:40:40Z"
+}

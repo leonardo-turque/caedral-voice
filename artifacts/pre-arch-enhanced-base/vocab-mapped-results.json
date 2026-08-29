@@ -1,0 +1,158 @@
+[
+  {
+    "voice": "af_heart",
+    "sentence": "evalA",
+    "skipped_symbols": [
+      "ɝː",
+      "‖"
+    ],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.426
+    },
+    "mapped_enhanced": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.44
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "propernoun",
+    "skipped_symbols": [
+      "iː",
+      "uː",
+      "ɔː"
+    ],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.412
+    },
+    "mapped_enhanced": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.431
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "numbers",
+    "skipped_symbols": [
+      "iː",
+      "uː",
+      "ɑː",
+      "ɔː",
+      "ɝː"
+    ],
+    "baseline": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.507
+    },
+    "mapped_enhanced": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4,
+      "dnsmos": 3.46
+    }
+  },
+  {
+    "voice": "af_heart",
+    "sentence": "abbrev",
+    "skipped_symbols": [
+      "iː",
+      "uː",
+      "ɑː",
+      "ɔː"
+    ],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.545
+    },
+    "mapped_enhanced": {
+      "class": "BABBLE",
+      "wer": 0.6667,
+      "dnsmos": 3.403
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "evalA",
+    "skipped_symbols": [
+      "ɝː",
+      "‖"
+    ],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.467
+    },
+    "mapped_enhanced": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.426
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "propernoun",
+    "skipped_symbols": [
+      "iː",
+      "uː",
+      "ɔː"
+    ],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "dnsmos": 3.499
+    },
+    "mapped_enhanced": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4444,
+      "dnsmos": 3.457
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "numbers",
+    "skipped_symbols": [
+      "iː",
+      "uː",
+      "ɑː",
+      "ɔː",
+      "ɝː"
+    ],
+    "baseline": {
+      "class": "NATURAL",
+      "wer": 0.0,
+      "dnsmos": 3.499
+    },
+    "mapped_enhanced": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.4,
+      "dnsmos": 3.407
+    }
+  },
+  {
+    "voice": "am_michael",
+    "sentence": "abbrev",
+    "skipped_symbols": [
+      "iː",
+      "uː",
+      "ɑː",
+      "ɔː"
+    ],
+    "baseline": {
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "dnsmos": 3.454
+    },
+    "mapped_enhanced": {
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.5556,
+      "dnsmos": 3.348
+    }
+  }
+]

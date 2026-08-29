@@ -1,0 +1,38 @@
+{
+  "100": {
+    "bucket_tokens": 100,
+    "nodes": 2464,
+    "initializers": 546,
+    "value_info_fixed": 3,
+    "shape_inference": true,
+    "loads": true,
+    "load_msg": "len=161400",
+    "mb": 310.45,
+    "wall_s": 7.7,
+    "file": "artifacts\\optimized\\kokoro-static-L100.onnx"
+  },
+  "300": {
+    "bucket_tokens": 300,
+    "nodes": 2464,
+    "initializers": 546,
+    "value_info_fixed": 3,
+    "shape_inference": true,
+    "loads": true,
+    "load_msg": "len=593400",
+    "mb": 310.45,
+    "wall_s": 20.2,
+    "file": "artifacts\\optimized\\kokoro-static-L300.onnx"
+  },
+  "512": {
+    "bucket_tokens": 512,
+    "nodes": 2464,
+    "initializers": 546,
+    "value_info_fixed": 3,
+    "shape_inference": true,
+    "loads": true,
+    "load_msg": "len=864600",
+    "mb": 310.45,
+    "wall_s": 30.3,
+    "file": "artifacts\\optimized\\kokoro-static-L512.onnx"
+  }
+}

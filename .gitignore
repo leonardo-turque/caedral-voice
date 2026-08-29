@@ -1,0 +1,52 @@
+# --- Caedral Voice .gitignore ---
+# Large binary artifacts stay out of version control; manifests/hashes stay in.
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Model weights / runtimes (tracked only via hashes + download scripts)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+!tests/fixtures/*.onnx
+models/
+
+# Audio artifacts
+artifacts/audio/
+benchmarks/audio_out/
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.opus
+
+# Data (raw immutable data lives outside git; manifests live inside)
+data/raw/
+data/downloads/
+data/processed/
+data/cache/
+
+# Training runs: keep configs/logs/metrics, drop weights
+experiments/*/checkpoints/*.pt
+experiments/*/checkpoints/*.pth
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+
+# Colab transfer zips (multi-GB, distributed out-of-band)
+artifacts/colab-r3/*.zip
+production/context/
+
+backup-staging/*.zip
+

@@ -1,0 +1,177 @@
+{
+  "generated_at_utc": "2026-08-23T21:05:57.011443+00:00",
+  "engine_load_seconds": 2.359,
+  "model_size_mb": 310.5,
+  "voices": {
+    "caedral-m1": {
+      "kokoro_voice": "am_michael",
+      "persona": "natural balanced male",
+      "renders": [
+        {
+          "sentence": "control",
+          "wall_s": 5.011,
+          "audio_s": 3.48,
+          "rtf": 1.441
+        },
+        {
+          "sentence": "technical",
+          "wall_s": 8.511,
+          "audio_s": 6.19,
+          "rtf": 1.376
+        },
+        {
+          "sentence": "numbers",
+          "wall_s": 9.303,
+          "audio_s": 7.13,
+          "rtf": 1.306
+        },
+        {
+          "sentence": "propernoun",
+          "wall_s": 5.158,
+          "audio_s": 3.56,
+          "rtf": 1.448
+        },
+        {
+          "sentence": "longform",
+          "wall_s": 21.189,
+          "audio_s": 16.3,
+          "rtf": 1.3
+        }
+      ],
+      "median_rtf": 1.376
+    },
+    "caedral-m2": {
+      "kokoro_voice": "am_echo",
+      "persona": "distinct second male identity",
+      "renders": [
+        {
+          "sentence": "control",
+          "wall_s": 5.211,
+          "audio_s": 3.67,
+          "rtf": 1.42
+        },
+        {
+          "sentence": "technical",
+          "wall_s": 8.209,
+          "audio_s": 5.76,
+          "rtf": 1.425
+        },
+        {
+          "sentence": "numbers",
+          "wall_s": 8.584,
+          "audio_s": 6.4,
+          "rtf": 1.341
+        },
+        {
+          "sentence": "propernoun",
+          "wall_s": 2.751,
+          "audio_s": 3.65,
+          "rtf": 0.754
+        },
+        {
+          "sentence": "longform",
+          "wall_s": 7.916,
+          "audio_s": 13.14,
+          "rtf": 0.602
+        }
+      ],
+      "median_rtf": 1.341
+    },
+    "caedral-f1": {
+      "kokoro_voice": "af_sky",
+      "persona": "natural balanced female",
+      "renders": [
+        {
+          "sentence": "control",
+          "wall_s": 2.144,
+          "audio_s": 3.29,
+          "rtf": 0.653
+        },
+        {
+          "sentence": "technical",
+          "wall_s": 3.299,
+          "audio_s": 5.53,
+          "rtf": 0.597
+        },
+        {
+          "sentence": "numbers",
+          "wall_s": 3.89,
+          "audio_s": 6.42,
+          "rtf": 0.606
+        },
+        {
+          "sentence": "propernoun",
+          "wall_s": 2.165,
+          "audio_s": 3.31,
+          "rtf": 0.655
+        },
+        {
+          "sentence": "longform",
+          "wall_s": 8.194,
+          "audio_s": 14.38,
+          "rtf": 0.57
+        }
+      ],
+      "median_rtf": 0.606
+    },
+    "caedral-f2": {
+      "kokoro_voice": "af_nova",
+      "persona": "distinct second female identity",
+      "renders": [
+        {
+          "sentence": "control",
+          "wall_s": 2.178,
+          "audio_s": 3.65,
+          "rtf": 0.597
+        },
+        {
+          "sentence": "technical",
+          "wall_s": 3.165,
+          "audio_s": 5.65,
+          "rtf": 0.56
+        },
+        {
+          "sentence": "numbers",
+          "wall_s": 4.09,
+          "audio_s": 6.61,
+          "rtf": 0.619
+        },
+        {
+          "sentence": "propernoun",
+          "wall_s": 2.142,
+          "audio_s": 3.58,
+          "rtf": 0.598
+        },
+        {
+          "sentence": "longform",
+          "wall_s": 7.342,
+          "audio_s": 13.1,
+          "rtf": 0.561
+        }
+      ],
+      "median_rtf": 0.597
+    }
+  },
+  "speed_samples": [
+    {
+      "speed": 0.5,
+      "file": "speed\\speed-0.5x.wav",
+      "audio_s": 7.32
+    },
+    {
+      "speed": 1.0,
+      "file": "speed\\speed-1.0x.wav",
+      "audio_s": 3.48
+    },
+    {
+      "speed": 1.5,
+      "file": "speed\\speed-1.5x.wav",
+      "audio_s": 2.37
+    },
+    {
+      "speed": 2.0,
+      "file": "speed\\speed-2.0x.wav",
+      "audio_s": 1.9
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{"id": "103_1241_000044_000005", "reason": "DUPLICATE_TRANSCRIPT", "detail": "hash of normalized transcript already emitted (sorted-order first occurrence kept)"}
+{"id": "1034_121119_000002_000001", "reason": "TOO_LONG", "detail": "duration_s=15.060317"}
+{"id": "1040_133433_000024_000000", "reason": "DUPLICATE_TRANSCRIPT", "detail": "hash of normalized transcript already emitted (sorted-order first occurrence kept)"}
+{"id": "1040_133433_000027_000000", "reason": "DUPLICATE_TRANSCRIPT", "detail": "hash of normalized transcript already emitted (sorted-order first occurrence kept)"}
+{"id": "1040_133433_000104_000000", "reason": "DUPLICATE_TRANSCRIPT", "detail": "hash of normalized transcript already emitted (sorted-order first occurrence kept)"}
+{"id": "1040_133433_000124_000000", "reason": "DUPLICATE_TRANSCRIPT", "detail": "hash of normalized transcript already emitted (sorted-order first occurrence kept)"}
+{"id": "1069_133699_000066_000006", "reason": "TOO_LONG", "detail": "duration_s=17.77034"}
+{"id": "1069_133699_000066_000009", "reason": "TOO_LONG", "detail": "duration_s=21.350295"}
+{"id": "1069_133709_000043_000031", "reason": "TOO_LONG", "detail": "duration_s=16.318141"}
+{"id": "1088_129236_000006_000004", "reason": "TOO_LONG", "detail": "duration_s=17.440181"}
+{"id": "1088_129236_000006_000005", "reason": "TOO_LONG", "detail": "duration_s=20.080181"}
+{"id": "1088_129236_000008_000010", "reason": "TOO_LONG", "detail": "duration_s=17.040181"}
+{"id": "1088_129236_000008_000014", "reason": "TOO_LONG", "detail": "duration_s=20.887664"}
+{"id": "1088_129236_000009_000002", "reason": "TOO_LONG", "detail": "duration_s=15.140726"}
+{"id": "1088_129236_000009_000004", "reason": "TOO_LONG", "detail": "duration_s=19.590385"}
+{"id": "1088_129236_000016_000001", "reason": "TOO_LONG", "detail": "duration_s=18.792517"}
+{"id": "1088_129236_000019_000005", "reason": "TOO_LONG", "detail": "duration_s=16.218277"}
+{"id": "1088_129236_000020_000004", "reason": "TOO_LONG", "detail": "duration_s=16.537642"}
+{"id": "1088_129236_000025_000002", "reason": "TOO_LONG", "detail": "duration_s=15.939002"}
+{"id": "1088_129236_000026_000002", "reason": "TOO_LONG", "detail": "duration_s=15.520181"}
+{"id": "1088_129236_000026_000004", "reason": "TOO_LONG", "detail": "duration_s=21.830385"}
+{"id": "1088_129236_000028_000006", "reason": "TOO_LONG", "detail": "duration_s=19.920181"}
+{"id": "1088_129236_000028_000010", "reason": "TOO_LONG", "detail": "duration_s=23.950703"}
+{"id": "1088_129236_000030_000005", "reason": "TOO_LONG", "detail": "duration_s=16.320181"}
+{"id": "1098_133695_000003_000006", "reason": "TOO_LONG", "detail": "duration_s=15.100816"}
+{"id": "1098_133695_000006_000016", "reason": "TOO_LONG", "detail": "duration_s=19.181542"}
+{"id": "1098_133695_000012_000001", "reason": "TOO_LONG", "detail": "duration_s=18.263719"}
+{"id": "1098_133695_000012_000007", "reason": "TOO_LONG", "detail": "duration_s=20.688118"}
+{"id": "1098_133695_000012_000010", "reason": "TOO_LONG", "detail": "duration_s=20.00966"}
+{"id": "1098_133695_000014_000003", "reason": "TOO_LONG", "detail": "duration_s=29.268707"}
+{"id": "1098_133695_000015_000001", "reason": "TOO_LONG", "detail": "duration_s=15.899002"}
+{"id": "1098_133695_000015_000008", "reason": "TOO_LONG", "detail": "duration_s=15.030975"}
+{"id": "1098_133695_000030_000000", "reason": "TOO_LONG", "detail": "duration_s=17.660317"}
+{"id": "1098_133695_000031_000002", "reason": "TOO_LONG", "detail": "duration_s=15.480181"}
+{"id": "1116_132851_000030_000001", "reason": "TOO_LONG", "detail": "duration_s=15.990295"}
+{"id": "1116_137572_000002_000001", "reason": "TOO_LONG", "detail": "duration_s=21.865442"}
+{"id": "1116_137572_000010_000000", "reason": "TOO_LONG", "detail": "duration_s=16.160181"}
+{"id": "118_47824_000109_000000", "reason": "DUPLICATE_TRANSCRIPT", "detail": "hash of normalized transcript already emitted (sorted-order first occurrence kept)"}
+{"id": "118_47824_000130_000002", "reason": "TOO_LONG", "detail": "duration_s=15.560181"}
+{"id": "1183_133255_000008_000000", "reason": "TOO_QUIET", "detail": "non-finite integrated loudness"}
+{"id": "1183_133255_000043_000000", "reason": "TOO_LONG", "detail": "duration_s=17.674966"}
+{"id": "1183_133256_000052_000001", "reason": "DUPLICATE_TRANSCRIPT", "detail": "hash of normalized transcript already emitted (sorted-order first occurrence kept)"}
+{"id": "1183_133256_000083_000005", "reason": "TOO_LONG", "detail": "duration_s=22.683673"}

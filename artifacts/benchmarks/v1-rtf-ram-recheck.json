@@ -1,0 +1,42 @@
+{
+  "experiment": "v1-rtf-ram-recheck",
+  "date_utc": "2026-08-24T15:27:04.425041+00:00",
+  "config": {
+    "backend": "ORT CPU",
+    "graph_opt": "ENABLE_ALL",
+    "intra_op_threads": 6,
+    "cpu_arena": false
+  },
+  "machine": {
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16
+  },
+  "rss_ladder_mb": {
+    "after_imports": 25,
+    "after_engine_load": 641,
+    "after_warmup_warm": 645,
+    "load_seconds": 1.63
+  },
+  "engine_only_peaks": {
+    "longform_16s": {
+      "peak_rss_mb": 1136,
+      "wall_s": 14.96,
+      "audio_s": 16.3,
+      "rtf_one_shot": 0.918
+    },
+    "post_render_settled_rss_mb": 842
+  },
+  "rtf_grid": [],
+  "rtf_summary": {
+    "skipped": "PEAKS_ONLY run"
+  },
+  "with_acceptance_audit_stack": {
+    "asr_model_load_seconds": 6.0,
+    "rss_after_asr_loaded_mb": 1332,
+    "rss_after_dnsmos_deps_imported_mb": 1336,
+    "delta_vs_warm_engine_mb": 686,
+    "longform_rerender_peak_rss_mb": 1650,
+    "longform_rerender_wall_s": 9.38
+  },
+  "conclusion": "Engine-only warm RSS 645 MB; engine-only long-form peak 1136 MB; loading the dual-ASR audit stack adds ~686 MB in the SAME process, putting combined peak near 1650 MB."
+}

@@ -1,0 +1,39 @@
+{
+  "checkpoint": "PRE-FIRE-TEST STATE",
+  "date_utc": "2026-08-24T16:05:00Z",
+  "git": {
+    "head": "3e497375b7a735cdf9be8ad284fec3dc3f7a07a9",
+    "branch": "main",
+    "working_tree_clean": true
+  },
+  "freeze_verification": {
+    "manifest": "artifacts/caedral-voice-v1/V1-FREEZE-MANIFEST.json",
+    "manifest_git_commit": "cff0784a7d89",
+    "asset_hashes_sha256_match": true,
+    "founder_wavs_present": "20/20",
+    "listening_pack_byte_identical": true,
+    "single_shared_ort_session_verified": true,
+    "verifier_artifact": "artifacts/caedral-voice-v1/freeze-verification.json"
+  },
+  "production_assets": {
+    "model": "models/kokoro/kokoro-v1.0.onnx (310.5 MB)",
+    "voices": "models/kokoro/voices-v1.0.bin (26.9 MB)",
+    "engine_config": {"backend": "ORT CPU", "graph_optimization": "ENABLE_ALL",
+                       "intra_op_threads": 6, "cpu_arena": false,
+                       "speed_default": 1.0, "sample_rate": 24000}
+  },
+  "container_isolation_probe": {
+    "docker_server": "linux/amd64 29.7.2",
+    "probe_cmd_flags": "--memory=1000000000b --memory-swap=1000000000b --cpus=1.0",
+    "cgroup_v2_files_read_inside_container": true,
+    "memory.max": 999997440,
+    "memory.swap.max": 0,
+    "cpu.max": "100000 100000 (= 1.0 vCPU quota/period)"
+  },
+  "pinned_runtime_versions_host_venv": {
+    "python": "3.13.15", "onnxruntime": "1.29.0", "kokoro-onnx": "0.6.1",
+    "numpy": "2.2.6", "nltk": "3.10.3", "g2p-en": "2.1.0",
+    "soundfile": "0.14.0", "fastapi": "0.141.1", "uvicorn": "0.52.4"
+  },
+  "rule": "No frozen file modified before/during/after fire tests; benchmark text selection is the only pre-test tuning activity."
+}

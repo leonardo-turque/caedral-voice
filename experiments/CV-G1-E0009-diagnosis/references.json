@@ -1,0 +1,8 @@
+{
+  "_purpose": "Reference transcripts for EVAL-CLASSIFY-01 self-test calibration. A/B wavs are E0009 vocos-chain roundtrips of processed LibriTTS-R utterances (manifest: data/manifests/librittsr-smoke-10spk.jsonl, stems truncated to 24 chars by vocoder_chain_audit.py). NOTE: the second A/B pair is utterance 1034_121119_000010_000006, confirmed by exact duration match (7.477s) and whisper spot-check - not _000004. caedral-preview-earliest.wav is the earliest-checkpoint preview alias (neutral section sentence).",
+  "A-native-1034_121119_000001_00000": "The Law.",
+  "B-adapter-1034_121119_000001_00000": "The Law.",
+  "A-native-1034_121119_000010_00000": "She would invoke the past, recall old recollections; she would supplicate him by the remembrance of guilty, yet happy days.",
+  "B-adapter-1034_121119_000010_00000": "She would invoke the past, recall old recollections; she would supplicate him by the remembrance of guilty, yet happy days.",
+  "caedral-preview-earliest": "Hello. This is the first generation of Caedral Voice."
+}

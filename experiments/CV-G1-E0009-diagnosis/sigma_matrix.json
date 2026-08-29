@@ -1,0 +1,146 @@
+{
+  "checkpoint": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\pilot-tiny-15k\\checkpoints\\step_000006000.pt",
+  "sigma": 0.25,
+  "results": [
+    {
+      "speaker": "103",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "ovrl": 2.074
+    },
+    {
+      "speaker": "103",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.0,
+      "ovrl": 2.324
+    },
+    {
+      "speaker": "1034",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "ovrl": 1.446
+    },
+    {
+      "speaker": "1034",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.0,
+      "ovrl": 1.496
+    },
+    {
+      "speaker": "1040",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "ovrl": 1.247
+    },
+    {
+      "speaker": "1040",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.125,
+      "ovrl": 2.022
+    },
+    {
+      "speaker": "1069",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "ovrl": 2.0
+    },
+    {
+      "speaker": "1069",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.25,
+      "ovrl": 2.357
+    },
+    {
+      "speaker": "1081",
+      "sentence": "sentA",
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.3333,
+      "ovrl": 1.242
+    },
+    {
+      "speaker": "1081",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.25,
+      "ovrl": 1.147
+    },
+    {
+      "speaker": "1088",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "ovrl": 1.772
+    },
+    {
+      "speaker": "1088",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.0,
+      "ovrl": 2.124
+    },
+    {
+      "speaker": "1098",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "ovrl": 2.292
+    },
+    {
+      "speaker": "1098",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.0,
+      "ovrl": 2.331
+    },
+    {
+      "speaker": "1116",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "ovrl": 2.302
+    },
+    {
+      "speaker": "1116",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.0,
+      "ovrl": 2.778
+    },
+    {
+      "speaker": "118",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.2222,
+      "ovrl": 1.695
+    },
+    {
+      "speaker": "118",
+      "sentence": "sentB",
+      "class": "PARTIAL_SPEECH",
+      "wer": 0.5,
+      "ovrl": 2.187
+    },
+    {
+      "speaker": "1183",
+      "sentence": "sentA",
+      "class": "INTELLIGIBLE",
+      "wer": 0.1111,
+      "ovrl": 1.511
+    },
+    {
+      "speaker": "1183",
+      "sentence": "sentB",
+      "class": "INTELLIGIBLE",
+      "wer": 0.0,
+      "ovrl": 2.438
+    }
+  ]
+}

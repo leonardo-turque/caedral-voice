@@ -1,0 +1,84 @@
+{
+  "task": "GATE-NAT-01",
+  "measured_at": "2026-08-22T21:29:40.047000+00:00",
+  "git_commit": "b8ce47063c2c34c17760e8a2d10fe7ded4020586",
+  "anchors": {
+    "kokoro": {
+      "n_clips": 20,
+      "dnsmos_ovrl_values_sorted": [
+        3.197,
+        3.23,
+        3.278,
+        3.343,
+        3.363,
+        3.369,
+        3.397,
+        3.43,
+        3.447,
+        3.448,
+        3.453,
+        3.458,
+        3.468,
+        3.499,
+        3.5,
+        3.507,
+        3.509,
+        3.513,
+        3.514,
+        3.55
+      ],
+      "dnsmos_median": 3.45,
+      "dnsmos_min": 3.197,
+      "dnsmos_max": 3.55,
+      "wer_median": 0.0,
+      "wer_max": 0.3333,
+      "rate_chars_per_sec_median": 16.27,
+      "rate_plausible_fraction": 1.0
+    },
+    "piper": {
+      "n_clips": 10,
+      "dnsmos_ovrl_values_sorted": [
+        3.2,
+        3.211,
+        3.3,
+        3.326,
+        3.368,
+        3.397,
+        3.452,
+        3.52,
+        3.556,
+        3.616
+      ],
+      "dnsmos_median": 3.382,
+      "dnsmos_min": 3.2,
+      "dnsmos_max": 3.616,
+      "wer_median": 0.0,
+      "wer_max": 0.2353,
+      "rate_chars_per_sec_median": 17.81,
+      "rate_plausible_fraction": 1.0
+    }
+  },
+  "gate": {
+    "anchor_model": "kokoro-82M-v1.0 (20 clips)",
+    "anchor_dnsmos_median": 3.45,
+    "median_threshold": 3.15,
+    "min_floor": 2.85,
+    "formula": "PASS iff median(DNSMOS ovrl) >= anchor_median - 0.30 AND min(DNSMOS ovrl) >= anchor_median - 0.60",
+    "frozen_before_caedral_v1_audio": true
+  },
+  "artifacts": {
+    "clips": [
+      "benchmarks/results/natgate/kokoro/",
+      "benchmarks/results/natgate/piper/"
+    ],
+    "scores": [
+      "scores-kokoro.json",
+      "scores-piper.json"
+    ],
+    "generation_meta": [
+      "gen-meta-kokoro.json",
+      "gen-meta-piper.json"
+    ],
+    "comparison_template": "comparison-template.json"
+  }
+}

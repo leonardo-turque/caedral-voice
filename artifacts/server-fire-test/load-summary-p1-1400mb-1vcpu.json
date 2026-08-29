@@ -1,0 +1,239 @@
+{
+  "theory_rpm": 0.6915,
+  "gen_p50_s_source": 86.77,
+  "ladder-0.25x": {
+    "target_rpm": 0.1729,
+    "submitted": 1,
+    "completed_200": 1,
+    "failed": 0,
+    "statuses": {
+      "200": 1
+    },
+    "wall_window_s": 300.1,
+    "achieved_rpm": 0.2,
+    "e2e_p50_s": 130.374,
+    "e2e_max_s": 130.374,
+    "svc_p50_s": 6.837881219903692,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        289.9,
+        0,
+        654.0,
+        1
+      ],
+      [
+        291.9,
+        0,
+        654.0,
+        1
+      ],
+      [
+        293.9,
+        0,
+        654.0,
+        1
+      ],
+      [
+        296.1,
+        0,
+        654.0,
+        1
+      ],
+      [
+        298.1,
+        0,
+        654.0,
+        1
+      ]
+    ]
+  },
+  "ladder-0.50x": {
+    "target_rpm": 0.3457,
+    "submitted": 2,
+    "completed_200": 2,
+    "failed": 0,
+    "statuses": {
+      "200": 2
+    },
+    "wall_window_s": 300.2,
+    "achieved_rpm": 0.3997,
+    "e2e_p50_s": 79.97399999999999,
+    "e2e_max_s": 84.017,
+    "svc_p50_s": 11.171510089569958,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        290.2,
+        0,
+        669.0,
+        3
+      ],
+      [
+        292.2,
+        0,
+        669.0,
+        3
+      ],
+      [
+        294.2,
+        0,
+        669.0,
+        3
+      ],
+      [
+        296.2,
+        0,
+        669.0,
+        3
+      ],
+      [
+        298.2,
+        0,
+        669.0,
+        3
+      ]
+    ]
+  },
+  "ladder-0.75x": {
+    "target_rpm": 0.5186,
+    "submitted": 3,
+    "completed_200": 3,
+    "failed": 0,
+    "statuses": {
+      "200": 3
+    },
+    "wall_window_s": 314.1,
+    "achieved_rpm": 0.5731,
+    "e2e_p50_s": 81.169,
+    "e2e_max_s": 82.241,
+    "svc_p50_s": 10.995575221238937,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        222.8,
+        0,
+        670.0,
+        5
+      ],
+      [
+        224.8,
+        0,
+        670.0,
+        5
+      ],
+      [
+        226.8,
+        0,
+        670.0,
+        5
+      ],
+      [
+        228.9,
+        0,
+        670.0,
+        5
+      ],
+      [
+        230.9,
+        0,
+        670.0,
+        5
+      ]
+    ]
+  },
+  "ladder-1.00x": {
+    "target_rpm": 0.6915,
+    "submitted": 4,
+    "completed_200": 4,
+    "failed": 0,
+    "statuses": {
+      "200": 4
+    },
+    "wall_window_s": 333.9,
+    "achieved_rpm": 0.7188,
+    "e2e_p50_s": 78.4875,
+    "e2e_max_s": 78.641,
+    "svc_p50_s": 11.370829774630511,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": [
+      [
+        173.1,
+        0,
+        671.0,
+        8
+      ],
+      [
+        253.8,
+        0,
+        671.0,
+        9
+      ],
+      [
+        255.8,
+        0,
+        671.0,
+        9
+      ],
+      [
+        257.8,
+        0,
+        671.0,
+        9
+      ],
+      [
+        259.9,
+        0,
+        671.0,
+        9
+      ]
+    ]
+  },
+  "ladder-1.25x": {
+    "target_rpm": 0.8644,
+    "submitted": 5,
+    "completed_200": 5,
+    "failed": 0,
+    "statuses": {
+      "200": 5
+    },
+    "wall_window_s": 450.5,
+    "achieved_rpm": 0.6659,
+    "e2e_p50_s": 169.91,
+    "e2e_max_s": 239.664,
+    "svc_p50_s": 9.805984873396909,
+    "all_riff_ok": true,
+    "overloaded": false,
+    "metrics_tail": []
+  },
+  "concurrency-2": {
+    "burst_size": 2,
+    "completed_200": 2,
+    "failed": 0,
+    "e2e_each_s": [
+      196.87,
+      196.97
+    ],
+    "burst_makespan_s": 196.98,
+    "parallel_speedup_x": 1.999,
+    "all_riff_ok": true
+  },
+  "concurrency-4": {
+    "burst_size": 4,
+    "completed_200": 4,
+    "failed": 0,
+    "e2e_each_s": [
+      363.01,
+      363.03,
+      363.03,
+      363.03
+    ],
+    "burst_makespan_s": 363.05,
+    "parallel_speedup_x": 4.0,
+    "all_riff_ok": true
+  }
+}

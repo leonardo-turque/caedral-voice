@@ -1,0 +1,51 @@
+[regressor] threads=6 torch=2.6.0+cpu python=3.13.15
+[data] durations: C:\Users\leona\Downloads\caedral-voice\data\manifests\all-durations.jsonl (44417 rows)
+[data] librittsr-clean100: 30917 utt (44.11 h)
+[data] teacher-kokoro: 13775 utt (19.97 h, 13775 teacher)
+[data] speakers=257 vocab_size=43
+[data] mel disk cache ON -> data\cache\mel-v1 (v1)
+[data] SKIPPED 275 rows (t04_2836_5355_000089_000001: no phoneme row; t05_2836_5355_000090_000001: no phoneme row; t06_2836_5355_000091_000001: no phoneme row; t07_2836_5355_000092_000000: no phoneme row; t08_2836_5355_000093_000000: no phoneme row ...)
+[data] usable utterances=44417 audio=63.681 h
+[split] train=42068 val=2349 (stratified by speaker, stride 20)
+[model] expanding speaker table 40 -> 257 (corpus exceeds the 40-slot floor)
+[model] regressor-medium params=15,942,707 (trainable 15,171,185) pitch=off energy=off
+[melcache] 1000 items processed (hits=692 computed=308 stale=0 invalid=0) elapsed=462.1s
+[melcache] 2000 items processed (hits=1404 computed=596 stale=0 invalid=0) elapsed=980.9s
+[melcache] 3000 items processed (hits=2121 computed=879 stale=0 invalid=0) elapsed=1466.5s
+[melcache] 4000 items processed (hits=2849 computed=1151 stale=0 invalid=0) elapsed=1581.4s
+[melcache] 5000 items processed (hits=3551 computed=1449 stale=0 invalid=0) elapsed=1742.5s
+[melcache] 6000 items processed (hits=4270 computed=1730 stale=0 invalid=0) elapsed=2233.2s
+[melcache] 7000 items processed (hits=4939 computed=2061 stale=0 invalid=0) elapsed=2696.2s
+[melcache] 8000 items processed (hits=5639 computed=2361 stale=0 invalid=0) elapsed=3284.8s
+[melcache] 9000 items processed (hits=6324 computed=2676 stale=0 invalid=0) elapsed=4161.7s
+[melcache] 10000 items processed (hits=7023 computed=2977 stale=0 invalid=0) elapsed=4659.6s
+[melcache] 11000 items processed (hits=7713 computed=3287 stale=0 invalid=0) elapsed=5121.5s
+[melcache] 12000 items processed (hits=8406 computed=3594 stale=0 invalid=0) elapsed=5622.4s
+[melcache] 13000 items processed (hits=9117 computed=3883 stale=0 invalid=0) elapsed=5939.4s
+[melcache] 14000 items processed (hits=9785 computed=4215 stale=0 invalid=0) elapsed=6266.7s
+[melcache] 15000 items processed (hits=10465 computed=4535 stale=0 invalid=0) elapsed=6536.5s
+[melcache] 16000 items processed (hits=11171 computed=4829 stale=0 invalid=0) elapsed=7080.2s
+[melcache] 17000 items processed (hits=11853 computed=5147 stale=0 invalid=0) elapsed=7389.6s
+[melcache] 18000 items processed (hits=12560 computed=5440 stale=0 invalid=0) elapsed=7707.4s
+[melcache] 19000 items processed (hits=13274 computed=5726 stale=0 invalid=0) elapsed=8115.9s
+[melcache] 20000 items processed (hits=13951 computed=6049 stale=0 invalid=0) elapsed=8355.3s
+[melcache] 21000 items processed (hits=14632 computed=6368 stale=0 invalid=0) elapsed=8727.5s
+[melcache] 22000 items processed (hits=15311 computed=6689 stale=0 invalid=0) elapsed=9500.7s
+[melcache] 23000 items processed (hits=16019 computed=6981 stale=0 invalid=0) elapsed=9919.8s
+[melcache] 24000 items processed (hits=16711 computed=7289 stale=0 invalid=0) elapsed=10380.1s
+[melcache] 25000 items processed (hits=17396 computed=7604 stale=0 invalid=0) elapsed=11093.8s
+[melcache] 26000 items processed (hits=18072 computed=7928 stale=0 invalid=0) elapsed=11536.9s
+[melcache] 27000 items processed (hits=18785 computed=8215 stale=0 invalid=0) elapsed=11989.2s
+[melcache] 28000 items processed (hits=19481 computed=8519 stale=0 invalid=0) elapsed=12731.8s
+[melcache] 29000 items processed (hits=20179 computed=8821 stale=0 invalid=0) elapsed=13162.5s
+[melcache] 30000 items processed (hits=20878 computed=9122 stale=0 invalid=0) elapsed=13547.9s
+[melcache] 31000 items processed (hits=21553 computed=9447 stale=0 invalid=0) elapsed=14001.5s
+[melcache] 32000 items processed (hits=22261 computed=9739 stale=0 invalid=0) elapsed=14286.5s
+[melcache] 33000 items processed (hits=22947 computed=10053 stale=0 invalid=0) elapsed=14647.8s
+[melcache] 34000 items processed (hits=23636 computed=10364 stale=0 invalid=0) elapsed=15120.0s
+[melcache] 35000 items processed (hits=24348 computed=10652 stale=0 invalid=0) elapsed=15817.8s
+[melcache] 36000 items processed (hits=25054 computed=10946 stale=0 invalid=0) elapsed=16173.0s
+[melcache] 37000 items processed (hits=25756 computed=11244 stale=0 invalid=0) elapsed=16794.2s
+[melcache] 38000 items processed (hits=26434 computed=11566 stale=0 invalid=0) elapsed=17470.8s
+[melcache] 39000 items processed (hits=27147 computed=11853 stale=0 invalid=0) elapsed=17828.3s
+[melcache] 40000 items processed (hits=27839 computed=12161 stale=0 invalid=0) elapsed=18129.5s

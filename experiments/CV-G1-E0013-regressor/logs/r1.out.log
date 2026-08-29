@@ -1,0 +1,10 @@
+[regressor] threads=6 torch=2.6.0+cpu python=3.13.15
+[data] durations: C:\Users\leona\Downloads\caedral-voice\data\manifests\librittsr-clean100.durations.jsonl (30917 rows)
+[data] librittsr-clean100: 30917 utt (44.11 h)
+[data] teacher-kokoro: 3270 utt (4.61 h, 3270 teacher)
+[data] speakers=257 vocab_size=43
+[data] SKIPPED 3270 rows (t00_103_1241_000000_000001: no phoneme row; t01_103_1241_000004_000002: no phoneme row; t02_103_1241_000007_000001: no phoneme row; t03_103_1241_000008_000001: no phoneme row; t04_103_1241_000012_000002: no phoneme row ...)
+[data] usable utterances=30917 audio=44.112 h
+[split] train=29247 val=1670 (stratified by speaker, stride 20)
+[model] expanding speaker table 40 -> 257 (corpus exceeds the 40-slot floor)
+[model] regressor-medium params=15,942,707 (trainable 15,171,185) pitch=off energy=off

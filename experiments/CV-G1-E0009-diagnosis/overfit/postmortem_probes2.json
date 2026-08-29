@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1081_128618_000027_000000",
+    "text": "BAKED PERCH",
+    "P4_tfd_ns01_mel_L1": 2.006,
+    "P4_mel_corr": 0.041,
+    "frac_frames_maxch_gt1": {
+      "gt": 0.514,
+      "inferred": 0.181
+    },
+    "T_gt": 87,
+    "T_inferred": 72,
+    "P5_chain_hyp": "Make the perch.",
+    "P5_chain_wer": 1.0
+  },
+  {
+    "id": "1081_128618_000013_000000",
+    "text": "PERCH A L'ALLEMANDE",
+    "P4_tfd_ns01_mel_L1": 1.518,
+    "P4_mel_corr": 0.543,
+    "frac_frames_maxch_gt1": {
+      "gt": 0.734,
+      "inferred": 0.677
+    },
+    "T_gt": 151,
+    "T_inferred": 124,
+    "P5_chain_hyp": "Perch a la la mande.",
+    "P5_chain_wer": 1.0
+  },
+  {
+    "id": "1034_121119_000053_000000",
+    "text": "\"Well, I own it.\"",
+    "P4_tfd_ns01_mel_L1": 1.0,
+    "P4_mel_corr": 0.744,
+    "frac_frames_maxch_gt1": {
+      "gt": 0.789,
+      "inferred": 0.933
+    },
+    "T_gt": 90,
+    "T_inferred": 90,
+    "P5_chain_hyp": "Well, I own it.",
+    "P5_chain_wer": 0.0
+  },
+  {
+    "id": "1034_121119_000071_000000",
+    "text": "\"His dishonor reflects upon us.\"",
+    "P4_tfd_ns01_mel_L1": 1.021,
+    "P4_mel_corr": 0.722,
+    "frac_frames_maxch_gt1": {
+      "gt": 0.826,
+      "inferred": 0.737
+    },
+    "T_gt": 167,
+    "T_inferred": 167,
+    "P5_chain_hyp": "His dishonour reflects upon us.",
+    "P5_chain_wer": 0.2
+  }
+]

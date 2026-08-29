@@ -1,0 +1,108 @@
+{
+  "checkpoint": "C:\\Users\\leona\\Downloads\\caedral-voice\\experiments\\pilot-tiny-15k\\checkpoints\\step_000007000.pt",
+  "sigma": 0.25,
+  "criteria": "INTELLIGIBLE = both evalA and evalB classified INTELLIGIBLE by scripts/classify_preview.py",
+  "note": "10 trained speakers available in this pilot run; the full 15-voice slate lands with the clean100 (44h/247spk) retrain per founder plan.",
+  "results": [
+    {
+      "voice": "voice-01",
+      "libritts_speaker": "103",
+      "speaker_index": 0,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.125,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-02",
+      "libritts_speaker": "1034",
+      "speaker_index": 1,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-03",
+      "libritts_speaker": "1040",
+      "speaker_index": 2,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-04",
+      "libritts_speaker": "1069",
+      "speaker_index": 3,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-05",
+      "libritts_speaker": "1081",
+      "speaker_index": 4,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.2222,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.25,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-06",
+      "libritts_speaker": "1088",
+      "speaker_index": 5,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-07",
+      "libritts_speaker": "1098",
+      "speaker_index": 6,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-08",
+      "libritts_speaker": "1116",
+      "speaker_index": 7,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-09",
+      "libritts_speaker": "118",
+      "speaker_index": 8,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    },
+    {
+      "voice": "voice-10",
+      "libritts_speaker": "1183",
+      "speaker_index": 9,
+      "evalA_class": "INTELLIGIBLE",
+      "evalA_wer": 0.1111,
+      "evalB_class": "INTELLIGIBLE",
+      "evalB_wer": 0.0,
+      "intelligible": true
+    }
+  ]
+}

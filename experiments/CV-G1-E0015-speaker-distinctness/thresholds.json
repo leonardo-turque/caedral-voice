@@ -1,0 +1,66 @@
+{
+ "protocol": "utterance embedding vs 6-utt real anchor cosine (gate geometry)",
+ "n_genuine_pairs": 90,
+ "n_impostor_pairs": 1260,
+ "genuine": {
+  "min": 0.7522,
+  "p05": 0.8137,
+  "mean": 0.9042
+ },
+ "impostor": {
+  "max": 0.8657,
+  "p999": 0.8631,
+  "p99": 0.8373,
+  "mean": 0.6592
+ },
+ "eer_threshold": 0.808,
+ "eer_rate": 0.0349,
+ "operating_points": {
+  "0.80": {
+   "FAR": 0.046,
+   "FRR": 0.0222
+  },
+  "0.82": {
+   "FAR": 0.0262,
+   "FRR": 0.0778
+  },
+  "0.84": {
+   "FAR": 0.0079,
+   "FRR": 0.1333
+  },
+  "0.85": {
+   "FAR": 0.0032,
+   "FRR": 0.1444
+  },
+  "0.86": {
+   "FAR": 0.0016,
+   "FRR": 0.1444
+  }
+ },
+ "threshold_at_far_1pct": {
+  "t": 0.839,
+  "FAR_at_t": 0.01,
+  "FRR_at_t": 0.1333
+ },
+ "threshold_at_far_0pct_observed": {
+  "t": 0.867,
+  "note": "above max observed impostor; FRR there:",
+  "frr": 0.1778
+ },
+ "loo_nearest_centroid_identification_accuracy": 0.9222,
+ "loo_confusions": {
+  "6209|7505": 2,
+  "2416|696": 2,
+  "6415|7402": 1,
+  "2416|3879": 1,
+  "1088|3879": 1
+ },
+ "worst_pair_binary_centroid_accuracy": {
+  "696|2416": 1.0,
+  "6209|7505": 0.9167,
+  "6209|78": 1.0,
+  "78|8419": 1.0,
+  "696|6147": 1.0,
+  "7505|7402": 1.0
+ }
+}

@@ -1,0 +1,6 @@
+{"tag": "cand3-spk7505-evalA", "speaker": "7505", "sentence": "evalA", "class": "INTELLIGIBLE", "min_wer": 0.1111, "dnsmos": 2.172}
+{"tag": "cand3-spk7505-evalB", "speaker": "7505", "sentence": "evalB", "class": "INTELLIGIBLE", "min_wer": 0.0, "dnsmos": 2.303}
+{"tag": "cand3-spk8838-evalA", "speaker": "8838", "sentence": "evalA", "class": "INTELLIGIBLE", "min_wer": 0.1111, "dnsmos": 2.793}
+{"tag": "cand3-spk8838-evalB", "speaker": "8838", "sentence": "evalB", "class": "INTELLIGIBLE", "min_wer": 0.25, "dnsmos": 2.536}
+{"tag": "cand3-spk7067-evalA", "speaker": "7067", "sentence": "evalA", "class": "INTELLIGIBLE", "min_wer": 0.1111, "dnsmos": 2.203}
+{"tag": "cand3-spk7067-evalB", "speaker": "7067", "sentence": "evalB", "class": "INTELLIGIBLE", "min_wer": 0.125, "dnsmos": 2.313}

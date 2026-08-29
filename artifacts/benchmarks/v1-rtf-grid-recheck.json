@@ -1,0 +1,115 @@
+{
+  "experiment": "v1-rtf-ram-recheck",
+  "date_utc": "2026-08-24T15:37:25.727350+00:00",
+  "config": {
+    "backend": "ORT CPU",
+    "graph_opt": "ENABLE_ALL",
+    "intra_op_threads": 6,
+    "cpu_arena": false
+  },
+  "machine": {
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16
+  },
+  "rss_ladder_mb": {
+    "after_imports": 25,
+    "after_engine_load": 640,
+    "after_warmup_warm": 645,
+    "load_seconds": 1.94
+  },
+  "engine_only_peaks": {
+    "skipped": "GRID_ONLY run"
+  },
+  "rtf_grid": [
+    {
+      "voice": "caedral-m1",
+      "sentence": "control",
+      "audio_s": 3.48,
+      "wall_median_s": 2.326,
+      "rtf_median": 0.669
+    },
+    {
+      "voice": "caedral-m1",
+      "sentence": "technical",
+      "audio_s": 6.19,
+      "wall_median_s": 3.253,
+      "rtf_median": 0.526
+    },
+    {
+      "voice": "caedral-m1",
+      "sentence": "longform",
+      "audio_s": 16.3,
+      "wall_median_s": 7.272,
+      "rtf_median": 0.446
+    },
+    {
+      "voice": "caedral-m2",
+      "sentence": "control",
+      "audio_s": 3.67,
+      "wall_median_s": 2.882,
+      "rtf_median": 0.785
+    },
+    {
+      "voice": "caedral-m2",
+      "sentence": "technical",
+      "audio_s": 5.76,
+      "wall_median_s": 4.639,
+      "rtf_median": 0.805
+    },
+    {
+      "voice": "caedral-m2",
+      "sentence": "longform",
+      "audio_s": 13.14,
+      "wall_median_s": 8.328,
+      "rtf_median": 0.634
+    },
+    {
+      "voice": "caedral-f1",
+      "sentence": "control",
+      "audio_s": 3.29,
+      "wall_median_s": 2.438,
+      "rtf_median": 0.742
+    },
+    {
+      "voice": "caedral-f1",
+      "sentence": "technical",
+      "audio_s": 5.53,
+      "wall_median_s": 4.191,
+      "rtf_median": 0.758
+    },
+    {
+      "voice": "caedral-f1",
+      "sentence": "longform",
+      "audio_s": 14.38,
+      "wall_median_s": 10.846,
+      "rtf_median": 0.754
+    },
+    {
+      "voice": "caedral-f2",
+      "sentence": "control",
+      "audio_s": 3.65,
+      "wall_median_s": 2.571,
+      "rtf_median": 0.705
+    },
+    {
+      "voice": "caedral-f2",
+      "sentence": "technical",
+      "audio_s": 5.65,
+      "wall_median_s": 3.479,
+      "rtf_median": 0.615
+    },
+    {
+      "voice": "caedral-f2",
+      "sentence": "longform",
+      "audio_s": 13.1,
+      "wall_median_s": 11.307,
+      "rtf_median": 0.863
+    }
+  ],
+  "rtf_summary": {
+    "min": 0.446,
+    "max": 0.863,
+    "median_across_combos": 0.7235,
+    "note": "warm median of 5 reps per voice x sentence, idle machine"
+  }
+}

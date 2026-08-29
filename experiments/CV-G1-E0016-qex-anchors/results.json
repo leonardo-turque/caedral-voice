@@ -1,0 +1,1240 @@
+{
+  "experiment": "CV-G1-E0016-qex-anchors",
+  "task": "ANCHOR-QEX",
+  "purpose": "Render + score missing teacher anchors qex_002..qex_006 so PROSODY-EVAL Tier C can gate the full qex set; validate that teachers pass their own proposed gates.",
+  "measured_at": "2026-08-23T00:55:29.324322+00:00",
+  "git_commit": "019acb67222c0f44104efbbf21f91f8015158912",
+  "protocols": [
+    "docs/benchmarks/PROSODY-EVAL.md",
+    "benchmarks/run_natgate.py",
+    "scripts/classify_preview.py"
+  ],
+  "corpus_version": "1.0",
+  "generation": {
+    "kokoro_meta_git_commit": "019acb67222c0f44104efbbf21f91f8015158912",
+    "piper_license": "GPL-3.0 - ISOLATED SUBPROCESS ONLY (black-box child)",
+    "rows": [
+      {
+        "file": "kokoro-af_heart-qex_002.wav",
+        "teacher": "kokoro",
+        "voice": "af_heart",
+        "item_id": "qex_002",
+        "chars": 37,
+        "audio_seconds": 1.899,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.4609,
+        "gain_applied": null,
+        "wall_warm_seconds": 2.1662
+      },
+      {
+        "file": "kokoro-af_heart-qex_003.wav",
+        "teacher": "kokoro",
+        "voice": "af_heart",
+        "item_id": "qex_003",
+        "chars": 39,
+        "audio_seconds": 1.835,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.5391,
+        "gain_applied": null,
+        "wall_warm_seconds": 2.8508
+      },
+      {
+        "file": "kokoro-af_heart-qex_004.wav",
+        "teacher": "kokoro",
+        "voice": "af_heart",
+        "item_id": "qex_004",
+        "chars": 19,
+        "audio_seconds": 1.237,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.7961,
+        "gain_applied": null,
+        "wall_warm_seconds": 2.1526
+      },
+      {
+        "file": "kokoro-af_heart-qex_005.wav",
+        "teacher": "kokoro",
+        "voice": "af_heart",
+        "item_id": "qex_005",
+        "chars": 44,
+        "audio_seconds": 2.389,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.5226,
+        "gain_applied": null,
+        "wall_warm_seconds": 4.1601
+      },
+      {
+        "file": "kokoro-af_heart-qex_006.wav",
+        "teacher": "kokoro",
+        "voice": "af_heart",
+        "item_id": "qex_006",
+        "chars": 70,
+        "audio_seconds": 3.136,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.4769,
+        "gain_applied": null,
+        "wall_warm_seconds": 3.6135
+      },
+      {
+        "file": "kokoro-am_michael-qex_002.wav",
+        "teacher": "kokoro",
+        "voice": "am_michael",
+        "item_id": "qex_002",
+        "chars": 37,
+        "audio_seconds": 2.197,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.6283,
+        "gain_applied": null,
+        "wall_warm_seconds": 2.4543
+      },
+      {
+        "file": "kokoro-am_michael-qex_003.wav",
+        "teacher": "kokoro",
+        "voice": "am_michael",
+        "item_id": "qex_003",
+        "chars": 39,
+        "audio_seconds": 2.24,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.5082,
+        "gain_applied": null,
+        "wall_warm_seconds": 2.3451
+      },
+      {
+        "file": "kokoro-am_michael-qex_004.wav",
+        "teacher": "kokoro",
+        "voice": "am_michael",
+        "item_id": "qex_004",
+        "chars": 19,
+        "audio_seconds": 1.536,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.569,
+        "gain_applied": null,
+        "wall_warm_seconds": 1.9018
+      },
+      {
+        "file": "kokoro-am_michael-qex_005.wav",
+        "teacher": "kokoro",
+        "voice": "am_michael",
+        "item_id": "qex_005",
+        "chars": 44,
+        "audio_seconds": 2.773,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.437,
+        "gain_applied": null,
+        "wall_warm_seconds": 3.4067
+      },
+      {
+        "file": "kokoro-am_michael-qex_006.wav",
+        "teacher": "kokoro",
+        "voice": "am_michael",
+        "item_id": "qex_006",
+        "chars": 70,
+        "audio_seconds": 3.755,
+        "sample_rate": 24000,
+        "peak_pre_gain": 0.4836,
+        "gain_applied": null,
+        "wall_warm_seconds": 4.8914
+      },
+      {
+        "file": "piper-lessac-qex_002.wav",
+        "teacher": "piper",
+        "voice": "lessac",
+        "item_id": "qex_002",
+        "chars": 37,
+        "audio_seconds": 2.15,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 1.2542,
+        "rtf_warm_subprocess": 1.1943,
+        "wall_cold_seconds": 2.6971,
+        "wall_warm_seconds": 2.5683,
+        "child_peak_rss_bytes": 138579968
+      },
+      {
+        "file": "piper-lessac-qex_003.wav",
+        "teacher": "piper",
+        "voice": "lessac",
+        "item_id": "qex_003",
+        "chars": 39,
+        "audio_seconds": 2.325,
+        "sample_rate": 22050,
+        "peak_pre_gain": 0.9999,
+        "gain_applied": 0.98006,
+        "rtf_cold_subprocess": 1.2139,
+        "rtf_warm_subprocess": 1.0302,
+        "wall_cold_seconds": 2.8218,
+        "wall_warm_seconds": 2.3949,
+        "child_peak_rss_bytes": 128221184
+      },
+      {
+        "file": "piper-lessac-qex_004.wav",
+        "teacher": "piper",
+        "voice": "lessac",
+        "item_id": "qex_004",
+        "chars": 19,
+        "audio_seconds": 1.257,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 1.2688,
+        "rtf_warm_subprocess": 1.8998,
+        "wall_cold_seconds": 1.5943,
+        "wall_warm_seconds": 2.3871,
+        "child_peak_rss_bytes": 116539392
+      },
+      {
+        "file": "piper-lessac-qex_005.wav",
+        "teacher": "piper",
+        "voice": "lessac",
+        "item_id": "qex_005",
+        "chars": 44,
+        "audio_seconds": 3.779,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 0.5056,
+        "rtf_warm_subprocess": 0.5632,
+        "wall_cold_seconds": 1.9104,
+        "wall_warm_seconds": 2.128,
+        "child_peak_rss_bytes": 139857920
+      },
+      {
+        "file": "piper-lessac-qex_006.wav",
+        "teacher": "piper",
+        "voice": "lessac",
+        "item_id": "qex_006",
+        "chars": 70,
+        "audio_seconds": 3.195,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 0.8546,
+        "rtf_warm_subprocess": 0.6658,
+        "wall_cold_seconds": 2.7308,
+        "wall_warm_seconds": 2.1275,
+        "child_peak_rss_bytes": 145973248
+      },
+      {
+        "file": "piper-ryan-qex_002.wav",
+        "teacher": "piper",
+        "voice": "ryan",
+        "item_id": "qex_002",
+        "chars": 37,
+        "audio_seconds": 1.756,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 1.0581,
+        "rtf_warm_subprocess": 1.29,
+        "wall_cold_seconds": 1.8577,
+        "wall_warm_seconds": 2.2649,
+        "child_peak_rss_bytes": 125431808
+      },
+      {
+        "file": "piper-ryan-qex_003.wav",
+        "teacher": "piper",
+        "voice": "ryan",
+        "item_id": "qex_003",
+        "chars": 39,
+        "audio_seconds": 1.907,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 0.9443,
+        "rtf_warm_subprocess": 1.2703,
+        "wall_cold_seconds": 1.8004,
+        "wall_warm_seconds": 2.422,
+        "child_peak_rss_bytes": 126570496
+      },
+      {
+        "file": "piper-ryan-qex_004.wav",
+        "teacher": "piper",
+        "voice": "ryan",
+        "item_id": "qex_004",
+        "chars": 19,
+        "audio_seconds": 1.152,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 2.1636,
+        "rtf_warm_subprocess": 1.7857,
+        "wall_cold_seconds": 2.4925,
+        "wall_warm_seconds": 2.0572,
+        "child_peak_rss_bytes": 118771712
+      },
+      {
+        "file": "piper-ryan-qex_005.wav",
+        "teacher": "piper",
+        "voice": "ryan",
+        "item_id": "qex_005",
+        "chars": 44,
+        "audio_seconds": 2.873,
+        "sample_rate": 22050,
+        "peak_pre_gain": 1.0,
+        "gain_applied": 0.98003,
+        "rtf_cold_subprocess": 0.6605,
+        "rtf_warm_subprocess": 0.6501,
+        "wall_cold_seconds": 1.8977,
+        "wall_warm_seconds": 1.8677,
+        "child_peak_rss_bytes": 114229248
+      },
+      {
+        "file": "piper-ryan-qex_006.wav",
+        "teacher": "piper",
+        "voice": "ryan",
+        "item_id": "qex_006",
+        "chars": 70,
+        "audio_seconds": 3.033,
+        "sample_rate": 22050,
+        "peak_pre_gain": 0.9999,
+        "gain_applied": 0.98006,
+        "rtf_cold_subprocess": 0.7499,
+        "rtf_warm_subprocess": 0.5993,
+        "wall_cold_seconds": 2.2743,
+        "wall_warm_seconds": 1.8175,
+        "child_peak_rss_bytes": 127528960
+      }
+    ]
+  },
+  "scoring_signals": "scripts/classify_preview.py dual-ASR minWER + DNSMOS ovrl (speechmos) + rate plausibility; separate process per RAM policy",
+  "prosody_detector_source": "docs/benchmarks/PROSODY-EVAL.md \u00a72 formulas; no in-repo implementation existed \u2014 minimal inline implementation, identical code path for all clips",
+  "calibration_reproducibility_check": {
+    "note": "probe implementation re-measured the 3 legacy qex_001 natgate anchors; matches PROSODY-EVAL \u00a77 to 3 decimals (1.169/1.122/1.256) -> identical code path confirmed",
+    "measured_B_qex001": {
+      "af_heart": 1.1688,
+      "am_michael": 1.1225,
+      "lessac": 1.2563
+    }
+  },
+  "clips": [
+    {
+      "stem": "kokoro-af_heart-qex_002",
+      "teacher": "kokoro",
+      "voice": "af_heart",
+      "item_id": "qex_002",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.899,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.338,
+      "class": "NATURAL",
+      "chars_per_sec": 19.49,
+      "rate_plausible": true,
+      "median_f0_hz": 205.94,
+      "B_rise_flag": 1.1387,
+      "C_slope_st_per_s": 9.423,
+      "voiced_fraction": 0.5509,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 60.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "kokoro-af_heart-qex_003",
+      "teacher": "kokoro",
+      "voice": "af_heart",
+      "item_id": "qex_003",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.835,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.416,
+      "class": "NATURAL",
+      "chars_per_sec": 21.26,
+      "rate_plausible": true,
+      "median_f0_hz": 210.14,
+      "B_rise_flag": 1.1225,
+      "C_slope_st_per_s": 9.936,
+      "voiced_fraction": 0.6,
+      "E_expected_pauses": 1,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 130.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "kokoro-af_heart-qex_004",
+      "teacher": "kokoro",
+      "voice": "af_heart",
+      "item_id": "qex_004",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.237,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.338,
+      "class": "NATURAL",
+      "chars_per_sec": 15.36,
+      "rate_plausible": true,
+      "median_f0_hz": 225.23,
+      "B_rise_flag": 1.0842,
+      "C_slope_st_per_s": -23.376,
+      "voiced_fraction": 0.5607,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 40.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "kokoro-af_heart-qex_005",
+      "teacher": "kokoro",
+      "voice": "af_heart",
+      "item_id": "qex_005",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 2.389,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.418,
+      "class": "NATURAL",
+      "chars_per_sec": 18.42,
+      "rate_plausible": true,
+      "median_f0_hz": 205.34,
+      "B_rise_flag": 1.2383,
+      "C_slope_st_per_s": 13.087,
+      "voiced_fraction": 0.6037,
+      "E_expected_pauses": 4,
+      "L_long_marks": 1,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 70.0,
+      "p3_rule_pass": false
+    },
+    {
+      "stem": "kokoro-af_heart-qex_006",
+      "teacher": "kokoro",
+      "voice": "af_heart",
+      "item_id": "qex_006",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 3.136,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.408,
+      "class": "NATURAL",
+      "chars_per_sec": 22.32,
+      "rate_plausible": true,
+      "median_f0_hz": 207.73,
+      "B_rise_flag": 1.0473,
+      "C_slope_st_per_s": 3.743,
+      "voiced_fraction": 0.5398,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 1,
+      "P350": 0,
+      "max_internal_silence_ms": 210.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "kokoro-am_michael-qex_002",
+      "teacher": "kokoro",
+      "voice": "am_michael",
+      "item_id": "qex_002",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 2.197,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.375,
+      "class": "NATURAL",
+      "chars_per_sec": 16.84,
+      "rate_plausible": true,
+      "median_f0_hz": 115.24,
+      "B_rise_flag": null,
+      "C_slope_st_per_s": null,
+      "voiced_fraction": 0.3934,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 50.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "kokoro-am_michael-qex_003",
+      "teacher": "kokoro",
+      "voice": "am_michael",
+      "item_id": "qex_003",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 2.24,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.153,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 17.41,
+      "rate_plausible": true,
+      "median_f0_hz": 114.58,
+      "B_rise_flag": 1.1355,
+      "C_slope_st_per_s": -12.777,
+      "voiced_fraction": 0.6906,
+      "E_expected_pauses": 1,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 100.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "kokoro-am_michael-qex_004",
+      "teacher": "kokoro",
+      "voice": "am_michael",
+      "item_id": "qex_004",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.536,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.285,
+      "class": "NATURAL",
+      "chars_per_sec": 12.37,
+      "rate_plausible": true,
+      "median_f0_hz": 113.92,
+      "B_rise_flag": 1.2819,
+      "C_slope_st_per_s": -12.121,
+      "voiced_fraction": 0.6757,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 30.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "kokoro-am_michael-qex_005",
+      "teacher": "kokoro",
+      "voice": "am_michael",
+      "item_id": "qex_005",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 2.773,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.389,
+      "class": "NATURAL",
+      "chars_per_sec": 15.87,
+      "rate_plausible": true,
+      "median_f0_hz": 119.31,
+      "B_rise_flag": 1.1225,
+      "C_slope_st_per_s": 3.832,
+      "voiced_fraction": 0.6725,
+      "E_expected_pauses": 4,
+      "L_long_marks": 1,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 130.0,
+      "p3_rule_pass": false
+    },
+    {
+      "stem": "kokoro-am_michael-qex_006",
+      "teacher": "kokoro",
+      "voice": "am_michael",
+      "item_id": "qex_006",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 3.755,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.458,
+      "class": "NATURAL",
+      "chars_per_sec": 18.64,
+      "rate_plausible": true,
+      "median_f0_hz": 117.26,
+      "B_rise_flag": 0.9772,
+      "C_slope_st_per_s": -25.99,
+      "voiced_fraction": 0.5291,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 1,
+      "P350": 0,
+      "max_internal_silence_ms": 180.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-lessac-qex_002",
+      "teacher": "piper",
+      "voice": "lessac",
+      "item_id": "qex_002",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 2.15,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.256,
+      "class": "NATURAL",
+      "chars_per_sec": 17.21,
+      "rate_plausible": true,
+      "median_f0_hz": 179.8,
+      "B_rise_flag": 1.078,
+      "C_slope_st_per_s": -18.28,
+      "voiced_fraction": 0.6273,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 89.8,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-lessac-qex_003",
+      "teacher": "piper",
+      "voice": "lessac",
+      "item_id": "qex_003",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 2.325,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.111,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 16.78,
+      "rate_plausible": true,
+      "median_f0_hz": 237.24,
+      "B_rise_flag": 1.4726,
+      "C_slope_st_per_s": 15.93,
+      "voiced_fraction": 0.7546,
+      "E_expected_pauses": 1,
+      "L_long_marks": 0,
+      "P150": 1,
+      "P350": 0,
+      "max_internal_silence_ms": 249.4,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-lessac-qex_004",
+      "teacher": "piper",
+      "voice": "lessac",
+      "item_id": "qex_004",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.257,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 2.584,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 15.12,
+      "rate_plausible": true,
+      "median_f0_hz": 176.71,
+      "B_rise_flag": 1.1824,
+      "C_slope_st_per_s": -15.359,
+      "voiced_fraction": 0.7356,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 39.9,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-lessac-qex_005",
+      "teacher": "piper",
+      "voice": "lessac",
+      "item_id": "qex_005",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 3.779,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.132,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 11.64,
+      "rate_plausible": true,
+      "median_f0_hz": 223.93,
+      "B_rise_flag": 1.3119,
+      "C_slope_st_per_s": -13.591,
+      "voiced_fraction": 0.5244,
+      "E_expected_pauses": 4,
+      "L_long_marks": 1,
+      "P150": 3,
+      "P350": 1,
+      "max_internal_silence_ms": 429.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-lessac-qex_006",
+      "teacher": "piper",
+      "voice": "lessac",
+      "item_id": "qex_006",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 3.195,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.194,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 21.91,
+      "rate_plausible": true,
+      "median_f0_hz": 203.57,
+      "B_rise_flag": 1.2276,
+      "C_slope_st_per_s": -16.818,
+      "voiced_fraction": 0.6957,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 49.9,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-ryan-qex_002",
+      "teacher": "piper",
+      "voice": "ryan",
+      "item_id": "qex_002",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.756,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.137,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 21.07,
+      "rate_plausible": true,
+      "median_f0_hz": 158.34,
+      "B_rise_flag": 1.2241,
+      "C_slope_st_per_s": -22.173,
+      "voiced_fraction": 0.7698,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 49.9,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-ryan-qex_003",
+      "teacher": "piper",
+      "voice": "ryan",
+      "item_id": "qex_003",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.907,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 2.986,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 20.45,
+      "rate_plausible": true,
+      "median_f0_hz": 154.72,
+      "B_rise_flag": 1.6151,
+      "C_slope_st_per_s": 23.415,
+      "voiced_fraction": 0.7908,
+      "E_expected_pauses": 1,
+      "L_long_marks": 0,
+      "P150": 1,
+      "P350": 0,
+      "max_internal_silence_ms": 259.4,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-ryan-qex_004",
+      "teacher": "piper",
+      "voice": "ryan",
+      "item_id": "qex_004",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 1.152,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 2.488,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 16.49,
+      "rate_plausible": true,
+      "median_f0_hz": 191.04,
+      "B_rise_flag": 1.1454,
+      "C_slope_st_per_s": -10.875,
+      "voiced_fraction": 0.8046,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 20.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "piper-ryan-qex_005",
+      "teacher": "piper",
+      "voice": "ryan",
+      "item_id": "qex_005",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 2.873,
+      "min_wer": 0.2222,
+      "dnsmos_ovrl": 2.913,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 15.32,
+      "rate_plausible": true,
+      "median_f0_hz": 181.89,
+      "B_rise_flag": 1.2819,
+      "C_slope_st_per_s": -23.362,
+      "voiced_fraction": 0.6681,
+      "E_expected_pauses": 4,
+      "L_long_marks": 1,
+      "P150": 2,
+      "P350": 0,
+      "max_internal_silence_ms": 199.5,
+      "p3_rule_pass": false
+    },
+    {
+      "stem": "piper-ryan-qex_006",
+      "teacher": "piper",
+      "voice": "ryan",
+      "item_id": "qex_006",
+      "origin": "CV-G1-E0016",
+      "audio_seconds": 3.033,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.278,
+      "class": "NATURAL",
+      "chars_per_sec": 23.08,
+      "rate_plausible": true,
+      "median_f0_hz": 160.18,
+      "B_rise_flag": 1.203,
+      "C_slope_st_per_s": -17.979,
+      "voiced_fraction": 0.7309,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 69.8,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "natgate-kokoro-af_heart-qex_001",
+      "teacher": "kokoro",
+      "voice": "af_heart",
+      "item_id": "qex_001",
+      "origin": "natgate-legacy-qex_001",
+      "audio_seconds": 2.795,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.278,
+      "class": "NATURAL",
+      "chars_per_sec": 21.47,
+      "rate_plausible": true,
+      "median_f0_hz": 191.59,
+      "B_rise_flag": 1.1688,
+      "C_slope_st_per_s": 1.551,
+      "voiced_fraction": 0.6863,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 40.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "natgate-kokoro-am_michael-qex_001",
+      "teacher": "kokoro",
+      "voice": "am_michael",
+      "item_id": "qex_001",
+      "origin": "natgate-legacy-qex_001",
+      "audio_seconds": 3.456,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.197,
+      "class": "INTELLIGIBLE",
+      "chars_per_sec": 17.36,
+      "rate_plausible": true,
+      "median_f0_hz": 104.47,
+      "B_rise_flag": 1.1225,
+      "C_slope_st_per_s": -5.321,
+      "voiced_fraction": 0.6977,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 40.0,
+      "p3_rule_pass": true
+    },
+    {
+      "stem": "natgate-piper-lessac-qex_001",
+      "teacher": "piper",
+      "voice": "lessac",
+      "item_id": "qex_001",
+      "origin": "natgate-legacy-qex_001",
+      "audio_seconds": 3.648,
+      "min_wer": 0.0,
+      "dnsmos_ovrl": 3.397,
+      "class": "NATURAL",
+      "chars_per_sec": 16.45,
+      "rate_plausible": true,
+      "median_f0_hz": 184.53,
+      "B_rise_flag": 1.2563,
+      "C_slope_st_per_s": -6.47,
+      "voiced_fraction": 0.7897,
+      "E_expected_pauses": 0,
+      "L_long_marks": 0,
+      "P150": 0,
+      "P350": 0,
+      "max_internal_silence_ms": 49.9,
+      "p3_rule_pass": true
+    }
+  ],
+  "teacher_summary_per_voice": {
+    "kokoro/af_heart": {
+      "n": 5,
+      "dnsmos_ovrl": {
+        "median": 3.408,
+        "min": 3.338,
+        "max": 3.418
+      },
+      "min_wer": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "kokoro/am_michael": {
+      "n": 5,
+      "dnsmos_ovrl": {
+        "median": 3.375,
+        "min": 3.153,
+        "max": 3.458
+      },
+      "min_wer": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "piper/lessac": {
+      "n": 5,
+      "dnsmos_ovrl": {
+        "median": 3.132,
+        "min": 2.584,
+        "max": 3.256
+      },
+      "min_wer": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "piper/ryan": {
+      "n": 5,
+      "dnsmos_ovrl": {
+        "median": 2.986,
+        "min": 2.488,
+        "max": 3.278
+      },
+      "min_wer": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.222
+      }
+    }
+  },
+  "gate_validation": {
+    "G1_p1_direction_table": {
+      "description": "rise REQUIRED qex_001+qex_003, FORBIDDEN qex_002+qex_006 (B>=1.15 / <1.15); NA exclamations",
+      "items": [
+        {
+          "item_id": "qex_001",
+          "expectation": "required",
+          "checks": [
+            {
+              "voice": "kokoro/af_heart",
+              "B": 1.1688,
+              "direction_ok": true
+            },
+            {
+              "voice": "kokoro/am_michael",
+              "B": 1.1225,
+              "direction_ok": false
+            },
+            {
+              "voice": "piper/lessac",
+              "B": 1.2563,
+              "direction_ok": true
+            }
+          ],
+          "n_pass": 2,
+          "n_measurable": 3,
+          "all_teachers_pass": false
+        },
+        {
+          "item_id": "qex_002",
+          "expectation": "forbidden",
+          "checks": [
+            {
+              "voice": "kokoro/af_heart",
+              "B": 1.1387,
+              "direction_ok": true
+            },
+            {
+              "voice": "kokoro/am_michael",
+              "B": null,
+              "direction_ok": null
+            },
+            {
+              "voice": "piper/lessac",
+              "B": 1.078,
+              "direction_ok": true
+            },
+            {
+              "voice": "piper/ryan",
+              "B": 1.2241,
+              "direction_ok": false
+            }
+          ],
+          "n_pass": 2,
+          "n_measurable": 3,
+          "all_teachers_pass": false
+        },
+        {
+          "item_id": "qex_003",
+          "expectation": "required",
+          "checks": [
+            {
+              "voice": "kokoro/af_heart",
+              "B": 1.1225,
+              "direction_ok": false
+            },
+            {
+              "voice": "kokoro/am_michael",
+              "B": 1.1355,
+              "direction_ok": false
+            },
+            {
+              "voice": "piper/lessac",
+              "B": 1.4726,
+              "direction_ok": true
+            },
+            {
+              "voice": "piper/ryan",
+              "B": 1.6151,
+              "direction_ok": true
+            }
+          ],
+          "n_pass": 2,
+          "n_measurable": 4,
+          "all_teachers_pass": false
+        },
+        {
+          "item_id": "qex_004",
+          "expectation": "na",
+          "checks": [
+            {
+              "voice": "kokoro/af_heart",
+              "B": 1.0842,
+              "direction_ok": null
+            },
+            {
+              "voice": "kokoro/am_michael",
+              "B": 1.2819,
+              "direction_ok": null
+            },
+            {
+              "voice": "piper/lessac",
+              "B": 1.1824,
+              "direction_ok": null
+            },
+            {
+              "voice": "piper/ryan",
+              "B": 1.1454,
+              "direction_ok": null
+            }
+          ],
+          "n_pass": 0,
+          "n_measurable": 0,
+          "all_teachers_pass": null
+        },
+        {
+          "item_id": "qex_005",
+          "expectation": "na",
+          "checks": [
+            {
+              "voice": "kokoro/af_heart",
+              "B": 1.2383,
+              "direction_ok": null
+            },
+            {
+              "voice": "kokoro/am_michael",
+              "B": 1.1225,
+              "direction_ok": null
+            },
+            {
+              "voice": "piper/lessac",
+              "B": 1.3119,
+              "direction_ok": null
+            },
+            {
+              "voice": "piper/ryan",
+              "B": 1.2819,
+              "direction_ok": null
+            }
+          ],
+          "n_pass": 0,
+          "n_measurable": 0,
+          "all_teachers_pass": null
+        },
+        {
+          "item_id": "qex_006",
+          "expectation": "forbidden",
+          "checks": [
+            {
+              "voice": "kokoro/af_heart",
+              "B": 1.0473,
+              "direction_ok": true
+            },
+            {
+              "voice": "kokoro/am_michael",
+              "B": 0.9772,
+              "direction_ok": true
+            },
+            {
+              "voice": "piper/lessac",
+              "B": 1.2276,
+              "direction_ok": false
+            },
+            {
+              "voice": "piper/ryan",
+              "B": 1.203,
+              "direction_ok": false
+            }
+          ],
+          "n_pass": 2,
+          "n_measurable": 4,
+          "all_teachers_pass": false
+        }
+      ],
+      "verdict": "FLAG \u2014 teachers fail their own direction table on 4 of 4 gated items",
+      "teacher_compliance_overall": "8 of 14 voice-item checks"
+    },
+    "G2_tier_c_band": {
+      "X": 0.2,
+      "formal_rule": "|B_ours - median(B_anchor,item)| <= 0.20 (rise-required items)",
+      "items": [
+        {
+          "item_id": "qex_001",
+          "B_values": {
+            "kokoro/af_heart": 1.1688,
+            "kokoro/am_michael": 1.1225,
+            "piper/lessac": 1.2563
+          },
+          "anchor_median_B": 1.1688,
+          "abs_deviation_from_median": {
+            "kokoro/af_heart": 0.0,
+            "kokoro/am_michael": 0.0463,
+            "piper/lessac": 0.0875
+          },
+          "max_abs_deviation_from_median": 0.0875,
+          "band_ok_vs_median_rule": true,
+          "spread_max_minus_min": 0.1338,
+          "spread_within_X_as_derived": true
+        },
+        {
+          "item_id": "qex_002",
+          "B_values": {
+            "kokoro/af_heart": 1.1387,
+            "piper/lessac": 1.078,
+            "piper/ryan": 1.2241
+          },
+          "anchor_median_B": 1.1387,
+          "abs_deviation_from_median": {
+            "kokoro/af_heart": 0.0,
+            "piper/lessac": 0.0607,
+            "piper/ryan": 0.0854
+          },
+          "max_abs_deviation_from_median": 0.0854,
+          "band_ok_vs_median_rule": true,
+          "spread_max_minus_min": 0.1461,
+          "spread_within_X_as_derived": true
+        },
+        {
+          "item_id": "qex_003",
+          "B_values": {
+            "kokoro/af_heart": 1.1225,
+            "kokoro/am_michael": 1.1355,
+            "piper/lessac": 1.4726,
+            "piper/ryan": 1.6151
+          },
+          "anchor_median_B": 1.304,
+          "abs_deviation_from_median": {
+            "kokoro/af_heart": 0.1815,
+            "kokoro/am_michael": 0.1685,
+            "piper/lessac": 0.1685,
+            "piper/ryan": 0.3111
+          },
+          "max_abs_deviation_from_median": 0.3111,
+          "band_ok_vs_median_rule": false,
+          "spread_max_minus_min": 0.4926,
+          "spread_within_X_as_derived": false
+        },
+        {
+          "item_id": "qex_004",
+          "B_values": {
+            "kokoro/af_heart": 1.0842,
+            "kokoro/am_michael": 1.2819,
+            "piper/lessac": 1.1824,
+            "piper/ryan": 1.1454
+          },
+          "anchor_median_B": 1.1639,
+          "abs_deviation_from_median": {
+            "kokoro/af_heart": 0.0797,
+            "kokoro/am_michael": 0.118,
+            "piper/lessac": 0.0185,
+            "piper/ryan": 0.0185
+          },
+          "max_abs_deviation_from_median": 0.118,
+          "band_ok_vs_median_rule": true,
+          "spread_max_minus_min": 0.1977,
+          "spread_within_X_as_derived": true
+        },
+        {
+          "item_id": "qex_005",
+          "B_values": {
+            "kokoro/af_heart": 1.2383,
+            "kokoro/am_michael": 1.1225,
+            "piper/lessac": 1.3119,
+            "piper/ryan": 1.2819
+          },
+          "anchor_median_B": 1.2601,
+          "abs_deviation_from_median": {
+            "kokoro/af_heart": 0.0218,
+            "kokoro/am_michael": 0.1376,
+            "piper/lessac": 0.0518,
+            "piper/ryan": 0.0218
+          },
+          "max_abs_deviation_from_median": 0.1376,
+          "band_ok_vs_median_rule": true,
+          "spread_max_minus_min": 0.1894,
+          "spread_within_X_as_derived": true
+        },
+        {
+          "item_id": "qex_006",
+          "B_values": {
+            "kokoro/af_heart": 1.0473,
+            "kokoro/am_michael": 0.9772,
+            "piper/lessac": 1.2276,
+            "piper/ryan": 1.203
+          },
+          "anchor_median_B": 1.1252,
+          "abs_deviation_from_median": {
+            "kokoro/af_heart": 0.0779,
+            "kokoro/am_michael": 0.148,
+            "piper/lessac": 0.1024,
+            "piper/ryan": 0.0778
+          },
+          "max_abs_deviation_from_median": 0.148,
+          "band_ok_vs_median_rule": true,
+          "spread_max_minus_min": 0.2504,
+          "spread_within_X_as_derived": false
+        }
+      ],
+      "verdict": "FLAG \u2014 anchors themselves violate the proposed band/spread basis on qex_003 (+qex_006 under the spread derivation)"
+    },
+    "G3_p3_pause_rule": {
+      "rule": "P150 <= E+2 AND no internal silence > 700 ms AND (L>=1 => some pause >= 200 ms)",
+      "clips_total": 20,
+      "clips_pass": 17,
+      "failures": [
+        {
+          "clip": "kokoro-af_heart-qex_005",
+          "item": "qex_005",
+          "voice": "af_heart",
+          "L": 1,
+          "P150": 0,
+          "E": 4,
+          "max_internal_silence_ms": 70.0
+        },
+        {
+          "clip": "kokoro-am_michael-qex_005",
+          "item": "qex_005",
+          "voice": "am_michael",
+          "L": 1,
+          "P150": 0,
+          "E": 4,
+          "max_internal_silence_ms": 130.0
+        },
+        {
+          "clip": "piper-ryan-qex_005",
+          "item": "qex_005",
+          "voice": "ryan",
+          "L": 1,
+          "P150": 2,
+          "E": 4,
+          "max_internal_silence_ms": 199.5
+        }
+      ],
+      "legacy_qex001_all_pass": true
+    },
+    "flags": [
+      "P1-DIRECTION qex_001 (required rise): teachers FAIL \u2014 2/3 comply [kokoro/am_michael B=1.1225]. Absolute B>=/>=1.15 needs recalibration before gating this item.",
+      "P1-DIRECTION qex_002 (forbidden rise): teachers FAIL \u2014 2/3 comply [piper/ryan B=1.2241]. Absolute B>=/<1.15 needs recalibration before gating this item.",
+      "P1-DIRECTION qex_003 (required rise): teachers FAIL \u2014 2/4 comply [kokoro/af_heart B=1.1225; kokoro/am_michael B=1.1355]. Absolute B>=/>=1.15 needs recalibration before gating this item.",
+      "P1-DIRECTION qex_006 (forbidden rise): teachers FAIL \u2014 2/4 comply [piper/lessac B=1.2276; piper/ryan B=1.203]. Absolute B>=/<1.15 needs recalibration before gating this item.",
+      "TIER-C-BAND qex_003: anchor {'piper/ryan': 0.3111} exceeds |dB|<=0.2 vs anchor median \u2014 a teacher falls outside its own proposed band.",
+      "TIER-C-SPREAD qex_003: anchor spread 0.4926 > X=0.2 (X was derived as max anchor spread + margin; new items exceed the calibration basis).",
+      "TIER-C-SPREAD qex_006: anchor spread 0.2504 > X=0.2 (X was derived as max anchor spread + margin; new items exceed the calibration basis).",
+      "P3-LONG-PAUSE CLAUSE: 3/20 teacher clips fail the '(L>=1 => pause >=200 ms)' requirement on qex_005 [kokoro-af_heart-qex_005 L=1 maxSil=70.0ms; kokoro-am_michael-qex_005 L=1 maxSil=130.0ms; piper-ryan-qex_005 L=1 maxSil=199.5ms] \u2014 teachers do not realize a >=200 ms gap after '\u2016' before an exclamatory continuation; clause needs recalibration (or expressive-context exemption) before gating."
+    ]
+  }
+}

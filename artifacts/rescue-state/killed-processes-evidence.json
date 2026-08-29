@@ -1,0 +1,44 @@
+[
+ {
+  "pid": 8552,
+  "cmd": ".venv\\Scripts\\python.exe -X utf8 experiments\\CV-G1-E0013-regressor\\train_regressor.py --manifests librittsr-clean100,teacher-kokoro --durations data/m",
+  "cpu_total": 0.0,
+  "rss_gb": 0.0
+ },
+ {
+  "pid": 12588,
+  "cmd": "C:\\Users\\leona\\Downloads\\caedral-voice\\.venv\\Scripts\\python.exe -c \nimport psutil, json\nfrom datetime import datetime\nevidence = []\nfor p in psutil.pr",
+  "cpu_total": 1.1,
+  "rss_gb": 0.02
+ },
+ {
+  "pid": 21536,
+  "cmd": "C:\\Users\\leona\\Downloads\\caedral-voice\\.venv\\Scripts\\python.exe -X utf8 C:\\Users\\leona\\Downloads\\caedral-voice\\scripts\\rescue_orchestrator.py",
+  "cpu_total": 0.0,
+  "rss_gb": 0.0
+ },
+ {
+  "pid": 22108,
+  "cmd": "C:\\Users\\leona\\Downloads\\caedral-voice\\.venv\\Scripts\\python.exe -c \nimport psutil, json\nfrom datetime import datetime\nevidence = []\nfor p in psutil.pr",
+  "cpu_total": 0.0,
+  "rss_gb": 0.0
+ },
+ {
+  "pid": 25240,
+  "cmd": "C:\\Users\\leona\\Downloads\\caedral-voice\\.venv\\Scripts\\python.exe -X utf8 C:\\Users\\leona\\Downloads\\caedral-voice\\scripts\\rescue_orchestrator.py",
+  "cpu_total": 31.9,
+  "rss_gb": 0.02
+ },
+ {
+  "pid": 25924,
+  "cmd": ".venv\\Scripts\\python.exe -X utf8 experiments\\CV-G1-E0013-regressor\\train_regressor.py --manifests librittsr-clean100,teacher-kokoro --durations data/m",
+  "cpu_total": 14902.5,
+  "rss_gb": 2.38
+ },
+ {
+  "pid": 26904,
+  "cmd": "C:\\Users\\leona\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command try { $PSDefaultParameterValue",
+  "cpu_total": 0.9,
+  "rss_gb": 0.08
+ }
+]

@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import threading
 import time
 from dataclasses import dataclass, field
@@ -303,6 +304,14 @@ def _resolve_checkpoint(run_dir: Path, explicit: str | Path | None) -> Path:
     raise FileNotFoundError(f"no checkpoint found under {ck_dir}")
 
 
+def _unsafe_checkpoint_fallback_allowed() -> bool:
+    """Checkpoints that embed non-tensor pickle objects (e.g. RNG state)
+    need weights_only=False, which executes pickle code. Off by default so
+    a third-party checkpoint file cannot run arbitrary unpickling; set
+    CV_ALLOW_UNSAFE_CHECKPOINT=1 for trusted local artifacts."""
+    return os.environ.get("CV_ALLOW_UNSAFE_CHECKPOINT", "").strip() == "1"
+
+
 def _load_checkpoint(path: Path) -> dict:
     try:
         return torch.load(path, map_location="cpu", weights_only=True)
@@ -310,6 +319,12 @@ def _load_checkpoint(path: Path) -> dict:
         transient = "Weights only load failed" in str(exc) or "Unpickler" in type(exc).__name__
         if not transient:
             raise
+        if not _unsafe_checkpoint_fallback_allowed():
+            raise ValueError(
+                f"{path.name} embeds non-tensor pickle objects; refusing to "
+                "unpickle them. Re-export the checkpoint tensors-only or set "
+                "CV_ALLOW_UNSAFE_CHECKPOINT=1 for trusted local artifacts."
+            ) from exc
         logger.warning(
             "%s embeds non-tensor pickle objects (e.g. RNG state); loading "
             "with weights_only=False -- local trusted artifacts only", path.name,

@@ -389,8 +389,18 @@ class Trainer:
 
     def resume(self, path: os.PathLike | str) -> dict:
         """Load a checkpoint from disk; its state is applied to the objects
-        passed to the next :meth:`fit` call. Nothing but file contents is used."""
+        passed to the next :meth:`fit` call. Nothing but file contents is used.
+
+        Resume payloads carry full trainer state (optimizer/RNG), so loading
+        them executes pickle code: gated behind CV_ALLOW_UNSAFE_CHECKPOINT=1
+        so a foreign checkpoint file cannot unpickle by default."""
         path = Path(path)
+        if os.environ.get("CV_ALLOW_UNSAFE_CHECKPOINT", "").strip() != "1":
+            raise ValueError(
+                "resume loads full pickle state (optimizer/RNG) and requires "
+                "CV_ALLOW_UNSAFE_CHECKPOINT=1; only resume checkpoints you "
+                "wrote yourself"
+            )
         payload = torch.load(path, map_location="cpu", weights_only=False)
         if int(payload.get("format_version", -1)) != FORMAT_VERSION:
             raise ValueError(f"unsupported checkpoint format_version "

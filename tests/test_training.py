@@ -35,6 +35,14 @@ SEED = 1234
 DIM_IN, DIM_OUT, N, BATCH = 8, 8, 64, 16  # 4 optimizer steps per epoch
 
 
+@pytest.fixture(autouse=True)
+def _allow_unsafe_checkpoints(monkeypatch):
+    # every checkpoint in this module is written and read by the test itself
+    # (trusted), so the 2026-10-03 audit gate on full-pickle resume payloads
+    # is explicitly enabled here.
+    monkeypatch.setenv("CV_ALLOW_UNSAFE_CHECKPOINT", "1")
+
+
 def make_task(seed: int = SEED):
     """Fixed synthetic regression task: y = x @ W^T + b + tiny noise."""
     g = torch.Generator().manual_seed(seed)
